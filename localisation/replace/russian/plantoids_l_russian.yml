@@ -1,0 +1,134 @@
+﻿l_russian:
+ ########################
+ # Plantoids Species Pack
+ ########################
+
+ civic_idyllic_bloom:0 "Идиллический сад"
+ civic_idyllic_bloom_desc:0 "Это общество старательно заботится об окружающей среде, стремясь создать настоящий рай для каждого жителя."
+ civic_hive_idyllic_bloom:0 "$civic_idyllic_bloom$"
+ civic_hive_idyllic_bloom_desc:0 "Коллективный разум всегда заботится об окружающей среде, ведь райские условия способствуют идеальной синергии."
+ civic_tooltip_idyllic_bloom_effects:2 "Можно строить £building£ §Y$building_gaiaseeders$§! на ваших мирах и мирах вассала, идеально подходящих для вашего стартового вида.\n$building_gaiaseeders_all_desc$\nПо мере открытия продвинутых технологий £society£ §Yтерраформирования§! £building£ §Y$building_gaiaseeders$§! можно строить на новых типах планет."
+ civic_tooltip_not_idyllic_bloom:0 "НЕТ гражданской модели: §Y$civic_idyllic_bloom$§!"
+
+ disables_idyllic_bloom:0 "§RВыбор этого бонуса за стремление отключит гражданскую модель $civic_idyllic_bloom$.§!"
+
+ gaiaseeders_tomb_world:0 "$TRIGGER_FAIL$Требуется £society£ §Y$tech_climate_restoration$§!, чтобы строить на §Yопустошенных мирах§!."
+ gaiaseeders_same_climate_start:0 "$TRIGGER_FAIL$Требуется £society£ §Y$tech_terrestrial_sculpting$§!, чтобы строить на"
+ gaiaseeders_different_climate_start:0 "$TRIGGER_FAIL$Требуется £society£ §Y$tech_ecological_adaptation$§!, чтобы строить на"
+ gaiaseeders_wet:0 "Влажный"
+ gaiaseeders_dry:0 "Сухой"
+ gaiaseeders_cold:0 "§YХолодный§!"
+ gaiaseeders_same_climate_wet:0 "Планеты"
+ gaiaseeders_same_climate_dry:0 "Планеты"
+ gaiaseeders_same_climate_cold:0 "Планеты"
+ gaiaseeders_different_climate_wet:0 "§Yпланетах§! типа $gaiaseeders_different_climate_start$ $gaiaseeders_dry$ или $gaiaseeders_cold$."
+ gaiaseeders_different_climate_dry:0 "§Yпланетах§! типа $gaiaseeders_different_climate_start$ $gaiaseeders_same_climate_wet$ или $gaiaseeders_cold$."
+ gaiaseeders_different_climate_cold:0 "§Yпланетах§! типа $gaiaseeders_different_climate_start$ $gaiaseeders_same_climate_wet$ или $gaiaseeders_same_climate_dry$."
+ gaiaseeders_special_habitability_preference:0 "§Yпланетах§! типа $gaiaseeders_different_climate_start$ $gaiaseeders_wet$, $gaiaseeders_dry$ или $gaiaseeders_cold$."
+
+ building_gaiaseeders:0 "Комплексы «Идеал»"
+ building_gaiaseeders_1:0 "$building_gaiaseeders$: 1-я стадия"
+ building_gaiaseeders_2:0 "$building_gaiaseeders$: 2-я стадия"
+ building_gaiaseeders_3:0 "$building_gaiaseeders$: 3-я стадия"
+ building_gaiaseeders_4:0 "$building_gaiaseeders$: Финальная стадия"
+ building_gaiaseeders_all_desc:0 "В ходе проекта из 4 стадий по всей планете строятся комплексы, которые постепенно превратят ее в §YИдеальный мир§!."
+ building_gaiaseeders_1_desc:0 "$building_gaiaseeders_all_desc$\n\nПланета находится на стадии начального ускорения роста."
+ building_gaiaseeders_2_desc:0 "$building_gaiaseeders_all_desc$\n\nНа этой стадии больше внимания уделяется пригодности планеты для жизни."
+ building_gaiaseeders_3_desc:0 "$building_gaiaseeders_all_desc$\n\nЭта стадия полностью сосредоточена на пригодности планеты для жизни."
+ building_gaiaseeders_4_desc:0 "$building_gaiaseeders_all_desc$"
+ building_gaiaseeders_4_effect_desc:0 "По завершении этой стадии планета будет терраформирована в §Yидеальный мир§!."
+
+ plant.100.name:0 "Совершенная идиллия"
+ plant.100.desc:1 "Благодаря передовым технологиям, значительным расходам и упорному труду наших лучших биоинженеров проект «Идеал» на мире §Y[Root.GetName]§! принес свои плоды!\n\nС этого дня мир §Y[Root.GetName]§! должен по праву считаться жемчужиной космоса, вызывая зависть и восхищение других государств."
+ plant.100.a:0 "Это нужно отпраздновать!"
+ plant.100.b:0 "Отличная работа. А теперь пора заняться другими проектами."
+
+ plant.105.desc:0 "Благодаря передовым технологиям, значительным расходам и упорному труду наших лучших биоинженеров проект «Идеал» на мире §Y[From.Planet.GetName]§! принес свои плоды!\n\nС этого дня мир §Y[From.Planet.GetName]§! должен по праву считаться жемчужиной космоса, вызывая зависть и восхищение других государств. Наверняка наши вассалы оценят усилия."
+
+ plant.110.desc:0 "Наш сюзерен завершил свой странный проект на мире §Y[from.from.planet.GetName]§!, превратив его в идеальный. Благодаря его стараниям мы можем в полной мере воспользоваться райским климатом и обширными просторами этого мира."
+ plant.110.desc.hydrocentric:0 "Наш сюзерен завершил свой странный проект на мире §Y[from.from.planet.GetName]§!. Планета уничтожена! На смену океанам пришли равнины и холмы. Влажная атмосфера стала сухой и безжизненной. Что еще хуже, наши жалобы были сходу отвергнуты! Сюзерен заявляет, что мир стал «привлекательнее»."
+
+ plant.110.a:0 "Как они посмели?!"
+ plant.110.b:0 "Какая забота!"
+ plant.110.c:0 "Любопытное решение."
+
+ celebrate_idyllic_bloom:0 "Праздник идиллии"
+ celebrate_idyllic_bloom_desc:0 "После успешной трансформации этого мира в настоящий рай по всей планете начались празднования."
+ terraformed_our_ocean_world:0 "Терраформирование океанического мира"
+ terraformed_our_ocean_world_desc:0 "Наш сюзерен превратил прекрасный океанический мир в свой мерзкий идеал. Ужасно."
+
+ thankful_for_gaia:0 "Благодарность за идеал"
+ thankful_for_gaia_desc:0 "Наш сюзерен недавно терраформировал одну из наших планет в идеальный мир. Как заботливо!"
+
+### Traits by Byron Aytoun
+
+ trait_plantoid_phototrophic:0 "Фототрофы"
+ trait_plantoid_phototrophic_desc:0 "§LЭтот вид одновременно питается как пищей, так и солнечным светом.§!\n"
+ TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Заменяет §Y50%§! базового расхода £food£ §Yпищи§! на содержание поселений на равное количество £energy£ §Yэнергии§!."
+
+ trait_plantoid_radiotrophic:0 "Радиотрофы"
+ trait_plantoid_radiotrophic_desc:0 "§LЭтот вид одновременно питается как пищей, так и слабым радиационным излучением. Он с легкостью осваивается на самых негостеприимных планетах.§!"
+ TRAIT_PLANTOID_RADIOTROPHIC_EFFECT:1 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\nЭти затраты £energy£ §Yэнергии§! не распространяются на поселения, проживающие на §Yопустошенных мирах§!.\nСкорость прироста поселений на §Yопустошенных мирах§!: §G+10%§!\nПриспособленность — опустошенный мир: §G+10%§!"
+ trait_harvested_radiotrophic:0 "$trait_plantoid_radiotrophic$"
+ trait_harvested_radiotrophic_desc:0 "$trait_plantoid_radiotrophic_desc$"
+ trait_lithoid_radiotrophic:0 "$trait_plantoid_radiotrophic$"
+ trait_lithoid_radiotrophic_desc:0 "$trait_plantoid_radiotrophic_desc$"
+ TRAIT_LITHOID_RADIOTROPHIC_EFFECT:1 "Заменяет §Y50%§! базового расхода £minerals£ §Yминералов§! на содержание поселений на равное количество £energy£ §Yэнергии§!.\nЭти затраты £energy£ §Yэнергии§! не распространяются на поселения, проживающие на §Yопустошенных мирах§!.\nСкорость прироста поселений на §Yопустошенных мирах§!: §G+10%§!\nПриспособленность — опустошенный мир: §G+10%§!"
+
+ trait_plantoid_budding:0 "Почкование"
+ trait_plantoid_budding_desc:0 "§LЭтот вид способен размножаться почкованием, помимо традиционного размножения посредством семян или спор.§!"
+ trait_lithoid_budding:0 "Кристаллизация"
+ trait_lithoid_budding_desc:0 "§LБлагодаря растущим кристаллам этот вид способен воспроизводить собственные кристаллические решетки в дополнение к традиционном способам размножения.§!"
+ TRAIT_PLANTOID_BUDDING_EFFECT:1 "Каждое поселение в статусе раба или выше увеличивает £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§! на 0,02.\n\nНакапливается с другими источниками, которые увеличивают $MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$, такими как £building£ §H$building_clone_vats$§! или £job_spawning_drone£ §H$job_spawning_drone_plural$§!."
+ TRAIT_LITHOID_BUDDING_EFFECT:0 "$TRAIT_PLANTOID_BUDDING_EFFECT$\n\n§HПризнак $trait_lithoid$§! меняет эффект этого признака."
+
+ trait_advanced_phototrophic:0 "$trait_plantoid_phototrophic$"
+ trait_advanced_phototrophic_desc:0 "§LБлагодаря продвинутым генным технологиям представители этой расы могут частично питаться солнечным светом.§!"
+ TRAIT_ADVANCED_PHOTOTROPHIC_EFFECT:0 "Заменяет §Y50%§! базового расхода £food£ §Yпищи§! или £minerals£ §Yминералов§! на содержание поселений на равное количество £energy£ §Yэнергии§!."
+
+ trait_advanced_radiotrophic:0 "$trait_plantoid_radiotrophic$"
+ trait_advanced_radiotrophic_desc:0 "§LБлагодаря продвинутым генным технологиям представители этой расы могут частично питаться слабым радиационным излучением и с легкостью осваиваются на самых негостеприимных планетах.§!"
+ TRAIT_ADVANCED_RADIOTROPHIC_EFFECT:0 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\nЭти затраты £energy£ §Yэнергии§! не распространяются на поселения, проживающие на §Yопустошенных мирах§!."
+ 
+ trait_advanced_budding:0 "$trait_plantoid_budding$"
+ trait_advanced_budding_desc:0 "§LИзменения в цепочках ДНК позволяют этой расе размножаться почкованием в дополнение к более традиционным способам.§!"
+
+### Catalytic Processing by Byron Aytoun
+
+# Regular
+ civic_catalytic_processing:0 "Каталитическая обработка"
+ civic_catalytic_processing_desc:0 "Сосредоточив усилия промышленности на химии катализа, эта цивилизация нашла способ применять органические материалы в строительстве космических сооружений."
+ civic_tooltip_catalytic_processing_effects:0 "Вид деятельности £job_foundry£ §Y$job_foundry_plural$§! заменяется видом деятельности $job_catalytic_technician_effect_desc$."
+
+# Corporate
+ civic_corporate_catalytic_processing:1 "Каталитическая переработка"
+ civic_corporate_catalytic_processing_desc:0 "В своем стремлении к максимальной прибыли эта мегакорпорация перерабатывает излишки органической материи в высокотехнологичные материалы для строительства космических сооружений."
+ civic_tooltip_catalytic_processing_corporate_effects:0 "$civic_tooltip_catalytic_processing_effects$"
+
+# Hive Mind
+ civic_hive_catalytic_processing:1 "Органическая переработка"
+ civic_hive_catalytic_processing_desc:0 "Коллективный разум перерабатывает излишки органической материи в высокотехнологичные материалы для строительства космических сооружений."
+ civic_tooltip_hive_catalytic_processing_effects:0 "Вид деятельности £job_alloy_drone£ §Y$job_alloy_drone_plural$§! заменяется видом деятельности $job_catalytic_drone_effect_desc$."
+
+# Machine Intelligence
+ civic_machine_catalytic_processing:1 "$civic_hive_catalytic_processing$"
+ civic_machine_catalytic_processing_desc:0 "Машинный разум перерабатывает избыток органической материи в высокотехнологичные материалы для строительства космических сооружений."
+ civic_tooltip_machine_catalytic_processing_effects:0 "Вид деятельности £job_fabricator£ §Y$job_fabricator_plural$§! заменяется видом деятельности $job_catalytic_drone_effect_desc$."
+
+# Regular & Corporate
+ job_catalytic_technician:0 "Техник-катализатор"
+ job_catalytic_technician_plural:0 "Техники-катализаторы"
+ job_catalytic_technician_desc:0 "Высококвалифицированные рабочие необходимы для превращения органической материи в прочные сплавы, которых требуют передовые строительные проекты."
+ job_catalytic_technician_effect_desc:0 "£job_catalytic_technician£ $job_catalytic_technician_plural$ превращают ресурс £food£ §Y$food$§! в £alloys£ §Y$alloys$§!"
+ mod_job_catalytic_technician_add:0 "Деятельность: $job_catalytic_technician$"
+ mod_job_catalytic_technician_per_pop:0 "§G+1§! $job_catalytic_technician$ за каждые $VALUE$ посел."
+ mod_job_catalytic_technician_per_pop_short:0 "\n§G+1§! £mod_job_catalytic_technician_add£ за каждые $VALUE$ £pop£"
+
+# Gestalt
+ job_catalytic_drone:0 "Дрон-катализатор"
+ job_catalytic_drone_plural:0 "Дроны-катализаторы"
+ job_catalytic_drone_desc:0 "Узкоспециализированные дроны-катализаторы перерабатывают ценные органические материалы в прочные сплавы, используемые для разработок в области флота и передового строительства."
+ job_catalytic_drone_effect_desc:0 "£job_catalytic_drone£ $job_catalytic_drone_plural$ превращают ресурс £food£ §Y$food$§! в £alloys£ §Y$alloys$§!"
+ mod_job_catalytic_drone_add:0 "Деятельность: $job_catalytic_drone$"
+ mod_job_catalytic_drone_per_pop:0 "§G+1§! $job_catalytic_drone$ за каждые $VALUE$ посел."
+ mod_job_catalytic_drone_per_pop_short:0 "\n§G+1§! £mod_job_catalytic_drone_add£ за каждые $VALUE$ £pop£"

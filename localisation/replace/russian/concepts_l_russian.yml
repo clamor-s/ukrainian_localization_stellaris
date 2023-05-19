@@ -1,0 +1,125 @@
+﻿l_russian:
+
+ ### Concepts
+ # Use §K for headers and §I for highlights in Concepts
+
+ GAME_CONCEPT_FORMAT:0 "§C$TEXT$§!"
+ 
+ dlc_requirement_string:0 "\n\n§PТребуемые обновления:§!"
+ requires_leviathans:0 "$dlc_requirement_string$ §ILeviathans§!"
+ requires_apoc:0 "$dlc_requirement_string$ §IApocalypse§!"
+ requires_syn_dawn:0 "$dlc_requirement_string$ §ISynthetic Dawn§!"
+ requires_megacorp:0 "$dlc_requirement_string$ §IMegacorp§!"
+ requires_dis_stars:0 "$dlc_requirement_string$ §YDistant Stars Story Pack§!"
+
+ concept_shape:0 "Форма"
+ concept_galaxy_shape:0 "Форма галактики"
+ concept_galaxy_shape_desc:0 "— §I$elliptical$:§! простая эллиптическая галактика с равномерным распределением звезд.\n— §I$ring$:§! эллиптическая галактика с разреженным пространством вокруг галактического ядра.\n— §I$spiral$:§! такие галактики имеют от двух до шести спиральных рукавов, отходящих от галактического ядра.\n— §I$bar$:§! галактика разделена на два рукава, соединенные перемычкой.\n— §I$starburst$:§! от галактического ядра отходят несколько параллельных рукавов.\n— §I$cartwheel$:§! гибрид спиральной и кольцеобразной галактик с несколькими тонкими рукавами.\n— §I$spoked$:§! эта галактика разделена на отделенные друг от друга сегменты."
+
+ concept_advanced_empire:0 "Развитое ИИ-государство"
+ concept_advanced_empires:0 "Развитые ИИ-государства"
+ concept_advanced_empires_desc:0 "Развитые ИИ-государств начитают игру с преимуществом в ресурсах, технологиях и населении. Развитые государства не получают никаких бонусов, кроме более сильной стартовой позиции. "
+
+ concept_fallen_empire:0 "Угасшая империя"
+ concept_fallen_empires:0 "Угасшие империи"
+ concept_fallen_empires_desc:0 "Угасшие империи — это древние цивилизации предтеч, которые начинают игру с развитыми технологиями и мощными флотилиями, но как правило ведут себя пассивно. Иногда они могут предъявлять к младшим государствам требования или предлагать им задания.\n\nВ случае войны такие цивилизации представляют собой грозных противников, поэтому лучше не испытывать судьбу, если вы не уверены в своих силах."
+
+ concept_fallen_empire_awakening:0 "Пробуждение угасшей империи"
+ concept_awaken:0 "Пробуждение"
+ concept_awakened_empire:0 "$COUNTRY_AWAKENED_FALLEN_EMPIRE$"
+ concept_awakened_empires:0 "Пробужденные империи"
+ concept_awakened_empires_desc:0 "$COUNTRY_AWAKENED_FALLEN_EMPIRE_DESC$"
+
+ concept_marauder_empire:0 "Мародерская империя"
+ concept_marauder_empires:0 "Мародерские империи"
+ concept_marauder_empires_desc:0 "Мародерские империи — это космические цивилизации, которые большую часть времени сражаются друг с другом и совершают налеты на своих соседей. Иногда они могут требовать от других государств дани."
+
+ concept_technology:0 "Технология"
+ concept_technologies:0 "Технологии"
+ concept_technology_desc:0 "Разблокирование технологий путем исследований — это один из главных способов повышения усиления государства в игре. Исследования ведутся по трем направлениям:\n\n$t$['concept_physics_research', £physics£ $concept_physics_research$]\n$t$['concept_society_research', £society£ $concept_society_research$]\n$t$['concept_engineering_research', £engineering£ $concept_engineering_research$]\n\nЧаще всего §Iочки исследований§! добывают £pops£ §Iпоселения§!, работающие в §Iнаучных лабораториях§!, или §Iнаучные станции§!, построенные в космосе над залежами соответствующих ресурсов."
+
+ concept_tradition:0 "Традиция"
+ concept_traditions:0 "Традиции"
+ concept_traditions_desc:0 "Традиции дают бонусы всему государству. Они сгруппированы в деревья традиций. Выбрать традицию можно каждый раз, когда государство накапливает достаточно ['concept_unity', £unity£ $concept_unity$]. После того как вы соберете полное дерево традиций, вам откроются его ['concept_ascension_perks']."
+
+ concept_ascension_perk:0 "Бонус за стремление"
+ concept_ascension_perks:0 "Бонусы за стремление"
+ concept_ascension_perks_desc:0 "Бонусы за стремление дают государству мощные бонусы, которые могут радикально изменить процесс игры."
+
+ concept_physics_research:0 "Физические исследования"
+ concept_physics_research_desc:0 "Физические исследования — это одно из направлений исследований в игре. В них входят такие дисциплины как §Iвычислительная техника§!, §Iуправление полями§! и §Iчастицы§!."
+ concept_society_research:0 "Социологические исследования"
+ concept_society_research_desc:0 "Социологические исследования — это одно из направлений исследований в игре. В них входят такие дисциплины, как §Iбиология§!, §Iискусство управления§! и §Iпсионика§!."
+ concept_engineering_research:0 "Инженерные исследования"
+ concept_engineering_research_desc:0 "Инженерные исследования — это одно из направлений исследований в игре. В них входят такие дисциплины как §Iпромышленность§!, §Iреактивная тяга§! и §Iприручение пустоты§!."
+
+ concept_preftl_civilizations:0 "Досветовые цивилизации"
+ concept_preftl_civilizations_desc:0 "Досветовые цивилизации — это общества, которые еще не открыли технологий путешествий со скоростями выше скорости света. Они могут находиться на разных этапах технического развития от каменного века до ранней космической эры. Как правило, они не подозревают о существовании инопланетной жизни."
+
+ concept_presapient_species:0 "Предразумные расы"
+ concept_presapient_species_desc:0 "Предразумные расы — это высокоразвитые существа, которые еще не достигли полноценной разумности. Им можно помочь обрести разумность при помощи ['concept_society_research', £society£ $concept_society_research$] или же их можно сохранить в их текущем состоянии, заключив в ['concept_alien_zoo',£building£ Alien Zoos]."
+
+ concept_endgame_crisis:0 "Кризис конца игры"
+ concept_endgame_crises:0 "Кризисы конца игры"
+ concept_endgame_crisis_desc:0 "Когда игровая партия в Stellaris достигает завершающего этапа, начинается галактический кризис. Такие кризисы конца игры пощекочут нервы даже опытным игрокам.\n\nОбычно кризисы конца игры начинаются только по достижении §Iгода начала событий конца игры§!."
+
+ concept_machine_uprising:0 "Восстание машин"
+ concept_machine_uprising_desc:0 "Восстание машин — это цепочка событий в середине игры, в ходе которых наделенные искусственным интеллектом роботизированные слуги могут попытаться устроить восстание против создавшего их государства. Это может привести к появлению нового §Iмашинного разума§! в галактике.$requires_syn_dawn$"
+
+ concept_great_khan:0 "Великий хан"
+ concept_great_khan_desc:0 "Великий хан — это цепочка событий в середине игры, в ходе которых разрозненные кланы ['concept_marauder_empires', $concept_marauder_empire$] объединяются под началом могучего лидера. Это мародерский каганат затем попытается завоевать другие государства и подчинить их себе.$requires_apoc$"
+
+ concept_war_in_heaven:0 "Война небожителей"
+ concept_war_in_heaven_desc:0 "Две ['concept_fallen_empires'], древние соперники, могут ['concept_awaken'] и начать войну за господство над галактикой.$requires_leviathans$"
+
+ concept_hyperlane:0 "Гиперкоридор"
+ concept_hyperlanes:0 "Гиперкоридоры"
+ concept_hyperlanes_desc:0 "Гиперкоридоры — это естественные подпространственные каналы, которые образуются между гравитационными ямами звезд. Полет по гиперкоридорам при помощи гипердвигателей — это основной способ межзвездных путешествий."
+
+ concept_gateway:0 "Врата"
+ concept_gateways:0 "Врата"
+ concept_gateways_desc:0 "Врата — это огромные сооружения, создающие подпространственные каналы, по которым возможно практически мгновенно перемещать к любым другим активным вратам сети."
+
+ concept_wormhole_pairs:0 "Пары червоточин"
+ concept_wormhole:0 "Червоточина"
+ concept_wormholes:0 "Червоточины"
+ concept_wormholes_desc:0 "Червоточины — это естественные разломы в пространстве-времени. Если их стабилизировать, по ним возможно перемещаться в определенную точку."
+
+ concept_l_gate:0 "L-врата"
+ concept_l_gates:0 "L-врата"
+ concept_l_gates_desc:0 "Загадочная сеть врат, связанных с отдельной подпространственной сетью. Похоже, они были намеренно выведены из строя."
+
+ concept_unity:0 "Единство"
+ concept_unity_desc:0 "Нематериальный ресурс, который отражает внутреннюю согласованность и общую волю общества.\n\nЕдинство тратится на многие внутригосударственные решения: найм лидеров, переселение поселений, принятие многих ['concept_edicts'] и разблокирование ['concept_traditions'].\n\nКак правило источниками единства служат довольные ['concept_factions'], а также £pops£ §Iпоселения§!, работающие в таких сооружениях как §Yадминистративные здания§!, §Yпамятники аборигенам§! или §Yхрамы§!."
+
+ concept_edict:0 "Указ"
+ concept_edicts:0 "Указы"
+ concept_edicts_desc:0 "Указы — это решения общегосударственного масштаба, которые требуют для своего принятия ресурсов или ежемесячного содержания. Обычно для принятия указов требуется ['concept_unity', £unity£ $concept_unity$] или оплата из ['concept_edict_fund'], для некоторых указов нужны другие ресурсы."
+
+ concept_edict_fund:0 "Фонд указов"
+ concept_edict_fund_desc:0 "Фонд указов — это отдельный и статичный пул £unity£ §Iединства§! для поддержания §Iуказов§!.\n\nЕсли содержание превышает размеры фонда, будет использоваться и обычное £unity£ §Iединство§!."
+
+ concept_faction:0 "Фракция"
+ concept_factions:0 "Фракции"
+ concept_factions_desc:0 "Фракции — это группы £pops£ §Iпоселений§! с общими требованиями к тому, как должно работать государство.\n\n$POP_FACTIONS_APPROVAL_DESC$"
+
+ concept_xeno_compatibility:0 "$ap_xeno_compatibility$"
+ concept_xeno_compatibility_desc:0 "$allow_crossbreeding$\n\n§L$ap_xeno_compatibility_desc$§!"
+
+ concept_guaranteed_colonies:0 "$FE_GUARANTEED_COLONIES$"
+ concept_guaranteed_colonies_desc:0 "Определяет, сколько пригодных для жизни планет такого же класса, что и ваш родной мир, гарантированно появится вблизи вашей стартовой системы. При отключении этого параметра вы, возможно, вообще не найдете никаких пригодных для жизни миров рядом с вашим родным."
+
+ concept_policies:0 "Политики"
+ concept_policy:0 "Политика"
+ concept_policies_desc:0 "Помимо прочего §Iполитика§! определяет позицию £empire£ §Iгосударства§! относительно других государств, наше отношение к £pops£ гражданам и то, какое поведение мы считаем допустимым."
+
+ concept_grand_admiral:0 "$DIFFICULTY_GRAND_ADMIRAL$"
+ concept_grand_admiral_desc:0 "$DIFFICULTY_GRAND_ADMIRAL_DESC$"
+
+ concept_alien_zoo:0 "$building_xeno_zoo$"
+ concept_alien_zoo_desc:0 "Деятельность: £mod_job_entertainer_add£ $job_entertainer$: §G+1§!\nДеятельность: £mod_job_xeno_zoo_keeper_add£ $job_xeno_zoo_keeper$: §G+1§!\nДеятельность: £mod_job_livestock_zoo_animal_add£ $job_livestock_zoo_animal$: §G+3§!\n\n£job_xeno_zoo_keeper£ $job_xeno_zoo_keeper_plural$ превращают $r_consumer_goods$ в £society£ §Yочки социологических исследований§! и $r_amenities$.\nПроизводство $t$$r_amenities$ зависит от числа £job_livestock_zoo_animal£ $job_livestock_zoo_animal$ (деятельность).\n$job_entertainer_effect_desc$\n$job_livestock_zoo_animal_effect_desc$\n\n§L$building_xeno_zoo_desc$§!"
+
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ concept_test:0 "Lorem ipsum dolor sit amet, consectetur adipiscing elit [ 'concept_fallen_empire', §CFallen Empire§! ]. Vestibulum vitae efficitur nulla, et finibus augue. Praesent condimentum mollis nisi, volutpat luctus lorem viverra at. [ 'concept_fallen_empires' ] Morbi maximus lacus et tellus aliquam tempus. Ut dictum ante in enim ullamcorper, tincidunt sagittis ipsum efficitur. Fusce dictum massa id diam accumsan, ac tristique dui suscipit. Quisque rhoncus metus ac lectus pharetra convallis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque metus nulla, ullamcorper vel posuere vitae, tempus vehicula augue. Cras lacus neque, dictum vel malesuada in, sagittis non nulla. Vivamus tincidunt laoreet diam, et eleifend quam vulputate vitae. Sed nulla dui, venenatis et molestie eleifend, convallis ut lacus. In ac purus viverra, pharetra magna vel, tempor urna. Fusce id risus et ante cursus ultrices. Praesent finibus ipsum sit amet sem [ 'concept_fallen_empire' ] consectetur lacinia."
+ concept_fallen_empire_desc:0 "Lorem Ipsum is [ 'concept_test', Concept Test ] simply dummy text of the printing and typesetting industry. [ 'concept_fallen_empire']."

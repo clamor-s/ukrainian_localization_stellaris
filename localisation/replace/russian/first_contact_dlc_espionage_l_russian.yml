@@ -1,0 +1,437 @@
+﻿l_russian:
+ ### Pre-FTL Espionage Operations
+ diplomacy_wrong_interference_policy:0 "$TRIGGER_FAIL$§RНаша §Yполитика «$policy_interference$»§! не позволяет нам вести здесь шпионаж.§!"
+
+ operation_requires_observation_outpost:0 "$TRIGGER_FAIL$§RНа орбите их родного мира должен быть §Yнаблюдательный форпост§!.§!"
+ operation_has_disguise:0 "" # Intentionally empty string
+ operation_no_disguise_bio:0 "§HОтсутствие технологии §Y$tech_gene_tailoring$§! затруднит нашим агентам маскировку под местных жителей. Возрастет вероятность случайных негативных событий.§!"
+ operation_no_disguise_machine:0 "§HОтсутствие технологии §Y$tech_robomodding$§! затруднит нашим агентам маскировку под местных жителей. Возрастет вероятность случайных негативных событий.§!"
+ operation_wrong_tech_level:0 "$TRIGGER_FAIL$§RЭта цивилизация недостаточно технически развита, чтобы присоединиться к нам.§!\n\n"
+ operation_is_gestalt:0 "$TRIGGER_FAIL$§RОни — §Yгештальт-сознание§!. Их невозможно интегрировать в другие общества.§!\n\n"
+ operation_gestalt_cant_indoctrinate:0 "$TRIGGER_FAIL$§RМы — §Yгештальт-сознание§!. Мы не можем повлиять на их умы.§!\n\n"
+ operation_gestalt_mismatched:0 "$TRIGGER_FAIL$§RМы не можем внедриться в государство столь отличного от нас типа.§!\n\n"
+ operation_wrong_interference_policy:0 "$TRIGGER_FAIL$§RНаша политика «§Y$policy_interference$§!» этого не позволяет.§!\n\n"
+ operation_wrong_enlightenment_policy:0 "$TRIGGER_FAIL$§RНаша политика «§Y$policy_enlightenment$§!» этого не позволяет.§!\n\n"
+ operation_same_ethos:0 "$TRIGGER_FAIL$§RЭта цивилизация уже придерживается наших принципов.§!\n\n"
+ operation_failed_infiltration:0 "$TRIGGER_FAIL$§RИз-за наших недавних действий объявлен режим повышенной готовности.§!\n\n"
+
+ operation_awareness_risk:0 "\nПовышенный риск того, что [from.target.GetName] накопит £awareness£ §Yосведомленность§! во время наших шпионских операций." # event tooltip
+ operation_random_event_resolved:0 "§YОперация «[from.GetName]»§! продолжится по плану."
+ operation_random_event_resolved_poor:0 "§YОперация «[from.GetName]»§! продолжится, несмотря на §Rнеудачу§!."
+ operation_random_event_resolved_good:0 "§YОперация «[from.GetName]»§! продолжится. Возможен более §Gположительный§! исход."
+ operation_random_event_resolved_excellent:0 "§YОперация «[from.GetName]»§! продолжится. Очень вероятен §Gположительный§! исход."
+
+ operation_infiltrate_government:0 "Внедриться в правительство"
+ operation_infiltrate_government_desc:0 "Агенты будут постепенно внедряться в общество и заменять мировых правителей, готовя планету к аннексии."
+ operation_infiltrate_government_on_success:0 "$IF_SUCCESSFUL|E$\nПланета будет аннексирована, а ее жители получат мощный, но временный прирост счастья.\n\n[owner.GetDisguiseState]"
+
+ operation_indoctrinate_society:0 "Повлиять на умы общества"
+ operation_indoctrinate_society_desc:1 "[target.GetName] и небольшие группы населения могут стать объектом влияния наших оперативников. Со временем они склонят все общество к нашему образу мышления."
+ operation_indoctrinate_society_on_success:0 "$IF_SUCCESSFUL|E$\nпринципы населения сменятся на наши.\n\n[owner.GetDisguiseState]"
+
+ operation_plant_advanced_knowledge:0 "Внедрить новые знания"
+ operation_plant_advanced_knowledge_desc:0 "[target.GetName] еще не знает, как преодолеть скорость света, но местные ученые уже проложили путь к звездам. Осталось только подтолкнуть их в правильном направлении."
+ operation_plant_advanced_knowledge_on_success:0 "$IF_SUCCESSFUL|E$\nу цели ускоряется технологический прогресс.\n\n[owner.GetDisguiseState]"
+
+ operation_increase_awareness:0 "Повысить осведомленность"
+ operation_increase_awareness_desc:0 "Пора дать понять, что [root.target.GetName] — не единственный разумный вид во вселенной."
+ operation_increase_awareness_on_success:0 "$IF_SUCCESSFUL|E$\nуровень осведомленности государства [root.target.GetName] повышается.\n\n[owner.GetDisguiseState]"
+
+ operation_spread_disinformation:0 "Распространить дезинформацию"
+ operation_spread_disinformation_desc:0 "Истина где-то рядом, но [root.target.GetName] пока что придется обойтись без нее."
+ operation_spread_disinformation_on_success:0 "$IF_SUCCESSFUL|E$\nУровень осведомленности государства [root.target.GetName] понижается.\n\n[owner.GetDisguiseState]"
+
+ operation_infiltrate_hive:0 "Внедриться в улей"
+ operation_infiltrate_hive_desc:0 "Постепенно подменяя одну важную узловую единицу Разума за другой, наше сознание может ассимилировать жизненно важные функции местного скопления."
+ operation_infiltrate_hive_on_success:0 "$IF_SUCCESSFUL|E$\nПланета будет аннексирована, а местные единицы Разума станут частью нашего сознания.\n\n[owner.GetDisguiseState]"
+
+### Operation Events
+
+ preftl_operation.1000.name:0 "[from.GetName]: агенты готовы" # Operation name, i.e. 'Infiltrate Government'
+ preftl_operation.1000.desc.okay:0 "Все лидеры на планете [target.capital_scope.GetName], которых почитают [target.GetSpeciesName], были заменены нашими агентами. Инфильтрационные группы сейчас работают в поселении [target.capital_scope.GetPlanetHabitat]. Скоро придет время действовать."
+ preftl_operation.1000.desc.good:0 "Сейчас на планете [target.capital_scope.GetName] действуют тысячи наших агентов, они проникли во все учреждения поселения [root.target.capital_scope.GetPlanetHabitat]. Некоторым удалось занять высшие посты в местной иерархии, и они уже используют свое влияние для того, чтобы помогать другим агентам."
+ preftl_operation.1000.desc.poor:0 "Хотя на планете [target.capital_scope.GetName] уже действуют тысячи наших сотрудников, процесс внедрения идет тяжело. Попытка свергнуть власти в одном из поселений, из которых состоит [target.GetName], закончилась катастрофой и гибелью или самоуничтожением всех участвовавших в ней агентов.\n\nЛишь благодаря героическим усилиям нашей спящей ячейки местным властям не удалось обнаружить тела агентов и раскрыть всю нашу операцию."
+ #preftl_operation.1001.name:1 "Shaping the Future"
+ #preftl_operation.1001.desc:1 "Our operatives have successfully embedded themselves within the [infiltrated_country_species.GetAdj] political leadership. We now hold control over every world power, and can shape the future of [infiltrated_country_planet.GetName] to our will."
+ #preftl_operation.1002.name:1 "Influencing Affairs"
+ #preftl_operation.1002.desc:1 "Our operatives have covertly gained a foothold over the [infiltrated_country_species.GetAdj] political leadership. We are now in a position of great influence regarding the internal affairs of [infiltrated_country_planet.GetName]. The mission was a success."
+ #preftl_operation.1003.name:1 "Minor Influence"
+ #preftl_operation.1003.desc:1 "After a poor start, our operatives were able to infiltrate the governments of [infiltrated_country_planet.GetName]. We were unable to secure many high ranking roles within the political leadership, but we are now in a position to influence minor tactical decisions concerning the [infiltrated_country_species.GetName]."
+#  observation.3008.desc:1 "While our agents have successfully replaced most of the local leaders on [root.target.GetSpeciesName], a stubborn few remain. A concerted effort is now underway to remove the last holdouts, but the date of our planned reveal will need to be pushed forward."
+ preftl_operation.1005.name:0 "С распростертыми объятьями"
+ preftl_operation.1005.desc:1 "[infiltrated_country_species.GetAdj] и их политические лидеры полностью у нас под контролем. Наши инфильтрационные ячейки заложили базу для появления группы официального Первого контакта.\n\nВ ходе торжественной церемонии в планетарной столице наш дипломатический посланник любезно согласился принять петицию, подписанную всеми главами местных государств, о немедленном присоединении планеты [infiltrated_country_planet.GetPlanetHabitat] к системе [root.GetName]. Ликующие толпы высыпали на улицы, приветствуя своих инопланетных благодетелей."
+ preftl_operation.1006.name:1 "Теплый прием"
+ preftl_operation.1006.desc:1 "Как только последний [infiltrated_country_species.GetAdj] политический лидер оказался под нашим влиянием, наши скрытые ячейки заложили основу для официального прибытия группы первого контакта. В ходе скромной церемонии в планетарной столице наш дипломатический представитель любезно согласился принять петицию, подписанную всеми мировыми лидерами планеты [infiltrated_country_planet.GetName]. Согласно ее условиям [infiltrated_country_planet.GetPlanetHabitat] войдет в состав государства [root.GetName]. Миллионы граждан восторженно приветствуют своих новых инопланетных покровителей."
+ preftl_operation.1007.name:1 "Холодный прием"
+ preftl_operation.1007.desc:1 "Как только последний [infiltrated_country_species.GetAdj] политический лидер незаметно для себя оказался в окружении наших оперативников, те заложили основу для официального прибытия группы первого контакта. Прилет нашего дипломатического представителя обойдется без торжественного приема. Однако мы заключили соглашение с мировыми лидерами планеты [infiltrated_country_planet.GetName]. Согласно его условиям, [infiltrated_country_planet.GetPlanetHabitat] войдет в состав государства [root.GetName]."
+ preftl_operation.1005.tt:0 "§Y[infiltrated_country_planet.GetName]§! вместе со всем населением входит в состав империи §Y[root.GetName]§!."
+ preftl_operation.1008.name:0 "[From.GetName]: неудача"
+ preftl_operation.1008.desc:0 "К сожалению, работа по внедрению оказалась неидеальной, и далеко не каждый [infiltrated_country_species.GetAdj] политический лидер попал под наше влияние. Потерпев неудачу в попытках внедриться в ведущие государства, мы попробовали организовать государственный переворот в государстве поменьше. Но даже там народ отнесся к нам враждебно.\n\nМы вывезли всех выживших оперативников с планеты [infiltrated_country_planet.GetName]. Ее обитатели еще много лет будут настороже."
+ preftl_operation.failed_annaxation.tt:0 "§RСледующую миссию, целью которой станет §H[From.GetName]§!, можно будет провести только через 5 лет.§!"
+ attempted_infiltration:0 "Попытка внедрения"
+
+# Operation Indoctrinate Society
+ preftl_operation.1015.name:1 "[target.GetName]: возможность склонить" # pre-FTL country name
+ preftl_operation.1015.desc:1 "Работа кипит, и [target.capital_scope.GetName], где проживает [owner.GetPreFTLLower] народ, под полным контролем наших оперативников. Достаточно одного приказа, чтобы каждый [target.GetSpeciesAdj] житель оказался накрыт волной нашей культуры."
+
+ preftl_operation.1016.name:1 "Обработка толпы"
+ preftl_operation.1016.intro:0 "Только время покажет, насколько §H[from.target.GetAdj]§! разум подвергся нашему влиянию, однако первоначальные модели обнадеживают. Некоторые активисты-[from.target.GetSpeciesNamePlural] уже настолько рьяно подхватили наши идеи, будто додумались до них сами." # used for both pre- and post-industrial societies
+ preftl_operation.1016.intro.good:0 "§H[from.target.GetName]§! стабильно обрабатывается, и результату можно только порадоваться. Благодаря тщательному внедрению культурной информации и общественных норм мы спровоцировали такой культурный сдвиг, который снаружи кажется совершенно естественным." # used for both pre- and post-industrial societies
+ preftl_operation.1016.intro.poor:0 "§H[from.target.GetName]§! стабильно обрабатывается, и хотя без трудностей не обошлось, результату все-таки можно порадоваться. Мы привлекли меньше местных активистов, чем хотелось бы, но все усилия не прошли даром." # used for both pre- and post-industrial societies
+
+ preftl_operation.1016.autho:0 "Наши предшественники могут гордиться современными оперативниками: на планете установлен примитивный [root.GetAdj] §Yавторитаризм§!. Несколько влиятельных местных деятелей получило полномочия управлять своими общинами. Какие-то из них добьются процветания, каким-то останется только мечтать об этом. Но каждая из них послужит показательным уроком для остальных, а [from.target.GetSpeciesNamePlural] задумаются об установлении нового общественного порядка." # pre-industrial societies only
+ preftl_operation.1016.egali:0 "Наши оперативники избороздили планету вдоль и поперек, просвещая местных жителей в вопросах равенства и справедливости. И пусть [from.target.GetSpeciesAdj] взгляд на политический уклад пока остается примитивным, мы все-таки вдохновили некоторых на дальнейшие дискуссии между собой. Операция «[from.GetName]» завершена, и теперь путь к §Yэгалитаризму§! предстоит прокладывать самому населению." # pre-industrial societies only
+ preftl_operation.1016.mater:0 "[from.target.capital_scope.GetPlanetHabitat] в хороших руках: здесь работает специально отобранная группа оперативников, каждый из которых — эксперт в области образовательной полемики. Перед ними была поставлена задача просвещать местные общины. Поскольку [from.target.GetSpeciesAdj] культурный багаж достаточно многообразен, каждый урок требует адаптации. Светские кружки, произведения искусства, образовательные учреждения — [from.target.GetSpeciesNamePlural] теперь в полной мере владеют этими достижениями §Yматериализма§!." # pre-industrial societies only
+ preftl_operation.1016.milit:0 "Не в последнюю очередь [from.target.GetSpeciesAdj] культура построена на представлениях о чести и доблести, чем и воспользовались наши оперативники, замаскировавшиеся под наемников, повстанцев и торговцев оружием. Церемониального оружия, показных учений и нескольких тщательно срежиссированных стычек хватило, чтобы глубоко поразить местное население. Теперь [from.target.GetName] в приступе вдохновения еще больше склоняется к §Yмилитаризму§!." # used for both pre- and post-industrial societies
+ preftl_operation.1016.pacif:0 "Наша специально отобранная группа оперативников, каждый из которых опытный примиритель, внедрилась в различные общины. Перед ними была поставлена задача доказать, что [root.GetAdj] §Yпацифизм§! — лучшее средство от почти любой проблемы, терзающей [from.target.GetSpeciesAdj] социум. Теперь местные жители — по крайней мере те, кто пообщался с нашими оперативниками, — не торопятся решать конфликты насилием." # used for both pre- and post-industrial societies
+ preftl_operation.1016.phile:0 "Наши оперативники избрали комплексный подход: они поощряют любопытство к другим культурам, будь то предания, изобразительное искусство или просто общественные мероприятия. Операция «[from.GetName]» завершена, и теперь местным §Yксенофилам§! предстоит поддерживать этот подход самостоятельно. Тогда [from.target.GetName] станет хорошим соседом для остальных." # used for both pre- and post-industrial societies
+ preftl_operation.1016.phobe:0 "Страх и недоверие — трудные инстинкты: они легко провоцируются, но с трудом поддаются управлению. Наши оперативники крайне тщательно подбирали слова при составлении выступлений и подготовке произведений культуры, демонстрирующих положительные стороны самоизоляции и ярко обрисовывающих опасность влияния со стороны чужаков. Идеология §Yксенофобии§! постепенно распространяется, ведь где один [from.target.GetSpeciesAdj] активист, там появляются и другие." # pre-industrial societies only
+ preftl_operation.1016.spiri:0 "Наш двусторонний подход выстроен следующим образом: одна группа особо харизматичных оперативников внедряется в руководство местных культов и сект, исповедующих локальные верования, а другая — защищает эти разрастающиеся движения от политического вмешательства и осмеяния. Теперь [from.target.GetSpeciesAdj] народ постепенно склоняется к разновидности §Yспиритуализма§!, близкого к их культуре. Теперь им открыт путь от мирского к божественному." # used for both pre- and post-industrial societies
+
+ preftl_operation.1016.autho.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.autho$"
+ preftl_operation.1016.egali.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.egali$"
+ preftl_operation.1016.mater.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.mater$"
+ preftl_operation.1016.milit.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.milit$"
+ preftl_operation.1016.pacif.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.pacif$"
+ preftl_operation.1016.phile.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.phile$"
+ preftl_operation.1016.phobe.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.phobe$"
+ preftl_operation.1016.spiri.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.spiri$"
+ preftl_operation.1017.autho.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.autho$"
+ preftl_operation.1017.egali.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.egali$"
+ preftl_operation.1017.mater.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.mater$"
+ preftl_operation.1017.milit.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.milit$"
+ preftl_operation.1017.pacif.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.pacif$"
+ preftl_operation.1017.phile.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.phile$"
+ preftl_operation.1017.phobe.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.phobe$"
+ preftl_operation.1017.spiri.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.spiri$"
+ preftl_operation.1018.autho.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.autho$"
+ preftl_operation.1018.egali.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.egali$"
+ preftl_operation.1018.mater.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.mater$"
+ preftl_operation.1018.milit.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.milit$"
+ preftl_operation.1018.pacif.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.pacif$"
+ preftl_operation.1018.phile.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.phile$"
+ preftl_operation.1018.phobe.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.phobe$"
+ preftl_operation.1018.spiri.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.spiri$"
+
+ preftl_operation.1019.name:0 "Влияние на народные массы"
+ preftl_operation.1019.autho:0 "Наши предшественники могут гордиться современными оперативниками: благодаря их усилиям [from.target.capital_scope.GetName] теперь центр, где пустил корни [root.GetAdj] §Yавторитаризм§!. Некоторые государственные структуры прошли через перестройку, в результате чего многие [from.target.GetSpeciesNamePlural] оказались включены в тщательно разработанную иерархию. Не каждая община переживет такие потрясения, но каждая неудача послужит важным уроком, укрепляющим общественный строй." # post-industrial societies only
+ preftl_operation.1019.egali:0 "Наши оперативники избороздили планету вдоль и поперек, просвещая местные общины и учреждения в вопросах равенства и справедливости. [from.target.GetSpeciesAdj] политология уже достаточно развита, но мы запустили несколько кампаний в поддержку более всеобъемлющих дискуссий и политики §Yэгалитаризма§!." # post-industrial societies only
+ preftl_operation.1019.mater:0 "[from.target.capital_scope.GetPlanetHabitat] в хороших руках: здесь работает специально отобранная группа оперативников, каждый из которых — эксперт в области образовательной полемики. Перед ними была поставлена задача просвещать местные общины и образовательные учреждения. Благодаря их усилиям возникли новые научно-исследовательские центры, образовательные фонды и даже новое направление в живописи. Теперь [from.target.GetSpeciesNamePlural] в полной мере владеют этими достижениями §Yматериализма§!." # post-industrial societies only
+ preftl_operation.1019.phobe:0 "Страх и недоверие легко провоцируются, но с трудом поддаются управлению, особенно в обществе, где широко распространены СМИ. Наши оперативники избрали аккуратный подход ко внедрению новых §Yксенофобных§! идеологических установок — путем выступлений и поддержки культурных движений, демонстрирующих положительные стороны самоизоляции и ярко обрисовывающих опасность влияния со стороны чужаков. Идеология постепенно распространяется, ведь где один [from.target.GetSpeciesAdj] активист или политический кружок, там появляются и другие." # post-industrial societies only
+
+ preftl_operation.1019.autho.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1019.autho$"
+ preftl_operation.1019.egali.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1019.egali$"
+ preftl_operation.1019.mater.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1019.mater$"
+ preftl_operation.1019.milit.desc:0 "$preftl_operation.1016.milit.desc$"
+ preftl_operation.1019.pacif.desc:0 "$preftl_operation.1016.pacif.desc$"
+ preftl_operation.1019.phile.desc:0 "$preftl_operation.1016.phile.desc$"
+ preftl_operation.1019.phobe.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1019.phobe$"
+ preftl_operation.1019.spiri.desc:0 "$preftl_operation.1016.spiri.desc$"
+ preftl_operation.1020.autho.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1019.autho$"
+ preftl_operation.1020.egali.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1019.egali$"
+ preftl_operation.1020.mater.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1019.mater$"
+ preftl_operation.1020.milit.desc:0 "$preftl_operation.1017.milit.desc$"
+ preftl_operation.1020.pacif.desc:0 "$preftl_operation.1017.pacif.desc$"
+ preftl_operation.1020.phile.desc:0 "$preftl_operation.1017.phile.desc$"
+ preftl_operation.1020.phobe.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1019.phobe$"
+ preftl_operation.1020.spiri.desc:0 "$preftl_operation.1017.spiri.desc$"
+ preftl_operation.1021.autho.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1019.autho$"
+ preftl_operation.1021.egali.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1019.egali$"
+ preftl_operation.1021.mater.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1019.mater$"
+ preftl_operation.1021.milit.desc:0 "$preftl_operation.1018.milit.desc$"
+ preftl_operation.1021.pacif.desc:0 "$preftl_operation.1018.pacif.desc$"
+ preftl_operation.1021.phile.desc:0 "$preftl_operation.1018.phile.desc$"
+ preftl_operation.1021.phobe.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1019.phobe$"
+ preftl_operation.1021.spiri.desc:0 "$preftl_operation.1018.spiri.desc$"
+
+ espionage_pre_ftl_indoctrination:0 "Смещение ценностей у расы"
+ espionage_pre_ftl_indoctrination_desc:0 "Некоторая часть этого общества недавно сменила политические взгляды и теперь придерживается совсем других принципов."
+ espionage_pre_ftl_indoctrination_authoritarian:0 "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_authoritarian_desc:0 "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_egalitarian:0 "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_egalitarian_desc:0 "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_materialist:0 "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_materialist_desc:0 "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_militarist:0 "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_militarist_desc:0 "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_pacifist:0 "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_pacifist_desc:0 "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_spiritualist:0 "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_spiritualist_desc:0 "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_xenophile:0 "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_xenophile_desc:0 "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_xenophobe:0 "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_xenophobe_desc:0 "$espionage_pre_ftl_indoctrination_desc$"
+ 
+# Operation Increase Awareness
+ preftl_operation.1025.name:1 "[this.GetName]: готовы к раскрытию" # Operation name, i.e. 'Increase Awareness'
+ preftl_operation.1025.desc:1 "Приготовления на полигоне [target.capital_scope.GetName] завершились. Наши оперативники готовы помочь государству [target.GetName] стать на шаг ближе к галактическому сообществу."
+ preftl_operation.1026.name:0 "Есть ли жизнь в космосе?"
+ preftl_operation.1026.desc.intro:0 "Благодаря действиям наших оперативников [this.GetSpeciesNamePlural] теперь глядят в ночное небо с новой надеждой в глазах."
+ preftl_operation.1026.desc.low:1 "Впечатлившись рассказами нашей пропаганды, [this.GetSpeciesNamePlural] обратили взор к небу и начали все чаще задаваться вопросом: есть ли там, под лучами других звезд, разумная жизнь?"
+ preftl_operation.1026.desc.medium:1 "$preftl_operation.1026.desc.intro$ Они робко пересказывают друг другу невероятные истории о загадочных огнях в небе и гостях с далеких планет... Где-то здесь затерялось зерно истины."
+ preftl_operation.1026.desc.high:1 "$preftl_operation.1026.desc.intro$ Многие, учитывая открывшиеся им факты, теперь уверены, что во вселенной есть и другая жизнь и что она вот-вот явит себя — достаточно лишь немного подождать."
+ preftl_operation.1026.desc.full:1 "Благодаря нашим усилиям [this.capital_scope.GetName] теперь знает, что вселенная определенно населена. В таких условиях они готовы к первому контакту: он пройдет без сильных общественных потрясений."
+
+ # Good and Great Outcomes
+ preftl_operation.1027.name:0 "В космосе есть жизнь"
+ preftl_operation.1027.desc.intro:0 "Благодаря умелой работе наших оперативников [this.GetSpeciesNamePlural] теперь глядят в небо с жадным любопытством."
+ preftl_operation.1027.desc.low:0 "$preftl_operation.1027.desc.intro$\n\nВпечатлившись до глубины души рассказами наших оперативников, [this.GetSpeciesNamePlural] обратили взор к небу и начали открыто задаваться вопросом: есть ли во вселенной другая разумная жизнь?"
+ preftl_operation.1027.desc.medium:0 "$preftl_operation.1027.desc.intro$\n\nОни восторженно пересказывают друг другу невероятные истории о загадочных огнях в небе и гостях с далеких планет. Многие вполне справедливо считают, что всё это правда."
+ preftl_operation.1027.desc.high:0 "$preftl_operation.1027.desc.intro$\n\nМногие теперь твердо убеждены, что во вселенной есть и другая жизнь. Они знают, что вот-вот она явит себя — достаточно лишь немного подождать."
+ preftl_operation.1027.desc.full:0 "$preftl_operation.1027.desc.intro$\n\nБлагодаря самоотверженным усилиям работников нашей агентурной сети [this.capital_scope.GetName] теперь понимает, что вселенная населена. В таких условиях они сами стремятся к первому контакту. Он пройдет без каких-либо культурных потрясений."
+
+ # Poor Outcome
+ preftl_operation.1028.name:0 "В космосе нет жизни"
+ preftl_operation.1028.desc.intro:0 "Благодаря действиям наших оперативников [this.GetSpeciesNamePlural] теперь боятся смотреть в ночное небо."
+ preftl_operation.1028.desc.low:0 "$preftl_operation.1028.desc.intro$\n\nИспугавшись рассказов наших оперативников, [this.GetSpeciesNamePlural] теперь смотрят в небо с ужасом в глазах. Они начинают задаваться вопросом, есть ли во вселенной другая разумная жизнь, поджидающая своих жертв в межзвездной пустоте."
+ preftl_operation.1028.desc.medium:0 "$preftl_operation.1028.desc.intro$\n\nОни робко пересказывают друг другу жуткие истории о загадочных огнях в небе и захватчиках с далеких планет."
+ preftl_operation.1028.desc.high:0 "$preftl_operation.1028.desc.intro$\n\nМногие теперь обеспокоены тем, что во вселенной есть и другая жизнь. Они считают, что истина где-то рядом, но искать ее готовы очень немногие."
+ preftl_operation.1028.desc.full:0 "$preftl_operation.1028.desc.intro$\n\nБлагодаря усилиям работников нашей агентурной сети [this.capital_scope.GetName] теперь понимает, что вселенная населена. В таких условиях они готовы к первому контакту: он пройдет без сильных потрясений."
+ 
+ preftl_operation.1035.name:0 "$preftl_operation.1026.name$"
+ preftl_operation.1035.desc:0 "$role_spymaster$ [spynetwork.leader.GetName] вкратце излагает результаты операции по сокрытию сведений об инопланетной жизни среди жителей государства [target.capital_scope.GetName]."
+
+# Operation Spread Disinformation
+ # Standard conclusion
+ preftl_operation.1036.name:0 "[from.target.GetName] и дезинформация"
+ preftl_operation.1036.desc.intro:0 "Действия наших оперативников возымели успех: §H[this.capital_scope.GetName]§! теперь сомневается в подлинности свидетельств о существовании инопланетной жизни."
+ preftl_operation.1036.desc.none:0 "$preftl_operation.1036.desc.intro$ Рассказы о межзвездных путешественниках объявляются нездоровыми фантазиями."
+ preftl_operation.1036.desc.low:0 "$preftl_operation.1036.desc.intro$ Некоторые [this.GetSpeciesNamePlural] до сих пор считают, что инопланетяне существуют, но мало кто верит в них по-настоящему."
+ preftl_operation.1036.desc.medium:0 "$preftl_operation.1036.desc.intro$ Некоторые высокопоставленные политики могут догадываться о нас, но общество остается в неведении."
+ # Great conclusion
+ preftl_operation.1037.name:0 "[from.target.GetName] и успешная дезинформация"
+ preftl_operation.1037.desc.intro:0 "Нашим опытным оперативникам на планете §H[this.capital_scope.GetName]§! удалось уничтожить интерес местных к возможности существования космических цивилизаций."
+ preftl_operation.1037.desc.none:0 "$preftl_operation.1037.desc.intro$ Теперь интересующихся инопланетянами считают сумасшедшими и изгоняют из общества."
+ preftl_operation.1037.desc.low:0 "$preftl_operation.1037.desc.intro$ В большинстве своем [this.GetSpeciesNamePlural] даже не задумываются о возможности существования жизни на других планетах."
+ preftl_operation.1037.desc.medium:0 "$preftl_operation.1037.desc.intro$ Некоторые высокопоставленные политики могут догадываться о нас, они не рискуют открыто говорить на публике о таких нелепых вещах."
+ # Good conclusion
+ preftl_operation.1038.name:0 "[from.target.GetName] и дезинформация"
+ preftl_operation.1038.desc.intro:0 "Нашим опытным оперативникам на планете §H[this.capital_scope.GetName]§! удалось значительно подавить интерес местных к возможности существования космических цивилизаций."
+ preftl_operation.1038.desc.none:0 "$preftl_operation.1038.desc.intro$ Теперь интересующихся инопланетянами считают эксцентриками, от которых лучше держаться подальше."
+ preftl_operation.1038.desc.low:0 "$preftl_operation.1038.desc.intro$ Лишь немногие [this.GetSpeciesNamePlural] допускают возможность существования инопланетной жизни."
+ preftl_operation.1038.desc.medium:0 "$preftl_operation.1038.desc.intro$ Некоторые высокопоставленные политики могут догадываться о нас, они предпочитают не говорить о таких вещах на публике."
+ # Poor conclusion
+ preftl_operation.1039.name:1 "[from.target.GetName]: провал дезинформации"
+ preftl_operation.1039.desc.intro:0 "Наши оперативники на планете §H[this.capital_scope.GetName]§! не смогли эффективно посеять среди местных сомнения в существовании инопланетной жизни."
+ preftl_operation.1039.desc.none:0 "$preftl_operation.1036.desc.intro$ Рассказы о межзвездных путешественниках стремительно приобретают популярность."
+ preftl_operation.1039.desc.low:0 "$preftl_operation.1036.desc.intro$ Многие [this.GetSpeciesNamePlural] открыто обсуждают возможность существования инопланетян, и многие искренне в них верят."
+ preftl_operation.1039.desc.medium:0 "$preftl_operation.1036.desc.intro$ Высокопоставленные политики открыто говорят о путешественниках с других звезд. Они практически уверены в нашем существовании."
+
+ preftl_operation.1041.name:0 "$preftl_operation.1005.name$"
+ preftl_operation.1041.desc:0 "Наши оперативники сообщают, что внедрение новых технологий в государстве §H[root.target.GetName]§! идет по плану."
+
+ preftl_operation.1045.name:0 "[from.GetName]: все готово" # Operation name, i.e. Plant Advanced Knowledge
+ preftl_operation.1045.desc:0 "Наши оперативники успешно подготовили почву, тайно подкинув туземцам ряд небольших технических изобретений. Теперь [from.target.GetSpeciesNamePlural] должны сами связать их воедино и составить общую картину из отдельных частей. Они полностью готовы к следующему шагу."
+
+ preftl_operation.1046.name:0 "[from.target.GetName]: гигантский скачок"
+ preftl_operation.1046.desc:0 "Успех! Технологии и знания, которые получили от нас [from.target.GetSpeciesNamePlural], привели к бурному развитию их цивилизации. Только время покажет, какие долгосрочные эффекты это окажет на их общество, но пока что по сообщениям наших оперативников, на планете [from.target.capital_scope.GetName] царят благополучие и энтузиазм."
+
+ preftl_operation.1047.name:0 "[from.target.GetName]: внушительный скачок"
+ preftl_operation.1047.desc:0 "Наши оперативники на планете [from.target.capital_scope.GetName] рапортуют о хороших результатах! Технологии и знания, которые получили от нас [from.target.GetSpeciesNamePlural], дали свои плоды, приблизив их цивилизацию к выходу на галактическую арену. Только время покажет, какие долгосрочные эффекты это окажет на их общество, но пока что, по сообщениям наших оперативников, на планете [from.owner.GetPreFTLLower] отмечается рост благополучия и энтузиазма."
+
+ preftl_operation.1048.name:0 "[from.target.GetName]: ощутимый прогресс"
+ preftl_operation.1048.desc:0 "Наши оперативники рапортуют об успехах в наших просветительских усилиях среди жителей планеты [from.target.capital_scope.GetName]. Местные [from.target.GetSpeciesNamePlural] усвоили полученные от нас технологии и знания, и их цивилизация на шаг приблизилась к выходу в космос."
+
+ preftl_operation.1049.name:0 "[from.target.GetName]: неудача"
+ preftl_operation.1049.desc:0 "Нам удалось достичь определенных успехов в просвещении обитателей планеты [from.target.capital_scope.GetName]. Несмотря на ряд трудностей, мы смогли простимулировать технологический прогресс, благодаря которому [from.target.GetSpeciesNamePlural] рано или поздно придут к процветанию. Однако, скорее всего, их цивилизация выйдет в космос позднее, чем мы первоначально рассчитывали."
+
+ preftl_operation.1060.name:0 "[from.GetName]: узлы поглощены" # Operation name, i.e. 'Infiltrate Government'
+ preftl_operation.1060.desc.okay:0 "[target.capital_scope.GetName] и местные [target.GetSpeciesNamePlural] лишились нескольких ключевых узловых центров — мы постепенно ассимилировали их в стремлении усиливать зависимость местного улья от нас в самых бытовых вопросах, пока наконец их планета не войдет бескровно в состав наших владений. [target.capital_scope.GetPlanetHabitat] станет ключевым полигоном для наших скрытых ячеек, которые уже начали трудиться еще активнее. Пришло время действовать."
+ preftl_operation.1060.desc.good:0 "[target.capital_scope.GetName] почти полностью принадлежит нашим внедрившимся агентам. Мы ассимилировали узлы почти всех учреждений поселения [root.target.capital_scope.GetPlanetHabitat] и теперь заведуем десятками и сотнями повседневных дел. Вскоре мы будем готовы провести полную интеграцию."
+ preftl_operation.1060.desc.poor:0 "Скорость ассимиляции пока что оставляет желать лучшего даже несмотря на тот факт, что [target.capital_scope.GetName] вскоре будет принадлежать нам — мы уже захватили множество узловых центров на поверхности. Попытка полностью ассимилировать основной континентальный улей окончилась катастрофой и потерей всех местных единиц Разума.\n\nЛишь благодаря грамотным действиям в чрезвычайной обстановке нам удалось спасти останки от переработчиков и скрыть наш замысел от населения планеты."
+ preftl_operation.1065.name:0 "Мы одно целое"
+ preftl_operation.1065.desc:0 "Полностью подчинив себе [infiltrated_country_species.GetAdj] разум во всем его многообразии, мы быстро позаботились о том, чтобы ни одна единица не осталась обиженной.\n\nСознание народа [infiltrated_country_species.GetName] не исчезло, а лишь растворилось в нас. Теперь наши умы потянутся к звездам в едином порыве."
+ preftl_operation.1066.name:0 "Контролируемый контроль"
+ preftl_operation.1066.desc:0 "Добившись решительного влияния на [infiltrated_country_species.GetAdj] разум, мы подготовили узловые центры к передаче нам прямого управления. [root.GetName] теперь целиком включает в себя поселение [infiltrated_country_planet.GetPlanetHabitat]. В процессе наблюдались лишь незначительные отклонения."
+ preftl_operation.1067.name:0 "Сохранение против воли"
+ preftl_operation.1067.desc:0 "Внедрившись в [infiltrated_country_species.GetAdj] коллективный разум, мы подготовили ассимилированные узловые центры к поглощению того, что осталось от поселения [infiltrated_country_planet.GetPlanetHabitat]. Впрочем, не все готовы были перейти под наше управление: один небольшой континент воспротивился нашему влиянию и предпочел покончить жизнь самоубийством, лишь бы не вливаться в чужое сознание. [root.GetName] теперь включит в себя их поселение. [infiltrated_country_planet.GetPlanetHabitat] будет принадлежать нам."
+ preftl_operation.1068.name:0 "[From.GetName]: неудача"
+ preftl_operation.1068.desc:0 "Наше влияние раскрыто: [infiltrated_country_species.GetAdj] коллективный разум все-таки обнаружил его. Мы приготовились задействовать ассимилированные узловые центры, но неожиданно для самих себя оказались отрезаны от остального улья. Всю работу придется свернуть, единицы Разума — утилизировать, а операцию «[from.GetName]» объявить неудачной. Теперь каждый [infiltrated_country_species.GetClass] житель будет готов отражать внешние угрозы."
+
+### Random event chains
+
+# Sorcery!
+ preftl_operation.3000.name:0 "Колдовство!"
+ preftl_operation.3000.desc:0 "[from.target.GetSpeciesNamePlural] на планете [from.target.capital_scope.GetName] воспринимают наши попытки оказать на них влияние с подозрением. Многие местные всеми силами избегают наших оперативников, считая их волшебными существами или даже злыми духами. Велик риск проявлений враждебности."
+ preftl_operation.3000.a:0 "Сыграть на этом."
+ preftl_operation.3000.b:0 "Проявить осторожность. Эвакуироваться в другое место."
+ preftl_operation.3000.c:0 "Бросить вызов их предрассудкам!"
+
+ preftl_operation.3001.name:0 "Колдовство: чистая правда"
+ preftl_operation.3001.desc:0 "Наши оперативники воспользовались своей сверхъестественной репутацией и убедили местных в том, что они — существа высшего порядка. В результате [from.target.GetSpeciesNamePlural] приняли наши технологии — однако теперь они охотнее готовы поверить в существование «паранормальных существ» вроде нас."
+
+ preftl_operation.3002.name:0 "Колдовство: убеждение"
+ preftl_operation.3002.desc:0 "Наши оперативники успешно разрушили новый [from.target.GetSpeciesAdj] предрассудок при помощи фактов и логики. В результате местные жители не только стали лучше поддаваться нашим махинациям, но и начали более объективно смотреть на окружающий мир."
+
+ preftl_operation.3003.name:0 "Колдовство: расправы"
+ preftl_operation.3003.desc:0 "Трагедия на планете [from.target.capital_scope.GetName]! Разъяренная толпа поймала и растерзала одного из наших оперативников. Местные лидеры и простые жители полны ненависти к «колдунам» и их «злым козням». Задача подготовки планеты [from.target.GetName] к новой эпохе затруднилась."
+
+# Pariah
+ preftl_operation.3010.name:1 "Изгои"
+ preftl_operation.3010.desc:1 "Мы были уверены, что [from.target.GetSpeciesAdj] культурный контекст и среда в целом не вызовут затруднений у наших оперативников, однако многим сложно вписываться в это общество. Местные жители избегают их и не пускают на светские мероприятия, а некоторых — даже на культурные.\n\nВтираться в доверие становится все сложнее, что уже говорить о дальнейшем проведении операции «[from.GetName]». Учитывая всю хрупкость сложившегося социального равновесия, следующий шаг требует тщательнейшего рассмотрения."
+ preftl_operation.3010.a:1 "Может быть, они среагируют на богатство?"
+ preftl_operation.3010.b:1 "Попробовать более эксцентричный подход."
+ preftl_operation.3010.c:1 "Посвятить больше времени изучению местной культуры."
+
+ preftl_operation.3011.name:0 "Больше не изгнанники"
+ preftl_operation.3011.desc:0 "[from.target.capital_scope.GetName] без ума от нас! Другими словами, наши оперативники не только обрели доверие — им готовы устроить радушный прием в любом уголке столицы. Похоже, в прошлый раз мы упустили такой важный [from.target.GetSpeciesAdj] аспект, как тихое восхищение показным нонконформизмом перед лицом пропаганды единообразия.\n\nТеперь, когда наши оперативники задают моду, мы имеем полное право заявить, что операция «[from.GetName]» продвигается без сучка, без задоринки."
+
+ preftl_operation.3012.name:0 "Изгои"
+ preftl_operation.3012.desc:0 "Весь [from.target.GetSpeciesAdj] культурный багаж оказался неподъемным для наших оперативников. Мы не только не смогли постичь их культуру — некоторых агентов даже отправили в ссылку из-за недавних прегрешений. Оказалось, что [from.target.GetSpeciesNamePlural] — гораздо более консервативный и подозрительный народ, чем мы предполагали.\n\nЭти просчеты затянули выполнение целей операции «[from.GetName]», однако теперь мы хотя бы знаем, каких ошибок избегать в будущем. Для оперативников уже готовятся новые легенды и программы обучения. Мы не станем дважды наступать на те же грабли."
+ operation_pariahs:0 "Парии"
+ operation_pariahs_desc:0 "Многих наших оперативников изгнали за нарушение культурных норм. Оставшиеся силы и средства испытывают серьезные трудности."
+
+## Distracted Agent
+ preftl_operation.3020.name:0 "Неожиданный интерес"
+ preftl_operation.3020.desc:0 "Один из ведущих оперативников, заброшенных в столицу — поселение [from.target.capital_scope.GetName], глубоко влюбился в местную цивилизацию и постоянно отказывается от одного задания за другим. Вместо этого он по собственной инициативе занялся ксенологией и даже несколько раз обратился с просьбой официально перевести его на эту должность.\n\nТакой поступок ставит всю операцию «[from.GetName]» на грань срыва, однако стоит признать, что деятельность этого чересчур самостоятельного агента оказалась по-своему полезной. Если отказать ему, операция замедлится."
+ preftl_operation.3020.a:0 "Следует поддерживать дисциплину."
+ preftl_operation.3020.b:0 "Такую инициативу нужно только поприветствовать!"
+ operation_no_more_distractions:0 "Никакой самодеятельности"
+ operation_no_more_distractions_desc:0 "Мы перестали получать знания от недисциплинированного оперативника-ксенолога."
+ observation_distraction_insights:0 "Тайное независимое исследование"
+ observation_distraction_insights_desc:0 "Бывший шпион поделился с нами уникальными тайными знаниями об этой культуре."
+
+## Mimicry
+ preftl_operation.3030.name:0 "Мимикрия"
+ preftl_operation.3030.desc:0 "[from.target.capital_scope.GetName] вдруг подбрасывает нам необычное осложнение: [from.target.GetSpeciesAdj] улей полностью копирует наше поведение. Сначала мы подумали, что местным единицам Разума просто свойственна эксцентричность, однако многие из новообретенных ими привычек — не что иное, как [from.owner.GetSpeciesAdj] культурный маркер.\n\nПеред нами предстало сразу две проблемы. Во-первых, мы оказываем непредвиденное влияние на улей уже вне рамок тщательно спланированной операции «[from.GetName]». Во-вторых, нам наглядно показывают неудачные попытки внедриться в это общество. Пока что улей не проявляет признаков осведомленности о нашей операции, но это всего лишь вопрос времени."
+ preftl_operation.3030.a:0 "Значит, они поддаются внушению?.."
+ preftl_operation.3030.b:0 "Нужно быть более осторожными."
+ preftl_operation.3030.b.tt:0 "Выделить больше ресурсов на контроль за инстинктами и повадками наших оперативников."
+ preftl_operation.3030.c:0 "Мы непременно доведем эту операцию до конца."
+ preftl_operation.3030.d:0 "Прервать операцию и отменить задание."
+ spynetwork_hive_mimicry:0 "Внушаемый имитатор"
+ spynetwork_hive_mimicry_desc:0 "Улей начал копировать наше поведение, а его единицы Разума установили бессознательно хорошие отношения с нашими оперативниками."
+ espionage_hive_mimicry:0 "Раскрытие через мимикрию"
+ espionage_hive_mimicry_desc:0 "Этот улей постоянно имитирует чуждое ему поведение. Существует риск, что таким образом он выявляет чужое влияние."
+
+## Academic Shenanigans (note only some of these strings refer to the intended event ID, preftl_operation.3040)
+ preftl_operation.1100.name:0 "Научные изыскания"
+ preftl_operation.1100.desc:1 "Вооруженные нашими передовыми знаниями, наши оперативники на планете [from.target.capital_scope.GetName] внедрились в местные университеты под видом гениальных мыслителей с революционными теориями. Однако они наткнулись на сопротивление местных академиков: многие отказываются общаться с нашими агентами и обвиняют их в шарлатанстве.\n\nБесконечные конфликты в местной научной среде мешают нашим агентам продвигать новые идеи. $role_spymaster$ запрашивает дальнейшие инструкции."
+ preftl_operation.1100.a:0 "Уничтожить конкурентов"
+ preftl_operation.1100.b:1 "Предложить более серьезную взятку: финансирование."
+ preftl_operation.1100.c:0 "Пусть лаются. Так будет только интереснее."
+
+ preftl_operation.1101.name:0 "Всякое случается..."
+ preftl_operation.3041.desc:0 "$preftl_operation.3042.desc$\n\nУвы, наши махинации были слишком очевидны и привлекли к нашим оперативникам много подозрений. От них отказался весь [from.target.GetSpeciesAdj] научный мир, а на освободившиеся места тут же пришли более консервативные мыслители."
+ preftl_operation.3042.desc:0 "Многим ученым, опротестовывавшим теории наших оперативников, за последние несколько недель пришлось оставить свои должности. Этому предшествовала целая череда на первый взгляд не связанных друг с другом, но очень жестоких «несчастных случаев»." # note this forms the first paragraph for preftl_operation.3041
+ preftl_operation.3042.a:0 "Превосходно. Нам открылась новая возможность."
+
+ preftl_operation.1103.name:0 "Финансирование исследований"
+ preftl_operation.3043.desc:0 "Наши попытки подкупить несогласных академиков были сразу же раскрыты и преданы огласке. [from.target.capital_scope.GetName] быстро вершит правосудие: нескольких оперативников изгнали из научных кругов. На освободившиеся места, чему наверняка обрадовался [from.target.GetSpeciesAdj] народ, пришли более консервативные мыслители."
+ operation_academic_bribery_caught:0 "Обвинения во взяточничестве"
+ operation_academic_bribery_caught_desc:0 "Выполнение этой шпионской операции замедлилось после того, как наших оперативников обвинили во взяточничестве."
+ preftl_operation.3044.desc:0 "Благодаря щедрости анонимного мецената местные ученые смогли получить финансирование для своих исследований. После такого неожиданного подарка ни у кого уже не остается времени на мелкие склоки.\n\nПриток инвестиций привел к созданию новых мест в научных учреждениях, на которые быстро пришли наши оперативники. Скоро [from.target.GetSpeciesAdj] ученый мир будет в наших руках. Распространять наши идеи становится все легче."
+ operation_academic_bribery:0 "Успешная взятка"
+ operation_academic_bribery_desc:0 "Выполнение этой шпионской операции упростилось после того, как мы профинансировали исследования научных конкурентов наших оперативников и заставили их замолчать."
+
+ preftl_operation.1105.name:0 "Бесконечные дебаты"
+ preftl_operation.3045.desc:0 "Бесконечные, как нам показалось, споры в научных кругах столицы скорее мешают нам, нежели открывают возможности. [from.target.capital_scope.GetPlanetHabitat] — крепкий орешек: нашим оперативникам так и не удалось закрепиться в ведущих культурных учреждениях. Возможно, наши идеи пока еще слишком противоречивы."
+ preftl_operation.3046.desc:0 "[from.target.GetName] предоставляет нам неожиданный шанс! Действующие там оперативники в результате дебатов с местными мыслителями незаметно для себя оказались вхожи в престижнейшие круги, состоящие из представителей самых уважаемых научных учреждений, какими может похвастаться [from.target.capital_scope.GetName].\n\nОни не только приняли наши идеи, но и активно взялись за их дополнение. Из беспорядочного обмена соображениями теперь рождаются новые знания."
+
+## Spymaster Exposed / Blackmail
+ preftl_operation.3050.name:0 "[from.spynetwork.leader.GetName]: личность раскрыта"
+ preftl_operation.3050.desc:0 "Вопиющее происшествие! $role_spymaster$ [from.spynetwork.leader.GetName] под угрозой: чужая личина оказалась раскрыта во время тайного визита в поселение [from.target.capital_scope.GetName]. Подробности пока неизвестны. Мы знаем лишь, что это произошло после недолгого прямого контакта с местным представителем расы [from.target.GetSpeciesName], который мгновенно скрылся с места происшествия. Наши оперативники попытались перехватить его, но эта попытка окончилась неудачно.\n\nОперация «[from.GetName]» пока не отменяется, однако нам пришлось прибегнуть к особым мерам, пока последствия не будут устранены."
+ preftl_operation.3050.a:0 "Отлично. Держите нас в курсе."
+ preftl_operation.3050.a.gestalt:0 "Продолжать наблюдение."
+ preftl_operation.3050.b:0 "Этот [from.target.GetSpeciesName] должен быть устранен."
+ preftl_operation.3050.c:0 "Возмутительно! Нужно прервать операцию."
+ preftl_operation.3050.d:0 "Пусть об этом узнает [global_event_country.GetGalCommunityOrGalImperium]."
+ spynetwork_extra_containment:0 "Экстренные меры предосторожности"
+ spynetwork_extra_containment_desc:0 "Вся деятельность этой агентурной сети приостановлена из-за раскрытия важного сотрудника."
+
+ preftl_operation.3051.name:0 "Свидетель устранен"
+ preftl_operation.3051.desc:0 "Оперативники докладывают об успешном устранении цели — единственного свидетеля раскрытия нашей маскировки в населенном пункте [from.target.GetName]. Оказалось, что свидетель сбежал в крупный [from.target.GetSpeciesAdj] город, где скрылся в отдаленном жилище на окраине. Цель была в состоянии сильного шока. Признаков, что с ней контактировали другие [from.target.GetSpeciesNamePlural], не обнаружилось. Проблему можно считать решенной."
+
+ preftl_operation.3055.name:0 "Шантаж"
+ preftl_operation.3055.desc:0 "Единственный [from.target.GetSpeciesName], ставший свидетелем нарушения нашей маскировки в населенном пункте [from.target.GetName], не только до сих пор на свободе, но и выдвинул нам оскорбительные требования: он угрожает, что $role_spymaster$, а то и [from.owner.GetName], будут раскрыты за вмешательство в [from.target.GetSpeciesAdj] уклад.\n\nЭта личность ограничивает нам свободу действий тем, что скрывается в густонаселенных городах. Мы не можем действовать, не подвергая себя риску окончательно сорвать маскировку. Возможно, придется просто согласиться на требования."
+ preftl_operation.3055.a:0 "Это неприемлемо. Отменить операцию и отступить."
+ preftl_operation.3055.b:0 "Мы не идем на переговоры. Устранить свидетеля."
+ preftl_operation.3055.c:0 "Цена высока, но мы готовы ее заплатить."
+ preftl_operation.3055.c.tt:1 "За свидетелем будет установлена круглосуточная слежка, гарантирующая полную секретность.\n§RЭто негативно повлияет на §! §Y$MOD_SPY_NETWORK_DAILY_VALUE_ADD$§!."
+ spynetwork_blackmailed:0 "Шантаж"
+ spynetwork_blackmailed_desc:0 "Эта агентурная сеть будет действовать менее эффективно, поскольку нас шантажирует местный житель. За ним установлена круглосуточная слежка."
+
+## Stricken
+ preftl_operation.3060.name:0 "Пострадавшие"
+ preftl_operation.3060.desc:1 "Двое наших ведущих оперативников, действующих в поселении [from.target.capital_scope.GetName], оказались серьезно ранены в результате неожиданного стихийного бедствия, от которого пострадал в первую очередь [from.target.GetSpeciesNamePlural] народ — несколько его представителей погибли. Местные жители мгновенно бросились на помощь пострадавшим, и теперь оперативникам оказывается элементарная первая помощь.\n\nПока что [from.target.GetSpeciesNamePlural] не успели допросить наших агентов, однако их ранения пусть и серьезны, но все же подозрительно легки по сравнению с остальными жертвами. Вскоре операция «[from.GetName]» потребует значительно более тщательного подхода, особенно на фоне недееспособности двух ключевых сотрудников."
+ preftl_operation.3060.hive.desc:0 "Двое наших ведущих оперативников, действующих в поселении [from.target.capital_scope.GetName], оказались серьезно ранены в результате неожиданного стихийного бедствия. Больше всего пострадал [from.target.GetSpeciesAdj] улей — несколько единиц Разума были уничтожены. Пострадавших перенесли в медицинский узел, где им оказывается элементарная первая помощь.\n\nПока что [from.target.GetSpeciesAdj] улей занят более серьезными ранениями, однако вскоре операция «[from.GetName]» потребует значительно более тщательного подхода, особенно на фоне недееспособности двух ключевых сотрудников. Наша маскировка под угрозой."
+ preftl_operation.3060.a:0 "Как можно скорее эвакуировать наших оперативников."
+ preftl_operation.3060.a.tt:0 "Если все получится, §Yоперация «[from.GetName]§!» продолжится. Существует небольшая вероятность неудачи с возможными серьезными последствиями."
+ preftl_operation.3060.b:0 "Будем надеяться, что маскировка удержится."
+ preftl_operation.3060.c:1 "Нельзя рисковать! Отменить операцию."
+ preftl_operation.3060.d:0 "Пора раскрыться."
+ preftl_operation.3060.d.negative.tt:0 "Позволить, чтобы [from.target.GetSpeciesAdj] персонал оказывал нашим оперативникам медицинскую помощь. Это §Rотрицательно§! повлияет на ход §Yоперации «[from.GetName]»§!."
+ preftl_operation.3060.d.positive.tt:0 "Позволить, чтобы [from.target.GetSpeciesAdj] персонал оказывал нашим оперативникам медицинскую помощь. Это §Gположительно§! повлияет на ход §Yоперации «[from.GetName]»§!."
+ operation_stricken_operatives:0 "Пострадавшие оперативники"
+ operation_stricken_operatives_desc:0 "Несколько ведущих оперативников получили тяжелые травмы. Это серьезно замедлило операцию."
+
+ preftl_operation.3061.success.desc:1 "$role_spymaster$ [from.spynetwork.leader.GetName] докладывает об успешной эвакуации раненых оперативников из медицинского учреждения в поселении [from.target.capital_scope.GetName]. При этом [from.target.GetSpeciesNamePlural] ничего не заподозрили: они считают, что «выжившие» скончались от ран, несовместимых с жизнью. Наши сотрудники уже избавляются от останков, выполненных по подобию агентов."
+ preftl_operation.3061.failure.desc:1 "$role_spymaster$ [from.spynetwork.leader.GetName] в спешке докладывает о неудачной попытке эвакуировать раненых оперативников из поселения [from.target.capital_scope.GetName]. Некоторые местные жители приняли эту попытку за похищение и вмешались, укрепив охрану пострадавших и даже задержав нескольких членов эвакуационной бригады!\n\nВся раса [from.target.GetSpeciesName] теперь будет настороже. Операция «[from.GetName]» частично раскрыта."
+ preftl_operation.3061.a:0 "Сообщить государству [global_event_country.GetGalCommunityOrGalImperium]."
+
+ preftl_operation.3062.success.desc:0 "Наша маскировка пока не нарушена. Наши оперативники чудесным, почти невозможным образом избежали гибели от ран. Это вызвало некоторые подозрения, но похоже, что [from.target.GetSpeciesNamePlural] приняли такой исход за счастливую случайность.\n\nПострадавшие агенты еще не скоро вернутся на службу. Пока что с ними провели беседу и заслушали отчет. Операция «[from.GetName]» может снова идти по плану."
+ preftl_operation.3062.failure.desc.intro:1 "$role_spymaster$ [from.spynetwork.leader.GetName] в спешке докладывает, что [from.target.GetName] теперь знает о нашей маскировке. Несмотря на тщательное обучение и передовое шпионское оборудование, наши агенты выдали, что они не [from.target.GetSpeciesNamePlural]."
+ preftl_operation.3062.failure.unaware.desc:0 "$preftl_operation.3062.failure.desc.intro$\n\nЭто резкое осознание обернулось фатальными последствиями для оперативников: их истинная природа вскрылась, когда [from.target.GetSpeciesAdj] персонал проводил хирургическую операцию и впал в панику."
+ preftl_operation.3062.failure.aware.desc:0 "$preftl_operation.3062.failure.desc.intro$\n\nК счастью, местные жители не поддались панике, и оперативники не пострадали. Однако вероятность, что мы сможем успешно изобразить непричастность к произошедшему, крайне невелика. Похоже, придется подготовиться к последствиям."
+ 
+## Mixed Signals
+ preftl_operation.3100.name:0 "Противоречивые сигналы"
+ preftl_operation.3100.desc:0 "Единицы Разума, составляющие крупную колонию в поселении [from.target.capital_scope.GetName], сегодня неожиданно пришли в боевую готовность. Наши оперативники в попытке сойти за местных чернорабочих ошибочно воспользовались неправильным феромоном, что и вызвало настоящее бешенство. По какой-то причине [from.target.GetSpeciesAdj] улей крайне восприимчив к нашим заранее заготовленным феромонам. Если организовать подобные провокационные контакты между местными колониями, возможно, мы узнаем много нового.\n\nПока что ясно одно: наше присутствие грозит срывом операции «[from.GetName]». Следующий сигнал с нашей стороны должен быть верным."
+ preftl_operation.3100.a:0 "Изучить их реакцию на контролируемый выпуск феромонов."
+ preftl_operation.3100.b:0 "Спрятать феромоны подальше."
+ preftl_operation.3100.b.tt:0 "Выделить агентам больше ресурсов, чтобы избежать внештатных ситуаций."
+ spynetwork_hive_no_pheromones:0 "Никаких феромонов"
+ spynetwork_hive_no_pheromones_desc:0 "После контакта этого улья с искусственными феромонами мы решили ограничить их применение в дальнейшем."
+
+## Technological Contamination
+ preftl_operation.3105.name:0 "Технологическое вмешательство"
+ preftl_operation.3105.desc:0 "В [from.target.species.GetHandNamePlural] единице Разума из поселения [from.target.capital_scope.GetName] попал наш измерительный прибор. Она довольно быстро разобрала устройство и вскоре поделится пониманием его принципа работы с местным ульем.\n\nЕсли мы не хотим помешать естественному развитию, то действовать надо безотлагательно."
+ preftl_operation.3105.a:0 "Пусть забирают наш мусор. Нам не жалко."
+ preftl_operation.3105.a.tt:0 "§Y[from.target.GetName]§!: §G+20%§! научно-технического прогресса."
+ preftl_operation.3105.b:0 "А что, если мы включим этот прибор?"
+ preftl_operation.3105.b.tt:0 "§Y[from.target.GetName]§! переходит в следующую технологическую эпоху."
+ preftl_operation.3105.c:1 "Взорвать все местное шпионское оборудование по сигналу."
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ observation.3009.a:1 "Поздравляем всех с отлично проведенной операцией."
+ observation.3002.desc:1 "Первые инфильтрационные группы закрепились на планете [infiltrated_country_planet.GetName], но у наших агентов возникли проблемы с прикрытием. Несколько раз членов групп раскрывали, что приводило к необходимости уничтожить всех свидетелей.\n\nЭто вызвало нежелательный интерес властей, и нашим оперативникам на время пришлось уйти на дно. Сроки операции придется скорректировать."
+ operation_wrong_policy:0 "$TRIGGER_FAIL$§RНаша §Yполитика обращения с видами без сверхсветовых двигателей§! запрещает такое вмешательство.§!\n\n"
+ preftl_operation.1001.name:0 "TODO_CD"
+ preftl_operation.1001.desc:0 "TODO_CD Финал прогресса, хороший результат"
+ preftl_operation.1001.desc.hive:0 "TODO_CD Финал прогресса, хороший результат (для улья без сверхсвета)"
+ preftl_operation.1002.name:0 "TODO_CD"
+ preftl_operation.1002.desc:0 "TODO_CD Финал прогресса, обычный результат"
+ preftl_operation.1002.desc.hive:0 "TODO_CD Финал прогресса, обычный результат (для улья без сверхсвета)"
+ preftl_operation.1003.name:0 "TODO_CD"
+ preftl_operation.1003.desc:0 "TODO_CD Финал прогресса, плохой результат"
+ preftl_operation.1003.desc.hive:0 "TODO_CD Финал прогресса, плохой результат (для улья без сверхсвета)"
+ preftl_operation.1005.hive:0 "[infiltrated_country_species.GetName] полностью у нас под контролем. Медленно, но верно наши единицы Разума добились того, что туземные [infiltrated_country_species.GetName] постепенно утратили сознание, и [root.GetPreFTLLower] попали под наше влияние.\n\nТеперь планета [infiltrated_country_planet.GetPlanetHabitat] ощущается нами куда яснее. Наши единицы Разума общаются и обмениваются знаниями с местными формами жизни: мы слились воедино."
+ preftl_operation.1006.desc.hive:0 "TODO_CD Финал аннексии, обычный результат (для улья без сверхсвета)"
+ preftl_operation.1007.desc.hive:0 "TODO_CD Финал аннексии, плохой результат (для улья без сверхсвета)"
+ preftl_operation.1016.desc:0 "TODO_CD Это результат операции по идеологической обработке общества"
+ preftl_operation.eliminate.desc:0 "В течение нескольких последних месяцев из-за ряда несвязанных друг с другом трагических инцидентов многие противостоящие нашим агентам академики были вынуждены покинуть свои посты."
+ preftl_operation.1101.desc:0 "$preftl_operation.eliminate.desc$ Увы, наши махинации были слишком очевидны и привлекли к нашим агентам много подозрений: их изгнали из научной среды, а на их места тут же пришли более консервативные мыслители."
+ preftl_operation.1102.desc:0 "$preftl_operation.eliminate.desc$ Это совершенно случайное совпадение позволило нашим агентам усилить свои позиции в научных организациях и усадить на освободившиеся места других доверенных агентов. Их исследования уже находят практическое применение: планета [pre_ftl_planet.GetName] вступает в новую эру прогресса."
+ preftl_operation.1103.desc:0 "Наши попытки подкупить несогласных академиков на планете [pre_ftl_planet.GetName] были сразу же раскрыты и преданы огласке. Уличенных агентов изгнали из научной среды, а на их места тут же пришли более консервативные мыслители."
+ preftl_operation.1104.desc:0 "Благодаря щедрости анонимного мецената местные ученые смогли получить финансирование для своих исследований. После такого неожиданного подарка ни у кого уже не остается времени на мелкие склоки.\n\nПриток инвестиций привел к созданию новых мест в научных учреждениях, на которые быстро пришли наши агенты, замаскированные под ученых. Наш контроль над академическими кругами планеты [pre_ftl_planet.GetName] укрепляется, и распространять наши идеи становится все легче."
+ preftl_operation.1105.desc:0 "Бесконечные войны в местных академических кругах не дали нашим агентам взять под контроль культурные институты на планете [pre_ftl_planet.GetName]. Возможно, идеи, которые мы пытались принести местным жителям, слишком для них радикальны."
+ preftl_operation.1106.desc:0 "Случилось нечто удивительное: в процессе академических споров наши агенты на планете [pre_ftl_planet.GetName] пришли к согласию с местными мыслителями. Ученые [from.target.GetSpeciesNamePlural] проанализировали наши идеи, указали на их недостатки, и теперь они разрабатывают на их основе новые теории: такая ситуация была бы немыслима без этого необузданного обмена мнениями."
+ preftl_operation.2000.name:0 "Неожиданный интерес"
+ preftl_operation.2000.desc:0 "TODO_CD Агент, которому было поручено вмешаться в местные дела на планете [pre_ftl_planet.GetName], оказался совершенно очарован цивилизацией, которой он должен быть манипулировать. Бросив выполнение своей первоначальной задачи, он решил заняться исследованиями местного общества."
+ preftl_operation.2000.a:0 "Отклонить просьбу."
+ preftl_operation.2000.a.tooltip:0 "Агент вернется к первоначальному заданию."
+ preftl_operation.2000.b:0 "Одобрить просьбу."
+ preftl_operation.2000.b.tooltip:0 "TODO_CD Вместо первоначального задания агент займется социологическими исследованиями."
+ preftl_operation.2001.name:0 "Неожиданный интерес"
+ preftl_operation.2001.desc:0 "TODO_CD Получив наше разрешение, руководитель резидентуры занялся ксенофологическими исследованиями. "
+ preftl_operation.2010.name:0 "Интересные времена"
+ preftl_operation.2010.desc:0 "TODO_CD Планета [pre_ftl_planet.GetName] претерпевает период радикальных социальных перемен. У нас есть шанс внедрить в общество новые идеи, но эта затея может обернуться хаосом. Наши оперативники не знают, как им поступить."
+ preftl_operation.2010.a:0 "Разжечь ненависть."
+ preftl_operation.2010.a.tooltip:0 "TODO_CD"
+ preftl_operation.2010.b:0 "Действовать решительно."
+ preftl_operation.2010.b.tooltip:0 "TODO_CD"
+ preftl_operation.2010.c:0 "Залечь на дно."
+ preftl_operation.2010.c.tooltip:0 "TODO_CD"
+ preftl_operation.2011.name:0 "TODO_CD Интересные времена: хороший исход"
+ preftl_operation.2011.desc:0 "TODO_CD Ура"

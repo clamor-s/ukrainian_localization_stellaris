@@ -1,0 +1,74 @@
+﻿l_russian:
+# The following names are applied to generic ships, Megastructures, and space creatures ('fauna') which populate the galaxy and are related to features, rather than particular events.
+
+# Generic ships
+ NAME_Constructor:0 "Строитель"
+
+# Space Fauna 'countries' (describing e.g. the Tiyanki, Space Crystals, Mining Drones...)
+
+# Galactic Imperium
+ NAME_Rebellion:0 "Коалиция повстанцев" #federation
+ NAME_Loyalists:0 "Имперские лоялисты" #federation
+ NAME_The_Civil_War:0 "Галактическое восстание" #war
+ NAME_Declared_Crisis_War:0 "[This.MainDefender.GetAdj]ая война кризиса" #war
+ NAME_Crisis_Star_Eater:0 "Пожиратель"
+ NAME_GDF:0 "Силы галактической обороны"
+ NAME_Imperial_Crusade_War:0 "Галактический крестовый поход" #war
+
+#################
+# MEGASTRUCTURES
+#################
+
+# Ring World sections
+ NAME_Ring_Section_A:0 "Секция мира-кольца A"
+ NAME_Ring_Section_B:0 "Секция мира-кольца B"
+ NAME_Ring_Section_C:0 "Секция мира-кольца C"
+ NAME_Ring_Section_D:0 "Секция мира-кольца D"
+ NAME_Ring_Section_E:0 "Секция мира-кольца E"
+ NAME_Ring_Section_F:0 "Секция мира-кольца F"
+ NAME_Ring_Section_G:0 "Секция мира-кольца G"
+ NAME_Ring_Section_H:0 "Секция мира-кольца H"
+ NAME_Ring_Section_I:0 "Секция мира-кольца I"
+ NAME_Ring_Section_K:0 "Секция мира-кольца K"
+ NAME_Ring_Section_L:0 "Секция мира-кольца L"
+ NAME_Ring_Section:0 "Секция мира-кольца"
+ NAME_Habitable_Section_A:0 "Обитаемая секция A"
+ NAME_Habitable_Section_B:0 "Обитаемая секция B"
+ NAME_Habitable_Section_C:0 "Обитаемая секция C"
+ NAME_Habitable_Section_D:0 "Обитаемая секция D"
+
+##########
+# ORIGINS
+##########
+
+# Galactic Doorstep
+ NAME_Galactic_Doorstep:0 "Черная Корона" #megastructure
+ NAME_Gateway_Vermin:0 "Вредители из врат" #empire
+
+# On the Shoulders of Giants
+ NAME_Theros:0 "Терос" #planet
+ NAME_Melidas:0 "Мелидас" #planet
+ NAME_Koras:0 "Корас" #planet
+ NAME_Haradas:0 "Харадас" #planet
+ NAME_Islena:0 "Ислена" #planet
+
+# Shattered Ring
+ NAME_Irreparable_Damage:0 "Ремонту не подлежит" #ringworld segment
+ NAME_The_Interloper:0 "Нарушитель" #shattered planet
+
+# Here Be Dragons
+ NAME_Sky_Dragon:0 "Небесный дракон"
+ NAME_Sky_Dragon_Baby:0 "Молодой небесный дракон"
+ NAME_Hrozgar_of_the_Endless_Flames:0 "Хрозгар Вечное Пламя"
+
+# Imperial Fiefdom
+ NAME_Imperial_Origin_Empire:0 "Священная [origin_imperial_species.GetAdj]ая империя"
+ NAME_Imperial_Origin_Empire_2:0 "[origin_imperial_species_2.GetAdj]ое королевство"
+ NAME_Imperial_Origin_Empire_3:0 "[origin_imperial_species_3.GetAdj]ое курфюршество"
+ NAME_Imperial_Origin_Empire_4:0 "[origin_imperial_species_4.GetAdj]ое пфальцграфство"
+ NAME_Imperial_Origin_Empire_5:0 "[origin_imperial_species_5.GetAdj]ая Лига"
+ NAME_Aix:0 "Экс" #planet
+
+ # Toxic Knights
+ NAME_Sinople:0 "Синопль"
+ NAME_Syamelle:0 "Сиамелль"
