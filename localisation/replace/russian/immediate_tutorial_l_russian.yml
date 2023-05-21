@@ -1,5 +1,5 @@
 ﻿l_russian:
- IMMEDIATE_TUTORIAL_PROMPT_TITLE:0 "Быстрый старт"
- IMMEDIATE_TUTORIAL_PROMPT_DESC:1 "$EMPIRE_DESIGN_humans1$ — оптимальное государство для начала игры в Stellaris."
- NO_THANKS:0 "Нет, спасибо"
- PLAY_NOW:0 "Играть"
+ IMMEDIATE_TUTORIAL_PROMPT_TITLE:0 "Швидкий старт"
+ IMMEDIATE_TUTORIAL_PROMPT_DESC:1 "Ми рекомендуємо вам почати з гри за $EMPIRE_DESIGN_humans1$, щоб отримати найкращий перший досвід використання Stellaris."
+ NO_THANKS:0 "Ні, дякую"
+ PLAY_NOW:0 "Грати зараз"

@@ -1,9 +1,9 @@
 ﻿l_russian:
 
- vo_lithoid_voice:0 "Литоиды"
- lithoid:0 "Литоиды"
+ vo_lithoid_voice:0 "Літоїди"
+ lithoid:0 "Літоїди"
 
- MESSAGE_TERRAVORE_CONSUME_WORLD_TITLE:0 "Поглотить мир"
- MESSAGE_TERRAVORE_CONSUME_WORLD_MINERALS_TEXT:0 "Поглотив планету $PLANET|Y$, рой получает дополнительные минералы."
- MESSAGE_TERRAVORE_CONSUME_WORLD_ALLOYS_TEXT:0 "Поглотив планету $PLANET|Y$, рой получает дополнительные сплавы."
- MESSAGE_TERRAVORE_CONSUME_WORLD_POP_TEXT:0 "Поглотив планету $PLANET|Y$, рой получает дополнительное население."
+ MESSAGE_TERRAVORE_CONSUME_WORLD_TITLE:0 "Поглинути світ"
+ MESSAGE_TERRAVORE_CONSUME_WORLD_MINERALS_TEXT:0 "Поглинання планети $PLANET|Y$ дасть мінерали для рою."
+ MESSAGE_TERRAVORE_CONSUME_WORLD_ALLOYS_TEXT:0 "Поглинання планети $PLANET|Y$ дасть сплави для рою."
+ MESSAGE_TERRAVORE_CONSUME_WORLD_POP_TEXT:0 "Поглинання планети $PLANET|Y$ дасть рою додаткові поселення."
