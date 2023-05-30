@@ -19,4 +19,5 @@
 | Volatile Motes - Леткі часточки | Exotic Gases - Екзотичні гази | Rare Crystals - Рідкісні кристали |
 | Zro - Зро | Dark Matter - Темна матерія | Living Metal - Живий метал |
 | Nanites - Наніти | Minor Artifacts - Малі артефакти | Trade Value - Торгова цінність |
-| Amenities - Блага | Housing - Житло | Blocker - Планетарна перешкода |
+| Amenities - Блага | Housing - Житло | Blocker - Планетарна перешкода | War in heaven - Війна Небес | Fallen Empire - Повалена імперія |
+| Fanatic Purifiers - Поборники чистоти | Rogue Servitors - Непокірні служителі | Driven Assimilators - Маніакальні асимілятори | Determined Exterminators - Переконані нищителі ||
