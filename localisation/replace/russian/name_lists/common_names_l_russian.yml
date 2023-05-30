@@ -2,7 +2,7 @@
 # The following names are applied to generic ships, Megastructures, and space creatures ('fauna') which populate the galaxy and are related to features, rather than particular events.
 
 # Generic ships
- NAME_Constructor:0 "Строитель"
+ NAME_Constructor:0 "Сборщик"
 
 # Space Fauna 'countries' (describing e.g. the Tiyanki, Space Crystals, Mining Drones...)
 
@@ -10,10 +10,10 @@
  NAME_Rebellion:0 "Коалиция повстанцев" #federation
  NAME_Loyalists:0 "Имперские лоялисты" #federation
  NAME_The_Civil_War:0 "Галактическое восстание" #war
- NAME_Declared_Crisis_War:0 "[This.MainDefender.GetAdj]ая война кризиса" #war
+ NAME_Declared_Crisis_War:0 "[This.MainDefender.GetAdj&fem] война кризиса" #war
  NAME_Crisis_Star_Eater:0 "Пожиратель"
  NAME_GDF:0 "Силы галактической обороны"
- NAME_Imperial_Crusade_War:0 "Галактический крестовый поход" #war
+ NAME_Imperial_Crusade_War:0 "Имперский крестовый поход" #war
 
 #################
 # MEGASTRUCTURES
@@ -42,8 +42,8 @@
 ##########
 
 # Galactic Doorstep
- NAME_Galactic_Doorstep:0 "Черная Корона" #megastructure
- NAME_Gateway_Vermin:0 "Вредители из врат" #empire
+ NAME_Galactic_Doorstep:0 "Чёрный Венец" #megastructure
+ NAME_Gateway_Vermin:0 "Нечисть из врат" #empire
 
 # On the Shoulders of Giants
  NAME_Theros:0 "Терос" #planet
@@ -53,8 +53,8 @@
  NAME_Islena:0 "Ислена" #planet
 
 # Shattered Ring
- NAME_Irreparable_Damage:0 "Ремонту не подлежит" #ringworld segment
- NAME_The_Interloper:0 "Нарушитель" #shattered planet
+ NAME_Irreparable_Damage:0 "Непоправимый Ущерб" #ringworld segment
+ NAME_The_Interloper:0 "Незваный Гость" #shattered planet
 
 # Here Be Dragons
  NAME_Sky_Dragon:0 "Небесный дракон"
@@ -62,13 +62,13 @@
  NAME_Hrozgar_of_the_Endless_Flames:0 "Хрозгар Вечное Пламя"
 
 # Imperial Fiefdom
- NAME_Imperial_Origin_Empire:0 "Священная [origin_imperial_species.GetAdj]ая империя"
- NAME_Imperial_Origin_Empire_2:0 "[origin_imperial_species_2.GetAdj]ое королевство"
- NAME_Imperial_Origin_Empire_3:0 "[origin_imperial_species_3.GetAdj]ое курфюршество"
- NAME_Imperial_Origin_Empire_4:0 "[origin_imperial_species_4.GetAdj]ое пфальцграфство"
- NAME_Imperial_Origin_Empire_5:0 "[origin_imperial_species_5.GetAdj]ая Лига"
+ NAME_Imperial_Origin_Empire:0 "Священная [origin_imperial_species.GetAdj&fem] Империя"
+ NAME_Imperial_Origin_Empire_2:0 "Королевство [origin_imperial_species_2.GetNamePlural&gen]"
+ NAME_Imperial_Origin_Empire_3:0 "Курфюршество [origin_imperial_species_3.GetNamePlural&gen]"
+ NAME_Imperial_Origin_Empire_4:0 "Пфальцграфство [origin_imperial_species_4.GetNamePlural&gen]"
+ NAME_Imperial_Origin_Empire_5:0 "[origin_imperial_species_5.GetAdj&fem] Лига"
  NAME_Aix:0 "Экс" #planet
 
  # Toxic Knights
- NAME_Sinople:0 "Синопль"
- NAME_Syamelle:0 "Сиамелль"
+ NAME_Sinople:0 "Изумруд"
+ NAME_Syamelle:0 "Сиамель"

@@ -123,6 +123,7 @@
  MOD_COUNTRY_EDICT_CAP_ADD:0 "$EDICT_CAPACITY_TITLE$"
  MOD_COUNTRY_EDICT_CAP_MULT:0 "$EDICT_CAPACITY_TITLE$"
  MOD_EMPIRE_SIZE_MULT:0 "$empire_size_mods$"
+ MOD_EMPIRE_SIZE_ADD:0 "$empire_size_mods$"
  MOD_COUNTRY_COMMUNITY_GDF_NAVAL_CAPACITY_ADD:0 "Вместимость флотилии Сообщества"
  MOD_COUNTRY_COMMUNITY_GDF_NAVAL_CAPACITY_ADD_DESC:0 "Влияет на вместимость флотилии Сил галактической обороны и Имперского флота"
  MOD_FIRST_CONTACT_SPEED_MULT:0 "Скорость изучения первого контакта"
@@ -441,9 +442,9 @@
  mod_planet_buildings_factories_cost_mult:0 "Стоимость фабрики"
  mod_planet_buildings_refineries_cost_mult:0 "Стоимость фабрики переработки"
  mod_planet_buildings_strongholds_cost_mult:0 "Стоимость крепости"
- mod_planet_metallurgists_upkeep_mult:0 "Содержание металлурга" # [LocEditor:ForFutureBatchExport]
- mod_planet_artisans_upkeep_mult:0 "Содержание ремесленника" # [LocEditor:ForFutureBatchExport]
- mod_planet_researchers_upkeep_mult:0 "Содержание исследователя" # [LocEditor:ForFutureBatchExport]
+ mod_planet_metallurgists_upkeep_mult:1 "Содержание: [GetAlloyProducer]"
+ mod_planet_artisans_upkeep_mult:1 "Содержание: [GetArtisan]"
+ mod_planet_researchers_upkeep_mult:1 "Содержание: [GetResearcher]"
  mod_planet_refiners_upkeep_mult:0 "Содержание переработчика"
  mod_planet_chemists_upkeep_mult:0 "Содержание химика"
  mod_planet_translucers_upkeep_mult:0 "Содержание специалиста по кристаллам"
@@ -1296,7 +1297,6 @@
  triggered_fe_opinion_barbaric_despoilers:0 "$civic_barbaric_despoilers$"
  triggered_opinion_relic_omnicodex:0 "$r_omnicodex$"
  triggered_opinion_crusader_spirit:0 "$civic_crusader_spirit$"
- triggered_opinion_crusader_spirit_machine_empires:0 "$civic_crusader_spirit$"
  triggered_opinion_crusader_spirit_pos:0 "$civic_crusader_spirit$"
 
  ####################################
@@ -1693,6 +1693,7 @@
  contact_with_MSI_02:1 "$contact_with_MSI_01$"
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ triggered_opinion_crusader_spirit_machine_empires:0 "$civic_crusader_spirit$"
  MOD_COUNTRY_COMMAND_LIMIT_ADD:0 "Предел управляемости флотилии"
  MOD_COUNTRY_COMMAND_LIMIT_MULT:0 "$MOD_FLEET_COMMAND_LIMIT_ADD$"
  mod_MECHANICAL_species_trait_picks_add:0 "$SPECIES_TRAIT_PICKS$ (механические)"

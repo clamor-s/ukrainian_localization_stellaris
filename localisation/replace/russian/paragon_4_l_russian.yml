@@ -1,9 +1,9 @@
 ﻿l_russian:
 
  # Gestalt trait names and desc
- leader_trait_fallible_hive:0 "Склонный ошибаться"
+ leader_trait_fallible_hive:1 "Подверженность слабостям"
  leader_trait_fallible_hive_desc:0 "Эта единица Разума страдает от иррационального поведения, что может привести к проблемам в будущем."
- leader_trait_fallible_machine:0 "Дефекты"
+ leader_trait_fallible_machine:1 "Дефективность"
  leader_trait_fallible_machine_desc:0 "Этот модуль страдает от незначительных сбоев, которые могут привести к проблемам в будущем."
 
  leader_trait_stubborn_machine:0 "Жесткая программа"
@@ -44,9 +44,9 @@
  leader_trait_bureaucratic_machine:0 "Ошибки передачи"
  leader_trait_bureaucratic_machine_desc:1 "Этот узел страдает от ошибок передачи при соединении с отдельными единицами Разума."
 
- leader_trait_micromanager_hive:0 "Рассинхронизация"
+ leader_trait_micromanager_hive:1 "Асинхронность"
  leader_trait_micromanager_hive_desc:0 "Эта единица Разума недостаточно эффективно синхронизируется при выполнении сложных флотских маневров."
- leader_trait_micromanager_machine:0 "Рассинхронизация"
+ leader_trait_micromanager_machine:1 "Асинхронность"
  leader_trait_micromanager_machine_desc:0 "Этот модуль недостаточно эффективно синхронизируется при выполнении сложных флотских маневров."
 
  leader_trait_reckless_hive:0 "Ошибка в расчетах"
@@ -154,9 +154,9 @@
  trait_ruler_eye_for_talent_2_machine:0 "$trait_ruler_eye_for_talent_machine$ II"
  trait_ruler_eye_for_talent_2_machine_desc:0 "$trait_ruler_eye_for_talent_machine_desc$"
 
- leader_trait_gifted_hive:0 "Одаренный"
+ leader_trait_gifted_hive:1 "Нейроусовершенствование"
  leader_trait_gifted_hive_desc:1 "Благодаря необычному росту синаптических связей функциональность этой единицы Разума значительно расширена."
- leader_trait_gifted_machine:0 "Улучшение"
+ leader_trait_gifted_machine:1 "Улучшение"
  leader_trait_gifted_machine_desc:1 "Благодаря экспериментальному усовершенствованию функциональность этого модуля значительно расширена."
 
  leader_trait_educator_hive:0 "Расширенное знание"
@@ -232,10 +232,10 @@
  leader_trait_corsair_machine:0 "Разборщик"
  leader_trait_corsair_machine_desc:0 "Этот модуль разбирает вражеские корабли и снимает с них все ценное."
 
- leader_trait_corsair_2_hive:0 "$leader_trait_corsair_hive$ II"
- leader_trait_corsair_2_hive_desc:0 "$leader_trait_corsair_hive_desc$"
- leader_trait_corsair_2_machine:0 "$leader_trait_corsair_machine$ II"
- leader_trait_corsair_2_machine_desc:0 "$leader_trait_corsair_machine_desc$"
+ leader_trait_par_zealot_hive:0 "Адаптивное поведение"
+ leader_trait_par_zealot_hive_desc:0 "Эта единица Разума настолько предана делу нашего дальнейшего выживания, что сравниться с ней может только ее рвение понять мотивы поступков наших врагов, чтобы сделать жизнь улья лучше."
+ leader_trait_par_zealot_machine:0 "Приемы адаптивного обучения"
+ leader_trait_par_zealot_machine_desc:0 "Этот модуль разработан для того, чтобы анализировать мотивы поступков враждебных рас и делать жизнь сознания лучше."
 
  leader_trait_demolisher_hive:0 "Уничтожитель"
  leader_trait_demolisher_hive_desc:1 "Эта единица Разума специализируется на уничтожении космических баз и оборонительных платформ."
@@ -352,7 +352,7 @@
  leader_trait_defence_engineer_2_machine:0 "$leader_trait_defence_engineer_machine$ II"
  leader_trait_defence_engineer_2_machine_desc:0 "$leader_trait_defence_engineer_machine_desc$"
 
- leader_trait_spycraft_hive:0 "Сбор разведданных"
+ leader_trait_spycraft_hive:1 "Сборщик разведданных"
  leader_trait_spycraft_hive_desc:1 "Этот узел обрабатывает информацию, добытую на шпионских операциях."
  leader_trait_spycraft_machine:0 "Шпионские подпрограммы"
  leader_trait_spycraft_machine_desc:1 "Этот узел обрабатывает информацию, добытую на шпионских операциях."
@@ -401,9 +401,9 @@
  leader_trait_army_logistician_2_machine:0 "$leader_trait_army_logistician_machine$ II"
  leader_trait_army_logistician_2_machine_desc:0 "$leader_trait_army_logistician_machine_desc$"
 
- leader_trait_restrained_hive:0 "Вычисление"
+ leader_trait_restrained_hive:1 "Расчетливость"
  leader_trait_restrained_hive_desc:1 "Эта единица Разума рассчитывает наступательные планы так, чтобы минимизировать сопутствующий урон."
- leader_trait_restrained_machine:0 "Вычисление"
+ leader_trait_restrained_machine:1 "Расчетливость"
  leader_trait_restrained_machine_desc:1 "Этот модуль рассчитывает наступательные планы так, чтобы минимизировать сопутствующий урон."
 
  leader_trait_restrained_2_hive:0 "$leader_trait_restrained_hive$ II"
@@ -416,7 +416,7 @@
  leader_trait_restrained_3_machine:0 "$leader_trait_restrained_machine$ III"
  leader_trait_restrained_3_machine_desc:0 "$leader_trait_restrained_machine_desc$"
 
- leader_trait_inspiring_hive:0 "Непоколебимый"
+ leader_trait_inspiring_hive:1 "Доминирование"
  leader_trait_inspiring_hive_desc:1 "Армии под управлением этой единицы Разума устойчивы к деморализации."
 
  leader_trait_inspiring_2_hive:0 "$leader_trait_inspiring_hive$ II"
@@ -442,9 +442,9 @@
  leader_trait_dreaded_2_machine:0 "$leader_trait_dreaded_machine$ II"
  leader_trait_dreaded_2_machine_desc:0 "$leader_trait_dreaded_machine_desc$"
 
- leader_trait_hardy_hive:0 "Закаленный"
+ leader_trait_hardy_hive:1 "Закалка"
  leader_trait_hardy_hive_desc:1 "Под управлением этой единицы Разума защита армий от урона значительно повышается."
- leader_trait_hardy_machine:0 "Закаленный"
+ leader_trait_hardy_machine:1 "Закалка"
  leader_trait_hardy_machine_desc:1 "Под управлением этого модуля защита армий от урона значительно повышается."
 
  leader_trait_hardy_2_hive:0 "$leader_trait_hardy_hive$ II"
@@ -567,7 +567,7 @@
  leader_trait_science_communicator_2_machine:0 "$leader_trait_science_communicator_machine$ II"
  leader_trait_science_communicator_2_machine_desc:0 "$leader_trait_science_communicator_machine_desc$"
 
- leader_trait_carefree_hive:0 "Быстрый"
+ leader_trait_carefree_hive:1 "Эффективность"
  leader_trait_carefree_hive_desc:1 "Эта единица Разума эффективно анализирует данные при исследовании неизвестных феноменов."
  leader_trait_carefree_machine:0 "Быстрые расчеты"
  leader_trait_carefree_machine_desc:1 "Этот модуль эффективно анализирует данные при исследовании неизвестных феноменов."
@@ -642,9 +642,9 @@
  leader_trait_inquisitive_machine:0 "Аналитик"
  leader_trait_inquisitive_machine_desc:1 "Благодаря аналитическому ПО этот модуль открыл новое направление технологических исследований."
 
- leader_trait_insightful_hive:0 "Умудренный"
+ leader_trait_insightful_hive:1 "Смекалка"
  leader_trait_insightful_hive_desc:1 "Эта единица Разума выполняет подробный анализ данных из аномалий."
- leader_trait_insightful_machine:0 "Наблюдательный"
+ leader_trait_insightful_machine:1 "Точность"
  leader_trait_insightful_machine_desc:1 "Этот модуль выполняет подробный анализ данных из аномалий."
  leader_trait_insightful_2_hive:0 "$leader_trait_insightful_hive$ II"
  leader_trait_insightful_2_hive_desc:0 "$leader_trait_insightful_hive_desc$"
@@ -653,7 +653,7 @@
 
  leader_trait_maniacal_hive:0 "Оптимизация нейронов"
  leader_trait_maniacal_hive_desc:1 "Благодаря стимулированию этот узел работает активнее, чем от него ожидается, что повышает эффективность исследований."
- leader_trait_maniacal_machine:0 "Разгон"
+ leader_trait_maniacal_machine:1 "Разгон"
  leader_trait_maniacal_machine_desc:1 "Этот модуль работает в режимах, превышающих максимальную рекомендуемую нагрузку, что повышает эффективность исследований."
 
  leader_trait_maniacal_2_hive:0 "$leader_trait_maniacal_hive$ II"
@@ -671,9 +671,9 @@
  leader_trait_manufacturer_2_machine:0 "$leader_trait_manufacturer_machine$ II"
  leader_trait_manufacturer_2_machine_desc:0 "$leader_trait_manufacturer_machine_desc$"
 
- leader_trait_meticulous_hive:0 "Педант"
+ leader_trait_meticulous_hive:1 "Педантичный аналитик"
  leader_trait_meticulous_hive_desc:1 "Эта единица Разума особенно обстоятельна в исследовании неизвестных феноменов."
- leader_trait_meticulous_machine:0 "Педантичные расчеты"
+ leader_trait_meticulous_machine:1 "Педантичный вычислитель"
  leader_trait_meticulous_machine_desc:1 "Этот модуль исследует неизвестные феномены с использованием продвинутых подпроцессов."
 
  leader_trait_meticulous_2_hive:0 "$leader_trait_meticulous_hive$ II"
@@ -681,7 +681,7 @@
  leader_trait_meticulous_2_machine:0 "$leader_trait_meticulous_machine$ II"
  leader_trait_meticulous_2_machine_desc:0 "$leader_trait_meticulous_machine_desc$"
 
- leader_trait_observant_hive:0 "Наблюдательный"
+ leader_trait_observant_hive:1 "Наблюдательность"
  leader_trait_observant_hive_desc:1 "Этот узел задействует механизмы глубокого сканирования, которые повышают шансы найти планетарные аномалии."
  leader_trait_observant_machine:0 "Глубокое сканирование"
  leader_trait_observant_machine_desc:1 "Этот модуль оптимизирован для проведения глубокого сканирования, что повышает шансы найти планетарные аномалии."
@@ -706,7 +706,7 @@
  leader_trait_salvager_machine:0 "Утилизатор"
  leader_trait_salvager_machine_desc:1 "Этот модуль оснащен оптимизированными протоколами утилизации погибших кораблей."
 
- leader_trait_slippery_hive:0 "Прохвост"
+ leader_trait_slippery_hive:1 "Увертливость"
  leader_trait_slippery_hive_desc:0 "У этой единицы Разума хорошо развиты инстинкты, помогающие ей уходить от опасности."
  leader_trait_slippery_machine:0 "Протоколы безопасности"
  leader_trait_slippery_machine_desc:0 "Протоколы безопасности этого модуля помогают ему уходить от опасности."
@@ -956,9 +956,9 @@
  leader_trait_adventurous_spirit_machine:0 "Неограниченный модуль"
  leader_trait_adventurous_spirit_machine_desc:1 "Программа этого модуля сообщает ему нестандартную самостоятельность."
  
- leader_trait_resilient_hive:0 "Выносливый"
+ leader_trait_resilient_hive:1 "Выносливость"
  leader_trait_resilient_hive_desc:1 "Эта единица Разума отличается выносливостью."
- leader_trait_resilient_machine:0 "Выносливый"
+ leader_trait_resilient_machine:1 "Выносливость"
  leader_trait_resilient_machine_desc:1 "Конструкция этого модуля делает его особенно выносливым."
 
  leader_trait_resilient_2_hive:1 "$leader_trait_resilient_hive$ II"
@@ -1050,9 +1050,9 @@
  leader_trait_reclusive_machine:0 "Сбой дипломатического протокола"
  leader_trait_reclusive_machine_desc:1 "Этот модуль неэффективно обрабатывает информацию и часто зависает при попытках формировать дипломатическую аналитику."
 
- leader_trait_intolerant_hive:0 "Нетерпимый"
+ leader_trait_intolerant_hive:1 "Нетерпимость"
  leader_trait_intolerant_hive_desc:1 "Этот узел отличается врожденной подозрительностью и заражает другие единицы Разума своим недоверием к инопланетянам."
- leader_trait_intolerant_machine:0 "Нетерпимый"
+ leader_trait_intolerant_machine:1 "Нетерпимость"
  leader_trait_intolerant_machine_desc:1 "Этот модуль страдает от дефектов в протоколах доверия и отличается повышенным скепсисом."
 
  leader_trait_volatile_hive:0 "Инстинктивная жестокость"
@@ -1060,9 +1060,9 @@
  leader_trait_volatile_machine:0 "Зацикленный алгоритм агрессии"
  leader_trait_volatile_machine_desc:1 "Этот модуль отличается импульсивностью и склонен к неуравновешенности."
 
- leader_trait_passive_hive:0 "Пассивный"
+ leader_trait_passive_hive:1 "Пассивность"
  leader_trait_passive_hive_desc:1 "Этот узел не любит проявлять инициативу."
- leader_trait_passive_machine:0 "Пассивный"
+ leader_trait_passive_machine:1 "Пассивность"
  leader_trait_passive_machine_desc:1 "Этот модуль демонстрирует неспособность к инициативе."
 
  leader_trait_emotional_support_pet_hive:0 "Симбионт эмоциональной поддержки"
@@ -1106,7 +1106,7 @@
  leader_trait_principled_2_machine:0 "$leader_trait_principled_machine$ II"
  leader_trait_principled_2_machine_desc:0 "$leader_trait_principled_machine_desc$"
 
- leader_trait_assembler_hive:0 "Нянька"
+ leader_trait_assembler_hive:1 "Заботливость"
  leader_trait_assembler_hive_desc:0 "Эта единица Разума имеет склонность к уходу за потомством."
  leader_trait_assembler_machine:0 "Программа сборки"
  leader_trait_assembler_machine_desc:1 "корректный код в нужном разделе помогает оптимизировать производство новых машин."
@@ -1194,7 +1194,7 @@
  leader_trait_sadistic_machine:1 "Машина-мазохист"
  leader_trait_sadistic_machine_desc:1 "Этот модуль обладает зависимостью от частой стимуляции датчиков повреждений."
 
- leader_trait_irenic_hive:0 "Отвращение к конфликтам"
+ leader_trait_irenic_hive:1 "Избегание конфликтов"
  leader_trait_irenic_hive_desc:1 "Из-за врожденного неприятия конфликтов эта единица Разума активно избегает возможной военной эскалации."
  leader_trait_irenic_machine:0 "Протоколы мира"
  leader_trait_irenic_machine_desc:0 "Этот модуль пропагандирует мир и всеми силами препятствует любым попыткам повышения боеготовности."
@@ -1284,9 +1284,9 @@
  subclass_admiral_strategist_machine:0 "Стратег"
  subclass_admiral_strategist_machine_desc:0 "$subclass_admiral_strategist_hive_desc$"
 
- leader_trait_cautious_hive:0 "Осторожный"
+ leader_trait_cautious_hive:1 "Осмотрительность"
  leader_trait_cautious_hive_desc:0 "Эта единица Разума проявляет особую осторожность."
- leader_trait_cautious_machine:0 "Осторожный"
+ leader_trait_cautious_machine:1 "Осмотрительность"
  leader_trait_cautious_machine_desc:0 "В программе этого модуля главная директива — осторожность."
 
  leader_trait_cautious_2_hive:0 "$leader_trait_cautious_hive$ II"
@@ -1299,9 +1299,9 @@
  leader_trait_watchdog_machine:0 "Бдительный"
  leader_trait_watchdog_machine_desc:1 "Этот модуль бдительно и неустанно охраняет занятую территорию."
 
- leader_trait_unyielding_hive:0 "Упорство"
+ leader_trait_unyielding_hive:1 "Несгибаемость"
  leader_trait_unyielding_hive_desc:1 "Эта единица Разума не способна капитулировать."
- leader_trait_unyielding_machine:0 "Упорство"
+ leader_trait_unyielding_machine:1 "Программа несгибаемости"
  leader_trait_unyielding_machine_desc:1 "У этого модуля нет протокола капитуляции."
 
  leader_trait_unyielding_2_hive:0 "$leader_trait_unyielding_hive$ II"
@@ -1370,6 +1370,10 @@
  leader_trait_shadow_broker_machine_desc:0 "Этот модуль оснащен инструментами, которые увеличивают наш потенциал к внедрению."
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ leader_trait_corsair_2_hive:0 "$leader_trait_corsair_hive$ II"
+ leader_trait_corsair_2_hive_desc:0 "$leader_trait_corsair_hive_desc$"
+ leader_trait_corsair_2_machine:0 "$leader_trait_corsair_machine$ II"
+ leader_trait_corsair_2_machine_desc:0 "$leader_trait_corsair_machine_desc$"
  leader_trait_artillery_focus_hive:0 "Специализация на артиллерии"
  leader_trait_artillery_focus_machine:0 "Специализация на артиллерии"
  leader_trait_carrier_focus_hive:0 "Специализация на авианосцах"

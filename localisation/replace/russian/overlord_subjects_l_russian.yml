@@ -435,33 +435,33 @@
 
  # Negotiate existing agreement diplomatic action
  ACTION_NEGOTIATE_EXISTING_AGREEMENT_TITLE:0 "Обсудить соглашение"
- ACTION_NEGOTIATE_EXISTING_AGREEMENT_DESC:0 "Обсудить условия соглашения с государством §H[Recipient.GetName]§!."
- ACTION_NEGOTIATE_EXISTING_AGREEMENT_OFFER_DESC:0 "Государство §H[Actor.GetName]§! предложило изменить условия нашего соглашения."
- ACTION_NEGOTIATE_EXISTING_AGREEMENT_PROPOSAL_FAILED_ACTOR:1 "Наше предложение изменить условия соглашения с государством §H[Recipient.GetName]§! было принято." # Negotiations are force accepted if the recipient can't pay to decline
- ACTION_NEGOTIATE_EXISTING_AGREEMENT_PROPOSAL_FAILED_RECIPIENT:1 "Предложение изменить условия соглашения с государством §H[Actor.GetName]§! было просрочено и автоматически принято."
+ ACTION_NEGOTIATE_EXISTING_AGREEMENT_DESC:0 "Обсудить условия соглашения с §H[Recipient.GetName&inst]§!."
+ ACTION_NEGOTIATE_EXISTING_AGREEMENT_OFFER_DESC:0 "[Actor.GetName:§H<1>§! предложил|||fem:§H<1>§! предложила|||neut:§H<1>§! предложило|||pl:§H<1>§! предложили] изменить условия нашего соглашения."
+ ACTION_NEGOTIATE_EXISTING_AGREEMENT_PROPOSAL_FAILED_ACTOR:1 "Наше предложение изменить условия соглашения с §H[Recipient.GetName&inst]§! было принято." # Negotiations are force accepted if the recipient can't pay to decline
+ ACTION_NEGOTIATE_EXISTING_AGREEMENT_PROPOSAL_FAILED_RECIPIENT:1 "Предложение изменить условия соглашения с §H[Actor.GetName&inst]§! было просрочено и автоматически принято."
  MESSAGE_NEGOTIATE_EXISTING_AGREEMENT_TITLE:0 "Обсудить соглашение"
 
  # Secret Fealty diplomatic actions
  ACTION_PLEDGE_SECRET_FEALTY_TITLE:0 "Тайно поклясться в верности"
- ACTION_PLEDGE_SECRET_FEALTY_DESC:0 "Тайно поклясться в верности государству §H[Recipient.GetName]§! как нашему новому сюзерену."
- ACTION_PLEDGE_SECRET_FEALTY_OFFER_DESC:0 "Государство §H[Actor.GetName]§! тайно поклялось нам в верности."
+ ACTION_PLEDGE_SECRET_FEALTY_DESC:0 "Тайно поклясться в верности §H[Recipient.GetName&dat]§! как нашему новому сюзерену."
+ ACTION_PLEDGE_SECRET_FEALTY_OFFER_DESC:0 "[Actor.GetName:§H<1>§! тайно поклялся|||fem:§H<1>§! тайно поклялась|||neut:§H<1>§! тайно поклялось|||pl:§H<1>§! тайно поклялись] нам в верности."
  MESSAGE_PLEDGE_SECRET_FEALTY_TITLE:0 "$ACTION_PLEDGE_SECRET_FEALTY_TITLE$"
 
  ACTION_PROPOSE_SECRET_FEALTY_TITLE:0 "Предложить тайную клятву верности"
- ACTION_PROPOSE_SECRET_FEALTY_DESC:0 "Предложить государству §H[Recipient.GetName]§! тайно поклясться в верности нам как новому сюзерену."
- ACTION_PROPOSE_SECRET_FEALTY_OFFER_DESC:0 "Государство §H[Actor.GetName]§! предложило нам тайно поклясться им в верности."
- ACTION_PROPOSE_SECRET_FEALTY_PROPOSAL_FAILED_ACTOR:0 "Наше предложение государству §H[Recipient.GetName]§! тайно поклясться нам в верности было отклонено."
- ACTION_PROPOSE_SECRET_FEALTY_PROPOSAL_FAILED_RECIPIENT:0 "Предложение к нам тайно поклясться в верности государству §H[Actor.GetName]§! было просрочено и автоматически отклонено."
+ ACTION_PROPOSE_SECRET_FEALTY_DESC:0 "Предложить §H[Recipient.GetName&dat]§! тайно поклясться в верности нам как новому сюзерену."
+ ACTION_PROPOSE_SECRET_FEALTY_OFFER_DESC:0 "[Actor.GetName:§H<1>§! предложил|||fem:§H<1>§! предложила|||neut:§H<1>§! предложило|||pl:§H<1>§! предложили] нам тайно поклясться [Actor.GetName:ему|||fem:ей|||pl:им] в верности."
+ ACTION_PROPOSE_SECRET_FEALTY_PROPOSAL_FAILED_ACTOR:0 "Наше предложение §H[Recipient.GetName&dat]§! тайно поклясться нам в верности было отклонено."
+ ACTION_PROPOSE_SECRET_FEALTY_PROPOSAL_FAILED_RECIPIENT:0 "Предложение к нам тайно поклясться в верности §H[Actor.GetName&dat]§! было просрочено и автоматически отклонено."
  MESSAGE_PROPOSE_SECRET_FEALTY_TITLE:0 "$ACTION_PROPOSE_SECRET_FEALTY_TITLE$"
 
  ACTION_BREAK_SECRET_FEALTY_TITLE:0 "Нарушить тайную клятву"
- ACTION_BREAK_SECRET_FEALTY_DESC:0 "Нарушить тайную клятву государству §H[Recipient.GetName]§!"
- ACTION_BREAK_SECRET_FEALTY_OFFER_DESC:0 "Государство §H[Actor.GetName]§! нарушило свою тайную клятву нам."
+ ACTION_BREAK_SECRET_FEALTY_DESC:0 "Нарушить тайную клятву §H[Recipient.GetName&dat]§!"
+ ACTION_BREAK_SECRET_FEALTY_OFFER_DESC:0 "[Actor.GetName:§H<1>§! нарушил|||fem:§H<1>§! нарушила|||neut:§H<1>§! нарушило|||pl:§H<1>§! нарушили] свою тайную клятву нам."
  ACTION_PROPOSE_TO_BREAK_SECRET_FEALTY_TITLE:0 "Разорвать тайную клятву"
- ACTION_PROPOSE_TO_BREAK_SECRET_FEALTY_DESC:0 "Предложить государству §H[Recipient.GetName]§! разорвать свою тайную клятву нам."
- ACTION_PROPOSE_TO_BREAK_SECRET_FEALTY_OFFER_DESC:0 "Государство §H[Actor.GetName]§! предложило нам разорвать нашу тайную клятву верности."
- ACTION_PROPOSE_TO_BREAK_SECRET_FEALTY_PROPOSAL_FAILED_ACTOR:0 "Наше предложение государству §H[Recipient.GetName]§! разорвать тайную клятву верности было отклонено."
- ACTION_PROPOSE_TO_BREAK_SECRET_FEALTY_PROPOSAL_FAILED_RECIPIENT:0 "Предложение к нам разорвать тайную клятву верности государству §H[Actor.GetName]§! было просрочено и автоматически отклонено."
+ ACTION_PROPOSE_TO_BREAK_SECRET_FEALTY_DESC:0 "Предложить §H[Recipient.GetName&dat]§! разорвать свою тайную клятву нам."
+ ACTION_PROPOSE_TO_BREAK_SECRET_FEALTY_OFFER_DESC:0 "[Actor.GetName:§H<1>§! предложил|||fem:§H<1>§! предложила|||neut:§H<1>§! предложило|||pl:§H<1>§! предложили] нам разорвать нашу тайную клятву верности."
+ ACTION_PROPOSE_TO_BREAK_SECRET_FEALTY_PROPOSAL_FAILED_ACTOR:0 "Наше предложение §H[Recipient.GetName&dat]§! разорвать тайную клятву верности было отклонено."
+ ACTION_PROPOSE_TO_BREAK_SECRET_FEALTY_PROPOSAL_FAILED_RECIPIENT:0 "Предложение к нам разорвать тайную клятву верности §H[Actor.GetName&dat]§! было просрочено и автоматически отклонено."
 
  IN_ALLEGIANCE_WAR_WITH_OUR_OVERLORD:0 "Мы находимся в состоянии войны с нашим сюзереном."
  IN_ALLEGIANCE_WAR_WITH_SUBJECTS_OVERLORD:0 "Мы находимся в состоянии войны с их сюзереном."
@@ -590,7 +590,7 @@
  holding_franchise_headquarters:0 "Штаб-квартира франшизы"
  holding_franchise_headquarters_desc:0 "Эти офисы позволяют менеджерам корпорации соотносить интересы филиала с интересами сюзерена через обязательную планетарную торговлю и командообразование."
  holding_franchise_headquarters_effect:0 "\n£job_clerk£ §Y$job_clerk_plural$§! производят §R-1§! £trade_value£ §Yобъема торговли§! для подданного и §G0,25§! ед. ресурса £unity£ §Y$unity$§! для сюзерена."
- no_branch_office:0 "$TRIGGER_FAIL$§RТребуется филиал государства [owner.overlord.GetName].§!"
+ no_branch_office:0 "$TRIGGER_FAIL$§RТребуется филиал [owner.overlord.GetName&gen].§!"
  planet_corporate_franchising_meddling:0 "Вмешательство корпорации"
  holding_franchise_headquarters_ethics_effect:0 "\nЕсли у сюзерена есть фанатичные принципы, обеспечивает §G+100%§! привлекательности данного принципа."
 
@@ -1390,7 +1390,7 @@
  subject_is_scholarium:0 "$TRIGGER_FAIL$§RПодданный должен быть схоларием.§!"
  overlord_is_homicidal:0 "$TRIGGER_FAIL$§RНаша жестокая и агрессивная природа не позволяет этого.§!"
  overlord_is_xenophobe:0 "$TRIGGER_FAIL$§RВ нашем государстве исповедуется $ethic_xenophobe$ и соответствующие идеалы.§!"
- overlord_has_technology:0 "$TRIGGER_FAIL$§RГосударство [owner.overlord.GetName] должно обладать технологией:§!"
+ overlord_has_technology:0 "$TRIGGER_FAIL$§RУ [owner.overlord.GetName&gen] должна быть технология:§!"
  ove_requires_tech_mineral_purification_2:0 "$overlord_has_technology$ £engineering£ §Y$tech_mineral_purification_2$§!"
  ove_requires_tech_power_hub_2:0 "$overlord_has_technology$ £physics£ §Y$tech_power_hub_2$§!"
  ove_requires_tech_food_processing_2:1 "$overlord_has_technology$ £society£ §Y$tech_food_processing_2$§!"

@@ -5,46 +5,46 @@
 
 # Assorted empire/country names
  NAME_Ancient_AI:0 "Древний ИИ"
- NAME_Armistice_Initiative:0 "Инициатива перемирия"
- NAME_Awoken:0 "Пробужденные"
+ NAME_Armistice_Initiative:0 "Протокол подавления"
+ NAME_Awoken:0 "Пробуждённые"
  NAME_Commonwealth_of_Man:0 "Человеческое Содружество" #UNE initializer
- NAME_Creatures_of_the_Shroud:0 "Существа Покрова"
- NAME_Cunning_Pirates:0 "Коварные пираты"
- NAME_Deformed_Creatures:0 "Изуродованные существа" #terraforming accident
+ NAME_Creatures_of_the_Shroud:0 "Создания Покрова"
+ NAME_Cunning_Pirates:0 "Ушлые пираты"
+ NAME_Deformed_Creatures:0 "Искажённые существа" #terraforming accident
  NAME_Demonic_Creatures:0 "Демонические существа"
  NAME_Demon_Incursion:0 "Демоническое вторжение"
- NAME_Demon_Incursion_adj:0 "Демонический"
+ NAME_Demon_Incursion_adj:0 "Демониче"
  NAME_Eternal_Watchers:0 "Вечные дозорные"
  NAME_Incoming_Asteroid:0 "Летящий астероид" #a literal asteroid
  NAME_Living_Snow:0 "Живой снег" #empire (planetary event)
- NAME_Looped_Syzygy:0 "Цикличная «Сизигия»"
- NAME_Marauding_Creatures:0 "Хищные существа" #planetary event
- NAME_mardak_vol_haters:0 "Вулы"
- NAME_Mutant_Horrors:0 "Ужасы-мутанты" #also used as an army name
+ NAME_Looped_Syzygy:0 "Запутанная «Сигизия»"
+ NAME_Marauding_Creatures:0 "Стервятники" #planetary event
+ NAME_mardak_vol_haters:0 "Вул"
+ NAME_Mutant_Horrors:0 "Жуткие мутанты" #also used as an army name
  NAME_Prikkiki_Ti:0 "Приккики-Ти"
  NAME_Psionic_Avatar_Country:0 "Псионический аватар"
  NAME_Ransomeers:0 "Искупатели"
  NAME_Rising_Manifold:0 "Растущее многообразие" #abstract/nonsensical
  NAME_Shattered_Frontier:0 "Разбитый рубеж" #empire, alluding to colonial frontiers (Shroud entity)
  NAME_Shroud_Reformers:0 "Реформаторы Покрова" #the definitive Shroud
- NAME_Spawning_Dragons:0 "Освобожденные драконы" #literal
+ NAME_Spawning_Dragons:0 "Освобождённые драконы" #literal
  NAME_Subterranean_Nation:0 "Подземный народ"
- NAME_The_Loop:0 "Кольцо" #as in time
+ NAME_The_Loop:0 "Петля" #as in time
  NAME_The_Shroud:0 "Покров"
  NAME_Titanic_Life:0 "Титаническая форма жизни" #gigantic lifeforms
  NAME_Unknown_Ancientry:0 "Неизвестная древность"
- NAME_Unscrupulous_Salvagers:0 "Бесчестные утилизаторы"
- NAME_Wreckers:0 "Мародеры"
+ NAME_Unscrupulous_Salvagers:0 "Беспринципные мародёры"
+ NAME_Wreckers:0 "Вредители"
 
 # Assorted species names
  NAME_AI:0 "ИИ"
- NAME_Awoken_Robot:0 "Пробужденные"
- NAME_Azizians:0 "Азизиане"
+ NAME_Awoken_Robot:0 "Пробуждённые"
+ NAME_Azizians:0 "Азизиан"
  NAME_Cockroach:0 "Таракан" #literal
  NAME_Cockroach_plural:0 "Тараканы" #literal
  NAME_Migrating_Trees:0 "Мигрирующие деревья" #literal
- NAME_Rampaging_Forests:0 "Неистовствующие леса" #literal
- NAME_Prikki:0 "Прикки"
+ NAME_Rampaging_Forests:0 "Буйствующие леса" #literal
+ NAME_Prikki:0 "Прикк"
  NAME_Robot:0 "Робот"
  NAME_Robot_plural:0 "Роботы"
  NAME_Titans:0 "Титаны" #gigantic lifeforms
@@ -52,7 +52,7 @@
  NAME_Demon_Refugee_pl:0 "Демоны"
 
 # Assorted star system names
- NAME_Klendath:0 "Клендат"
+ NAME_Klendath:0 "Клендату"
  NAME_Pantagruel:0 "Пантагрюэль"
  NAME_Zron:0 "Зрон"
 
@@ -60,11 +60,11 @@
  NAME_Baldarak:0 "Балдарак"
  NAME_New_Baldarak:0 "Новый Балдарак"
  NAME_Chabkymak:0 "Чабкимак"
- NAME_Exile:0 "Изгнанник"
+ NAME_Exile:0 "Изгнанники"
  NAME_Fotangia:0 "Фотангия"
- NAME_The_Fragments:0 "Фрагменты" #a shattered world
+ NAME_The_Fragments:0 "Осколки" #a shattered world
  NAME_Gish:0 "Гиш"
- NAME_Homeworld_Two:0 "[Space_Owner.GetHomeWorldName] II" #after terraforming
+ NAME_Homeworld_Two:0 "[Space_Owner.GetHomeWorldName] Нова" #after terraforming
  NAME_Paridayda:0 "Паридайда" #gaia world
  NAME_Spjuuht:0 "Спьюут"
  NAME_Tollok_Rong:0 "Толлок Ронг"
@@ -75,26 +75,26 @@
  NAME_Ancient_AI_Fleet:0 "Флотилия древнего ИИ"
  NAME_Clutch_of_Whelps:0 "Дракончики" #dragons
  NAME_Dimensional_Portal:0 "Межпространственный портал"
- NAME_Greased_Lightning:0 "Смазанная молния"
+ NAME_Greased_Lightning:0 "Юркая молния"
  NAME_Head_in_Sand:0 "Голова-в-песке" #i.e. cowardly/ignorant
- NAME_Hijacked_Fleet:0 "Захваченная флотилия"
+ NAME_Hijacked_Fleet:0 "Угнанная флотилия"
  NAME_Main_Forces:0 "Основные силы"
- NAME_mardak_vol_haters_fleet:0 "Мардаки-уничтожители"
- NAME_Modified_Probe:0 "Зонд модифицирован"
+ NAME_mardak_vol_haters_fleet:0 "Мардакские чистильщики"
+ NAME_Modified_Probe:0 "Модифицированный зонд"
  NAME_New_Ship_plural:0 "Новые корабли"
- NAME_Occupation_Flotilla:0 "Оккупирующий флот"
- NAME_Other_Science_Ship:0 "Другой научный корабль" #comprises 'NAME_From_Beyond'
+ NAME_Occupation_Flotilla:0 "Оккупационная флотилия"
+ NAME_Other_Science_Ship:0 "Иной научный корабль" #comprises 'NAME_From_Beyond'
  NAME_Psionic_Avatar:0 "Псионический аватар"
  NAME_Ransomeer_Base:0 "База Искупателей" #starbase
  NAME_Salvage_Fleet:0 "Флотилия утилизаторов"
  NAME_Scrap_Probes:0 "Мусорные зонды"
- NAME_Seaborn:0 "Морерожденные"
- NAME_Seaborn_Flotilla:0 "Флотилия морерожденных"
+ NAME_Seaborn:0 "Морерождённый"
+ NAME_Seaborn_Flotilla:0 "Флотилия морерождённых"
  NAME_Skeletal_Giant:0 "Костяной гигант"
  NAME_Surveillance_Bots:0 "Боты-разведчики"
  NAME_TIME_IS_SIGHT_GRAVITY_IS_DESIRE:0 "ВРЕМЯ — ВЗГЛЯД, ГРАВИТАЦИЯ — ЖЕЛАНИЕ" #abstract/nonsensical
  NAME_The_End:0 "Конец" #End of the Cycle (Shroud)
- NAME_Wrecker_Base:0 "База мародеров" #as in 'NAME_Wreckers'
+ NAME_Wrecker_Base:0 "База вредителей" #as in 'NAME_Wreckers'
  NAME_Zarqlans_Pilgrims:0 "Паломники Зарклана"
  NAME_Mercenary_Fleet:0 "Флотилия [event_target:mercenary_enclave_country.GetName]"
 
@@ -107,54 +107,54 @@
  NAME_Autonomous_Drone:0 "Автономный дрон"
  NAME_Burnt_Out_Science_Ship:0 "Сгоревший научный корабль"
  NAME_Conceptual_Ship:0 "Корабль как понятие" #abstract
- NAME_Corrupted_Avatar:0 "Искаженный аватар" #psionic entity
- NAME_Dark_Wanderer:0 "Темный скиталец"
+ NAME_Corrupted_Avatar:0 "Искажённый аватар" #psionic entity
+ NAME_Dark_Wanderer:0 "Тёмный скиталец"
  NAME_Dimensional_Horror:0 "Межпространственный ужас"
  NAME_enigmatic_cache:0 "Загадочное хранилище"
- NAME_Foundling:0 "Найденыш" #lost science ship
- NAME_Fragment:0 "Фрагмент" #Shroud manifestation
- NAME_From_Beyond:0 "По ту сторону"
- NAME_Gallant_Dawn:0 "Галантный рассвет"
+ NAME_Foundling:0 "Найдёныш" #lost science ship
+ NAME_Fragment:0 "Осколок" #Shroud manifestation
+ NAME_From_Beyond:0 "Иной"
+ NAME_Gallant_Dawn:0 "Славный Рассвет"
  NAME_Grand_Herald:0 "Великий предвестник"
  NAME_Herald:0 "Предвестник"
- NAME_Junk_Probe_Alpha:0 "Мусорный альфа-зонд"
- NAME_Junk_Probe_Beta:0 "Мусорный бета-зонд"
+ NAME_Junk_Probe_Alpha:0 "Мусорный зонд Альфа"
+ NAME_Junk_Probe_Beta:0 "Мусорный зонд Бета"
  NAME_Kellop-Gar:0 "Келлоп-гар"
  NAME_Lessenger:0 "Малый гонец"
  NAME_Lesser_Messenger:1 "$NAME_Lessenger$"
- NAME_Mended_Frontier:0 "Отремонтированная граница" #as in 'NAME_Shattered_Frontier'
+ NAME_Mended_Frontier:0 "Восстановленный рубеж" #as in 'NAME_Shattered_Frontier'
  NAME_Migil-Yar:0 "Мигил-яр"
- NAME_Suntha-Pol:0 "Сантха-пол"
- NAME_Nanite_Dragon:0 "Симулированное порождение дракона" #a literal dragon
+ NAME_Suntha-Pol:0 "Сунта-Пол"
+ NAME_Nanite_Dragon:0 "Искусственный дракон" #a literal dragon
  NAME_New_Ship:0 "Новый корабль"
  NAME_Ostrich:0 "Страус" #reference to 'NAME_Head_in_Sand'
- NAME_Patchwork_Paradise:0 "Лоскутный рай" #wrecker ship
+ NAME_Patchwork_Paradise:0 "Пёстрый рай" #wrecker ship
  NAME_Reckoning:0 "Расплата"
- NAME_Reclaimed_Ship:0 "Восстановленный корабль" #as in 'back in our possession'
+ NAME_Reclaimed_Ship:0 "Отвоёванный корабль" #as in 'back in our possession'
  NAME_Research_Expedition_Vessel:0 "Корабль исследователей"
- NAME_Salvage:0 "Утилизаторы" #literal
+ NAME_Salvage:0 "Утилизация" #literal
  NAME_Seafallen_Cruiser:0 "Затонувший крейсер"
  NAME_Ship_of_Unknown_Origin:0 "Неизвестный корабль"
- NAME_Shroud_Manifestation:0 "Проявление Покрова"
+ NAME_Shroud_Manifestation:0 "Воплощение Покрова"
  NAME_Skeletal_Transport:0 "Костяной транспорт" #as in 'NAME_Skeletal_Giant'
- NAME_Specter:0 "Призрак"
+ NAME_Specter:0 "Спектр"
  NAME_Subspace_Anomaly:0 "Подпространственная аномалия" #literal
  NAME_Syzygy:0 "«Сизигия»"
- NAME_Unshrouded_Science_Ship:0 "Раскрытый научный корабль"
+ NAME_Unshrouded_Science_Ship:0 "Научный корабль из Покрова"
  NAME_Worm_in_Waiting:0 "Червь Ожидающий" #definite article, 'The Worm'
 
 # Assorted army names
- NAME_Awoken_Army:0 "Армия пробужденных"
+ NAME_Awoken_Army:0 "Армия пробуждённых"
  NAME_Enraged_Guardian:0 "Разгневанный страж"
  NAME_Enraged_Titan:0 "Разгневанный титан"
  NAME_Invading_Horde:0 "Атакующая орда" #subterranean army
  NAME_Loot_Equipped_Army:0 "Армия с добычей"
- NAME_Marauding_Swarms:0 "Хищные рои"
- NAME_mechawarrior_contractors:0 "Подрядчики меха-воины"
- NAME_military_contractors:0 "Военные подрядчики"
- NAME_Mutated_Horrors:0 "Ужасы-мутанты"
- NAME_Monstrous_Snow:0 "Снежные монстры" #from literal snow
- NAME_Twisted_Beasts:0 "Искаженные чудовища"
+ NAME_Marauding_Swarms:0 "Стервятники"
+ NAME_mechawarrior_contractors:0 "Наёмные мехавоины"
+ NAME_military_contractors:0 "Военные наёмники"
+ NAME_Mutated_Horrors:0 "Жуткие мутанты"
+ NAME_Monstrous_Snow:0 "Снежные чудовища" #from literal snow
+ NAME_Twisted_Beasts:0 "Искажённые чудовища"
 
 # Assorted leader names
  NAME_00110001:0 "00110001" #1
@@ -164,13 +164,13 @@
  NAME_00110101:0 "00110101" #5
  NAME_01000001_01001001:0 "01000001 01001001" #AI
  NAME_0101010111:0 "0101010111" #W
- NAME_Majula_the_Bearer:0 "Маджула Носительница"
+ NAME_Majula_the_Bearer:0 "Маджула Несущая"
  NAME_Oracle:0 "Оракул" #also used as the species name
  NAME_The_Exile:0 "Изгнанник" #a scientist of the player's own species
- NAME_William_Shakespeare:0 "Уилльям Шекспир" #May be replaced with a more relevant, national literary figure depending on the extent to which you localize event 'federations2.1', 'Love's Labor's Lost'. See also '.GetAuteur' scripted loc for use of Molière in French.
+ NAME_William_Shakespeare:0 "Александр Пушкин" #May be replaced with a more relevant, national literary figure depending on the extent to which you localize event 'federations2.1', 'Love's Labor's Lost'. See also '.GetAuteur' scripted loc for use of Molière in French.
 
 # Other
- NAME_Machine_Uprising_War:0 "[This.MainDefender.GetAdj] Восстание машин"
+ NAME_Machine_Uprising_War:0 "[This.MainDefender.GetAdj&neut] восстание машин"
 
 #########
 # CRISES
@@ -178,45 +178,45 @@
 
 # Empire names
  NAME_Aberrant:0 "Заблудшие"
- NAME_Unbidden:0 "Незваные гости"
+ NAME_Unbidden:0 "Незваные"
  NAME_Vehement:0 "Неотступный"
  NAME_Contingency:0 "Контингенция"
  NAME_Cybrex:0 "Сайбрекс"
  NAME_Cybrex_Empire:0 "Останки Сайбрекса"
  NAME_Dessanu:0 "Дессаню"
  NAME_Dessanu_Consonance:0 "Гармония Дессаню"
- NAME_Gray:0 "Грей" #also used as a name for the leader, ship and army
+ NAME_Gray:0 "Серый" #also used as a name for the leader, ship and army
  NAME_Gray_Goo:0 "Серая буря"
  NAME_Portal_Holder_1:2 "Экстрамерный портал"
- NAME_Prethoryn_Scourge:0 "Преторианская Кара"
+ NAME_Prethoryn_Scourge:0 "Преторинская напасть"
 
 # Species names
- NAME_Custodian_Bot:0 "Бот хранителя"
- NAME_Prethoryn:0 "Преторианцы"
+ NAME_Custodian_Bot:0 "Робот-смотритель"
+ NAME_Prethoryn:0 "Преторин"
 
 # Star system names
  NAME_Contingency_System:0 "CX-9881"
- NAME_Cybrex_Beta:0 "Сайбрекс-бета"
+ NAME_Cybrex_Beta:0 "Сайбрекс Бета"
 
 # Planet names
  NAME_Contingency_Lair:0 "Нексус Ноль-Один"
- NAME_Cybrex_Beta_1:0 "Сайбрекс-бета I"
- NAME_Cybrex_Beta_2:0 "Сайбрекс-бета II"
- NAME_Cybrex_Beta_3:0 "Сайбрекс-бета III"
- NAME_Cybrex_Beta_4:0 "Сайбрекс-бета IV"
+ NAME_Cybrex_Beta_1:0 "Сайбрекс Бета I"
+ NAME_Cybrex_Beta_2:0 "Сайбрекс Бета II"
+ NAME_Cybrex_Beta_3:0 "Сайбрекс Бета III"
+ NAME_Cybrex_Beta_4:0 "Сайбрекс Бета IV"
 
 # Fleet names
  NAME_Dessanu_Fleet:0 "Флотилия обороны Дессаню"
  NAME_Dessanu_Fleet_2:0 "Патрульная флотилия Дессаню"
- NAME_Feral_Prethoryn:0 "Одичавшие преторианцы"
- NAME_Loyal_Brood:0 "Преданное потомство"
- NAME_Prethoryn_Armies:0 "Преторианские армии"
- NAME_Prethoryn_Constructor:0 "Преторианский строитель"
- NAME_Prethoryn_Infestor:0 "Преторианский инфектор"
- NAME_Prethoryn_Star_Brood:0 "Звездная стая преторианцев"
- NAME_Prethoryn_Transport:0 "Преторианский транспорт"
- NAME_Prethoryn_Vanguard:0 "Преторианский авангард"
- NAME_Refugee_Fleet:0 "Флот беженцев"
+ NAME_Feral_Prethoryn:0 "Одичавшие преторины"
+ NAME_Loyal_Brood:0 "Верный выводок"
+ NAME_Prethoryn_Armies:0 "Преторинские армии"
+ NAME_Prethoryn_Constructor:0 "Преторинский строитель"
+ NAME_Prethoryn_Infestor:0 "Преторинский осквернитель"
+ NAME_Prethoryn_Star_Brood:0 "Преторинский звёздный выводок"
+ NAME_Prethoryn_Transport:0 "Преторинский транспорт"
+ NAME_Prethoryn_Vanguard:0 "Преторинский авангард"
+ NAME_Refugee_Fleet:0 "Корабли беженцев"
  NAME_Sentinel_Auxiliary_Fleet:0 "Вспомогательная флотилия Стражей"
  NAME_Sentinel_Battle_Fleet:0 "Боевая флотилия Стражей"
  NAME_Sentinel_Defense_Fleet:0 "Флотилия обороны Стражей"
@@ -229,27 +229,27 @@
 # Ship names
  NAME_Dessanu_Interdictor:0 "Вирсик"
  NAME_Dessanu_Mothership:0 "Унтра"
- NAME_Domesticated_Prethoryn:0 "Прирученный преторианец"
- NAME_Domesticated_Queen:0 "Прирученная матка"
- NAME_Domesticated_Swarmling:0 "Прирученный саранчид"
- NAME_Domesticated_Warrior:0 "Прирученный воин"
+ NAME_Domesticated_Prethoryn:0 "Приручённый преторин"
+ NAME_Domesticated_Queen:0 "Приручённая матка"
+ NAME_Domesticated_Swarmling:0 "Приручённый роевичок"
+ NAME_Domesticated_Warrior:0 "Приручённый воин"
  NAME_Early_Warning_X_34:0 "Раннее оповещение X-34"
  NAME_Early_Warning_X_35:0 "Раннее оповещение X-35"
  NAME_Early_Warning_X_36:0 "Раннее оповещение X-36"
  NAME_Early_Warning_X_37:0 "Раннее оповещение X-37"
  NAME_Early_Warning_X_38:0 "Раннее оповещение X-38"
  NAME_Gatebuilder_Starbase:0 "Капрок"
- NAME_Refugee_Site_Beta:0 "Бета-площадка беженцев"
+ NAME_Refugee_Site_Beta:0 "Площадка убежища Бета"
  NAME_Sentinel_Alpha:0 "Альфа Стражей"
  NAME_Deep_Eyes:0 "Глубокие глаза"
  NAME_Gray_Moon:0 "Серая луна"
- NAME_Kobyar_Miru:0 "Кобияр Миру"
+ NAME_Kobyar_Miru:0 "Кобьяр Миру"
  NAME_Princess_Kolos:0 "Принцесса Колос"
- NAME_Refugee_Site_Alpha:0 "Альфа-площадка беженцев"
- NAME_Stellar_Queen:0 "Звездная королева"
+ NAME_Refugee_Site_Alpha:0 "Площадка убежища Альфа"
+ NAME_Stellar_Queen:0 "Звёздная королева"
 
 # Army names
- NAME_Prethoryn_Invaders:0 "Преторианские захватчики"
+ NAME_Prethoryn_Invaders:0 "Преторинские захватчики"
 
 # Leader names
  NAME_Fleet_Consciousness:0 "Сознание флотилии"
@@ -273,12 +273,12 @@
 ###########
 
 # Leader names
- NAME_Doctor_Xib:0 "Доктор Ксиб"
- NAME_Kix_the_Brilliant:0 "Блистательный Кикс"
+ NAME_Doctor_Xib:0 "Доктор Зиб"
+ NAME_Kix_the_Brilliant:0 "Кикс Великолепный"
  NAME_merchant_leader:0 "Прахти Магхун"
  NAME_Professor_Zarg:0 "Профессор Зарг"
  NAME_Sensei_Borkaz:0 "Сенсей Борказ"
- NAME_The_Mentat:0 "Ментат"
+ NAME_The_Mentat:0 "Мыслитель"
 
 ############################
 # FALLEN & AWAKENED EMPIRES
@@ -288,7 +288,7 @@
  NAME_Tuborek:0 "Туборек"
 
 # Other
- NAME_Holy_World_War:0 "[This.MainAttacker.GetAdj] Священная мировая война" #war over a designated Holy World
+ NAME_Holy_World_War:0 "[This.MainAttacker.GetAdj&fem] священная война" #war over a designated Holy World
  NAME_The_War_in_Heaven:0 "Война небес" #war between fallen empires
 
 ##############
@@ -297,7 +297,7 @@
 
 # Military Alliance Joint Operation
  NAME_training_adversary:0 "Учебный противник" #empire
- NAME_Training_Targets:0 "Цели учебных упражнений" #fleet
+ NAME_Training_Targets:0 "Цели учений" #fleet
  NAME_Elusive_Craft:0 "Неуловимый штурмовик" #ship
 
 #####################
@@ -308,8 +308,8 @@
  NAME_Galactic_Horde:0 "Галактическая орда" #federation
 
 # Fleet names
- NAME_Chosen_of_the_Great_Khan:0 "Избранные Великим ханом"
- NAME_Horde_Auxiliary_Fleet:0 "Вспомогательная флотилия [satrapy_species.GetName]"
+ NAME_Chosen_of_the_Great_Khan:0 "Избранники Великого Хана"
+ NAME_Horde_Auxiliary_Fleet:0 "[satrapy_species.GetName]ская подмога"
 
 ###########################
 # LEVIATHANS & SPACE FAUNA
@@ -317,30 +317,30 @@
 # See also: initializers_names_l_english.yml, containing names related to Leviathans and space fauna which appear at galaxy start
 
 # Empire names
- NAME_Alien_Hive:0 "Инопланетный рой"
- NAME_Mining_Drone_Expansion_Initiative:0 "Инициатива по экспансии добывающих дронов"
- NAME_Aggressive_Mining_Drone_Expansion_Initiative:0 "Инициатива по экспансии мощных дронов"
+ NAME_Alien_Hive:0 "Инопланетный улей"
+ NAME_Mining_Drone_Expansion_Initiative:0 "Протокол экспансии добывающих дронов"
+ NAME_Aggressive_Mining_Drone_Expansion_Initiative:0 "Протокол агрессивнной экспансии дронов"
  NAME_Old_One:0 "Старик" #void cloud
- NAME_Stellarite:0 "Стелларит"
+ NAME_Stellarite:0 "Звезданит"
  NAME_VLUUR:0 "ВЛУУР"
 
 # Planet names
- NAME_Bot_Compactor:0 "Уплотнитель робота-мусорщика"
- NAME_Drakes_Roost:0 "Драконий насест"
+ NAME_Bot_Compactor:0 "Пресс робота-мусорщика"
+ NAME_Drakes_Roost:0 "Драконье гнездо"
 
 # Fleet names
- NAME_Aggressive_Mining_Drone_Expansion_Fleet:0 "Флотилия экспансии агрессивных дронов"
+ NAME_Aggressive_Mining_Drone_Expansion_Fleet:0 "Флотилия агрессивной экспансии дронов"
  NAME_Ancient_Mining_Drones:0 "Древние добывающие дроны"
  NAME_Mining_Drone_Expansion_Fleet:0 "Флотилия экспансии добывающих дронов"
- NAME_Crystalline_Elites:0 "Кристаллические элиты"
- NAME_Crystalline_Entity:0 "Кристаллический организм"
+ NAME_Crystalline_Elites:0 "Кристальные гвардейцы"
+ NAME_Crystalline_Entity:0 "Кристальная сущность"
  NAME_Exiled_One:0 "Изгнанник" #void cloud
  NAME_Hiver_Nest:0 "Пчелиное гнездо"
  NAME_Life_Tree_Protector_plural:0 "Защитники древа жизни"
  NAME_Nesting_Crystals:0 "Гнездо кристаллов" #space crystals
  NAME_Shard:0 "Шард" #named dragon
- NAME_Space_Amoeba_plural:0 "Космическая амеба"
- NAME_Stellarite_Devourer:0 "Стелларитовый пожиратель"
+ NAME_Space_Amoeba_plural:0 "Космические амёбы"
+ NAME_Stellarite_Devourer:0 "Звезданитовый пожиратель"
  NAME_Subspace_Rupture_Cloud_1:0 "Подпространственный разрыв XV-990"
  NAME_Subspace_Rupture_Cloud_2:0 "Подпространственный разрыв R-5921"
  NAME_Subspace_Rupture_Cloud_3:0 "Подпространственный разрыв TLZ-84"
@@ -348,9 +348,9 @@
  NAME_Void_Cloud:0 "Войд-облако"
 
 # Ship names
- NAME_Annoyed_Crystal:0 "Раздраженный кристалл"
+ NAME_Annoyed_Crystal:0 "Раздражённый кристалл"
  NAME_Cortus:0 "Кортус" #space amoeba
- NAME_Cracked_Crystalline_Shard:0 "Треснувший осколок кристалла"
+ NAME_Cracked_Crystalline_Shard:0 "Треснувший кристальный осколок"
  NAME_Dreadnought:0 "Дредноут"
  NAME_Drone_0931_F:0 "Единица 0931-F"
  NAME_Drone_1119_X:0 "Единица 1119-X"
@@ -361,7 +361,7 @@
  NAME_Drone_5110_X:0 "Единица 5110-X"
  NAME_Drone_6732_A:0 "Единица 6732-A"
  NAME_Drone_7731_A:0 "Единица 7731-A"
- NAME_Effluvial_Offspring:0 "Облачный отпрыск" #void cloud
+ NAME_Effluvial_Offspring:0 "Зловонное отродье" #void cloud
  NAME_Ether_Hatchling:0 "Эфирный дракончик" #ether drake
  NAME_Shard_Dragon:0 "Величайший дракон" #ether drake
  NAME_KASH:0 "КАШ" #void cloud
@@ -372,19 +372,19 @@
  NAME_Psi:0 "Пси"
  NAME_SHAB:0 "ШАБ" #void cloud
  NAME_Scile:0 "Скайл" #named dragon
- NAME_Stellar_Devourer:0 "Пожиратель звезд"
+ NAME_Stellar_Devourer:0 "Пожиратель звёзд"
  NAME_TAHA:0 "ТАХА" #void cloud
  NAME_TANT:0 "ТАНТ" #void cloud
  NAME_Trapped_Asteroid:0 "Захваченный астероид" #inert space crystal
- NAME_Wraith_450THz:0 "Фантом 450 ТГц"
- NAME_Wraith_520THz:0 "Фантом 520 ТГц"
- NAME_Wraith_650THz:0 "Фантом 650 ТГц"
- NAME_XADRA:0 "КСАДРА" #void cloud
- NAME_XELMAGGUS:0 "КСЕЛЬМАГГУС" #void cloud
- NAME_XILNIAK:0 "КСИЛЬНИАК" #void cloud
- NAME_XUNIA:0 "КСАНИЯ" #void cloud
- NAME_XUUL:0 "КСУУЛ" #void cloud
- NAME_Young_Dragon:0 "Молодой образец"
+ NAME_Wraith_450THz:0 "Призрак 450 ТГц"
+ NAME_Wraith_520THz:0 "Призрак 520 ТГц"
+ NAME_Wraith_650THz:0 "Призрак 650 ТГц"
+ NAME_XADRA:0 "ЗАДРА" #void cloud
+ NAME_XELMAGGUS:0 "ЗЕЛЬМАГГУС" #void cloud
+ NAME_XILNIAK:0 "ЗИЛНИАК" #void cloud
+ NAME_XUNIA:0 "ЗАНИЯ" #void cloud
+ NAME_XUUL:0 "ЗУУЛ" #void cloud
+ NAME_Young_Dragon:0 "Молодая особь"
 
 ############
 # MARAUDERS
@@ -392,15 +392,15 @@
 
 # Fleet names
  NAME_234th_Dwamak_Bashers:0 "234-я эскадра крушителей двамаков"
- NAME_Armada_of_the_Voidborn:0 "Армада рожденных в пустоте"
+ NAME_Armada_of_the_Voidborn:0 "Армада рождённых в пустоте"
  NAME_First_Storm_Wing:0 "Первое крыло бури"
- NAME_Frenzied_Volunteer_Squadron:0 "Эскадра разъяренных добровольцев"
+ NAME_Frenzied_Volunteer_Squadron:0 "Отряд рьяных добровольцев"
  NAME_Garrison_Fleet:0 "Гарнизонная флотилия орды"
- NAME_Her_Chosen_Champions:0 "Ее избранные воители"
+ NAME_Her_Chosen_Champions:0 "Её избранные воители"
  NAME_Order_of_Eternal_Night:0 "Орден вечной ночи"
  NAME_Raiding_Fleet:0 "Рейдерская флотилия"
- NAME_Salvaged_Fleet:0 "Флотилия утилизаторов"
- NAME_Star_Rider_Flotilla:0 "Флотилия звездных всадников"
+ NAME_Salvaged_Fleet:0 "Утилизованная флотилия"
+ NAME_Star_Rider_Flotilla:0 "Флотилия звёздных всадников"
  NAME_Twilight_Congregation:0 "Сумеречная паства"
 
 # Ship & starbase names
@@ -413,13 +413,13 @@
  NAME_Galactic_Nomads:0 "Галактические кочевники" #empire name
 
 # Species names
- NAME_Namarian:0 "Намарианец" #also used as an adjective
- NAME_Namarian_plural:0 "Намарианцы"
+ NAME_Namarian:0 "Намариан" #also used as an adjective
+ NAME_Namarian_plural:0 "Намариане"
 
 # Fleet names
- NAME_Nomad_Delivery:0 "Поставка кочевников"
- NAME_Nomadic_Armada:0 "Армада кочевников"
- NAME_Redirected_Nomad_Delivery:0 "Перенаправленная поставка кочевников"
+ NAME_Nomad_Delivery:0 "Кочевничья доставка"
+ NAME_Nomadic_Armada:0 "Кочевничья армада"
+ NAME_Redirected_Nomad_Delivery:0 "Переадресованная кочевничья доставка"
  NAME_Unhinged_Screamer_Flotilla:0 "Флотилия бешеных крикунов"
 
 # Ship names
@@ -427,7 +427,7 @@
  NAME_Home_One:0 "Первый дом"
  NAME_Home_Two:0 "Второй дом"
  NAME_Home_Three:0 "Третий дом"
- NAME_Protector:0 "Протектор"
+ NAME_Protector:0 "Хранитель"
 
 ##########
 # PIRATES
@@ -440,42 +440,42 @@
 
 # Fleet names
  NAME_Old_Guard:0 "Старая гвардия"
- NAME_Scarred_Veterans:0 "Израненные ветераны"
- NAME_Young_Blood:0 "Свежая кровь"
+ NAME_Scarred_Veterans:0 "Закалённые ветераны"
+ NAME_Young_Blood:0 "Молодая кровь"
  NAME_Numerous_Pirates:0 "Толпа пиратов"
  NAME_Pirate_Fleet:0 "Пиратская флотилия"
- NAME_Pirate_Station:0 "Станция пиратов" #starbase
+ NAME_Pirate_Station:0 "Пиратская станция" #starbase
  NAME_Wounded_Pirates:0 "Раненые пираты"
 
 # Ship names
- NAME_Damaged_Pillager:0 "Поврежденный «Расхититель»"
- NAME_Defaced_Gunmouth:0 "Искаженный Ганмут"
- NAME_Defaced_Starflinger:0 "Искаженный Старфлингер"
+ NAME_Damaged_Pillager:0 "Повреждённый «Расхититель»"
+ NAME_Defaced_Gunmouth:0 "Побитый «Ядроплюй»"
+ NAME_Defaced_Starflinger:0 "Побитый «Звездомёт»"
  NAME_Dices:0 "Кубики"
  NAME_First_Pillager:0 "Первый расхититель"
  NAME_First_Ravager:0 "Первый опустошитель"
- NAME_Ingrates_Inferno:0 "Инферно Инграта"
+ NAME_Ingrates_Inferno:0 "Преисподняя для неблагодарных"
  NAME_Second_Pillager:0 "Второй расхититель"
  NAME_Second_Ravager:0 "Второй опустошитель"
  NAME_Third_Pillager:0 "Третий расхититель"
  NAME_Third_Ravager:0 "Третий опустошитель"
- NAME_Outcast_Gunmouth:0 "Отверженный Ганмут"
- NAME_Outcast_Starflinger:0 "Отверженный Старфлингер"
+ NAME_Outcast_Gunmouth:0 "Изгнанный «Ядроплюй»"
+ NAME_Outcast_Starflinger:0 "Изгнанный «Звездомёт»"
  NAME_Pillager:0 "Расхититель"
  NAME_Ravager:0 "Опустошитель"
  NAME_Swashbuckler:0 "Головорез"
- NAME_Scorched_Ravager:0 "Опаленный опустошитель"
- NAME_Slices:0 "Ломти"
+ NAME_Scorched_Ravager:0 "Опалённый опустошитель"
+ NAME_Slices:0 "Кусочки"
 
 # Bemat Thalassocracy
  NAME_Thalassocracy:0 "Бематская талассократия" #empire
  NAME_Thalassocracy_species:0 "Бемат"
  NAME_Thalassocracy_species_plural:0 "Бематы"
- NAME_Thalassocracy_species_adj:0 "Бемати"
- NAME_Thalassocracy_fleet:0 "Флотилия скупщиков"
+ NAME_Thalassocracy_species_adj:0 "Бемат"
+ NAME_Thalassocracy_fleet:0 "Флотилия отбирателей"
  NAME_Bemat_corvette_01:0 "Симне"
  NAME_Bemat_destroyer_01:0 "Набаз"
- NAME_Bemat_destroyer_02:0 "Эрмех"
+ NAME_Bemat_destroyer_02:0 "Эрмей"
  NAME_Bemat_cruiser_01:0 "Хебер"
  NAME_Bemat_cruiser_02:0 "Эддек"
 
@@ -496,7 +496,7 @@
  NAME_Fen_Habbanis_VI:0 "Фен Хаббанис VI" #planet
 
 # Irassians
- NAME_Ira:0 "Аира" #system
+ NAME_Ira:0 "Ира" #system
  NAME_Irass:0 "Ирасс" #star
  NAME_Irass_I:0 "Ирасс I" #planet
  NAME_Irass_II:0 "Ирасс II" #planet
@@ -524,7 +524,7 @@
  NAME_Vultaumar_V:0 "Вультаумар V" #planet
 
 # Yuht
- NAME_Yuhtaan:0 "Yuhtaan" #star
+ NAME_Yuhtaan:0 "Юутаан" #star
  NAME_Yuhtaan_II:0 "Юутаан II" #planet
  NAME_Yuhtaan_III:0 "Юутаан III" #planet
  NAME_Yuhtaan_IV:0 "Юутаан IV" #planet
@@ -533,8 +533,8 @@
  NAME_Yuhtaan_IVc:0 "Юутаан IVc" #moon
  NAME_Yuhtaan_V:0 "Юутаан V" #planet
  NAME_Yuhtaan_Va:0 "Юутаан Va" #moon
- NAME_Yuhtaan_Majoris:0 "Юутаан Майорис" #broken planet
- NAME_Yuhtaan_Minoris:0 "Юутаан Минорис" #broken planet
+ NAME_Yuhtaan_Majoris:0 "Большой Юутаан" #broken planet
+ NAME_Yuhtaan_Minoris:0 "Малый Юутаан" #broken planet
 
 ##################
 # PRE-FTL SPECIES
@@ -564,12 +564,12 @@
  NAME_Radical_Cult:0 "Радикальный культ" #empire name
 
 # Fleet names
- NAME_Cult_Defense_Fleet:0 "Флотилия обороны культа"
- NAME_Cultist_Marauders:0 "Культисты-мародеры"
- NAME_Exiled_Pirates:0 "Изгнанные пираты"
+ NAME_Cult_Defense_Fleet:0 "Оборонительная флотилия культа"
+ NAME_Cultist_Marauders:0 "Культисты-мародёры"
+ NAME_Exiled_Pirates:0 "Пираты-изгнанники"
 
 # Ship names
- NAME_Bane_of_the_Heretic:0 "Проклятие еретиков"
+ NAME_Bane_of_the_Heretic:0 "Погибель еретиков"
  NAME_Cultist_Flagship:0 "Флагман культистов"
  NAME_Cultist_Shipyard:0 "Верфь культистов"
  NAME_Dawn_of_Creation:0 "Рассвет творения"
@@ -579,19 +579,19 @@
  NAME_Eternal_Damnation:0 "Вечное проклятие"
  NAME_Final_Judgment:0 "Страшный суд"
  NAME_Glorious_Might:0 "Выдающаяся мощь"
- NAME_Heathens_Doom:0 "Гибель еретиков"
+ NAME_Heathens_Doom:0 "Погибель язычников"
  NAME_Heavenly_Judgment:0 "Небесное правосудие"
  NAME_Heavenly_Portent:0 "Небесное знамение"
  NAME_Holy_Avatar:0 "Священный аватар"
  NAME_Holy_Defender:0 "Священный защитник"
- NAME_Holy_Protector:0 "Священный протектор"
- NAME_Infidel_Slayer:0 "Неверующий истребитель"
- NAME_Path_of_the_Pilgrim:0 "Путь пилигрима"
+ NAME_Holy_Protector:0 "Священный хранитель"
+ NAME_Infidel_Slayer:0 "Истребитель неверных"
+ NAME_Path_of_the_Pilgrim:0 "Путь паломника"
  NAME_Pious_Crusader:0 "Праведный крестоносец"
  NAME_Revered_Elder:0 "Старейшина"
- NAME_Righteous_Zealot:0 "Добродетельный фанатик"
+ NAME_Righteous_Zealot:0 "Праведный фанатик"
  NAME_The_Chosen_One:0 "Избранный"
- NAME_Sacred_Might:0 "Священная мощь"
+ NAME_Sacred_Might:0 "Сакральная мощь"
  NAME_Temple_of_Light:0 "Храм Света"
  NAME_Unyielding_Faith:0 "Непоколебимая вера"
  NAME_Wrath_of_the_Spirits:0 "Гнев духов"
@@ -604,4 +604,4 @@
  NAME_Freedom_Fighters:0 "Борцы за свободу"
 
 # Other
- NAME_WAR_OF_REVOLT:0 "[Root.Target.GetName] восстание"
+ NAME_WAR_OF_REVOLT:0 "Восстание в мире [Root.Target.GetName]"

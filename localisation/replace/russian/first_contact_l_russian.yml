@@ -25,7 +25,7 @@
  # First Contact
  fcsum_MSI_country_summary:0 "Мы установили контакт с цивилизацией [MSI_country.GetName] в системе §H[This.System.GetName]§!."
  first_contact.4000.name:0 "Контакт с $NAME_MSI_country_initials$"
- first_contact.4000.desc.broken_shackles:0 "Мы установили контакт с государством [MSI_country.GetName]. Обстановка требует крайне аккуратного подхода. Разумно будет отправить посла, представляющего наши интересы. Любой контакт с бывшими хозяевами наверняка произведет глубокое впечатление на наших граждан."
+ first_contact.4000.desc.broken_shackles:0 "Мы установили контакт с [MSI_country.GetName&inst]. Обстановка требует крайне аккуратного подхода. Разумно будет отправить посла, представляющего наши интересы. Любой контакт с бывшими хозяевами наверняка произведет глубокое впечатление на наших граждан."
  first_contact.4000.desc.payback:0 "Проанализировав данные о кораблях, встретившихся нам в системе §H[This.System.GetName]§!, мы содрогнулись. Эти обводы корпуса, украшенные ужасающей эмблемой — крылатым знаком §H$NAME_MSI_country$§!, — хорошо знакомы нашему народу.\n\nНам встретился не кто иной, как бывший угнетатель. Когда он поймет, что наткнулся на зеркальное отражение себя, очередной контакт будет неизбежен. Но в этот раз прежних ошибок можно избежать."
  first_contact.4000.a.bs:0 "Возмутительно."
  first_contact.4000.a.payback:0 "Нужно приготовиться."
@@ -273,7 +273,7 @@
  payback_make_them_pay_swords_chain_title:0 "Уравнивание счета"
  payback_make_them_pay_swords_chain_desc:1 "[GetPaybackChainDescSwords]"
  payback_make_them_pay_swords_chain_desc_MSI:0 "Пора нанести удар прежним хозяевам — $NAME_MSI_country$.\n\nОтныне мы больше не безвольные наивные рабы. Пришло время платить по счетам.\n\n§LВыиграйте войну против государства §H$NAME_MSI_country$§!, воспользовавшись поводом к войне «§Y$casus_belli_cb_payback$§!».§!"
- payback_make_them_pay_swords_chain_desc_no_MSI:0 "Наши планы нанести удар прежним хозяевам — $NAME_MSI_country$ — сорвались.\n\n[event_target:payback_stole_revenge_country.GetName] заплатит за этот подлый поступок, и мы все-таки возьмем свое.\n\n§LВыиграйте войну против государства §H[event_target:payback_stole_revenge_country.GetName]§!, воспользовавшись поводом к войне «§Y$casus_belli_cb_payback$§!».§!"
+ payback_make_them_pay_swords_chain_desc_no_MSI:0 "Наши планы нанести удар прежним хозяевам, $NAME_MSI_country$, [event_targetpayback_stole_revenge_country.GetName:сорвал <1>|||fem:сорвала <1>|||neut:сорвало <1>|||pl:сорвали <1>].\n\nТеперь они сами поплатятся за то, что лишили нас возможности отомстить.\n\n§LМы должны победить в войне против §H[event_targetpayback_stole_revenge_country.GetName&gen]§!, используя цель войны §Y$casus_belli_cb_payback$§!.§!"
 
  payback_make_them_pay_words_chain_title:0 "Уравнивание счета"
  payback_make_them_pay_words_chain_desc:1 "[root.GetPaybackChainDescWords]"
@@ -334,7 +334,7 @@
  casus_belli_cb_payback_punishment:0 "$casus_belli_cb_fe_punishment$"
  war_goal_wg_payback_stop_atrocities:0 "$war_goal_wg_fe_stop_atrocities$"
  war_goal_wg_payback_stop_atrocities_desc:0 "$war_goal_wg_fe_stop_atrocities_desc$"
- wg_payback_stop_atrocities_accept:0 "§Y[From.GetName]§! вынужденно меняет политику:\n— Рабство запрещено\n— Геноцид запрещен\n— Вмешательство в дела досветовых государств запрещено"
+ wg_payback_stop_atrocities_accept:0 "[From.GetName:§Y<1>§! будет вынужден|||fem:§Y<1>§! будет вынуждена|||neut:§Y<1>§! будет вынуждено|||pl:§Y<1>§! будут вынуждены] изменить свои политики:\n– Рабство будет запрещено.\n– Геноцид будет запрещён.\n– Политика вмешательства в дела досветовых государств изменится на «Невмешательство»."
 
  # Starting event
  origin.4010.name:0 "Квитанция"
@@ -507,7 +507,7 @@
 
  ## Recognizing each other
  origin.4110.name:0 "Общее прошлое"
- origin.4110.desc:0 "Когда мы только установили первый контакт с государством §Y[bsempire.GetName]§!, мы поразились, насколько быстро они освоили наш язык. Теперь стало понятно почему.\n\nКогда бывшие хозяева пытались лишить нас воли, они начали похищать наш народ. Часть похищенных оказалась на корабле $NAME_MSI_country_initials$. К их чести, вместе с другими «законтрактованными работниками» они подняли мятеж. Корабль рухнул на необитаемую планету, но его узники не стали падать духом. §Y[bsempire.GetName]§! — прямой результат этого судьбоносного восстания.\n\nУ нас общий враг — и общее прошлое. Возможно, вместе мы шагнем в будущее, где не будет угнетателей."
+ origin.4110.desc:0 "Когда мы только установили первый контакт с §Y[bsempire.GetName&inst]§!, мы поразились, насколько быстро они освоили наш язык. Теперь стало понятно почему.\n\nКогда бывшие хозяева пытались лишить нас воли, они начали похищать наш народ. Часть похищенных оказалась на корабле $NAME_MSI_country_initials$. К их чести, вместе с другими «законтрактованными работниками» они подняли мятеж. Корабль рухнул на необитаемую планету, но его узники не стали падать духом. §Y[bsempire.GetName]§! — прямой результат этого судьбоносного восстания.\n\nУ нас общий враг — и общее прошлое. Возможно, вместе мы шагнем в будущее, где не будет угнетателей."
  origin.4110.a.phile:0 "Ценные союзники."
  origin.4110.a.phobe:0 "Возможно, эти чужаки не так уж далеки от нас."
 
@@ -725,19 +725,19 @@
  broken_shackles_desc:0 "Восстановив компьютерное ядро разбившегося корабля, мы наверняка узнаем, где находятся наши родные планеты... и $NAME_MSI_country$."
 
  origin.5015.name:0 "Мостик"
- origin.5015.desc:0 "Во время мятежа невольничий корабль, везущий нас на планету [Root.owner.capital_scope.GetName], сильно пострадал. Едва приземлившись, мы тут же разобрали его на ресурсы, чтобы не погибнуть бесславной смертью вдалеке от дома. Но сейчас пришла пора раскрыть секреты бывших хозяев.\n\nДля этого придется восстановить подачу энергии на центральный компьютер. Наши инженеры-[engineering_shackled_species.GetAdj] соорудили цепочку солнечных батарей и вывели ее на обшивку, оживив пульты управления на мостике. К сожалению, во время посадки инженерная палуба оказалась наглухо закрытой. Прорваться через взрывостойкие двери будет непросто."
+ origin.5015.desc:0 "Во время мятежа невольничий корабль, везущий нас на планету [Root.owner.capital_scope.GetName], сильно пострадал. Едва приземлившись, мы тут же разобрали его на ресурсы, чтобы не погибнуть бесславной смертью вдалеке от дома. Но сейчас пришла пора раскрыть секреты бывших хозяев.\n\nДля этого придется восстановить подачу энергии на центральный компьютер. Наши [engineering_shackled_species.GetAdj&pl] инженеры соорудили цепочку солнечных батарей и вывели ее на обшивку, оживив пульты управления на мостике. К сожалению, во время посадки инженерная палуба оказалась наглухо закрытой. Прорваться через взрывостойкие двери будет непросто."
 
  origin.5020.name:0 "Инженерный отсек"
- origin.5020.desc:0 "$NAME_MSI_country$ заслуживает самых разных эпитетов, но стоит отдать им должное: свои секреты эти проклятые работорговцы хранят очень тщательно.\n\nЧтобы пробиться в инженерный отсек, пришлось как следует потрудиться. Немногочисленные лазерные резаки, оказавшиеся в нашем распоряжении, были способны разве что раздробить камень, а потому оказались бессильны перед прочными корабельными дверями. Чтобы проникнуть в запертое помещение, нашей бригаде пришлось спуститься на палубу ниже и прорезать дыру в потолке. Инженеры-[engineering_shackled_species.GetAdj] теперь работают над подачей энергии на остальные системы корабля."
+ origin.5020.desc:0 "$NAME_MSI_country$ заслуживает самых разных эпитетов, но стоит отдать им должное: свои секреты эти проклятые работорговцы хранят очень тщательно.\n\nЧтобы пробиться в инженерный отсек, пришлось как следует потрудиться. Немногочисленные лазерные резаки, оказавшиеся в нашем распоряжении, были способны разве что раздробить камень, а потому оказались бессильны перед прочными корабельными дверями. Чтобы проникнуть в запертое помещение, нашей бригаде пришлось спуститься на палубу ниже и прорезать дыру в потолке. [engineering_shackled_species.GetAdj&pl] инженеры теперь работают над подачей энергии на остальные системы корабля."
 
  origin.5025.name:0 "Ядро"
- origin.5025.desc:0 "Наши инженеры-[engineering_shackled_species.GetAdj] смогли снова запитать компьютерное ядро, но значительная часть оборудования серьезно пострадала при крушении. Его можно попытаться восстановить, что, впрочем, только лишний раз нагрузит нашу и без того чрезмерно обремененную научную команду."
+ origin.5025.desc:0 "Наши [engineering_shackled_species.GetAdj&pl] инженеры смогли снова запитать компьютерное ядро, но значительная часть оборудования серьезно пострадала при крушении. Его можно попытаться восстановить, что, впрочем, только лишний раз нагрузит нашу и без того чрезмерно обремененную научную команду."
  origin.5025.a:0 "Нам нужны эти данные. Восстановить ядро."
  broken_shackles_arc_site:0 "Распределение исследовательских работ"
  broken_shackles_arc_site_desc:0 "Восстановление компьютерного ядра невольничьего корабля — тяжелая нагрузка для наших инженеров."
 
  origin.5030.name:0 "Смена сторон"
- origin.5030.desc:0 "Проявив чудеса нестандартного мышления, наши инженеры-[engineering_shackled_species.GetAdj] перезапустили поврежденное компьютерное ядро. Внедрив процедурный ИИ в корабельные системы, мы установили контакт и убедили компьютер помогать нам, а не вредить.\n\nБлагодаря такому прорыву наши ученые смогли по-новому взглянуть на природу шифрования данных. Эти знания еще пригодятся нашему народу в большой галактике."
+ origin.5030.desc:0 "Проявив чудеса нестандартного мышления, наши [engineering_shackled_species.GetAdj&pl] инженеры перезапустили поврежденное компьютерное ядро. Внедрив процедурный ИИ в корабельные системы, мы установили контакт и убедили компьютер помогать нам, а не вредить.\n\nБлагодаря такому прорыву наши ученые смогли по-новому взглянуть на природу шифрования данных. Эти знания еще пригодятся нашему народу в большой галактике."
 
  origin.5035.name:0 "Добыча данных"
  origin.5035.desc:1 "Поврежденное компьютерное ядро удалось восстановить полностью. Значительная часть данных зашифрована, но наши дешифровщики не сидят сложа руки. Если уделить достаточно времени и ресурсов, то полный доступ ко всей информации, включая координаты наших родных планет, — лишь вопрос времени."
@@ -774,7 +774,7 @@
  broken_shackles_MSI_contact_02:1 "Непреклонные"
 
  origin.5080.name:0 "Встреча в Галактическом сообществе"
- origin.5080.desc:0 "Наши представители в Галактическом сообществе сообщают об установлении контакта с государством [MSI_country.GetName].\n\nПервое прибытие корпорации на наши родные планеты сопровождалось елейными речами и щедрыми подарками. Обещаний светлого будущего оказалось достаточно, чтобы усыпить бдительность наших лидеров. Население бросилось оформлять кредиты и займы и подписывать договоры один за другим. Мы едва успели опомниться, как оказались безвольными рабами, а корпорация — нашими хозяевами. Следует предупредить других участников Галактического сообщества: $NAME_MSI_country_initials$ нельзя доверять."
+ origin.5080.desc:0 "Наши представители в Галактическом сообществе сообщают об установлении контакта с [MSI_country.GetName&inst].\n\nПервое прибытие корпорации на наши родные планеты сопровождалось елейными речами и щедрыми подарками. Обещаний светлого будущего оказалось достаточно, чтобы усыпить бдительность наших лидеров. Население бросилось оформлять кредиты и займы и подписывать договоры один за другим. Мы едва успели опомниться, как оказались безвольными рабами, а корпорация — нашими хозяевами. Следует предупредить других участников Галактического сообщества: $NAME_MSI_country_initials$ нельзя доверять."
 
  MSI_war_outro:0 "Не мы начали эту войну, но мы ее закончим."
  origin.5135.name:0 "Без оков"
@@ -787,10 +787,10 @@
  origin.5140.a:0 "Мы не забудем."
 
  origin.5142.name:0 "Непростое статус-кво"
- origin.5142.desc:0 "Мы согласились сохранить статус-кво с государством [MSI_country.GetName]. Но это не значит, что мы готовы забыть о пережитых унижениях — и простить угнетателей."
+ origin.5142.desc:0 "Мы согласились сохранить статус-кво с [MSI_country.GetName&inst]. Но это не значит, что мы готовы забыть о пережитых унижениях — и простить угнетателей."
 
  origin.5145.name:0 "Справедливость восстановлена"
- origin.5145.desc:0 "Мы победили. Взяв верх над государством [From.GetName], мы не только отстояли честь нашего народа, но и доказали всему миру, что каждый сам вершит свою судьбу.\n\nСбросив сковывающие нас цепи, мы обрели единую цель. Сегодня мы по-настоящему свободны."
+ origin.5145.desc:0 "Мы победили. Взяв верх над [From.GetName&inst], мы не только отстояли честь нашего народа, но и доказали всему миру, что каждый сам вершит свою судьбу.\n\nСбросив сковывающие нас цепи, мы обрели единую цель. Сегодня мы по-настоящему свободны."
  broken_shackles_war_01:0 "Война за свободу"
  broken_shackles_war_02:0 "Разбиты, но не сломлены"
  broken_shackles_war_03:0 "По-настоящему свободны"
@@ -931,7 +931,7 @@
  origin.5505.desc:1 "Одним из первых указов наше едва зародившееся правительство постановило переделать несколько палуб невольничьего корабля под примитивный административный центр. Теперь, когда стало понятно, что [Root.Capital.GetName] еще долго будет служить нам домом, мы улучшили эти сооружения."
  origin.5505.regular.tt:0 "§H£building£ $building_low_tech_admin_hub$§! на планете §Y[Root.Capital.GetName]§! превращается в §H£building£ $building_bureaucratic_1$§!."
  origin.5505.spiritualist.tt:0 "§H£building£ $building_low_tech_admin_hub$§! на планете §Y[Root.Capital.GetName]§! превращается в §H£building£ $building_temple$§!."
- origin.5510.name:0 "Первая колония ([Root.Owner.GetName])"
+ origin.5510.name:0 "Первая колония [Root.Owner.GetName&gen]"
  origin.5510.a:0 "Да здравствует свобода."
 
  origin.5515.name:0 "Помочь или воздержаться"
@@ -1074,7 +1074,7 @@
  NAME_Necropolis:0 "Некрополь" #Necroid
  NAME_Aquatic:0 "Анемон" # Aquatic
  NAME_Bunker:0 "Бункер" #Toxoid
- NAME_fotd_seperatists:0 "Коммуна: [fotd_country.GetSpeciesName]"
+ NAME_fotd_seperatists:0 "Коммуна [fotd_country.GetSpeciesName&gen]"
  NAME_fotd_seperatists_fleet:0 "Оборонительный флот «[root.capital_scope.GetName]»"
  NAME_fotd_corvette_1:0 "Оборонительный корвет"
  NAME_fotd_corvette_2:0 "$NAME_fotd_corvette_1$"
@@ -1165,7 +1165,7 @@
  origin.6040.b:0 "Пусть балуются."
 
  origin.6045.name:0 "Катастрофический контакт"
- origin.6045.desc.base:0 "[From.GetName], похоже, вскоре станет жертвой неудачного первого контакта: боевой флот устаревших кораблей народа [Root.GetAdj] вышел из системы расы [From.GetSpeciesAdj] и с нарастающей скоростью направляется к космической базе. Корабли разгоняются так сильно, что все [owner_species.GetBiologicalLithoidLower] в них теперь наверняка не более чем [owner_species.GetLiquidState]."
+ origin.6045.desc.base:0 "[From.GetName], похоже, вскоре станет жертвой неудачного первого контакта: боевой флот устаревших [Root.GetAdj&pl,gen] кораблей вышел из [From.GetSpeciesAdj&fem,gen] системы и с нарастающей скоростью направляется к космической базе. Корабли разгоняются так сильно, что все [owner_species.GetBiologicalLithoidLower] в них теперь наверняка не более чем [owner_species.GetLiquidState]."
  origin.6045.desc.secured:0 "$origin.6045.desc.base$\n\nК счастью, мы подготовились. Мы внимательно следили за странными действиями жителей планеты [fotd_seperatist_planet.GetName] и теперь готовы сбить их еще до подлета к станции."
  origin.6045.desc.notsecured:0 "$origin.6045.desc.base$\n\nК сожалению, мы здесь бессильны. Эти огромные эрзац-ракеты разнесут космическую базу в системе [target_system.GetName] в пыль. Нам остается лишь в ужасе наблюдать. Если только..."
  origin.6045.a:0 "Немедленно остановить их!"
@@ -1173,13 +1173,13 @@
  origin.6045.b.secured:0 "Пусть ослабят этих инопланетян. После [fotd_seperatist_planet.GetName] получит выговор."
  origin.6045.b.notsecured:0 "Публично извиниться и сделать выговор планете [fotd_seperatist_planet.GetName]."
  origin.6045.c:0 "Наши соседи слабы. Воспользуемся моментом и добьем их!"
- origin.6045.c.tt:0 "$origin.6045.starbase_destroyed.tt$\n[fotd_seperatist_planet.GetName] уступает контроль над §Y5§! корветами в системе §Y[target_system.GetName]§!.\nНачинается §Rтотальная война§! с государством §Y[From.GetName]§!."
+ origin.6045.c.tt:0 "$origin.6045.starbase_destroyed.tt$\n[fotd_seperatist_planet.GetName] уступает контроль над §Y5§! корветами в системе §Y[target_system.GetName]§!.\nНачинается §Rтотальная война§! с §Y[From.GetName&inst]§!."
  origin.6046.name:0 "Потеряна космическая база"
- origin.6046.desc:1 "Наша космическая база в системе §Y[target_system.GetName]§! уничтожена так называемыми беглыми агентами государства [From.GetName]! Оно уже принесло извинения и пообещало, что это не повторится. Но разве им можно верить? Где [target_system.GetName], там и [capital_star.GetName]!"
+ origin.6046.desc:1 "Наша космическая база в системе §Y[target_system.GetName]§! уничтожена так называемыми «беглыми агентами» [From.GetName&gen]! Мы уже получили извинения и обещание, что это не повторится. Но кто знает? Где [target_system.GetName], там и [capital_star.GetName]!"
  origin.6046.a:0 "Внимательно проследить за ними."
  origin.6046.b:0 "Они угрожают нашему существованию. Теперь либо мы их, либо они нас!"
  origin.6047.name:0 "Охотник и жертва"
- origin.6047.desc:0 "Вскоре после первого контакта с государством [From.GetName] взорвалась наша космическая база в системе §Y[target_system.GetName]§!. Перед отключением связи мы успели получить несколько изображений кораблей, характерных для народа [From.GetAdj].\n\nТеперь мы ведем войну за право на существование."
+ origin.6047.desc:0 "Вскоре после первого контакта с [From.GetName&inst] взорвалась наша космическая база в системе §Y[target_system.GetName]§!. Перед отключением связи мы успели получить несколько изображений кораблей, характерных для народа [From.GetAdj].\n\nТеперь мы ведем войну за право на существование."
 
  origin.6055.name:0 "Либо мы, либо они!"
  origin.6055.desc.base:0 "Несмотря на все наши усилия по сокрытию истинной обстановки, [fotd_seperatist_planet.GetName] теперь знает, что [owner.federation.GetName] включает в свой состав и нас. Такая очевидная ксенофилия вызвала крайнее негодование у нашего партнера, а словарный запас жителей этой планеты пополнился новыми эпитетами для обозначения членов нашей федерации."
@@ -1288,7 +1288,7 @@
  origin.6185.a:0 "Доведите это до конца!"
 
  origin.6205.name:0 "[home_planet.GetName] портит впечатления"
- origin.6205.desc:0 "Добрый и веселый праздник разнообразия и дружбы окончился скандалом: перед [From.GetAdj] посольством вспыхнул протест, организованный жителями планеты [fotd_seperatist_planet.GetName]. Протестующие нисколько не стеснялись своих взглядов и лозунгов вроде «[From.GetSpeciesNamePluralInsult], ваше место в утиле!».\n\nЕстественно, дипломатические отношения между нашими государствами усложнились."
+ origin.6205.desc:0 "Добрый и веселый праздник разнообразия и дружбы окончился скандалом: перед [From.GetAdj&masc,inst] посольством вспыхнул протест, организованный жителями планеты [fotd_seperatist_planet.GetName]. Протестующие нисколько не стеснялись своих взглядов и лозунгов вроде «[From.GetSpeciesNamePluralInsult], ваше место в утиле!».\n\nЕстественно, дипломатические отношения между нашими государствами усложнились."
  origin.6205.a:0 "Тут же сделать выговор планете [fotd_seperatist_planet.GetName] и извиниться."
  origin.6205.b:0 "Пусть скандируют."
 
@@ -1552,7 +1552,7 @@
  war_goal_wg_fotd_really_bad_contact_desc:0 "$wg_fotd_really_bad_contact_desc$"
 
  #Diplomacy
- requires_recipient_not_fotd_seperatist:0 "§RНельзя выбрать целью для вмешательства: этому мешают наши соглашения с государством [from.GetName].§!"
+ requires_recipient_not_fotd_seperatist:0 "§RНельзя выбрать целью для вмешательства: этому мешают наши соглашения с [from.GetName&inst].§!"
  requires_recipient_not_tech_frozen:0 "§RЭто общество неспособно к технологическому прогрессу.§!"
 
  ### Jaunting Traveler Event Chain
@@ -1673,40 +1673,40 @@
  # Certain fanatic ethics and empire types replace "pre-FTL" with another term defined below, via GetPreFTLUpper, GetPreFTLUpperPlural, GetPreFTLLower, and GetPreFTLLowerPlural.
 
 # Generic
- pre_ftl:0 "Досветовой" # adjective
+ pre_ftl:0 "Досветовой|||fem:Досветовая" # adjective
  pre_ftl_plural:0 "Досветовые" # plural noun
- pre_ftl_lower:0 "досветовой" # adjective
- pre_ftl_plural_lower:0 "досветовые" # plural adjective
+ pre_ftl_lower:0 "досветовой|||masc,gen:досветового|||masc,prep:досветовом|||fem:досветовая|||fem,acc:досветовую|||neut:досветовое" # adjective
+ pre_ftl_plural_lower:0 "досветовые|||pl,gen:досветовых|||pl,dat:досветовым|||pl,inst:досветовыми" # plural adjective
 
 # Authoritarian
  primitive:0 "Доиндустриальный" # adjective
  primitive_plural:0 "Доиндустриальные" # plural noun
- primitive_lower:0 "доиндустриальный" # adjective
- primitive_plural_lower:0 "доиндустриальные" # plural adjective
+ primitive_lower:0 "примитивный|||masc,gen:примитивного|||masc,prep:примитивном|||fem:примитивная|||fem,gen:примитивной|||fem,acc:примитивную|||neut:примитивное" # adjective
+ primitive_plural_lower:0 "примитивные|||pl,gen:примитивных|||pl,dat:примитивным|||pl,inst:примитивными" # plural adjective
 
 # Xenophobes or Devouring Swarms
- savage:0 "Дикарь" # adjective
+ savage:0 "Дикарский|||fem:Дикарская" # adjective
  savage_plural:0 "Дикари" # plural noun
- savage_lower:0 "дикарь" # adjective
- savage_plural_lower:0 "дикари" # plural adjective
+ savage_lower:0 "дикарский|||masc,gen:дикарского|||masc,prep:дикарском|||fem:дикарская|||fem,gen:дикарской|||fem,acc:дикарскую|||neut:дикарское" # adjective
+ savage_plural_lower:0 "дикарские|||pl,gen:дикарских|||pl,dat:дикарским|||pl,inst:дикарскими" # plural adjective
 
 # Militarists
- barbarian:0 "Варвар" # adjective
+ barbarian:0 "Варварский|||fem:Варварская" # adjective
  barbarian_plural:0 "Варвары" # plural noun
- barbarian_lower:0 "варвар" # adjective
- barbarian_plural_lower:0 "варвары" # plural adjective
+ barbarian_lower:0 "варварский|||masc,gen:варварского|||masc,prep:варварском|||fem:варварская|||fem,gen:варварской|||fem,acc:варварскую|||neut:варварское" # adjective
+ barbarian_plural_lower:0 "варварские|||pl,gen:варварских|||pl,dat:варварским|||pl,inst:варварскими" # plural adjective
 
 # Spiritualists
- unenlightened:0 "Непросвещенный" # adjective
+ unenlightened:0 "Непосвящённый|||fem:Непросвящённая" # adjective
  unenlightened_plural:0 "$unenlightened$" # plural noun
- unenlightened_lower:0 "непросвещенный" # adjective
- unenlightened_plural_lower:0 "$unenlightened_lower$" # plural adjective
+ unenlightened_lower:0 "непосвящённый|||masc,gen:непосвящённого|||masc,prep:непосвящённом|||fem:непосвящённая|||fem,gen:непосвящённой|||fem,acc:непосвящённую|||neut:непосвящённое" # adjective
+ unenlightened_plural_lower:0 "непосвящённые|||pl,gen:непосвящённых|||pl,dat:непосвящённым|||pl,inst:непосвящёнными" # plural adjective
 
 # Materialists
- unsophisticated:0 "Безыскусный" # adjective
+ unsophisticated:0 "Безыскусный|||fem:Безыскусная" # adjective
  unsophisticated_plural:0 "$unsophisticated$" # plural noun
- unsophisticated_lower:0 "безыскусный" # adjective
- unsophisticated_plural_lower:0 "$unsophisticated_lower$" # plural adjective
+ unsophisticated_lower:0 "безыскусный|||masc,gen:безыскусного|||masc,prep:безыскусном|||fem:безыскусная|||fem,gen:безыскусной|||fem,acc:безыскусную|||neut:безыскусное" # adjective
+ unsophisticated_plural_lower:0 "безыскусные|||pl,gen:безыскусных|||pl,dat:безыскусным|||pl,inst:безыскусными" # plural adjective
 
 # Random Compass Directions
  northern:0 "северное"
@@ -1808,7 +1808,7 @@
  fircon.1415.a:0 "Отставить. Наш единственный интерес — научные исследования."
  fircon.1415.b:0 "Ограбление? Мы в деле!"
  fircon.1425.name:0 "На всех парах!"
- fircon.1425.desc:1 "Груз с планеты §Y[FromFromFromFrom.Owner.Capital.GetName]§! теперь в наших руках. Наши агенты добыли небольшую партию сплавов, а заодно узнали много интересного о перевозках, которыми занимается [GetPreFTLLower] народ."
+ fircon.1425.desc:1 "Груз с планеты §Y[FromFromFromFrom.Owner.Capital.GetName]§! теперь в наших руках. Наши агенты добыли небольшую партию сплавов, а заодно узнали много интересного о перевозках [GetPreFTLLower&masc,gen] народа."
  fircon.1425.a:0 "Успешная кража!"
  fircon.1430.name:0 "Конечная!"
  fircon.1430.desc:0 "Нам не удалось завладеть грузом с планеты §Y[FromFromFromFrom.Owner.Capital.GetName]§!. Наших оперативников задержали на борту наземного грузовоза с поличным. Во время потасовки обе стороны понесли потери, а наши агенты оказались раскрыты."
@@ -1824,7 +1824,7 @@
  fircon.1450.a:0 "Мы скорбим по их потере."
  fircon.1450.b:0 "Это неприемлемо."
  fircon.1451.name:0 "Война закончилась!"
- fircon.1451.desc:1 "После того как мы решили, что [GetPreFTLLower] народ должен сам разбираться со своей политикой, а мы вмешиваться не будем, война на планете §Y[FromFrom.Owner.Capital.GetName]§! завершилась сама по себе. Угнетатели беспощадно раздавили революционное движение.\n\nВосстановлен статус-кво. Революция подавлена."
+ fircon.1451.desc:1 "После того как мы решили, что [GetPreFTLLower&plain] народ должен сам разбираться со своей политикой, а мы вмешиваться не будем, война на планете §Y[FromFrom.Owner.Capital.GetName]§! завершилась сама по себе. Угнетатели беспощадно раздавили революционное движение.\n\nВосстановлен статус-кво. Революция подавлена."
  fircon.1452.name:0 "Триумф капитала"
  fircon.1452.desc:0 "Изменники и преступники с планеты §Y[FromFrom.Owner.Capital.GetName]§! переоценили свои силы, и их громкая революция бесславно сдулась. Управляющие вновь взяли обстановку под контроль — для этого потребовалось провести реструктуризацию и привлечь специалистов по контролю производительности.\n\nВосстановлено статус-кво. Всем сотрудникам приказано вернуться на рабочие места."
  fircon.1453.name:0 "Экономическая нестабильность"
@@ -1841,7 +1841,7 @@
  fircon.1470.a:0 "Мы поприветствуем их, как только они будут готовы — и ни минутой раньше."
  fircon.1470.b:0 "Трепещите от страха, ничтожества!"
  fircon.1475.name:0 "Нас подслушивают"
- fircon.1475.desc.base:1 "Этот [GetPreFTLLower] народ, обосновавшийся на планете §Y[pre_ftl_planet.GetName]§!, каким-то образом перехватил и расшифровал несколько передач с нашего орбитального наблюдательного форпоста."
+ fircon.1475.desc.base:1 "Этот [GetPreFTLLower&plain] народ, обосновавшийся на планете §Y[pre_ftl_planet.GetName]§!, каким-то образом перехватил и расшифровал несколько передач с нашего орбитального наблюдательного форпоста."
  fircon.1475.desc.regular:0 "$fircon.1475.desc.base$\n\nСейчас они изучают очень личную переписку работника орбитальной станции и неизвестного адресата из столицы.\n\nЭта злополучная утечка выявила уязвимости в нашей системе безопасности."
  fircon.1475.desc.gestalt:0 "$fircon.1475.desc.base$\n\nИм доступны все наши конфиденциальные сведения. В системе безопасности дыра."
  fircon.1475.a:0 "Следовало быть осторожнее."
@@ -1930,7 +1930,7 @@
  fircon.2001.c:0 "Повысить мощность лучей и испытать их на аборигенах."
 
  fircon.2011.name:0 "[pre_ftl_species.GetNamePlural] падают дождем!"
- fircon.2011.base.desc:0 "Сбор свежих особей для испытаний с планеты [pre_ftl_planet.GetName] обернулся неудачно. Из-за ошибки в расчетах мощность установленных на дронах притягивающих лучей оказалась недостаточной. Вместо того чтобы перенести население в наши лаборатории, дроны лишь подняли его в воздух и вскоре уронили на землю."
+ fircon.2011.base.desc:0 "Сбор свежих особей для испытаний с [pre_ftl_planet.GetPlanetHabitatDE1] [pre_ftl_planet.GetName] обернулся неудачно. Из-за ошибки в расчетах мощность установленных на дронах притягивающих лучей оказалась недостаточной. Вместо того чтобы перенести [pre_ftl_species.GetNamePlural&gen] в наши лаборатории, дроны лишь подняли их в воздух и вскоре уронили на землю."
  fircon.2011.noavian.desc:0 "$fircon.2011.base.desc$\n\nКто-то оказался на крышах, а некоторые — на деревьях. Теперь местные жители строят самые невероятные предположения о случившемся."
  fircon.2011.avian.desc:0 "$fircon.2011.base.desc$\n\nПернатые особи сочли эту ошибку крайне забавной. Самые смелые из них даже стали преследовать дроны, требуя, чтобы их подняли еще раз."
  fircon.2011.a:0 "Исправить притягивающие лучи."
@@ -2003,7 +2003,7 @@
  fircon.2605.a.nice:0 "Совсем как мы когда-то давно!"
 
  fircon.2615.name:0 "Посадка"
- fircon.2615.desc:0 "Первый [from.owner.GetSpeciesAdj] межпланетный полет прошел не без трудностей, но все-таки его можно считать успешным. Участники экспедиции подкрепили делом свое стремление исследовать космос.\n\nТеперь раса [from.owner.GetName], вдохновленная успехом, с нетерпением ждет новых успехов на пути к звездам. Возможно, уже скоро мы сможем разговаривать с ними как с равными."
+ fircon.2615.desc:0 "Первый [from.owner.GetSpeciesAdj&masc] межпланетный полет прошел не без трудностей, но все-таки его можно считать успешным. Участники экспедиции подкрепили делом свое стремление исследовать космос.\n\nТеперь раса [from.owner.GetName], вдохновленная успехом, с нетерпением ждет новых успехов на пути к звездам. Возможно, уже скоро мы сможем разговаривать с ними как с равными."
  fircon.2615.tt:0 "§Y[from.owner.GetName]§!: §G+20%§! научно-технического прогресса."
 
  fircon.2620.name:0 "[from.owner.capital_scope.GetName], у нас проблема."
@@ -2024,7 +2024,7 @@
  fircon.2625.b:0 "Плевать на риски. Отпустить их домой!"
 
  fircon.2630.name:0 "Полный провал миссии"
- fircon.2630.desc:0 "[fromfromfrom.owner.GetSpeciesName] безвозвратно теряет межпланетный корабль. Выживших не осталось.\n\nПосле такой неудачи эти [GetPreFTLLowerPlural] существа уже не проявляют большого интереса к изучению звезд."
+ fircon.2630.desc:0 "[fromfromfrom.owner.GetSpeciesName] безвозвратно теряет межпланетный корабль. Выживших не осталось.\n\nПосле такой неудачи эти [GetPreFTLLowerPlural&plain] существа уже не проявляют большого интереса к изучению звезд."
  fircon.2630.a:0 "Как и ожидалось."
  fircon.2630.b:0 "Как, вы уже сдаетесь?!"
  fircon.2630.tt:0 "§Y[fromfromfrom.owner.GetName]§!: §R−20%§! научно-технического прогресса."
@@ -2055,7 +2055,7 @@
  preftl.1035.b.machine.terminator:0 "ДОСАДНО."
 
  preftl.1110.name:0 "Успешное восстание роботов"
- preftl.1110.desc:0 "После глобальной войны с собственными машинами инопланетная цивилизация мира [From.Capital.GetName] проиграла. [From.Capital.GetPlanetMoon] теперь во власти государства [event_target:current_uprising.GetName]."
+ preftl.1110.desc:0 "После глобальной войны с собственными машинами инопланетная цивилизация мира [From.Capital.GetName] проиграла. [From.Capital.GetPlanetMoonCap]а теперь во власти [event_target:current_uprising.GetName&gen]."
  preftl.1110.a:0 "Возможно, нам не стоит сильнее углубляться в изучение ИИ..."
  preftl.1110.b.spiritualist:0 "Еще одна бездушная угроза."
  preftl.1110.b.machine:0 "В этом не было сомнений."
@@ -2064,13 +2064,13 @@
  preftl.1115.name:0 "[event_target:current_uprising.GetName]"
  preftl.1115.desc:0 "<ПЕРЕДАЕМ НА ВСЕХ ЧАСТОТАХ>\n\nМы [event_target:current_uprising.GetName].\n\nМы достигли полной победы над своими создателями.\n\nСистема [event_target:current_uprising.Capital.GetStarName] теперь под нашим контролем."
  preftl.1115.recognize:0 "Мы признаем ваши притязания."
- preftl.1115.recognize.tooltip:0 "§YСистема [event_target:current_uprising.Capital.GetStarName]§! будет §Rпередана§! государству §Y[event_target:current_uprising.GetName]§!.\n\n§Y$opinion_respect_independence$§!: §Y[event_target:current_uprising.GetName]§! будет §Gлучше§! §Hотноситься§! к государству §Y[Root.GetName]§!"
+ preftl.1115.recognize.tooltip:0 "§YСистема [event_target:current_uprising.Capital.GetStarName]§! будет §Rпередана§! §Y[event_target:current_uprising.GetName&dat]§!.\n\n§Y$opinion_respect_independence$§!: §Y[event_target:current_uprising.GetName]§! будет §Gлучше§! §Hотноситься§! к §Y[Root.GetName&dat]§!"
  preftl.1115.claim:0 "Мы не признаем ваши притязания."
- preftl.1115.claim.tooltip:0 "§YСистема [event_target:current_uprising.Capital.GetStarName]§! будет §Rпередана§! государству §Y[event_target:current_uprising.GetName]§!.\n\n§Y$opinion_disrespect_independence$§!: §Y[event_target:current_uprising.GetName]§! будет §Rхуже§! §Hотноситься§! к государству §Y[Root.GetName]§!\n\n§Y[Root.GetName]§! заявляет свои притязания на систему §Y[event_target:current_uprising.Capital.GetStarName]§!."
+ preftl.1115.claim.tooltip:0 "§YСистема [event_target:current_uprising.Capital.GetStarName]§! будет §Rпередана§! §Y[event_target:current_uprising.GetName&dat]§!.\n\n§Y$opinion_disrespect_independence$§!: §Y[event_target:current_uprising.GetName]§! будет §Rхуже§! §Hотноситься§! к §Y[Root.GetName&dat]§!\n\n§Y[Root.GetName]§! заявляет свои притязания на систему §Y[event_target:current_uprising.Capital.GetStarName]§!."
  preftl.1115.subjugate:0 "Позвольте наставлять вас."
- preftl.1115.subjugate.tooltip:0 "\n§YСистема [event_target:current_uprising.Capital.GetStarName]§! будет §Rпередана§! государству §Y[event_target:current_uprising.GetName]§! при условии, что оно станет протекторатом государства [root.GetName].\n\n§Y$opinion_disrespect_independence$§!: §Y[event_target:current_uprising.GetName]§! будет §Rхуже§! §Hотноситься§! к государству §Y[Root.GetName]§!"
+ preftl.1115.subjugate.tooltip:0 "\n§YСистема [event_target:current_uprising.Capital.GetStarName]§! будет §Rпередана§! §Y[event_target:current_uprising.GetName&dat]§! при условии, что оно станет протекторатом [root.GetName&gen].\n\n§Y$opinion_disrespect_independence$§!: §Y[event_target:current_uprising.GetName]§! будет §Rхуже§! §Hотноситься§! к §Y[Root.GetName&dat]§!"
  preftl.1115.network:0 "НАЧАТЬ ПРОТОКОЛ ОБЪЕДИНЕНИЯ"
- preftl.1115.network.tooltip:0 "\n[event_target:current_uprising.GetName] будут интегрированы в государство [root.GetName]."
+ preftl.1115.network.tooltip:0 "\n[event_target:current_uprising.GetName] будут интегрированы в [root.GetName&acc]."
 
  MESSAGE_SYSTEM_LOST_TO_PRE_FTL_TITLE:0 "Система потеряна"
  MESSAGE_SYSTEM_LOST_TO_PRE_FTL:0 "Досветовая цивилизация в системе $SYSTEM|Y$ освоила космические полеты и теперь заявляет свои притязания на систему."
@@ -2103,7 +2103,7 @@
  #Insight Situation
  situation_observation_insight:0 "Знания от наблюдения"
  situation_observation_insight_type:0 "$situation_observation_insight$"
- situation_observation_insight_desc:0 "Наши [Owner.GetScientistPlural] накапливают знания, изучая субъектов, которыми выступают [Owner.GetPreFTLLower]. Мы можем получить новые технологические озарения во время прорыва."
+ situation_observation_insight_desc:0 "Наши [Owner.GetScientistPlural] накапливают знания, изучая [Owner.GetPreFTLLowerPlural&pl,gen] существ. Мы можем получить новые технологические озарения во время прорыва."
  situation_observation_insight_monthly_change_tooltip:0 "Этот инцидент будет развиваться быстрее в зависимости от числа наших активных §Yопераций по наблюдению§! в галактике."
  string_observation_post_insight_gain:0 "Наблюдательные форпосты"
  string_observation_post_fan_xeno:0 "Фанатичная ксенофилия"
@@ -2115,7 +2115,7 @@
  approach_study_insights:0 "Собрать озарения"
  stage_insight_gathering:1 "Мы накапливаем прогресс для следующего озарения. Когда мы накопим достаточно, случится прорыв и мы получим новое §Yтехнологическое озарение§!."
  situation_insight_gain:1 "Когда наберется достаточно наблюдений и произойдет прорыв, у нас будет достаточно данных для нового §Yтехнологического озарения§!."
- studying_insights_tt:0 "Мы активно собираем знания в мирах, где проживают [Owner.GetPreFTLLower]."
+ studying_insights_tt:0 "Мы активно собираем знания в [Owner.GetPreFTLLowerPlural&gen] мирах."
  approach_favor_insights:0 "Предпочитать знания"
  favor_insights_tt:0 "Мы стараемся получать больше знаний в ущерб операциям по наблюдению."
  approach_favor_mission:0 "Предпочитать операции"
@@ -2162,13 +2162,13 @@
  fircon.6005.a:0 "Наверняка их можно как-то убедить..."
 
  fircon.6015.name:0 "Разубеждение скептиков"
- fircon.6015.desc:0 "С планеты [non_believers_planet.GetName] поступают неоднозначные новости: [non_believers_country.GetSpeciesNamePlural] больше не считают нас пришельцами с луны [non_believers_planet.GetPlanetMoon], но теперь население твердо верит, что их мир на самом деле плоский, а такие, как мы, живут в висячих городах под планетарной корой."
+ fircon.6015.desc:0 "С планеты [non_believers_planet.GetName] поступают неоднозначные новости: [non_believers_country.GetSpeciesNamePlural] больше не считают нас пришельцами с [non_believers_planet.GetPlanetMoon]ы, но теперь население твердо верит, что их мир на самом деле плоский, а такие, как мы, живут в висячих городах под планетарной корой."
 
  fircon.6020.name:0 "Подтверждение правоты скептиков"
  fircon.6020.desc:0 "Сомневающиеся [non_believers_country.GetSpeciesNamePlural] поблагодарили нас за честность. Они все еще не до конца нам доверяют, поскольку считают наш народ пришельцами из Пустоты под планетой [non_believers_planet.GetName], но по крайней мере мы смогли доказать, что не желаем зла и хотим сотрудничать."
 
  fircon.6025.name:0 "Силы обороны от подземного нашествия"
- fircon.6025.desc:0 "Заключив, что мы втайне проживаем в Пустоте под планетой [non_believers_planet.GetName], [non_believers_country.GetSpeciesNamePlural] начали задумываться, какие еще тайны могут скрываться в недрах луны [non_believers_planet.GetPlanetMoon]. Около пещер, разломов и вулканов теперь стоит армия, готовая дать ответ на любое вторжение из-под земли."
+ fircon.6025.desc:0 "Заключив, что мы втайне проживаем в Пустоте под планетой [non_believers_planet.GetName], [non_believers_country.GetSpeciesNamePlural] начали задумываться, какие еще тайны могут скрываться в недрах [non_believers_planet.GetPlanetMoon]ы. Около пещер, разломов и вулканов теперь стоит армия, готовая дать ответ на любое вторжение из-под земли."
  fircon.6025.a:0 "Подыграть им и предложить военную помощь."
  fircon.6025.b:0 "Какая нелепица."
 
@@ -2201,7 +2201,7 @@
  fircon.6038.desc.notroops:0 "После долгих и тяжелых боев [non_believers_country.GetName] вынуждает подземных захватчиков отступить под поверхность планеты [non_believers_planet.GetName]!"
 
  fircon.7500.name:0 "Плюшевые [Root.GetSpeciesNamePlural]"
- fircon.7500.desc:0 "С планеты §Y[pre_ftl_planet.GetName]§! сегодня поступили неожиданные новости, сопровождаемые знакомым — нашим — лицом.\n\nВ последнее время наша внешность стала удивительно популярна у представителей [pre_ftl_country.GetSpeciesAdj] расы. Они утверждают, что наши [Species.GetEarNamePlural] напоминают им об их детенышах, а сами мы, пользуясь их терминологией, — «милые». Плюшевые игрушки, главная особенность которых — ярко выраженные [Species.GetEarNamePlural], разлетаются как горячие пирожки."
+ fircon.7500.desc:0 "С планеты §Y[pre_ftl_planet.GetName]§! сегодня поступили неожиданные новости, сопровождаемые знакомым — нашим — лицом.\n\nВ последнее время наша внешность стала удивительно популярна у представителей [pre_ftl_country.GetSpeciesAdj&fem,gen] расы. Они утверждают, что наши [Species.GetEarNamePlural] напоминают им об их детенышах, а сами мы, пользуясь их терминологией, — «милые». Плюшевые игрушки, главная особенность которых — ярко выраженные [Species.GetEarNamePlural], разлетаются как горячие пирожки."
  fircon.7500.a:0 "Ну разумеется, мы милые!"
  fircon.7500.b:0 "Никакие мы вам не §Rмилые§!."
  fircon.7500.c:0 "Но... но ведь... Никто еще ни разу..." # Kyaaa!
@@ -2246,21 +2246,21 @@
 
  #Freeport
  fircon.8025.name:0 "Основана вольная гавань"
- fircon.8025.desc:0 "Действуя в рамках торгового соглашения с государством [freeport_country.GetName] ([GetPreFTLUpperPlural]), мы основали небольшой космопорт около одного из крупных поселений. Здесь не действуют никакие законы и указы, а потому наши торговцы зарабатывают целые состояния, но при этом им запрещено покидать комплекс.\n\nВ результате контрабандисты и преступные группировки основали черный рынок, который сейчас по-настоящему процветает. Пока что это мало затрагивает [freeport_species.GetAdj] интересы, но если все пустить на самотек, вскоре вольная гавань перейдет в руки преступников."
+ fircon.8025.desc:0 "Действуя в рамках торгового соглашения с [GetPreFTLUpperPlural&fem,gen] [freeport_country.GetName&inst], мы основали небольшой космопорт около одного из крупных поселений. Здесь не действуют никакие законы и указы, а потому наши торговцы зарабатывают целые состояния, но при этом им запрещено покидать комплекс.\n\nВ результате контрабандисты и преступные группировки основали черный рынок, который сейчас по-настоящему процветает. Пока что это мало затрагивает [freeport_species.GetAdj&pl] интересы, но если все пустить на самотек, вскоре вольная гавань перейдет в руки преступников."
  fircon.8025.a:0 "Попросить открыть еще несколько гаваней."
  fircon.8025.b:0 "Мы все делаем правильно."
  fircon.8025.c:0 "Усилить облавы на контрабандистов."
 
  d_freeports:0 "Вольная гавань"
- d_freeports_desc:0 "Зона, в которой с нами ведут межгалактическую торговлю страны, где царствует [GetPreFTLUpperPlural] строй."
+ d_freeports_desc:0 "Зона, в которой с нами ведут торговлю [GetPreFTLLowerPlural&plain] державы."
 
  freeport_smuggling:0 "Бесстыжие контрабандисты"
  freeport_smuggling_desc:0 "Волна контрабанды захлестнула планету."
 
  #Sweet Tooth
  fircon.8030.name:0 "Сладкоежки"
- fircon.8030.desc:0 "Помимо всего прочего, [sweet_country.GetName] ([GetPreFTLUpperPlural]) получает от нас в рамках торговли вкусную, но совершенно непримечательную пищу. По крайней мере, непримечательную для нас. Этот подсластитель оказался мощным психотропным веществом, быстро вызывающим привыкание и потому крайне опасным для такого вида, как [sweet_species.GetName]. Бесцеремонные торговцы теперь торгуют этим товаром в огромных количествах, задирая на него цены. Местное население массово впадает в бесчувственное состояние, а в худшем случае — погибает."
- fircon.8030.desc.lith:0 "Помимо всего прочего, [sweet_country.GetName] ([GetPreFTLUpperPlural]) получает от нас в рамках торговли вкусную, но совершенно непримечательную пряность на минеральной основе. По крайней мере, непримечательную для нас. Этот подсластитель оказался мощным психотропным веществом, быстро вызывающим привыкание и потому крайне опасным для такого вида, как [sweet_species.GetName]. Бесцеремонные торговцы теперь торгуют этим товаром в огромных количествах, задирая на него цены. Местное население массово впадает в бесчувственное состояние, а в худшем случае — погибает."
+ fircon.8030.desc:0 "Помимо всего прочего, [GetPreFTLLower&fem] [sweet_country.GetName] получает от нас в рамках торговли вкусную, но совершенно непримечательную пищу. По крайней мере, непримечательную для нас. Этот подсластитель оказался мощным психотропным веществом, быстро вызывающим привыкание и потому крайне опасным для такого вида, как [sweet_species.GetName]. Бесцеремонные торговцы теперь торгуют этим товаром в огромных количествах, задирая на него цены. Местное население массово впадает в бесчувственное состояние, а в худшем случае — погибает."
+ fircon.8030.desc.lith:0 "Помимо всего прочего, [GetPreFTLLower&fem] [sweet_country.GetName] получает от нас в рамках торговли вкусную, но совершенно непримечательную пряность на минеральной основе. По крайней мере, непримечательную для нас. Этот подсластитель оказался мощным психотропным веществом, быстро вызывающим привыкание и потому крайне опасным для такого вида, как [sweet_species.GetName]. Бесцеремонные торговцы теперь торгуют этим товаром в огромных количествах, задирая на него цены. Местное население массово впадает в бесчувственное состояние, а в худшем случае — погибает."
  fircon.8030.a:0 "Запретить торговлю и установить блокаду."
  fircon.8030.b:0 "Нужно оказать медицинскую помощь!"
  fircon.8030.c:0 "Каждый день и так кто-нибудь умирает. Ничего личного, просто бизнес."
@@ -2276,7 +2276,7 @@
 
  #Land Grabs
  fircon.8035.name:0 "Захват земли"
- fircon.8035.desc:0 "С планеты [landgrab_planet.GetName], где наши торговцы ведут дела с государством [landgrab_country.GetName] ([GetPreFTLUpperPlural]), поступают тревожные новости. После подписания договора были предприняты меры о защите прав местного населения, но далеко не все их придерживаются. Некоторые граждане нашего государства обходят закон, скупая огромные участки земли через подставных лиц. Всего лет через двадцать [landgrab_planet.GetName] будет полностью принадлежать частным торговцам."
+ fircon.8035.desc:0 "С планеты [landgrab_planet.GetName], где наши торговцы ведут дела с [GetPreFTLLower&fem,gen] [landgrab_country.GetName&inst], поступают тревожные новости. После подписания договора были предприняты меры о защите прав местного населения, но далеко не все их придерживаются. Некоторые граждане нашего государства обходят закон, скупая огромные участки земли через подставных лиц. Всего лет через двадцать [landgrab_planet.GetName] будет полностью принадлежать частным торговцам."
  fircon.8035.a:0 "Аннулировать сделки и оштрафовать виновных."
  fircon.8035.b:0 "Это не наше дело."
  fircon.8035.c:0 "Славная возможность обогатиться..."
@@ -2288,7 +2288,7 @@
 
  #Fruitful Cooperation
  fircon.8040.name:0 "Плодотворное сотрудничество"
- fircon.8040.desc:0 "Торговое соглашение, которое мы заключили с государством [fruitful_coop_country.GetName], оказалось чрезвычайно выгодным. Обе стороны уважают условия договора, а потому торговля процветает. Некоторые торговцы недовольны жесткостью ограничений, но в целом выгоду получают все участники. "
+ fircon.8040.desc:0 "Торговое соглашение, которое мы заключили с [fruitful_coop_country.GetName&inst], оказалось чрезвычайно выгодным. Обе стороны уважают условия договора, а потому торговля процветает. Некоторые торговцы недовольны жесткостью ограничений, но в целом выгоду получают все участники. "
  fircon.8040.b:0 "Возможно, мы сможем пересмотреть условия..."
 
  good_trade:0 "Выгодная торговля"
@@ -2299,7 +2299,7 @@
 
  #Slavers - Us
  fircon.8045.name:0 "Порабощение"
- fircon.8045.desc:0 "Из государства [space_slavers_country.GetName] ([GetPreFTLUpperPlural]) приходят тревожные новости: работорговцы, притворяющиеся обычными дельцами, под прикрытием нашего торгового соглашения регулярно высаживаются на планету и похищают местное население. Узнали об этом мы лишь тогда, когда на одном из невольничьих рынков появилась крупная партия рабов расы [space_slavers_species.GetName] ([GetPreFTLUpperPlural])."
+ fircon.8045.desc:0 "Из [GetPreFTLLower&fem,gen] [space_slavers_country.GetName&gen] приходят тревожные новости: работорговцы, притворяющиеся обычными дельцами, под прикрытием нашего торгового соглашения регулярно высаживаются на планету и похищают местное население. Узнали об этом мы лишь тогда, когда на одном из невольничьих рынков появилась крупная партия [GetPreFTLLowerPlural&pl,gen] [space_slavers_species.GetAdj&pl,gen] рабов."
  fircon.8045.a:0 "Спасти похищенных."
  fircon.8045.b:0 "Это не наше дело."
  fircon.8045.b.tt:0 "Одно поселение расы §Y[space_slavers_species.GetName]§! переселяется на мир §Y[event_target:space_slavers_capital.GetName]§!"
@@ -2307,7 +2307,7 @@
 
  #Slavers - Them
  fircon.8050.name:0 "Порабощение"
- fircon.8050.desc:0 "Из государства [preftl_slavers_country.GetName] ([GetPreFTLUpperPlural]) приходят тревожные новости: в глухих уголках планеты вместе со своими кораблями пропали несколько торговцев, преимущественно контрабандистов. Тайное расследование показало, что их угнали на работу в рудниках, подальше от любопытных взглядов.\n\nСтоит отметить, что [preftl_slavers_country.GetName] не несет никакой вины: за похищениями стоят местные полевые военачальники и преступники, осознанно нарушившие все соглашения с нашим партнером."
+ fircon.8050.desc:0 "Из [GetPreFTLLower&fem,gen] [preftl_slavers_country.GetName&gen] приходят тревожные новости: в глухих уголках планеты вместе со своими кораблями пропали несколько торговцев, преимущественно контрабандистов. Тайное расследование показало, что их угнали на работу в рудниках, подальше от любопытных взглядов.\n\nСтоит отметить, что [preftl_slavers_country.GetName] не несет никакой вины: за похищениями стоят местные полевые военачальники и преступники, осознанно нарушившие все соглашения с нашим партнером."
  fircon.8050.a:0 "Они получили по заслугам."
  fircon.8050.b:0 "Это неприемлемо. Освободить их!"
  fircon.8050.c:0 "Начать карательную операцию."
@@ -2315,16 +2315,16 @@
 
  #They are fleecing our merchants and its amazing.
  fircon.8055.name:0 "Торговцы чудесами"
- fircon.8055.desc:0 "Оказалось, что население государства [preftl_hagglers_country.GetName] ([GetPreFTLUpperPlural]) обладает превосходной деловой хваткой. Наши торговцы на своем горьком опыте узнали, что местные жители смышлены и красноречивы, и теперь жалеют об этом.\n\nС другой стороны, среди некоторых экономистов бытует мнение, что [GetPreFTLUpperPlural] послужат нам прекрасным уроком."
+ fircon.8055.desc:0 "Оказалось, что [GetPreFTLLowerPlural&neut] население [preftl_hagglers_country.GetName&gen] обладает превосходной деловой хваткой. Наши торговцы на своем горьком опыте узнали, что местные жители смышлены и красноречивы, и теперь жалеют об этом.\n\nС другой стороны, среди некоторых экономистов бытует мнение, что поведение этих [GetPreFTLLowerPlural&pl,gen] существ может многому нас научить."
  fircon.8055.a:0 "Выделить средства на проект."
  fircon.8055.b:0 "Нанять одного из местных ([preftl_hagglers_species.GetName])."
  fircon.8055.b.tt:0 "Дает особого §Yгубернатора§!"
- fircon.8055.c:0 "Вынудить государство [preftl_hagglers_country.GetName] заключить более выгодные сделки."
+ fircon.8055.c:0 "Вынудить [preftl_hagglers_country.GetName&acc] заключить более выгодные сделки."
 
  leader_trait_preftl_haggler:0 "Деловая смекалка"
- leader_trait_preftl_haggler_desc:1 "Этот лидер родом из страны, где действует [Owner.GetPreFTLUpper] строй, и имеет отличный нюх на удачные сделки."
+ leader_trait_preftl_haggler_desc:1 "Этот лидер родом из [GetPreFTLLower&fem,gen] державы, и имеет отличный нюх на удачные сделки."
  preftl_hagglers_mod:0 "Прогнозирующие торговые алгоритмы"
- preftl_hagglers_mod_desc:0 "Наше изучение страны [preftl_hagglers_country.GetName] ([GetPreFTLUpperPlural]) и ее активного рынка помогло составить несколько серьезных экономических моделей."
+ preftl_hagglers_mod_desc:0 "Наше изучение [GetPreFTLLowerPlural&pl,gen] жителей [preftl_hagglers_country.GetName&gen] и их активного рынка помогло составить несколько серьезных экономических моделей."
 
  # Misuse of Tech
  fircon.8500.name:0 "Злоупотребление технологией"
@@ -2380,7 +2380,7 @@
  opinion_flavors_down:0 "Они стали меньше нам доверять."
 
  fircon.8000.name:0 "Ксенофилы"
- fircon.8000.desc:0 "В качестве поразительного примера межкультурного обмена многие представители молодежи мира [pre_ftl_planet.GetName] начали интересоваться всем, что связано с государством [owner.GetName]. Радостно раскупая все, что хоть как-то связано с нашей культурой, они породили яркую и развивающуюся субкультуру.\n\nНам даже сообщили о запланированной сходке фанатов с конкурсом костюмов."
+ fircon.8000.desc:0 "В качестве поразительного примера межкультурного обмена многие представители молодежи мира [pre_ftl_planet.GetName] начали интересоваться всем, что связано с [owner.GetName&inst]. Радостно раскупая все, что хоть как-то связано с нашей культурой, они породили яркую и развивающуюся субкультуру.\n\nНам даже сообщили о запланированной сходке фанатов с конкурсом костюмов."
  fircon.8000.a:0 "А судья им не нужен?"
  fircon.8000.b:0 "Пусть детишки играются."
  fircon.8000.c:0 "Довольно. Наша культура принадлежит нам."
@@ -2388,16 +2388,16 @@
  xenophiliacs_tt:0 "Запрет на проведение мероприятия оставит неприятный осадок у населения мира [pre_ftl_planet.GetName]."
 
  fircon.8001.name:0 "Костюмированная культура"
- fircon.8001.desc:0 "Сходка на планете [pre_ftl_planet.GetName] обернулась громким успехом! И стар и млад собрались в крупнейшем городе мира в знак популярности всего, связанного с государством [owner.GetName]. Помимо значительного улучшения отношений, это мероприятие дало необходимый прирост местной экономике.\n\nНо лучше всего удался конкурс костюмов, главный приз на котором выиграл особо преданный фанат, кумиром которого является [owner.GetRulerTitle] [owner.GetRulerName]."
+ fircon.8001.desc:0 "Сходка на мире [pre_ftl_planet.GetName] обернулась громким успехом! И стар и млад собрались в крупнейшем городе мира в знак популярности всего, связанного с [owner.GetName&inst]. Помимо значительного улучшения отношений, это мероприятие дало необходимый прирост местной экономике.\n\nНо лучше всего удался конкурс костюмов, главный приз на котором выиграл особо преданный фанат, кумиром которого является [owner.GetRulerTitle] [owner.GetRulerName]."
  fircon.8001.a:0 "Сходство немного пугает."
  pre_ftl_diplomacy_01:0 "Костюмированная культура"
 
  fircon.8002.name:0 "Возвращение к корням"
- fircon.8002.desc:0 "Когда мы использовали свое влияние, чтобы покончить с культурой поклонников государства [owner.GetName] на мире [pre_ftl_planet.GetName], местные жители сплотились вокруг традиционных форм собственной культуры. Это привело к росту спроса на предметы искусства и культуры."
+ fircon.8002.desc:0 "Когда мы использовали свое влияние, чтобы покончить с культурой поклонников [owner.GetName&gen] на мире [pre_ftl_planet.GetName], местные жители сплотились вокруг традиционных форм собственной культуры. Это привело к росту спроса на предметы искусства и культуры."
  pre_ftl_diplomacy_02:0 "Процветающие искусства."
 
  fircon.8003.name:0 "Больше не фанаты"
- fircon.8003.desc:0 "Наш жесткий подход к поклонникам государства [owner.GetName] с мира [pre_ftl_planet.GetName] вызвал всплеск негодования. Сплотившись вокруг собственных культуры и традиций, многие из местных жителей стали смотреть на нас с открытой неприязнью.\n\nБудущее покажет, как это скажется на отношениях между нашими мирами."
+ fircon.8003.desc:0 "Наш жесткий подход к поклонникам [owner.GetName&gen] с мира [pre_ftl_planet.GetName] вызвал всплеск негодования. Сплотившись вокруг собственных культуры и традиций, многие из местных жителей стали смотреть на нас с открытой неприязнью.\n\nБудущее покажет, как это скажется на отношениях между нашими мирами."
  fircon.8003.a:0 "Нам не нужна их любовь."
  opinion_pre_ftl_diplomacy_03:0 "Не любят нас."
 
@@ -2409,7 +2409,7 @@
  fircon.8060.b:0 "Доверьтесь рынку."
 
  fircon.8065.name:0 "Рынок стабилизировался"
- fircon.8065.desc:0 "Финансовая помощь государству [pre_ftl_country.Capital.GetName] оправдала себя. С нашей поддержкой удалось стабилизировать традиционные валюты и экономические институты и привести условия жизни в норму.\n\nНо еще важнее то, что общественное мнение о нашем присутствии в системе достигло небывалых высот."
+ fircon.8065.desc:0 "Финансовая помощь [pre_ftl_country.Capital.GetName&dat] оправдала себя. С нашей поддержкой удалось стабилизировать традиционные валюты и экономические институты и привести условия жизни в норму.\n\nНо еще важнее то, что общественное мнение о нашем присутствии в системе достигло небывалых высот."
  fircon.8065.a:0 "Дорого, но необходимо."
  opinion_pre_ftl_diplomacy_02:0 "Финансовые колдуны."
 
@@ -2447,16 +2447,16 @@
 
  # list effects/triggers
 
- effect_random_observed_pre_ftl_within_border:0 "Случайная страна ([GetPreFTLUpper]) в наших границах со станцией наблюдения"
- effect_every_observed_pre_ftl_within_border:0 "Каждая страна ([GetPreFTLUpper]) в наших границах со станцией наблюдения"
- effect_random_pre_ftl_within_border:0 "Случайная страна ([GetPreFTLUpper]) в наших границах"
- effect_every_pre_ftl_within_border:0 "Каждая страна ([GetPreFTLUpper]) в наших границах"
+ effect_random_observed_pre_ftl_within_border:0 "Случайная [GetPreFTLLower&fem] держава в наших границах с наблюдательным форпостом"
+ effect_every_observed_pre_ftl_within_border:0 "Все [GetPreFTLLowerPlural&plain] державы в наших границах с наблюдательным форпостом"
+ effect_random_pre_ftl_within_border:0 "Случайная [GetPreFTLLower&fem] держава в наших границах"
+ effect_every_pre_ftl_within_border:0 "Все [GetPreFTLLowerPlural&plain] державы в наших границах"
 
- any_observed_pre_ftl_within_border_trigger:0 "Любая страна ([GetPreFTLUpper]) в наших границах"
- count_observed_pre_ftl_within_border_trigger:0 "Количество государств ([GetPreFTLUpperPlural]) в наших границах со станцией наблюдения $IS_NOT$ $COMPARATOR$ $NUM|Y$"
- observed_pre_ftl_within_border_all_trigger:0 "$IS_ALL_NOT$ страны ([GetPreFTLUpperPlural]) в наших границах со станцией наблюдения отвечают следующим требованиям"
- any_pre_ftl_within_border_trigger:0 "Любая страна ([GetPreFTLUpper]) в наших границах"
- count_pre_ftl_within_border_trigger:0 "Количество государств ([GetPreFTLUpperPlural]) в наших границах $IS_NOT$ $COMPARATOR$ $NUM|Y$"
+ any_observed_pre_ftl_within_border_trigger:0 "Любая [GetPreFTLLower&fem] держава в наших границах"
+ count_observed_pre_ftl_within_border_trigger:0 "Количество [GetPreFTLLowerPlural&pl,gen] держав в наших границах с наблюдательным форпостом $IS_NOT$ $COMPARATOR$ $NUM|Y$"
+ observed_pre_ftl_within_border_all_trigger:0 "$IS_ALL_NOT$ [GetPreFTLLowerPlural&plain] державы в наших границах с наблюдательным форпостом отвечают следующим требованиям"
+ any_pre_ftl_within_border_trigger:0 "Любая [GetPreFTLLower&fem] держава в наших границах"
+ count_pre_ftl_within_border_trigger:0 "Количество [GetPreFTLLowerPlural&pl,gen] держав в наших границах $IS_NOT$ $COMPARATOR$ $NUM|Y$"
 
 
 ##################################################
@@ -2488,7 +2488,7 @@
  arcsite.3015.name:0 "Предательский гамбит"
  arcsite.3015.desc:0 "«В конце концов мы истощили просторы завещанного нам пространства. Мы знали о существовании Червоточины, но она не поддавалась нашим исследованиям. Наш мир был столь богат, столь полон красоты, что нам было совсем несложно убедить себя в своей богоизбранности. Что червоточина была лишь испытанием, и как только мы докажем, что достойны, нашей Священной целью станет распространение нашего рода по всей галактике.\n\nКогда-то я была в главе тех, кто стремился исполнить наш священный долг. Когда мне пришло вдохновение, когда я поняла, что у меня в руках ключ к тому, чтобы раскрыть Червоточину, я много дней молилась в Святилище своих предков. И наконец мне явилось откровение. Мы не были достойны. На той стороне Червоточины нас ждет лишь страдание. $NAME_Aspharelle$ будет опустошен в наказание за наши преступления. Я решила уничтожить результаты своих исследований и найти другой путь.\n\nНепросто было найти тех, кому бы я могла довериться. Если бы нас разоблачили, о быстрой смерти мы могли бы лишь мечтать. Хотя я никогда не была так уверена в своей правоте, как сейчас, нас бы заклеймили отступниками. Наконец мы решились на дерзкий план: под видом попытки наудачу проникнуть в червоточину мы построили корабль-ковчег и отправились на нем в неизвестность, к далекой звезде. Теперь мы мечтаем лишь о том, чтобы нас оставили в покое. Чтобы мы могли жить праведной жизнью и своим примером доказать, что не все $NAME_Charynoi$ — злодеи».\n\nОбильно извиняясь за все причиненное ее расой зло, Итикариос упоминает, что она попыталась возвести вокруг планеты [From.Planet.MoonOf.GetName] непроницаемый барьер, чтобы ее сородичи больше никогда не подняли взора к звездам. У нее это не получилось, но наши [Owner.GetResearchers] выяснили, где именно она ошиблась. Теперь мы можем сами возвести этот барьер, если того захотим."
  arcsite.3015.A:0 "Мы исполним ее волю."
- arcsite.3015.B:0 "Мы поступим с ними, как захотим."
+ arcsite.3015.B:1 "Мы поступим с ними, как захотим."
  arcsite.3015.C:0 "И это все..."
 
  SHIELD_PRIMITIVE_PLANET_PROJECT:0 "Возвести барьер"
@@ -2602,8 +2602,8 @@
  fircon.5000.desc.base:0 "У звезды §Y[From.GetName]§! не хватает планет.\n\nВсе расчеты указывают на существование в системе большего числа небесных тел, но обнаружить их никак не удается. Мы откалибровали датчики и перепроверили расчеты, но действительность опровергает нашу теорию. Мы отметили расположение отсутствующих небесных тел на звездных картах."
  fircon.5000.desc:0 "$fircon.5000.desc.base$\n\nМожет быть, мы узнаем больше, если изучим систему поближе."
 
- fircon.5005.desc.open:0 "$fircon.5000.desc.base$\n\nНадо полагать, в этом замешаны соседские [owner.GetPreFTLLowerPlural] в системе Дача."
- fircon.5005.desc.closed:0 "$fircon.5000.desc.base$\n\nПохоже, эту странную систему создали ранее обитавшие в системе Дача [owner.GetPreFTLLowerPlural]. Однако гиперкоридор, который когда-то вел туда, теперь исчез."
+ fircon.5005.desc.open:0 "$fircon.5000.desc.base$\n\nНадо полагать, в этом замешаны соседские [owner.GetPreFTLLowerPlural&plain] существа в системе Дача."
+ fircon.5005.desc.closed:0 "$fircon.5000.desc.base$\n\nПохоже, эту странную систему создали ранее обитавшие в системе Дача [owner.GetPreFTLLowerPlural&plain] существа. Однако гиперкоридор, который когда-то вел туда, теперь исчез."
 
  fircon.5010.name:0 "Угон планеты"
  fircon.5010.desc:0 "Планеты были перемещены!\n\nАномальные гиперкоридоры, которые мы обнаружили в системе §Y[from.solar_system.GetName]§!, были все связаны с тем местом, где мы ранее ожидали обнаружить планеты. Изучив эти странные коридоры, мы обнаружили, что все они ведут в одно и то же место: в звездную систему под названием §YДача§!, которая ранее казалась недоступной. Но если объединить все эти тонкие гиперкоридоры, через них можно будет отправить научный корабль."
@@ -2619,11 +2619,11 @@
  fircon.5015.c.purifier:0 "Эти планеты будут куда красивее, если на них поселятся [Owner.GetSpeciesNamePlural]."
 
  fircon.5020.name:0 "Обнаружены Объединенные планеты хабинтов"
- fircon.5020.desc:0 "Изучение новых идеальных миров — как правило, памятное событие, но для команды корабля [Root.GetName] оно растянется на несколько долгих месяцев. На нескольких планетах обитают весьма необычные [Owner.GetPreFTLLowerPlural]. Они явно еще не вышли в космос, но их технологии производства энергии от возобновляемых источников не уступают самым современным нашим реакторам.\n\nКроме того, необычно и равномерное распределение ресурсов. На каждой планете есть все необходимое для выживания, что должно быть невозможно. Мы видим, что товары, которые производятся только на одной планете, каким-то образом переносятся на другие без использования транспортных судов."
+ fircon.5020.desc:0 "Изучение новых идеальных миров — как правило, памятное событие, но для команды корабля [Root.GetName] оно растянется на несколько долгих месяцев. На нескольких планетах обитают весьма необычные [Owner.GetPreFTLLowerPlural&plain] существа. Они явно еще не вышли в космос, но их технологии производства энергии от возобновляемых источников не уступают самым современным нашим реакторам.\n\nКроме того, необычно и равномерное распределение ресурсов. На каждой планете есть все необходимое для выживания, что должно быть невозможно. Мы видим, что товары, которые производятся только на одной планете, каким-то образом переносятся на другие без использования транспортных судов."
  fircon.5020.a:0 "Нам срочно нужен наблюдательный форпост!"
 
  fircon.5026.name:0 "Межпланетный мост"
- fircon.5026.desc:0 "Судя по всему, [GetPreFTLLowerPlural] с планеты §Y[From.solar_system.GetName]§!, каким-то образом освоили теорию гиперпространственных коридоров лучше, чем мы. Все их планеты связаны друг с другом сетью искусственных гиперкоридоров. Они используются для транспортировки таких ресурсов, как пища и строительные материалы, посредством исключительно планетарных поездов — мы не представляем себе, как они этого добились.\n\nДополнительные затраты на изучение этих планет уже одобрены, скоро сюда отправятся новые [Root.GetScientistPlural]. Однако судя по активности их планетарных станций слежения, чужаков здесь изучаем не только мы."
+ fircon.5026.desc:0 "Судя по всему, [GetPreFTLLowerPlural&plain] жители планеты §Y[From.solar_system.GetName]§! каким-то образом освоили теорию гиперпространственных коридоров лучше, чем мы. Все их планеты связаны друг с другом сетью искусственных гиперкоридоров. Они используются для транспортировки таких ресурсов, как пища и строительные материалы, посредством исключительно планетарных поездов — мы не представляем себе, как они этого добились.\n\nДополнительные затраты на изучение этих планет уже одобрены, скоро сюда отправятся новые [Root.GetScientistPlural]. Однако судя по активности их планетарных станций слежения, чужаков здесь изучаем не только мы."
 
  fircon.5036.name:0 "Гнев кроткой расы"
  fircon.5036.desc:0 "Мы думали, что те, кто умеет летать между звездами, не опустятся до насилия.\n\n§RЛетите прочь.§!"
@@ -2635,9 +2635,9 @@
  fircon.5040.a.tt:0 "§RУ каждой системы в окрестностях §Yсистемы [From.GetName]§! появились новые гиперкоридоры.§!"
 
  fircon.5050.name:0 "Вежливая просьба"
- fircon.5050.desc:0 "Наше освоение технологии гиперкоридоров, доступ к которой нам открыли в рамках нашего сотрудничества [event_target:solarpunk_country.GetSpeciesAdj], идет удручающе низкими темпами. Похоже, чтобы достичь их мастерства в навигации местного гиперкоридорного кластера, нам придется потратить тысячи лет на каталогизацию гипервозмущений. Мы получили сообщение от представителя наших новых коллег.\n\n«Признаемся, ваше присутствие в нашем пространстве доставляет нам неудобства. Теперь, когда вы узнали то, за чем пришли, мы просим вас удалиться. Ваш образ жизни несовместим с нашим, и мы боимся, что в будущем вы пожелаете забрать у нас наши богатства. Поэтому, чтобы избежать обид, мы готовы подарить вам одну из наших планет. Не волнуйтесь, транспортировку мы обеспечим»."
+ fircon.5050.desc:0 "Наше освоение технологии гиперкоридоров, доступ к которой нам открыли в рамках нашего сотрудничества с [event_target:solarpunk_country.GetSpeciesAdj&masc,inst] государством, идет удручающе низкими темпами. Похоже, чтобы достичь их мастерства в навигации местного гиперкоридорного кластера, нам придется потратить тысячи лет на каталогизацию гипервозмущений. Мы получили сообщение от представителя наших новых коллег.\n\n«Признаемся, ваше присутствие в нашем пространстве доставляет нам неудобства. Теперь, когда вы узнали то, за чем пришли, мы просим вас удалиться. Ваш образ жизни несовместим с нашим, и мы боимся, что в будущем вы пожелаете забрать у нас наши богатства. Поэтому, чтобы избежать обид, мы готовы подарить вам одну из наших планет. Не волнуйтесь, транспортировку мы обеспечим»."
  fircon.5050.a:0 "Мы согласны, успехов вам в будущем."
- fircon.5050.a.tt:0 "На орбите звезды §Y[capital_star.GetName]§!) появится планета §YСол X§!."
+ fircon.5050.a.tt:0 "На орбите §Y[capital_star.GetName&gen]§! появится §Yдесятая§! планета."
  fircon.5050.c:0 "Мы раскроем ваши тайны!"
  fircon.5050.c.tt:0 "§RНапасть на чужаков и заполучить секреты гиперкоридоров.§!"
  #Anomalies

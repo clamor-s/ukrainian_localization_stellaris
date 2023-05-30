@@ -397,7 +397,7 @@
  tr_diplomacy_diplomatic_networking:0 "Дипломатические связи"
  tr_diplomacy_diplomatic_networking_desc:0 "Посольства: §G+3§! £unity£ §Yединства§!"
  tr_diplomacy_diplomatic_networking_gestalt:0 "$tr_diplomacy_diplomatic_networking$"
- tr_diplomacy_diplomatic_networking_delayed:0 "Влияние и эффективность дипломатических связей — предмет особой гордости каждого жителя государства [This.GetName]."
+ tr_diplomacy_diplomatic_networking_delayed:0 "Влияние и эффективность дипломатических связей — предмет особой гордости каждого жителя [This.GetName&gen]."
  tr_diplomacy_diplomatic_networking_gestalt_delayed:0 "Пользуясь дипломатией во всех аспектах наших взаимоотношений с другими видами, мы не только совершенствуем дипломатические протоколы — [This.GetGovernmentName] считает, что это повышает эффективность принятия решений и идет на пользу управлению государству в целом."
  diplomatic_networking:0 "$tr_diplomacy_diplomatic_networking$"
 
@@ -692,7 +692,7 @@
  tr_unyielding_federations_finish_desc:0 "$MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_MULT$§G+50%§!\n$mod_starbases_upkeep_mult$§G-20%§!\nОткрывает доступ к типу федерации §Y$military_federation$§!.\nОткрыты бонусы за стремление: §G+1§!"
 
  tr_unyielding_resistance_is_frugal:0 "Сопротивление уместно"
- tr_unyielding_resistance_is_frugal_desc:1 "£defense_army£ §YОборонительные армии§! теперь производят §Y0,5§! £unity£ единства. Кроме того, §Y$MOD_ARMY_DEFENSE_HEALTH_MULT$§! увеличивается на §G+25%§!."
+ tr_unyielding_resistance_is_frugal_desc:1 "£defense_army£ §YОборонительные армии§! теперь производят §Y0,5§! £unity£ единства. Кроме того, §Y$MOD_ARMY_DEFENSE_HEALTH_MULT$§! увеличивается на §G+25%§!." # [LocEditor:ForFutureBatchExport]
  tr_unyielding_resistance_is_frugal_hive:0 "$tr_unyielding_resistance_is_frugal$"
  tr_unyielding_resistance_is_frugal_machine:0 "$tr_unyielding_resistance_is_frugal$"
  tr_unyielding_resistance_is_frugal_delayed:0 "Наш народ верит в надежность укреплений, оберегающих покой наших планет, и видит в них гарантию процветания в будущем."
@@ -924,7 +924,7 @@
  tradition_aptitude_machine_desc:0 "Модуль с высоким лидерским потенциалом ведет государство к великим свершениям."
  tr_aptitude_adopt:0 "Традиции одаренности"
  tr_aptitude_finish:0 "Традиции одаренности завершены"
- tr_aptitude_finish_desc:0 "Начальные признаки лидера: §G+1§!"
+ tr_aptitude_adopt_desc:0 "Начальные признаки лидера: §G+1§!"
  tr_aptitude_the_empire_needs_you:0 "Вы нужны государству!"
  tr_aptitude_the_empire_needs_you_delayed:0 "Молодежь часто мечтает о почетном статусе государственного лидера."
  tr_aptitude_the_empire_needs_you_hive:0 "Из грязи в князи"
@@ -955,7 +955,7 @@
  tr_aptitude_champions_of_the_empire_hive_delayed:0 "Улей готов предоставить сильнейшим единицам небольшую самостоятельность ради блага сообщества."
  tr_aptitude_champions_of_the_empire_machine:0 "Административные права"
  tr_aptitude_champions_of_the_empire_machine_delayed:0 "Мы верим в уникальные подпрограммы наших лидеров и позволяем им выбирать путь, которым пойдет государство."
- tr_aptitude_champions_of_the_empire_desc:0 "Каждый персонаж-$admiral_with_icon$ и $general_with_icon$\n$t$$MOD_COUNTRY_NAVAL_CAP_ADD$: §G+2§!\nКаждый персонаж-$governor_with_icon$\n$t$$MOD_EMPIRE_SIZE_MULT$: §G-2%§!\nКаждый персонаж-$scientist_with_icon$\n$t$$MOD_LEADER_SPECIES_EXP_GAIN$: §G+2%§!"
+ tr_aptitude_champions_of_the_empire_desc:1 "За каждый уровень $admiral_with_icon$ и $general_with_icon$\n$t$$MOD_COUNTRY_NAVAL_CAP_ADD$: §G+2§!\nЗа каждый уровень $governor_with_icon$\n$t$$MOD_EMPIRE_SIZE_MULT$: §G-2§!\nЗа каждый уровень $scientist_with_icon$: \n$t$$MOD_LEADER_SPECIES_EXP_GAIN$: §G+0,5%§!"
 
 ################################################################
 # Statecraft
@@ -1040,7 +1040,7 @@
 
  requires_tradition_the_federation:1 "$TRIGGER_FAIL$§RТребуется традиция дипломатии §YФедерация§!.§!"
  requires_tradition_universal_compatibility:0 "§RТребуется традиция многогранности §YУниверсальная совместимость§!.§!"
- requires_independence:0 "$TRIGGER_FAIL$Государство [This.GetName] должно быть независимым."
+ requires_independence:0 "$TRIGGER_FAIL$[This.GetName:<1> должен|||fem:<1> должна|||neut:<1> должно|||pl:<1> должны] обладать независимостью."
  requires_ascension_perks_1:0 "$TRIGGER_FAIL$Требуется сначала выбрать один другой бонус за стремление."
  requires_ascension_perks_2:1 "$TRIGGER_FAIL$Требуется сначала выбрать два других бонуса за стремление."
  requires_ascension_perks_3:1 "$TRIGGER_FAIL$Требуется сначала выбрать три других бонуса за стремление."
@@ -1209,3 +1209,4 @@
  ap_transcendence_desc:0 "Мы стоим на пороге пробуждения истинной псионической мощи нашей расы. Наш разум к этому готов, и мы слышали шепот, идущий из экстрасенсорной области, которая нам пока недоступна..."
  tr_aptitude_psychological_profiling_desc:0 "$chance_for_negative_traits$: §G−25%§!"
  tr_statecraft_finish_desc:0 "Получена технология: §Y$tech_galactic_administration$§!"
+ tr_aptitude_finish_desc:0 "Начальные признаки лидера: §G+1§!"
