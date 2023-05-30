@@ -3,9 +3,19 @@
 
  SECTOR_EDIT_VIEW:0 "Редактор секторов"
  EDITING_SECTOR:0 "Редактирование сектора: $SECTOR_NAME|Y$"
- SECTOR_EDITOR_HELP:0 "§H$SECTOR_EDIT_VIEW$§!\n§H$SECTOR_EDIT_VIEW$§! позволит вам свободно добавить или удалить любую принадлежащую вам связанную систему, которая находится в радиусе доступности £sector_capital£§Yстолицы сектора§!.\n$SEPARATOR$$SEPARATOR$$SEPARATOR$\n§EСектор автоматически расширится и включит в себя все системы, находящие в радиусе доступности и не входящие в другие сектора.§!"
+ SECTOR_EDITOR_HELP:1 "§H$SECTOR_EDIT_VIEW$§!\n§H$SECTOR_EDIT_VIEW$§! Позволит вам свободно добавить или удалить любую принадлежащую вам связанную систему, которая находится в радиусе доступности £sector_capital£§Yстолицы сектора§!.\n$SEPARATOR$$SEPARATOR$$SEPARATOR$\n§EСектор автоматически расширится и включит в себя все системы, находящие в радиусе доступности и не входящие в другие сектора, если будет включено автоматическое расширение.§!"
  SECTOR_EDITOR_ADD_SYSTEMS:0 "Добавить системы"
  SECTOR_EDITOR_REMOVE_SYSTEMS:0 "Убрать системы"
+ SECTOR_EDITOR_AUTO_EXPAND_TEXT:0 "Автоматически расширять сектор"
+ SECTOR_AUTO_EXPAND:0 "Включите, чтобы §Yсектор§! автоматически расширялся и включал в себя новые системы."
+ 
+ democratic_local_government:0 "Демократическая администрация" # [LocEditor:ForFutureBatchExport]
+ oligarchic_local_government:0 "Олигархическое правительство" # [LocEditor:ForFutureBatchExport]
+ dictatorial_local_government:0 "Диктаторская комиссия" # [LocEditor:ForFutureBatchExport]
+ imperial_local_government:0 "Имперская ассамблея" # [LocEditor:ForFutureBatchExport]
+ hive_mind_local_government:0 "Сознание улья" # [LocEditor:ForFutureBatchExport]
+ machine_intelligence_local_government:0 "Центр машинного разума" # [LocEditor:ForFutureBatchExport]
+ corporate_local_government:0 "Корпоративный офис" # [LocEditor:ForFutureBatchExport]
 
  ####################
  ### THE BEHOLDER ###
@@ -97,7 +107,13 @@
  the_beholder_energy_big_desc:0 "$the_beholder_energy_small_desc$"
 
  paragon.31.name:0 "Корабль"
- paragon.31.desc:0 "Мы выполнили свою часть соглашения и предоставили Смотрителю энергию. Получив ее, монолит завибрировал на высокой частоте, затрясся и поднялся в воздух, вырвавшись из почвы. Настоящие размеры монолита оказались как минимум в два раза больше самых смелых наших предположений.\n\nГигантский восьмигранник повис в небе, обильно посыпая землю грязью и пылью. Местные жители в панике заверещали, с ужасом наблюдая, как их реликвия взмывает в атмосферу.\n\nТеперь нам стало понятно, что на самом деле монолит — огромный космический корабль. Сейчас он висит на орбите планеты [beholder_planet.GetName]."
+ paragon.31.desc:0 "§HМы выполнили свою часть соглашения и предоставили Смотрителю энергию. Получив ее, монолит завибрировал на высокой частоте, затрясся и поднялся в воздух, вырвавшись из почвы. Настоящие размеры монолита оказались как минимум в два раза больше самых смелых наших предположений.\n\nГигантский восьмигранник повис в небе, обильно посыпая землю грязью и пылью. Местные жители в панике заверещали, с ужасом наблюдая, как их реликвия взмывает в атмосферу.\n\nТеперь нам стало понятно, что на самом деле Шепчущий монолит — огромный космический корабль. Сейчас он висит на орбите планеты [beholder_planet.GetName].§!"
+ paragon.1.a:0 "Зачем вы ищете энергию?"
+ paragon.1.a.response:0 "§HПосле продолжительного молчания канал передачи начинает заполняться помехами; их становится всё больше и больше, пока все слушающие не исполняются бесчисленными эмоциями, от сокрушительных сожалений до непреодолимых желаний. В этой какофонии почти невозможно ничего разобрать, но сквозь помехи явно читается одно:§!\n\nНаблюдать."
+ paragon.1.b:0 "Что вы можете дать нашей цивилизации?"
+ paragon.1.b.response:0 "§HВ ответ слышится гомон невнятных шелестящих голосов.§!\n\nТайны... обнаженные. Потенциал... пути... открыт. Покров... начинается. Мы раскроем объятия... Дайте нам... ваши глаза... привести... туда.\n\n§HХотя это неясное сообщение можно интерпретировать по-разному, ни у кого не остается сомнений в том, что здесь как-то замешаны псионическая энергия и Покров.§!"
+ paragon.1.c:0 "Что вы такое?"
+ paragon.1.c.response:0 "§HНеожиданно ясно слышится один голос:§!\n\nПреходящее и вечное. Ничто и всё... Ваш язык бессилен. Мы сродни «цели». Сейчас любое другое определение вам недоступно. Покров обширен и полон скрытых знаний."
 
  paragon_beholder_joins:1 "§Y$NAME_The_Beholder$§! присоединяется к вашему государству в качестве §Hлидера§!."
 
@@ -111,33 +127,43 @@
  BEHOLDER_CLOUD_LIGHTNING:0 "Молния из энергии Покрова"
  NAME_Temple_of_Whispers:0 "Шепчущий монолит"
  building_the_beholder:0 "$NAME_Temple_of_Whispers$"
- building_the_beholder_desc:0 ""
- building_the_beholder_known_desc:1 "Корабль, превращающий энергию планеты в зро, чтобы поддерживать связь с Покровом. С его помощью §H$temple_of_whispers$§! связывается с нашим миром.\n\n$beholder_decisions$"
+ building_the_beholder_desc:1 "Корабль, превращающий энергию планеты в зро, чтобы поддерживать связь с Покровом. С его помощью §Y$temple_of_whispers$§! связывается с нашим миром."
+ building_the_beholder_known_desc:2 "$beholder_decisions$"
  building_the_beholder_unknown_desc:0 "Загадочное сооружение, излучающее странную энергию."
 
  beholder_ship_button_desc:0 "§HПриземление§!\nПосадить этот корабль на принадлежащую вам планету, где он превратится в сооружение.\n\n§YШепчущий монолит§!\nЛимит для государства: §Y1/1§!\nПроизводит: £sr_zro£ 8,00\nСодержание: £energy£ 25,00\nРесурсы от поселений псиоников: §G+10%§!\n\n$beholder_decisions$"
- beholder_decisions:0 "Открывает §Eпланетарные решения§!:\n— §H$decision_deploy_beholder$§!\n— §H$decision_psi_inoculate_pops$§!"
+ beholder_decisions:1 "Открывает §Eпланетарные решения§!:\n- §H$decision_deploy_beholder$§!\n- §H$decision_psi_inoculate_pops$§!\n- §H$decision_cease_psi_inoculate_pops$§!\n\n"
 
  SHROUD_SHIELD_SUPPRESSION_FIELD:0 "Подавление щитов энергией Покрова"
  SHROUD_SHIELD_SUPPRESSION_FIELD_DESC:0 "Поле, насыщенное энергией Покрова, нейтрализует все щиты в пределах одной звездной системы."
  SHIP_PLANETFALL:0 "Конструкция двойного назначения"
  SHIP_PLANETFALL_DESC:0 "Монолит — очень прочное судно, способное служить как кораблем, так и планетарным сооружением."
  decision_deploy_beholder:0 "Поднять Шепчущий монолит"
- decision_deploy_beholder_custom_tooltip:0 "Чтобы поднять Шепчущий монолит с планеты, потребуется значительное количество зро."
+ decision_deploy_beholder_custom_tooltip:1 "Шепчущий монолит появится в виде боеспособного межзвездного судна."
  decision_deploy_beholder_desc:0 "В космосе корабль Смотрителя включает мощный демпфер щита, отключающий все щиты без разбора."
  cannot_deploy_during_psi_inoculation:1 "§RИдет пси-инокуляция населения этой планеты. Нельзя поднять Смотрителя, иначе психика населения окажется под угрозой.§!"
- decision_psi_inoculate_pops:0 "Провести пси-инокуляцию населения"
- decision_psi_inoculate_pops_custom_tooltip:0 "Смотритель постепенно прививает органических и не ставших киборгами жителей планеты, пробуждая у тех §Yпризнак «Псионик»§!. На это тратится £sr_zro£ §Y100§! за одно поселение. Шепчущий монолит нельзя поднять в космос до окончания инокуляции." # [LocEditor:ForFutureBatchExport]
- decision_psi_inoculate_pops_desc:0 "" # [LocEditor:ForFutureBatchExport]
+
+ decision_psi_inoculate_pops:1 "Начать пси-инокуляцию"
+ decision_psi_inoculate_pops_custom_tooltip:2 "Шепчущий монолит вместо производства £sr_zro£ §Yзро§! будет постепенно давать £pop£ §Yпоселениям§! признак §Yпсионик§!.\n\n§R Во время этого процесса Шепчущий монолит невозможно поднять в космос.§!"
+ decision_psi_inoculate_pops_desc:3 "Смотритель постепенно прививает поселения, пробуждая у них признак §Y$trait_psionic$§!. Для этого необходимо, чтобы поселения не подвергались геноциду, не были кибернетическими и не принадлежали коллективному разуму."
  no_organic_pops_on_planet:0 "§RНа этой планете нет органических, не ставших киборгами жителей, которые могли бы пройти инокуляцию.§!"
+
+ decision_cease_psi_inoculate_pops:0 "Прекратить пси-инокуляцию"
+ decision_cease_psi_inoculate_pops_custom_tooltip:0 "Модификация £pop£ §Yпоселений§! с целью постепенного пробуждения у них признака §Yпсионик§! будет прекращена.\n$beholder_psi_pops_timer_tooltip$\nЭто позволит поднять Шепчущий монолит в космос и возобновить производство £zro£ §Yзро§!."
+ decision_cease_psi_inoculate_pops_desc:0 "Смотритель постепенно прививает поселения, пробуждая у них признак §Yпсионик§!. Для этого необходимо, чтобы поселения не подвергались геноциду, не были кибернетическими и не принадлежали коллективному разуму."
+
+ beholder_psi_pops_timer_tooltip:0 "Следующая пси-инокуляция на планете §Y[This.GetName]§! завершится §Y[This.beholder_psi_pops_timer]§!."
+
+ beholder_psi_pops_cooldown_tooltip:0 "\n§RШепчущий монолит недавно прекратил пси-инокуляцию и не сможет возобновить ее до §Y[This.beholder_psi_pops_cooldown_timer]§!§!"
+
  MESSAGE_POPS_INOCULATED_TITLE:0 "Инокуляция населения завершена"
- MESSAGE_POPS_INOCULATED_DESC:0 "Смотритель завершил пси-инокуляцию населения планеты $PLANET|$."
+ MESSAGE_POPS_INOCULATED_DESC:1 "£pop£ Поселение на планете $PLANET|$ приобрело признак §Y$trait_psionic$§! вследствие пси-инокуляции §YСмотрителем§!."
 
  MESSAGE_BEHOLDER_PLANETFALL_TITLE:0 "Приземление Смотрителя"
  MESSAGE_BEHOLDER_PLANETFALL_DESC:0 "Смотритель приземлился на планету $PLANET|$. Теперь Шепчущий монолит находится там."
 
  MESSAGE_BEHOLDER_PLANETFALL_NO_SLOTS_TITLE:0 "Приземление Смотрителя неудачно"
- MESSAGE_BEHOLDER_PLANETFALL_NO_SLOTS_DESC:0 "Смотритель не сумел приземлиться на планете $PLANET|$. На планете нет места."
+ MESSAGE_BEHOLDER_PLANETFALL_NO_SLOTS_DESC:1 "Смотритель не сумел приземлиться на планете $PLANET|$. Требуется пустая ячейка сооружений."
 
  leader_trait_governor_psionic_communion:0 "Псионическое единение"
  leader_trait_governor_psionic_communion_desc:1 "За счет своих псионических способностей этот лидер улучшает душевное здоровье населения, повышает взаимодоверие и дарит ему чувство безопасности."
@@ -480,6 +506,11 @@
  paragon_astrocreation_is:1 "«Астрогенез — это усовершенствованная техника терраформирования. И очень эффективная! Я засеиваю планету терраформирующим ядром… — §HАзарин указывает на ростки у себя за спиной§!, — и почти любой мир превращается в идеальный. Затраты энергии просто огромны, зато результат не назвать иначе, как впечатляющим»."
 
  paragon.228.b.custom_tooltip:2 "§Y$NAME_Astrocreator_Azaryn$§! присоединяется к нашему государству в качестве §Hлидера§!."
+
+ paragon.228.c:0 "Что это у тебя на спине?"
+ paragon.228.c.response:0 "§HПохоже, Азарин удивлена этим вопросом.§!\n\n«Это уникальная особенность моей расы, если в двух словах. В юности они растут быстро — что не очень приятно, замечу! — и их нужно регулярно подрезать, чтобы они не начали перевешивать, §H— она улыбается. —§! Но в моем возрасте это уже давно не проблема.\n\nЭто не совсем семена, но можно их и так назвать. Я называю их терраформирующими ядрами. Внутри них таится потенциал роста, возрождения и жизни»."
+ paragon.228.d:0 "А что это так гудит? Твой маленький дрон?"
+ paragon.228.d.response:0 "«Ах, это? §H— Азарин слегка касается маленького летающего объекта. —§! Это один из дронов-опылителей. Они поддерживают жизнеспособность экосистемы моего корабля.\n\nОни не совсем неорганические, они даже способны сами вырабатывать пыльцу, §H— Азарин указывает на днище дрона. —§! Они даже могут регулировать перенос пыльцы при помощи статических магнитных свойств своих аккумуляторных терминалов. Правда мило?»"
 
  paragon.230.name:0 "$NAME_Astrocreator_Azaryn$"
  paragon.230.desc_worst:0 "$paragon.230.desc_main$ $paragon.230.worst$"
@@ -1123,10 +1154,20 @@
  councilor_gestalt_governor_desc:1 "$TITLE$ принимает важные для улья решения."
  councilor_gestalt_scientist:0 "Когнитивный узел"
  councilor_gestalt_scientist_desc:0 "$TITLE$ служит для развития нашего понимания окружающего мира."
- councilor_gestalt_admiral:0 "Узел экспансии"
+ councilor_gestalt_admiral:1 "Узел-легион"
  councilor_gestalt_admiral_desc:1 "$TITLE$ принимает решения по освоению галактики."
- councilor_gestalt_general:1 "Узел подавления отклонений"
+ councilor_gestalt_general:2 "Регуляторный узел"
  councilor_gestalt_general_desc:1 "$TITLE$ борется с появлением сознаний-отступников."
+ couniclor_machine_governor:0 "Директива экспансии"
+ couniclor_machine_governor_desc:0 "$TITLE$: единицы будут осваивать все доступные миры"
+ couniclor_machine_scientist:0 "Директива исследований"
+ couniclor_machine_scientist_desc:0 "$TITLE$: необходимо собирать и анализировать данные."
+ councilor_machine_admiral:0 "Директива истребления"
+ councilor_machine_admiral_desc:0 "$TITLE$: все угрозы должны быть уничтожены."
+ couniclor_machine_admiral_servitor:0 "Директива изнеживания"
+ councilor_machine_admiral_servitor_desc:0 "$TITLE$: все угрозы должны быть уничто§R'¿°éü¿T (( (+ÇÄ§! изнежены."
+ councilor_machine_general:0 "Директива эксплуатации"
+ councilor_machine_general_desc:0 "$TITLE$: необходимо эксплуатировать любое преимущество."
 
  councilor_psionic_sovereign:0 "Божественный проводник"
  councilor_psionic_sovereign_female:0 "$councilor_psionic_sovereign$"
@@ -1158,6 +1199,14 @@
  councilor_ancient_caches_of_technology_female:0 "$councilor_ancient_caches_of_technology$"
  councilor_ancient_caches_of_technology_desc:0 ""
 
+# councilor_expert_programmer: "Expert Programmer"
+# councilor_expert_programmer_female: "$councilor_expert_programmer$"
+# councilor_expert_programmer_desc: "An $TITLE$ is to thank for the new script support for Council Positions."
+# councilor_expert_programmer_modifiers: "This is an example of a custom tooltip with modifiers for a Council Position."
+# councilor_expert_programmer_conditional: "This is an example of a conditional tooltip for a Council Positon."
+# councilor_expert_programmer_unlock_title: "§HCouncil Position from Console Commands§!"
+
+
 # AGENDAS - Misc
  agenda_ref:0 "Программа"
  council_agenda_agenda_infinite_opportunities_name:0 "Безграничные возможности"
@@ -1172,6 +1221,8 @@
  council_agenda_agenda_unlock_slot_desc:1 "Нам нужно расширить правительство, чтобы мы смогли нанять еще одного советника."
  council_agenda_agenda_idle_name:0 "Обычное положение"
  council_agenda_agenda_idle_desc:0 "У нас нет конкретной задачи, поэтому мы занимаемся менее существенными вопросами."
+ council_agenda_agenda_reorganize_council_name:0 "Реорганизация совета"
+ council_agenda_agenda_reorganize_council_desc:0 "Вследствие изменения приоритетов правительства нам следует реорганизовать совет, чтобы обратить внимание на другие проблемы."
 
 # AGENDAS - Ethics
  council_agenda_agenda_we_come_in_peace_name:0 "Мы пришли с миром"

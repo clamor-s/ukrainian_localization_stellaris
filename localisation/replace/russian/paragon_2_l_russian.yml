@@ -25,6 +25,7 @@
  empire_capital_world:0 "Столица государства"
  sector_capital_world:0 "Столица сектора"
  TOO_CLOSE_TO_ANOTHER_SECTOR_CAPITAL:0 "Расстояние между столицами секторов должно быть не менее 5 прыжков."
+ EXPERIENCE_GAIN_RATE_TITLE:0 "§EСкорость прироста опыта:§!"
 
  DISMISS_LEADER_COST:0 "§GСтоимость: $COST$§!"
  CAN_NOT_AFFORD_DISMISSING_LEADER:0 "§RНечем оплатить стоимость $COST$§!"
@@ -119,6 +120,11 @@
  SCIENCE_SHIP_AUTOMATION_TITLE:0 "Настройки автоматизации"
  AUTOMATION_ORDER_SETTINGS_TITLE:0 "§YТекущие настройки приказа автоматизации:§!"
 
+ RENAME_COUNCILOR_TITLE:0 "Переименовать советника"
+ RENAME_COUNCILOR_TITLE_MALE:0 "Титул (мужской)"
+ RENAME_COUNCILOR_TITLE_FEMALE:0 "Титул (женский)"
+ RENAME_COUNCILOR_TITLE_INDETERMINABLE:0 "Титул"
+
  COUNCIL:0 "Совет"
  COUNCILOR:0 "§HСоветник§!"
  COUNCIL_AGENDA:0 "Программа совета"
@@ -197,6 +203,7 @@
  COUNCIL_ACTIVE_EDICTS:0 "Действующие указы"
  COUNCIL_GOTO_EDICTS:0 "Открыть указы"
  COUNCIL_NO_ACTIVE_EDICTS:0 "§gУ вас нет действующих указов§!"
+ UNLOCK_COUNCIL_SELECTION:0 "Позволяет перераспределение незаблокированных мест в совете"
 
  CLICK_TO_OPEN_EDICTS_VIEW:0 "§GЩелкните, чтобы открыть окно указов§!"
  CLICK_TO_VIEW_COUNCIL:0 "§GЩелкните, чтобы открыть окно совета§!"
@@ -210,14 +217,14 @@
  EMPIRE_EFFECTS_TXT:0 "§EЭффекты§! £empire£ §Yгосударства§! при должности §Yсоветника§!"
  THIS_LEADER_TXT:0 "§YЭтот§! §Eлидер§!"
  FLEET_EFFECTS_TXT:0 "§EЭффекты§! £military_ship£ §Yвоенных флотилий§!"
- # [LocEditor:UntranslatedKey] `NAVAL_BATTLE_WON_TXT`
+ NAVAL_BATTLE_WON_TXT:0 "£military_ship£ §EЭффекты при победе в§! §Yбитве флотилий§!"
  SCIENCE_SHIP_EFFECTS_TXT:0 "§EЭффекты§! £science_ship£ §Yнаучных кораблей§!"
  ARMY_EFFECTS_TXT:0 "§EЭффекты§! £army_ship£ §Yармий§!"
  PLANET_EFFECTS_TXT:0 "§EЭффекты§! £planet£ §Yпланет§!"
  PLANET_EFFECTS_WHILE_DEFENDING_TXT:0 "§EЭффекты§! £planet£ §Yпланет во время обороны§!"
  SYSTEM_EFFECTS_TXT:0 "Эффекты £system£ §Yсистем§!"
  SYSTEM_EFFECTS_WHILE_DEFENDING_TXT:0 "§EЭффекты§! £system£ §Yсистем во время обороны§!"
- CAPITAL_SYSTEM_EFFECTS_TXT:0 "Эффекты £ruler£ §Yстоличной системы§!" # [LocEditor:ForFutureBatchExport]
+ CAPITAL_SYSTEM_EFFECTS_TXT:1 "Эффекты £system£ §Yстоличной системы§!"
  ASSIST_RESEARCH_EFFECTS_TXT:0 "§EЭффекты§! £planet£ §Yпланет§! при §Yпомощи в исследованиях§!"
 
  alert_unassigned_leader_title:0 "Бездействующие лидеры"
@@ -247,7 +254,7 @@
  GOVERNANCE_SKILL_FROM_SECTOR_GOVERNOR:0 "§HУровень управления§!\n$SKILL|Y$ от губернатора сектора ($NAME|Y$)\n\n$SEPARATOR$\n§EПланетарный §Hуровень управления§! зависит от §Hнавыка§! губернатора §Yпланеты§! или §Yсектора§! — в зависимости от того, что окажется выше.§!"
  SECTOR_CAPITAL_NAME_WITH_FLAG:0 "£sector_capital£$NAME$"
 
- councilor_trait:1 "§cЧерта лидера§!\n£council£ Совет" # [LocEditor:ForFutureBatchExport]
+ councilor_trait:2 "§cЧерта лидера§! (£council£)"
  leader_trait:0 "§cЧерта лидера§!"
  admiral_trait:1 "§cЧерта лидера§!\n£admiral£ Класс «Адмирал»"
  general_trait:1 "§cЧерта лидера§!\n£general£ Класс «Генерал»"
@@ -259,7 +266,7 @@
  veteran_leader_trait:0 "§vВетеранская черта лидера§!"
  paragon_leader_trait:1 "§dСудьбоносная черта§!"
  common_councilor_trait:1 "$councilor_trait$"
- veteran_councilor_trait:1 "§vВетеранская черта лидера§!\n£council£ Совет" # [LocEditor:ForFutureBatchExport]
+ veteran_councilor_trait:2 "§vВетеранская черта лидера§! (£council£)"
  paragon_councilor_trait:1 "§dСудьбоносная черта§! (£council£)"
  common_admiral_trait:1 "$admiral_trait$"
  veteran_admiral_trait:1 "§vВетеранская черта лидера§!\n£admiral£ Класс «Адмирал»"
@@ -280,10 +287,10 @@
  triggered_scientist_trait:0 "[Root.SubtitleDLCCheckScientist]"
 
  veteran_class:0 "Класс «Ветеран»"
- admiral_subclass:1 "£admiral£ $veteran_class|v$" # [LocEditor:ForFutureBatchExport]
- general_subclass:1 "£general£ $veteran_class|v$" # [LocEditor:ForFutureBatchExport]
- governor_subclass:1 "£governor£ $veteran_class|v$" # [LocEditor:ForFutureBatchExport]
- scientist_subclass:1 "£scientist£ $veteran_class|v$" # [LocEditor:ForFutureBatchExport]
+ admiral_subclass:2 "£admiral£ §v$veteran_class$§!"
+ general_subclass:2 "£general£ §v$veteran_class$§!"
+ governor_subclass:2 "£governor£ §v$veteran_class$§!"
+ scientist_subclass:2 "£scientist£ §v$veteran_class$§!"
  councilor_subclass_base:0 "[Root.GetClass]"
 
  councilor_subclass_admiral:0 "$admiral_subclass$ (£council£)"
@@ -291,7 +298,7 @@
  councilor_subclass_governor:0 "$governor_subclass$ (£council£)"
  councilor_subclass_scientist:0 "$scientist_subclass$ (£council£)"
 
- councilor_subclass:1 "[Root.GetClassTexticon] $veteran_class|v$ (£council£)" # [LocEditor:ForFutureBatchExport]
+ councilor_subclass:2 "[Root.GetClassTexticon] §v$veteran_class$§! (£council£)"
 
  ADMIRAL_TEXTICON:0 "£admiral£"
  SCIENTIST_TEXTICON:0 "£scientist£"
@@ -311,12 +318,12 @@
  LEADER_MISSING_ASSIGNMENT:0 "§HБездействует§!\nЖдет назначения."
  LEADER_WAITING_TO_BE_ASSIGNED:0 "§YЖдет назначения.§!"
  LEADER_ASSIGNED:0 "§HЛидер назначен§!"
- LEADER_CLASS_TEXT:0 "[Root.ClassPrefix][Root.GetClass]" # [LocEditor:ForFutureBatchExport]
+ LEADER_CLASS_TEXT:1 "[Root.ClassPrefix][Root.GetClass]§!"
  LEADER_SUBCLASS_TEXT:0 "[Root.GetSubclass]"
  LEADER_TIER_NAME:0 "[Root.LeaderTierName]"
- CLASS_PREFIX_NONE:0 "§H" # [LocEditor:ForFutureBatchExport]
- CLASS_PREFIX_RENOWNED:0 "Знаменитый " # [LocEditor:ForFutureBatchExport]
- CLASS_PREFIX_LEGENDARY:0 "Легендарный " # [LocEditor:ForFutureBatchExport]
+ CLASS_PREFIX_NONE:1 "§H"
+ CLASS_PREFIX_RENOWNED:1 "§rЗнаменитый "
+ CLASS_PREFIX_LEGENDARY:1 "§lЛегендарный "
  CLASS_TIER_RENOWNED:1 "§rЗнаменитый идеал§!"
  CLASS_TIER_LEGENDARY:1 "§lЛегендарный идеал§!"
 
@@ -652,7 +659,7 @@
  MESSAGE_COUNCIL_AGENDA_AVAILABLE_TITLE:0 "Доступна программа совета"
  MESSAGE_COUNCIL_AGENDA_AVAILABLE_COOLDOWN_DESC:0 "Вновь доступна программа «$AGENDA|Y$»."
  MESSAGE_COUNCIL_AGENDA_AVAILABLE_UNLOCKED_DESC:0 "Разблокирована программа «$AGENDA|Y$»."
- MESSAGE_COUNCIL_AGENDA_AVAILABLE_UNLOCKED_INSPIRING_AGENDAS:0 "Разблокированы программы «§Y$council_agenda_agenda_rightful_claims_name$§!», «§Y$council_agenda_agenda_evolving_society_name$§!» и «§Y$council_agenda_agenda_oppose_the_fallen_name$§!»."
+ MESSAGE_COUNCIL_AGENDA_AVAILABLE_UNLOCKED_INSPIRING_AGENDAS:0 "Разблокированы программы «§Y$council_agenda_agenda_rightful_claims_name$§!», «§Y$council_agenda_agenda_evolving_society_name$§!» и «§Y$council_agenda_agenda_oppose_the_fallen_name$§!»." # [LocEditor:ForFutureBatchExport]
  MESSAGE_RECRUITED_LEADER_TITLE:0 "Получен лидер"
  MESSAGE_RECRUITED_LEADER_DESC:0 "§H[LEADER.GetClass]§! §Y$LEADER$§! присоединяется к нашему государству."
  
@@ -671,10 +678,14 @@
  scientists_cost_mod:0 "Нанятые ученые"
  governors_cost_mod:0 "Нанятые губернаторы"
  generals_cost_mod:0 "Нанятые генералы"
- mod_leader_admirals_cost_mult:0 "Стоимость лидера-адмирала"
- mod_leader_generals_cost_mult:0 "Стоимость лидера-генерала"
- mod_leader_scientists_cost_mult:0 "Стоимость лидера-ученого"
- mod_leader_governors_cost_mult:0 "Стоимость лидера-губернатора"
+ mod_leader_admirals_cost_mult:0 "Стоимость лидера-адмирала" # [LocEditor:ForFutureBatchExport]
+ mod_leader_generals_cost_mult:0 "Стоимость лидера-генерала" # [LocEditor:ForFutureBatchExport]
+ mod_leader_scientists_cost_mult:0 "Стоимость лидера-ученого" # [LocEditor:ForFutureBatchExport]
+ mod_leader_governors_cost_mult:0 "Стоимость лидера-губернатора" # [LocEditor:ForFutureBatchExport]
+ mod_leader_admirals_upkeep_mult:0 "$admiral_with_icon$ $UPKEEP$" # [LocEditor:ForFutureBatchExport]
+ mod_leader_generals_upkeep_mult:0 "$general_with_icon$ $UPKEEP$" # [LocEditor:ForFutureBatchExport]
+ mod_leader_scientists_upkeep_mult:0 "$scientist_with_icon$ $UPKEEP$" # [LocEditor:ForFutureBatchExport]
+ mod_leader_governors_upkeep_mult:0 "$governor_with_icon$ $UPKEEP$" # [LocEditor:ForFutureBatchExport]
  LEADER_UPKEEP:0 "$VALUE$"
  LEADER_UPKEEP_WITH_TEXT:0 "Содержание: $VALUE$"
  LEADER_COST:1 "Стоимость: $VALUE|Y$"
@@ -738,10 +749,14 @@
  trait_ruler_logistic_understanding_2_desc:0 "$trait_ruler_logistic_understanding_desc$"
  trait_ruler_eye_for_talent_2:0 "$trait_ruler_eye_for_talent$ II"
  trait_ruler_eye_for_talent_2_desc:0 "$trait_ruler_eye_for_talent_desc$"
- leader_trait_gifted:0 "Одаренный"
+ leader_trait_gifted:1 "Компетентность"
  leader_trait_gifted_desc:1 "Этот лидер отличается быстрым умом и на лету схватывает самые сложные понятия."
- trait_imperial_heir:0 "Имперский наследник"
- trait_imperial_heir_desc:0 "Этот наследник — следующий в очереди на имперский престол."
+ trait_imperial_heir:1 "[triggered_imperial_name]"
+ trait_imperial_heir_desc:1 "[triggered_imperial_desc]"
+ imperial_heir:0 "Имперский наследник"
+ imperial_heir_desc:0 "Этот наследник — следующий в очереди на имперский престол."
+ imperial_ruler:0 "Правитель Империи"
+ imperial_ruler_desc:0 "[Owner.Ruler.GetName] — [Owner.Ruler.GetTitle] империи."
  leader_trait_scrapper:0 "Утилизатор"
  leader_trait_scrapper_desc:1 "Этот лидер владеет частными единицами Разума для утилизации."
  leader_trait_scrapper_2:0 "$leader_trait_scrapper$ II"
@@ -754,32 +769,36 @@
  leader_trait_venerated_desc:1 "Этого лидера глубоко уважают окружающие."
  leader_trait_venerated_2:0 "$leader_trait_venerated$ II"
  leader_trait_venerated_2_desc:0 "$leader_trait_venerated_desc$"
- leader_trait_melancholic:0 "Меланхолик"
+ leader_trait_melancholic:1 "Меланхолия"
  leader_trait_melancholic_desc:1 "Этот лидер страдает от продолжительных приступов тоски."
- leader_trait_fallible:0 "Склонный ошибаться"
+ leader_trait_fallible:1 "Подверженность слабостям"
  leader_trait_fallible_desc:1 "Этот лидер не умеет сопротивляться соблазнам и постоянно попадает в неприятные ситуации."
  leader_trait_lavish_lifestyle:0 "Роскошный образ жизни"
  leader_trait_lavish_lifestyle_desc:1 "Этот лидер обожает всё дорогое и красивое."
- leader_trait_excessive:0 "Скопидом"
+ leader_trait_excessive:1 "Накопительство"
  leader_trait_excessive_desc:1 "Этот лидер постоянно копит запасы."
- leader_trait_reclusive:0 "Затворник"
+ leader_trait_reclusive:1 "Затворничество"
  leader_trait_reclusive_desc:1 "Этот лидер терпеть не может внимания — ни общественного, ни какого-либо еще."
  leader_trait_embezzler:0 "Расхититель"
  leader_trait_embezzler_desc:1 "Этот лидер считает, что пропажу небольшой суммы кредитов никто не заметит."
- leader_trait_intolerant:0 "Нетерпимый"
+ leader_trait_intolerant:1 "Нетерпимость"
  leader_trait_intolerant_desc:1 "Этот лидер с подозрением и недоверием относится ко всем, кто хоть немного отличается."
- leader_trait_gullible:0 "Доверчивый"
+ leader_trait_gullible:1 "Доверчивость"
  leader_trait_gullible_desc:1 "Этот лидер верит почти всему, что читает в официальных на вид источниках."
- leader_trait_volatile:0 "Беспокойный"
+ leader_trait_volatile:1 "Ветреность"
  leader_trait_volatile_desc:1 "Этот лидер печально славится своим непредсказуемым характером."
- leader_trait_passive:0 "Пассивный"
+ leader_trait_passive:1 "Пассивность"
  leader_trait_passive_desc:1 "Этот лидер обладает крайне невыразительным и неприметным характером."
- leader_trait_tyrannical:0 "Тиран"
+ leader_trait_tyrannical:1 "Тиранство"
  leader_trait_tyrannical_desc:1 "Этот лидер беспощадно и жестоко угнетает своих подчиненных."
- leader_trait_bureaucratic:0 "Бюрократ"
+ leader_trait_bureaucratic:1 "Бюрократизм"
  leader_trait_bureaucratic_desc:1 "Этот лидер не мыслит существования государства без регламентированных бюрократических процедур и бумажных протоколов."
  leader_trait_emotional_support_pet:0 "Питомец для эмоциональной поддержки"
  leader_trait_emotional_support_pet_desc:1 "Объятия с прелестным пушистым другом помогают пережить космический ужас за окном."
+
+ leader_trait_opportunity:0 "Инициативность"
+ leader_trait_opportunity_desc:0 "Этот лидер уверенно превосходит все ожидания на своем посту."
+ leader_trait_opportunity_custom_effect:0 "$t$Не занимает количество лидеров при уровне ниже 4."
 
  # Governor Traits
  subclass_governor_visionary:0 "Провидец"
@@ -833,9 +852,9 @@
  expeditionist_custom_desc:0 "$PLANET_EFFECTS_TXT$:\n$t$Все £blocker£ §Yнепригодные квадраты§! можно убрать"
  leader_trait_geologist:1 "Геологический консультант"
  leader_trait_geologist_desc:1 "Этот лидер задействует местные СМИ для просвещения населения относительно важности масштабных проектов изменения ландшафтов."
- geologist_custom_desc:1 "$PLANET_EFFECTS_TXT$:\n$t$Каждый расчищенный непригодный квадрат дает производство $r_unity$ в течение §Y6 месяцев§!"
- geologist_custom_desc_2:0 "$PLANET_EFFECTS_TXT$:\n$t$Каждый расчищенный непригодный квадрат дает производство $r_unity$ в течение §Y9 месяцев§!"
- geologist_custom_desc_3:0 "$PLANET_EFFECTS_TXT$:\n$t$Каждый расчищенный непригодный квадрат дает производство $r_unity$ в течение §Y18 месяцев§!"
+ geologist_custom_desc:1 "$PLANET_EFFECTS_TXT$:\n$t$Каждый расчищенный непригодный квадрат дает производство $r_unity$ в течение §Y6 месяцев§!" # [LocEditor:ForFutureBatchExport]
+ geologist_custom_desc_2:0 "$PLANET_EFFECTS_TXT$:\n$t$Каждый расчищенный непригодный квадрат дает производство $r_unity$ в течение §Y9 месяцев§!" # [LocEditor:ForFutureBatchExport]
+ geologist_custom_desc_3:0 "$PLANET_EFFECTS_TXT$:\n$t$Каждый расчищенный непригодный квадрат дает производство $r_unity$ в течение §Y18 месяцев§!" # [LocEditor:ForFutureBatchExport]
  decision_geologist_prospect:0 "Разведка ресурсов геологом"
  decision_geologist_prospect_effect:0 "Шанс обнаружить на планете залежь редких ресурсов.\nМожно использовать всего один раз на каждой планете."
  decision_geologist_prospect_desc:0 "Мы можем попытаться отыскать скрытые в недрах богатства, просканировав поверхность планеты и высадив на нее разведывательные отряды. Это решение дает нам шанс обнаружить дополнительные залежи."
@@ -902,15 +921,15 @@
  # Governor Negative Traits
  leader_trait_polluter:0 "Загрязнитель"
  leader_trait_polluter_desc:1 "Этот лидер с полным пренебрежением относится к окружающей среде, чем ухудшает жизненные условия на планете."
- leader_trait_sadistic:1 "Жестокость"
+ leader_trait_sadistic:2 "Жестокость"
  leader_trait_sadistic_desc:1 "Этот лидер жестоко обращается с подчиненными, чем отталкивает от себя опытный колониальный персонал."
- leader_trait_profligate:1 "Расточительный"
+ leader_trait_profligate:2 "Расточительство"
  leader_trait_profligate_desc:1 "Этот лидер халатно относится к хранению и приобретению товаров и припасов."
  leader_trait_procrastinator:0 "Отлыниватель"
  leader_trait_procrastinator_desc:1 "Этот лидер предпочитает заниматься незначительными делами."
  leader_trait_insider_trading:0 "Инсайдерская торговля"
  leader_trait_insider_trading_desc:1 "Этот лидер не гнушается нелегальными методами торговли ради личного обогащения."
- leader_trait_irenic:0 "Примиритель"
+ leader_trait_irenic:1 "Пацифизм"
  leader_trait_irenic_desc:1 "Этот лидер с одержимостью старается ограничить якобы чрезмерные полномочия военных."
 
  # Scientist Traits
@@ -935,9 +954,9 @@
  leader_trait_society_focus_desc:1 "Этот лидер прекрасно разбирается в тонкостях функционирования цивилизации. Своим вниманием к общественным вопросам поможет нам сделать первый шаг в новую эпоху."
  leader_trait_society_focus_2:0 "$leader_trait_society_focus$ II"
  leader_trait_society_focus_2_desc:0 "$leader_trait_society_focus_desc$"
- leader_trait_meticulous_2:0 "Педантичный II"
+ leader_trait_meticulous_2:1 "Перфекционизм II"
  leader_trait_meticulous_2_desc:0 "$leader_trait_meticulous_desc$"
- leader_trait_carefree_2:0 "Беспечный II"
+ leader_trait_carefree_2:1 "Интуиция II"
  leader_trait_carefree_2_desc:0 "$leader_trait_carefree_desc$"
  leader_trait_roamer_2:0 "Скиталец II"
  leader_trait_roamer_2_desc:0 "$leader_trait_roamer_desc$"
@@ -949,17 +968,17 @@
  leader_trait_archaeologist_3_desc:0 "$leader_trait_archaeologist_desc$"
  leader_trait_prospector:0 "Старатель"
  leader_trait_prospector_desc:1 "Этот лидер обладает коллекцией мощных самодельных сканеров, способных обнаруживать даже очень глубокие залежи в звездных системах."
- leader_trait_prospector_effect:0 "$SCIENCE_SHIP_EFFECTS_TXT$:\n$t$При завершении осмотра:\n$tt$Шанс появления аномалии с базовыми ресурсами: §G+5%§!" # [LocEditor:ForFutureBatchExport]
+ leader_trait_prospector_effect:1 "$SCIENCE_SHIP_EFFECTS_TXT$:\n$t$При завершении осмотра:\n$tt$Шанс обнаружения базового ресурса: §G+5%§!"
  leader_trait_prospector_2:0 "$leader_trait_prospector$ II"
  leader_trait_prospector_2_desc:0 "$leader_trait_prospector_desc$"
- leader_trait_prospector_2_effect:0 "$SCIENCE_SHIP_EFFECTS_TXT$:\n$t$При завершении осмотра:\n$tt$Шанс появления аномалии с базовыми ресурсами: §G+10%§!" # [LocEditor:ForFutureBatchExport]
- leader_trait_observant:0 "Наблюдательный"
+ leader_trait_prospector_2_effect:1 "$SCIENCE_SHIP_EFFECTS_TXT$:\n$t$При завершении осмотра:\n$tt$Шанс обнаружения базового ресурса: §G+10%§!"
+ leader_trait_observant:1 "Наблюдательность"
  leader_trait_observant_desc:1 "Этот лидер обладает коллекцией мощных самодельных сканеров, иногда способных обнаруживать даже редчайшие аномалии в звездных системах."
- leader_trait_observant_effect:0 "$SCIENCE_SHIP_EFFECTS_TXT$:\n$t$При завершении осмотра:\n$tt$Шанс появления аномалии с залежью ресурсов: §G+5%§!" # [LocEditor:ForFutureBatchExport]
+ leader_trait_observant_effect:1 "$SCIENCE_SHIP_EFFECTS_TXT$:\n$t$При завершении осмотра:\n$tt$Шанс обнаружения залежи для исследования: §G+5%§!"
  leader_trait_observant_2:0 "$leader_trait_observant$ II"
  leader_trait_observant_2_desc:0 "$leader_trait_observant_desc$"
- leader_trait_observant_2_effect:0 "$SCIENCE_SHIP_EFFECTS_TXT$:\n$t$При завершении осмотра:\n$tt$Шанс появления аномалии с залежью ресурсов: §G+10%§!" # [LocEditor:ForFutureBatchExport]
- leader_trait_slippery:0 "Прохвост"
+ leader_trait_observant_2_effect:1 "$SCIENCE_SHIP_EFFECTS_TXT$:\n$t$При завершении осмотра:\n$tt$Шанс обнаружения залежи для исследования: §G+10%§!"
+ leader_trait_slippery:1 "Увертливость"
  leader_trait_slippery_desc:1 "Исследование вселенной — опасное занятие. Корабль этого лидера оснащен дополнительными отказоустойчивыми системами и способен автоматически переходить в сверхсветовой полет."
  leader_trait_collective_wisdom:0 "Коллективный опыт"
  leader_trait_collective_wisdom_desc:1 "Этот лидер на короткой ноге со своей командой, что укрепляет моральный дух и помогает в исследовании неизвестных феноменов."
@@ -976,7 +995,9 @@
  leader_trait_insightful_effect:0 "$SCIENCE_SHIP_EFFECTS_TXT$:\n$t$При изучении любой аномалии:\n$tt$Получает ежемесячный эквивалент £physics_research£ £society_research£ £engineering_research£ всех исследований §G×1§!"
  leader_trait_insightful_2:0 "$leader_trait_insightful$ II"
  leader_trait_insightful_2_desc:0 "$leader_trait_insightful_desc$"
- leader_trait_insightful_2_effect:0 "$SCIENCE_SHIP_EFFECTS_TXT$:\n$t$При изучении любой аномалии:\n$tt$Получает ежемесячный эквивалент £physics_research£ £society_research£ £engineering_research£ всех исследований §G×3§!"
+ insightful_effect:0 "$t$При изучении любой аномалии:\n$tt$Получает ежемесячный эквивалент £physics_research£ £society_research£ £engineering_research£ всех исследований §G×3§!"
+ leader_trait_insightful_2_effect:1 "$SCIENCE_SHIP_EFFECTS_TXT$:\n$insightful_effect$"
+ leader_trait_insightful_3_effect:0 "$insightful_effect$"
  leader_trait_experimenter:0 "Экспериментатор"
  leader_trait_experimenter_desc:1 "Этот лидер любить стоить и проверять гипотезы и одновременно ведет несколько научных проектов."
  leader_trait_experimenter_2:0 "$leader_trait_experimenter$ II"
@@ -998,7 +1019,7 @@
  leader_trait_salvager_effect_2:0 "$SYSTEM_EFFECTS_TXT$:\n$t$Если в системе есть разобранные или изученные обломки:\n$tt$Шанс утилизировать корабли: §Y20%§!\n$tt$§YПрименяется не ко всем обломкам.§!"
  leader_trait_salvager_effect_3:0 "$SYSTEM_EFFECTS_TXT$:\n$t$Если в системе есть разобранные или изученные обломки:\n$tt$Шанс утилизировать корабли: §Y30%§!\n$tt$§YПрименяется не ко всем обломкам.§!"
  leader_trait_salvager_desc:1 "Обладает редким талантом разбирать даже самые безнадежно разбитые корабли и собирать из них что-то относительно полезное."
- leader_trait_inquisitive:0 "Пытливый"
+ leader_trait_inquisitive:1 "Пытливость"
  leader_trait_inquisitive_desc:0 "Этот лидер чрезвычайно любознателен и постоянно рвется открыть новую область научных изысканий."
 
  # Scientist Council Traits
@@ -1025,11 +1046,11 @@
  # Scientist Negative Traits
  leader_trait_narrow_minded:0 "Предвзятый"
  leader_trait_narrow_minded_desc:0 "Этот лидер занимается только узкопрофильными исследованиями и считает другие варианты бесполезными."
- leader_trait_neurotic:0 "Невротик"
+ leader_trait_neurotic:1 "Невроз"
  leader_trait_neurotic_desc:0 "Этот лидер чересчур осторожен, пусть и вопреки эффективности."
- leader_trait_opinionated:0 "Категоричный"
+ leader_trait_opinionated:1 "Упрямство"
  leader_trait_opinionated_desc:0 "Этот лидер очень категоричен во многих вопросах, что затрудняет сотрудничество с другими исследователями."
- leader_trait_destructive:0 "Разрушительный"
+ leader_trait_destructive:1 "Деструктивность"
  leader_trait_destructive_desc:0 "Этот лидер не заботится о таких мелочах, как состояние кораблей или оборудования, заставляя ремонтников работать без перерыва."
 
  # Admiral Traits
@@ -1064,10 +1085,10 @@
  leader_trait_fleet_logistician_2:0 "$leader_trait_fleet_logistician$ II"
  leader_trait_fleet_logistician_2_desc:0 "$leader_trait_fleet_logistician_desc$"
  leader_trait_scholar_of_war:0 "Специалист по войне"
- leader_trait_scholar_of_war_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$Каждый уничтоженный вражеский корабль:\n$tt$§Y[Root.GetName]§!:\n$ttt$Дополнительный опыт лидера: §G+$@trait_scholar_of_war_amt$§!"
+ leader_trait_scholar_of_war_effect:1 "$FLEET_EFFECTS_TXT$:\n$t$Каждый уничтоженный вражеский корабль:\n$tt$Дополнительный опыт адмирала: §G+$@trait_scholar_of_war_amt$§!"
  leader_trait_scholar_of_war_desc:1 "Этот лидер любит изучать опыт прошлых битв и выносить уроки из побед и поражений."
  leader_trait_scholar_of_war_2:0 "$leader_trait_scholar_of_war$ II"
- leader_trait_scholar_of_war_2_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$Каждый уничтоженный вражеский корабль:\n$tt$§Y[Root.GetName]§!:\n$ttt$Дополнительный опыт лидера: §G+$@trait_scholar_of_war_2_amt$§!"
+ leader_trait_scholar_of_war_2_effect:1 "$FLEET_EFFECTS_TXT$:\n$t$Каждый уничтоженный вражеский корабль:\n$tt$Дополнительный опыт адмирала: §G+$@trait_scholar_of_war_2_amt$§!"
  leader_trait_scholar_of_war_2_desc:0 "$leader_trait_scholar_of_war_desc$"
  trait_ruler_fortifier_2:0 "$trait_ruler_fortifier$ II"
  trait_ruler_fortifier_2_desc:0 "$trait_ruler_fortifier_desc$"
@@ -1082,28 +1103,28 @@
  leader_trait_wrecker:0 "Крушитель"
  leader_trait_wrecker_desc:1 "Этот лидер не сохраняет вражеские корабли в пригодном для обследования состоянии, но по возможности полностью их уничтожает."
  leader_trait_corsair:1 "Сборщик утиля"
- leader_trait_corsair_effect:1 "$FLEET_EFFECTS_TXT$:\n$t$Каждый уничтоженный вражеский корабль:\n$tt$§Y[Root.Owner.GetName]§!:\n$ttt$£energy£ Энергия: §G+$@trait_corsair_amt$§!"
+ leader_trait_corsair_effect:2 "$FLEET_EFFECTS_TXT$:\n$t$Каждый уничтоженный корабль вражеского государства:\n$tt$$r_energy$: §G+$@trait_corsair_amt$§!"
  leader_trait_corsair_desc:1 "Этот лидер стремится собрать как можно больше полезных предметов с уничтоженных вражеских кораблей."
  leader_trait_corsair_2:0 "$leader_trait_corsair$ II"
- leader_trait_corsair_2_effect:1 "$FLEET_EFFECTS_TXT$:\n$t$Каждый уничтоженный вражеский корабль:\n$tt$§Y[Root.Owner.GetName]§!:\n$ttt$£energy£ Энергия: §G+$@trait_corsair_2_amt$§!"
+ leader_trait_corsair_2_effect:2 "$FLEET_EFFECTS_TXT$:\n$t$Каждый уничтоженный корабль вражеского государства:\n$tt$$r_energy$: §G+$@trait_corsair_2_amt$§!"
  leader_trait_corsair_2_desc:0 "$leader_trait_corsair_desc$"
  leader_trait_par_zealot:0 "Фанатик"
- leader_trait_par_zealot_effect:1 "$t$Каждый уничтоженный имперский вражеский корабль:\n$tt$§Y[Root.Owner.GetName]§!:\n$ttt$Каждое очко §Yсмены принципов§!:\n$tttt$£unity£ Единство: §G+$@trait_zealot_amt$§!"
+ leader_trait_par_zealot_effect:2 "$t$Каждый уничтоженный корабль вражеского государства:\n$tt$$r_unity$: §G+$@trait_zealot_amt$§! и §G+$@trait_zealot_amt$§! за каждое очко §Yсмены принципов§!"
  leader_trait_par_zealot_desc:1 "Этот лидер безжалостно уничтожает врагов государства, не останавливаясь ни перед чем."
  leader_trait_par_zealot_2:0 "$leader_trait_par_zealot$ II"
- leader_trait_par_zealot_2_effect:1 "$t$Каждый уничтоженный имперский вражеский корабль:\n$tt$§Y[Root.Owner.GetName]§!:\n$ttt$Каждое очко §Yсмены принципов§!:\n$tttt$£unity£ Единство: §G+$@trait_zealot_2_amt$§!"
+ leader_trait_par_zealot_2_effect:2 "$t$Каждый уничтоженный корабль вражеского государства:\n$tt$$r_unity$: §G+$@trait_zealot_amt$§! и §G+$@trait_zealot_2_amt$§! за каждое очко §Yсмены принципов§!"
  leader_trait_par_zealot_2_desc:0 "$leader_trait_par_zealot_desc$"
  leader_trait_shipbreaker:0 "Переработчик судов"
- leader_trait_shipbreaker_effect:1 "$FLEET_EFFECTS_TXT$:\n$t$Каждый уничтоженный имперский вражеский корабль:\n$tt$§Y[Root.Owner.GetName]§!:\n$ttt$£alloys£ Сплавы: §G+$@trait_shipbreaker_amt$§!"
+ leader_trait_shipbreaker_effect:2 "$FLEET_EFFECTS_TXT$:\n$t$Каждый уничтоженный корабль вражеского государства:\n$tt$$r_alloys$: §G+$@trait_shipbreaker_amt$§!"
  leader_trait_shipbreaker_desc:1 "После каждой битвы этот лидер разбирает уничтоженные вражеские корабли и перерабатывает их на сплавы."
  leader_trait_shipbreaker_2:0 "$leader_trait_shipbreaker$ II"
- leader_trait_shipbreaker_2_effect:1 "$FLEET_EFFECTS_TXT$:\n$t$Каждый уничтоженный вражеский корабль:\n$tt$§Y[Root.Owner.GetName]§!:\n$ttt$£alloys£ Сплавы: §G+$@trait_shipbreaker_2_amt$§!"
+ leader_trait_shipbreaker_2_effect:2 "$FLEET_EFFECTS_TXT$:\n$t$Каждый уничтоженный вражеский корабль:\n$tt$$r_alloys$: §G+$@trait_shipbreaker_2_amt$§!"
  leader_trait_shipbreaker_2_desc:0 "$leader_trait_shipbreaker_desc$"
  leader_trait_juryrigger:1 "Самоделкин"
- leader_trait_juryrigger_effect:1 "$t$Каждый уничтоженный имперский вражеский корабль:\n$tt$Случайный корабль во £military_ship£ §Yфлотилии§!:\n$ttt$£ship_stats_hitpoints£ Восстановление здоровья: §G$@trait_juryrigger_amt|%0$§!"
+ leader_trait_juryrigger_effect:2 "$t$Каждый уничтоженный корабль вражеского государства:\n$tt$Случайный корабль во £military_ship£ §Yфлотилии§!: восстанавливает §G$@trait_juryrigger_amt|%0$§! £ship_stats_hitpoints£ очков здоровья"
  leader_trait_juryrigger_desc:0 "В перерыве между боями этот лидер может подлатать флотилию с помощью найденных обломков."
  leader_trait_juryrigger_2:0 "$leader_trait_juryrigger$ II"
- leader_trait_juryrigger_2_effect:1 "$t$Каждый уничтоженный имперский вражеский корабль:\n$tt$Случайный корабль во £military_ship£ §Yфлотилии§!:\n$ttt$£ship_stats_hitpoints£ Восстановление здоровья: §G$@trait_juryrigger_2_amt|%0$§!"
+ leader_trait_juryrigger_2_effect:2 "$t$Каждый уничтоженный корабль вражеского государства:\n$tt$Случайный корабль во £military_ship£ §Yфлотилии§!: восстанавливает §G$@trait_juryrigger_2_amt|%0$§! £ship_stats_hitpoints£ очков здоровья"
  leader_trait_juryrigger_2_desc:0 "$leader_trait_juryrigger_desc$"
  leader_trait_commanding_presence:0 "Властная фигура"
  leader_trait_commanding_presence_desc:1 "Этот лидер обладает особой славой во флоте, чем привлекает к себе самых опытных капитанов и логистов."
@@ -1121,9 +1142,9 @@
  leader_trait_intimidator_desc:1 "Этот лидер имеет зловещую репутацию, чем без труда запугивает робких врагов."
  leader_trait_micromanager:0 "Микроменеджер"
  leader_trait_micromanager_desc:1 "Этот лидер может управлять лишь небольшой флотилией, так как стремится контролировать каждую мелочь."
- leader_trait_reckless:0 "Безрассудный"
+ leader_trait_reckless:1 "Безрассудство"
  leader_trait_reckless_desc:1 "Этот лидер безрассуден и в бою забывает про технику безопасности, доводя корабли до предела возможностей."
- leader_trait_slipshod:0 "Безответственный"
+ leader_trait_slipshod:1 "Небрежность"
  leader_trait_slipshod_desc:1 "Этот лидер не обладает организационными навыками и не может поддерживать свою флотилию в боеспособном состоянии."
 
  # Admiral Specializations
@@ -1166,17 +1187,17 @@
  leader_trait_restrained_2_desc:0 "$leader_trait_restrained_desc$"
  leader_trait_restrained_3:0 "$leader_trait_restrained$ III"
  leader_trait_restrained_3_desc:0 "$leader_trait_restrained_desc$"
- leader_trait_inspiring:0 "Источник вдохновения"
+ leader_trait_inspiring:1 "Талант вдохновлять"
  leader_trait_inspiring_desc:1 "Этот лидер считает, что ключ к победе в планетарных битвах — это несломимый дух бойцов."
  leader_trait_inspiring_2:0 "$leader_trait_inspiring$ II"
  leader_trait_inspiring_2_desc:0 "$leader_trait_inspiring_desc$"
  leader_trait_glory_seeker_2:0 "$leader_trait_glory_seeker$ II"
  leader_trait_glory_seeker_2_desc:0 "$leader_trait_glory_seeker_desc$"
- leader_trait_dreaded:0 "Наводящий страх"
+ leader_trait_dreaded:1 "Гроза врагов"
  leader_trait_dreaded_desc:1 "Этот лидер вселяет ужас в сердца врагов."
  leader_trait_dreaded_2:0 "$leader_trait_dreaded$ II"
  leader_trait_dreaded_2_desc:0 "$leader_trait_dreaded_desc$"
- leader_trait_hardy:0 "Закаленный"
+ leader_trait_hardy:1 "Закалка"
  leader_trait_hardy_desc:1 "Этот лидер организует эффективные учения, чтобы войска всегда находились в отличной физической форме."
  leader_trait_hardy_2:0 "$leader_trait_hardy$ II"
  leader_trait_hardy_2_desc:0 "$leader_trait_hardy_desc$"
@@ -1221,10 +1242,10 @@
  leader_trait_conscripter:1 "Военный комиссар"
  leader_trait_conscripter_desc:1 "Этот лидер знает, как надо обращаться с новобранцами и упрощать набор добровольцев в армию."
  leader_trait_interrogator:0 "Допросчик"
- leader_trait_interrogator_effect:0 "$ARMY_EFFECTS_TXT$:\n$t$При победе в наземной атаке:\n$tt$Получает $INTEL$ разведданные о вражеском государстве: §G+10§!"
+ leader_trait_interrogator_effect:1 "$ARMY_EFFECTS_TXT$:\n$t$При победе в наземной атаке:\n$tt$ $INTEL$ о вражеском государстве: §G+10§!"
  leader_trait_interrogator_desc:1 "Этот лидер умеет извлекать нужную информацию из вражеских военнопленных."
- leader_trait_interrogator_2_effect:0 "$ARMY_EFFECTS_TXT$:\n$t$При победе в наземной атаке:\n$tt$Получает $INTEL$ разведданные о вражеском государстве: §G+20§!"
- leader_trait_interrogator_3_effect:0 "$ARMY_EFFECTS_TXT$:\n$t$При победе в наземной атаке:\n$tt$Получает $INTEL$ разведданные о вражеском государстве: §G+30§!"
+ leader_trait_interrogator_2_effect:1 "$ARMY_EFFECTS_TXT$:\n$t$При победе в наземной атаке:\n$tt$ $INTEL$ о вражеском государстве: §G+20§!"
+ leader_trait_interrogator_3_effect:1 "$ARMY_EFFECTS_TXT$:\n$t$При победе в наземной атаке:\n$tt$ $INTEL$ о вражеском государстве: §G+30§!"
  leader_trait_industrial_espionage:1 "Интеллектуальный шпионаж"
  leader_trait_industrial_espionage_effect:0 "$ARMY_EFFECTS_TXT$:\n$t$При победе в наземной атаке:\n$tt$Шанс похитить вариант исследований: §Y5%§!\n$ttt$Каждый £job_researcher£ $job_researcher$ на планете:\n$tttt$Шанс: §G+5%§!"
  leader_trait_industrial_espionage_desc:1 "Этот лидер старается похищать всю ценную информацию, которую только можно найти на захваченной планете."
@@ -1237,15 +1258,15 @@
  leader_trait_crusader_2:0 "$leader_trait_crusader$ II"
  leader_trait_crusader_2_effect:0 "$ARMY_EFFECTS_TXT$:\n$t$Каждая убитая в бою вражеская армия:\n$tt$§Y[Root.Owner.GetName]§!:\n$ttt$£unity£ $unity$: §G+40§!"
  leader_trait_crusader_2_desc:0 "$leader_trait_crusader_desc$"
- leader_trait_uninspiring:0 "Невыразительный"
+ leader_trait_uninspiring:1 "Невнятность"
  leader_trait_uninspiring_desc:1 "Этот лидер не обладает харизмой и даже не старается вознаградить или подбодрить своих подчиненных, повергая солдат в уныние."
- leader_trait_slothful:0 "Лентяй"
+ leader_trait_slothful:1 "Леность"
  leader_trait_slothful_desc:1 "Своим нежеланием налаживать учебные занятия этот лидер снижает эффективность войск под своим командованием."
- leader_trait_victory_or_death:1 "Надменный"
+ leader_trait_victory_or_death:2 "Безразличие"
  leader_trait_victory_or_death_desc:1 "Этот лидер не ценит жизни своих солдат, жертвуя ими ради одной славы."
- leader_trait_disorganized:0 "Неорганизованный"
+ leader_trait_disorganized:1 "Неорганизованность"
  leader_trait_disorganized_desc:1 "Этот лидер обладает низкими организационными навыками, вследствие чего [Root.GetHisHer] войска действуют скорее как банда, чем как настоящая армия."
- leader_trait_lawless:0 "Вне закона"
+ leader_trait_lawless:1 "Коррумпированность"
  leader_trait_lawless_desc:1 "Этот лидер в кармане у местных преступников и пиратов."
  leader_trait_defence_engineer:0 "Инженер-оборонщик"
  leader_trait_defence_engineer_desc:0 "Этот лидер специализируется на превращении орбитальных систем обороны в неприступные стены, о которых насмерть разобьется любой захватчик."
@@ -1264,7 +1285,7 @@
  leader_trait_selfcare_expert_desc:1 "Этот лидер настолько одержим своим здоровьем, что знает всё о физических упражнениях, графике сна и здоровом питании — одним словом, настоящий гуру."
  # Governor
  leader_trait_shroud_preacher:0 "Проповедник Покрова"
- leader_trait_shroud_preacher_effect:0 "\n$t$Превращает 1 поселение в §Yпсиоников§! каждые §Y10 лет§!" # [LocEditor:ForFutureBatchExport]
+ leader_trait_shroud_preacher_effect:1 "$t$Каждые §Y10 лет§! дает 1 £pop£ поселению признак §Y$trait_latent_psionic$§!."
  leader_trait_shroud_preacher_desc:1 "Покров заключает в себя все живые существа. Благодаря своей связи с его внутренними силами этот лидер взращивает искреннее почитание среди своих последователей."
  leader_trait_master_diplomat:0 "Опытный дипломат"
  leader_trait_master_diplomat_desc:1 "Благодаря многолетнему опыту работы в иностранных посольствах этот лидер превосходно разбирается в особенностях культуры, а заодно поддерживает отношения с высокопоставленными чиновниками из соседних государств."
@@ -1297,17 +1318,17 @@
  leader_trait_deep_space_explorer_desc:1 "Задача исследователей дальнего космоса — изучать далекие уголки галактики. Вооружившись современными технологиями, этот лидер смело отправляется в неизвестность."
  leader_trait_xeno_cataloger:0 "Составитель ксенокаталогов"
  leader_trait_xeno_cataloger_desc:1 "Этот лидер занимается открытием, наименованием и внесением в каталог инопланетных форм жизни. После этого определяется их опасность и устанавливаются процедуры санобработки."
- leader_trait_xeno_cataloger_effect:0 "$t$При завершении осмотра:\n$tt$Получает трехмесячный эквивалент £unity£§Y$unity$§!" # [LocEditor:ForFutureBatchExport]
+ leader_trait_xeno_cataloger_effect:1 "$t$При завершении осмотра:\n$tt$Получает трехмесячный эквивалент £unity£§Y$unity$§!"
  leader_trait_frontier_adventurer:0 "Исследователь пограничья"
  leader_trait_frontier_adventurer_desc:1 "Любой достойный искатель приключений изучает новые системы, открывает миры и находит следы давно позабытых цивилизаций. Этот лидер — настоящее воплощение этих идеалов и постоянно стремится отыскать утраченные знания или древние руины."
- leader_trait_frontier_adventurer_effect:0 "$t$При завершении осмотра:\n$tt$Получает трехмесячный эквивалент £society£§Y$society_research$§!" # [LocEditor:ForFutureBatchExport]
+ leader_trait_frontier_adventurer_effect:1 "$t$При завершении осмотра:\n$tt$Получает трехмесячный эквивалент £society£§Y$society_research$§!"
  leader_trait_brilliant_shipwright:0 "Блистательный судостроитель"
  leader_trait_brilliant_shipwright_desc:1 "Этот лидер обладает обширными знаниями в области кораблестроения, а потому отвечает не только за новые технологии, но и за надзор за работой верфей."
  leader_trait_truth_seeker:0 "Искатель истины"
  leader_trait_truth_seeker_desc:1 "Истина открывается только тем, кто способен заглянуть за горизонт собственного восприятия — и, возможно, даже самой реальности. Этот лидер стремится раскрывать тайны вселенной, невзирая на риски."
  leader_trait_midas_touch:0 "Выразительный рассказчик"
  leader_trait_midas_touch_desc:1 "Этот лидер часто покидает родную планету по долгу службы, а потому может рассказать не одну захватывающую историю о великих свершениях и красотах далеких миров. Такие рассказы не только вдохновляют население, но и содержат в себе ценные сведения о редких ресурсах и аномальных явлениях."
- leader_trait_midas_touch_effect:0 "$SCIENCE_SHIP_EFFECTS_TXT$:\n$t$При завершении осмотра:\n$tt$Шанс появления аномалии со стратегическими ресурсами: §G+10%§!" # [LocEditor:ForFutureBatchExport]
+ leader_trait_midas_touch_effect:2 "$t$Шанс обнаружения редкого ресурса: §G+10%§!"
  leader_trait_surveyor:0 "Планетарный аналитик"
  leader_trait_surveyor_desc:1 "Современные приемы и инструменты изучения планет требуют для своего использования самых широких компетенций. Благодаря своим знаниям этот лидер превратил планетарную разведку в настоящее искусство."
  leader_trait_surveyor_tt:0 "$ASSIST_RESEARCH_EFFECTS_TXT$:\n$t$$mod_planet_districts_generator_physics_research_produces_add$: §G+3§!\n$t$$mod_planet_districts_farming_society_research_produces_add$: §G+3§!\n$t$$mod_planet_districts_mining_engineering_research_produces_add$: §G+3§!"
@@ -1323,7 +1344,7 @@
  leader_trait_fanatic:0 "Одержимый вояка"
  leader_trait_fanatic_desc:1 "Этот адмирал настолько поглощен стремлением бить врага в бою, что едва не впадает в безумие. Такое безрассудство нередко выливается в огромные потери не только у противника, но и среди собственных войск."
  leader_trait_reverse_engineer:0 "Собиратель технологий"
- leader_trait_reverse_engineer_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$При победе в битве флотилий:\n$tt$Шанс получить вариант исследований: §Y33%§!\n$ttt$Известные противнику технологии из категорий:\n$tttt$£engineering_research£ §HРеактивная тяга§!\n$tttt$£physics_research£ §HЧастицы§!\n$tt$Начальный прогресс исследования: §G+50%§!" # [LocEditor:ForFutureBatchExport]
+ leader_trait_reverse_engineer_effect:1 "$NAVAL_BATTLE_WON_TXT$:\n$t$Шанс похитить технологию: §Y33%§!\n$t$Начальный прогресс исследования: §G+50%§!\n$t$Допустимые категории:\n$tt$£engineering_research£ §Yреактивная тяга§!\n$tt$£physics_research£ §Yчастицы§!"
  leader_trait_reverse_engineer_desc:0 "Этот адмирал обладает гибким умом и широкой эрудицией, а также любовью к новым и неизвестным технологиям. Любая встреча с технологически превосходящим противником — это в первую очередь возможность постичь новое."
  leader_trait_supreme_admiral:0 "Командор армады"
  leader_trait_supreme_admiral_desc:1 "Этот адмирал превосходно разбирается в логистике и стратегическом планировании, а потому может руководить такими флотилиями, которые вогнали бы в отчаяние менее способных командиров."
@@ -1374,11 +1395,11 @@
  leader_trait_bellicose_desc:1 "Этот генерал превосходно разбирается в логистике, а потому умеет находить обманчиво простые, но эффективные подходы к любой задаче, стоящей перед армией."
 
  # Special Traits
- leader_trait_erudite:0 "Эрудит"
+ leader_trait_erudite:1 "Эрудированность"
  leader_trait_erudite_desc:1 "Этот лидер обладает выдающимся интеллектом и широкими познаниями."
  leader_trait_cyborg:0 "Киборг"
  leader_trait_cyborg_desc:0 "Этот лидер значительно усилен кибернетическими имплантами."
- leader_trait_synthetic:0 "Синтетик"
+ leader_trait_synthetic:1 "Синтетик"
  leader_trait_synthetic_desc:0 "Этот лидер-синтетик оснащен большим набором различных программных модификаций."
  leader_trait_psionic:0 "Экстрасенс"
  leader_trait_psionic_desc:1 "Этот лидер обладает мощными псионическими способностями."
@@ -1543,7 +1564,7 @@
  building_paragon_memory_vaults_hive_desc:1 "В этих хранилищах содержатся воспоминания и мыслеобразы каждой автономной единицы Разума, внедряющиеся новому поколению. Если уничтожить это здание, то вся хранящаяся внутри информация будет утрачена."
  building_corporate_clinics:0 "Корпоративная клиника"
  building_corporate_clinics_desc:1 "Это частное медицинское учреждение за умеренную плату предоставляет услуги как местных, так и инопланетных специалистов."
- building_corporate_clinics_effect:0 "£job_healthcare£ $job_healthcare_plural$ дают дополнительно $r_amenities$ (§Y1§! ед.) и $r_trade_value$ (2 ед.)"
+ building_corporate_clinics_effect:1 "$r_amenities$, которое дают £job_healthcare£ §Y$job_healthcare_plural$§!: §G+1§!\n$r_trade_value$, которую дают £job_healthcare£ §Y$job_healthcare_plural$§!: §G+2§!"
 
  # Civics
  civic_tooltip_memory_vault_effects:0 "§YЛидеры§! начинают с уровнем §G+1§!\nМожно строить уникальные £building£ §Y$building_paragon_memory_vaults$§!\n£building£§Y$building_paragon_memory_vaults$§! производят $r_unity$ и увеличивают §Y$MOD_LEADER_SPECIES_EXP_GAIN$§! в зависимости от полученных §Yсудьбоносных черт§!."
@@ -1551,22 +1572,22 @@
  civic_memory_vault_desc:1 "В этих архивах в цифровом виде хранятся знания, идеи и личные переживания великих деятелей. Любой гражданин может прикоснуться к этому источнику мудрости и обратиться непосредственно к духам прошлого."
 
  civic_tooltip_memory_vault_corporate_effects:0 "§YЛидеры§! начинают с уровнем §G+1§!\nМожно строить уникальные £building£ §Y$building_paragon_memory_vaults$§!\n£building£§Y$building_paragon_memory_vaults$§! производят $r_unity$ и $r_trade_value$ в зависимости от полученных §Yсудьбоносных черт§!."
- civic_memory_vault_corporate:0 "Хранилища знаний" # [LocEditor:ForFutureBatchExport]
+ civic_memory_vault_corporate:1 "Менторство по знаниям"
  civic_memory_vault_corporate_desc:1 "В этих архивах в цифровом виде хранятся знания, идеи и личные переживания великих деятелей. Любой гражданин может прикоснуться к этому источнику мудрости и обратиться непосредственно к духам прошлого — разумеется, не бесплатно."
 
  civic_tooltip_memory_vault_machine_effects:0 "§YЛидеры§! начинают с уровнем §G+1§!\nМожно строить уникальные £building£ §Y$building_paragon_memory_vaults$§!\n£building£§Y$building_paragon_memory_vaults$§! производят $r_unity$ и увеличивают §Y$MOD_LEADER_SPECIES_EXP_GAIN$§! в зависимости от количества §Yлидеров§!, получивших §Y8-й уровень§!."
- civic_memory_vault_machine:0 "Хранилища знаний" # [LocEditor:ForFutureBatchExport]
+ civic_memory_vault_machine:1 "Хранилище опыта"
  civic_memory_vault_machine_desc:0 "Этот машинный разум был разработан для оцифровки и хранения знаний и «жизненного опыта» с целью анализа, обучения и самосовершенствования на основе накопленных данных."
 
- civic_tooltip_memory_vault_hive_effects:1 "§YЛидеры§! начинают с уровнем §G+1§!\nМожно строить уникальные £building£ §Y$building_paragon_memory_vaults$§!\n£building£ §Y$building_paragon_memory_vaults$§! производят $r_unity$ и увеличивают §Y$MOD_LEADER_SPECIES_EXP_GAIN$§! в зависимости от количества §Yлидеров§!, получивших §Y8-й уровень§!."
- civic_memory_vault_hive:0 "Хранилища знаний" # [LocEditor:ForFutureBatchExport]
+ civic_tooltip_memory_vault_hive_effects:2 "§YЛидеры§! начинают с уровнем §G+1§!\nМожно строить уникальные £building£ §Y$building_paragon_memory_vaults$§!\n£building£§Y$building_paragon_memory_vaults$§! производят $r_unity$ и увеличивают §Y$MOD_LEADER_SPECIES_EXP_GAIN$§! в зависимости от количества §Yлидеров§!, получивших §Y8-й уровень§!."
+ civic_memory_vault_hive:1 "Нейроархивы"
  civic_memory_vault_hive_desc:0 "Этот улей занимается самоанализом и обучением, пользуясь знаниями автономных единиц, разбросанных по всей галактике. Он извлекает воспоминания из растворившейся мозговой ткани, а затем частично вживляет их новым единицам."
 
- civic_tooltip_crusader_spirit_effects:0 "§YАдмиралы§! начинают с чертой §Y«Фанатик»§!\n§YГенералы§! начинают с чертой §Y«Крестоносец»§!\nДоступна только политика §Y«Освободительные войны»§!"
+ civic_tooltip_crusader_spirit_effects:1 "§YАдмиралы§! начинают с чертой §Y$leader_trait_par_zealot$§!\n§YГенералы§! начинают с чертой §Y$leader_trait_crusader$§!\nДоступна только политика §Y«Освободительные войны»§!"
  civic_crusader_spirit:0 "Дух крестоносцев"
  civic_crusader_spirit_desc:0 "В отсутствие духовного наставника народ слабеет, и неизбежно возникают разброд, разложение и упадок. Это общество добровольно и очень активно «просвещает» широкие массы, даже если те этого не желают."
 
- civic_tooltip_crusader_spirit_corporate_effects:1 "§YАдмиралы§! начинают с чертой §Y«Корсар»§!\nИмеет повод к войне с другими государствами по причине «§Y$casus_belli_cb_pirate_raid$§!»"
+ civic_tooltip_crusader_spirit_corporate_effects:2 "§YАдмиралы§! начинают с чертой §Y$leader_trait_corsair$§!\nИмеет повод к войне с другими государствами по причине «§Y$casus_belli_cb_pirate_raid$§!»"
  civic_crusader_spirit_corporate:0 "Каперские грамоты"
  civic_crusader_spirit_corporate_desc:0 "Для борьбы с космическими пиратами и защиты границ эта мегакорпорация не гнушается назначать самых грозных пиратов на должности военных советников и адмиралов."
  casus_belli_cb_pirate_raid:0 "Пиратский налет"
@@ -1580,7 +1601,7 @@
 
  civic_private_healthcare_corporate:1 "Фармацевтическое государство"
  civic_private_healthcare_corporate_desc:1 "Здоровый народ — сильный народ. Устойчивость экономики эта мегакорпорация обеспечивает с помощью экспериментальных лекарств, частных клиник и чрезвычайно навязчивых рекламных кампаний."
- civic_tooltip_civic_private_healthcare_corporate_effects:1 "£job_healthcare£ §Y$job_healthcare_plural$§! производят $r_amenities$ (§Y2§! ед.) и $r_trade_value$ (§Y4§! ед.)\nМожно строить $BRANCH_OFFICE_BUILDING$, руководящий таким сооружением, как £building£ §Y$building_corporate_clinics$§!"
+ civic_tooltip_civic_private_healthcare_corporate_effects:2 "$r_amenities$, которое дают £job_healthcare£ §Y$job_healthcare_plural$§!: §G+2§!\n$r_trade_value$, которую дают £job_healthcare£ §Y$job_healthcare_plural$§!: §G+4§!\nМожно строить £building£ §Y$building_corporate_clinics$§! $BRANCH_OFFICE_BUILDING$"
 
  civic_machine_upkeep_twister:1 "Микросхемы самостоятельности"
  civic_machine_upkeep_twister_desc:1 "Этот машинный разум производит модули сразу со встроенными программами независимого принятия решений. Они эффективнее прежних моделей, но требуют больше энергии."

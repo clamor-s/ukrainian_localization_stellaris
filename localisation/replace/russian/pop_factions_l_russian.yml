@@ -38,7 +38,7 @@
  pft_democratic_election_4_desc:0 "$pft_democratic_election_1_desc$"
 
  # SUPREMACISTS
- SUPREMACIST_RULER_SAME_SPECIES:0 "[Root.Owner.GetSpeciesName] [Root.Owner.GetRulerTitle]"
+ SUPREMACIST_RULER_SAME_SPECIES:0 "[Root.Owner.GetRulerTitle] [Root.Owner.GetSpeciesAdj&fem,gen] расы"
  SUPREMACIST_RULER_NOT_SAME_SPECIES:0 "[Root.Owner.GetRulerTitle] — чужак"
  SUPREMACIST_RULER_NOT_SAME_SPECIES_DESC:0 "[Root.GetName] хотят, чтобы наш правитель принадлежал к их расе, и разгневаются, если [Root.Owner.GetRulerTitle] будет не из расы [Root.Owner.GetSpeciesName]."
  SUPREMACIST_UNRESTRICTED_STUDY:0 "Агрессивное изучение чужаков"
@@ -66,7 +66,7 @@
  SUPREMACIST_NO_DOMINATION:0 "$SUPREMACIST_DOMINATION$"
  SUPREMACIST_GENE_MOD:0 "Генетическая чистота"
  SUPREMACIST_GENE_MOD_DESC:2 "[Root.GetName] будут довольны, имея уверенность в том, что все поселения расы [Root.Owner.GetSpeciesNamePlural] имеют одинаковые генетические признаки."
- SUPREMACIST_IMPURE:0 "Порочность расы [Root.Owner.GetSpeciesAdj]"
+ SUPREMACIST_IMPURE:0 "[Root.Owner.GetSpeciesAdj&fem] порочность"
  SUPREMACIST_NO_HARMONY:0 "Отсутствие гармонии"
  SUPREMACIST_HARMONY:0 "$SUPREMACIST_NO_HARMONY$"
  SUPREMACIST_NO_HARMONY_DESC:0 "[Root.GetName] будут недовольны в случае принятия традиций гармонии, намекающих на мнимое равенство низших рас с высшими."
@@ -97,7 +97,7 @@
 
  # XENOISTS
  XENOIST_PASSIVE_STUDY:0 "Косвенные ксенологические исследования"
- XENOIST_PASSIVE_STUDY_DESC:1 "[Root.GetName] будут рады законам, обеспечивающим мягкое вмешательство или невмешательство в дела цивилизаций ([root.owner.GetPreFTLLower])."
+ XENOIST_PASSIVE_STUDY_DESC:1 "[Root.GetName] будут рады законам, обеспечивающим мягкое вмешательство или невмешательство в дела [root.owner.GetPreFTLLowerPlural&pl,gen] цивилизаций."
  XENOIST_NO_PASSIVE_STUDY:0 "$XENOIST_PASSIVE_STUDY$"
  XENOIST_NO_SLAVES:1 "Нет рабства по расовому признаку"
  XENOIST_NO_SLAVES_DESC:3 "[Root.GetName] будут очень недовольны в случае нашей неспособности объявить вне закона массовое порабощение целой расы."
@@ -223,7 +223,7 @@
  ISOLATIONIST_NO_PHILOSOPHY:0 "$ISOLATIONIST_PHILOSOPHY$"
  ISOLATIONIST_NO_AGGRESSIVE_WAR:0 "Нежелательная агрессия"
  ISOLATIONIST_AGGRESSIVE_WAR:0 "$ISOLATIONIST_NO_AGGRESSIVE_WAR$"
- ISOLATIONIST_NO_AGGRESSIVE_WAR_DESC:0 "[Root.GetName] будут крайне недовольны, если представители расы [Root.Owner.GetAdj] окажутся втянутыми в галактические неприятности посредством участия в агрессивной войне."
+ ISOLATIONIST_NO_AGGRESSIVE_WAR_DESC:0 "[Root.GetName] будут крайне недовольны, если [Root.Owner.GetAdj&neut] государство окажется втянуто в галактические неприятности, приняв участие в наступательной войне."
  ISOLATIONIST_NO_DEFENSIVE_WAR:0 "Нежелательное сопротивление"
  ISOLATIONIST_DEFENSIVE_WAR:0 "$ISOLATIONIST_NO_DEFENSIVE_WAR$"
  ISOLATIONIST_NO_DEFENSIVE_WAR_DESC:0 "[Root.GetName] будут какое-то время недовольны в случае использования оружия, даже если это необходимо для нашей защиты."
@@ -255,7 +255,7 @@
  ISOLATIONIST_PEACE_DESC3:0 "[Root.GetName] Будут довольны, если мы не будем участвовать ни в каком крупномасштабном галактическом конфликте в течение §Yкак минимум пятидесяти лет§!."
  ISOLATIONIST_NO_PEACE3:0 "$ISOLATIONIST_PEACE3$"
  ISOLATIONIST_STRONG_ARMY:0 "Регулярная армия"
- ISOLATIONIST_STRONG_ARMY_DESC:0 "[Root.GetName] будут довольны в случае содержания как минимум §Yтрех§! оборонительных армий во всех принадлежащих расе [Root.Owner.GetAdj] мирах с §Yпятью§! и более поселениями."
+ ISOLATIONIST_STRONG_ARMY_DESC:0 "[Root.GetName] будут довольны в случае наличия как минимум §Yтрех§! оборонительных армий во всех [Root.Owner.GetAdj&pl,gen] мирах с §Yпятью§! и более поселениями."
  ISOLATIONIST_WEAK_ARMY:0 "Недостаточно оружия"
  ISOLATIONIST_DEFENSIVE_STATIONS:0 "Космическая оборона"
  ISOLATIONIST_DEFENSIVE_STATIONS_DESC:0 "[Root.GetName] будут довольны в случае размещения как минимум §Yодной§! военной станции в каждой колонизованной системе."
@@ -282,7 +282,7 @@
  TRADITIONALIST_FEW_SPIRITUALIST_POPS:0 "$TRADITIONALIST_SPIRITUALIST_POPS$"
  TRADITIONALIST_UNSPIRITUALIST:0 "Притесняемое меньшинство"
  TRADITIONALIST_NOT_UNSPIRITUALIST:0 "$TRADITIONALIST_UNSPIRITUALIST$"
- TRADITIONALIST_UNSPIRITUALIST_DESC:0 "[Root.GetName] будут недовольны, если спиритуалистические убеждения станут считаться проблемой меньшинства в государстве [Root.Owner.GetName]."
+ TRADITIONALIST_UNSPIRITUALIST_DESC:0 "[Root.GetName] будут недовольны, если спиритуалистические убеждения станут считаться проблемой меньшинства в [Root.Owner.GetName&prep]."
  TRADITIONALIST_FRUGALITY:0 "Бережливость"
  TRADITIONALIST_FRUGALITY_DESC:0 "[Root.GetName] будут довольны в случае обеспечения низких затрат на товары массового спроса."
  TRADITIONALIST_BIG_SPENDING:0 "Чрезмерные излишества"
@@ -340,7 +340,7 @@
  TECHNOLOGIST_TECH_LEAP_DESC:0 "[Root.GetName] будут довольны, если мы останемся на передовых позициях и не позволим другим государствам выходить за пределы технического уровня, §Yаналогичного§! нашему."
  TECHNOLOGIST_TECH_LAG:0 "Задержка прогресса"
  TECHNOLOGIST_RESEARCH_TREATIES:0 "Наука без границ"
- TECHNOLOGIST_RESEARCH_TREATIES_DESC:1 "[Root.GetName] будут довольны в случае подписания договоров о научном сотрудничестве как минимум с §Yтремя§! другими государствами, вступления в научное содружество или предоставления помощи в научном просвещении для цивилизации [root.owner.GetPreFTLLower]."
+ TECHNOLOGIST_RESEARCH_TREATIES_DESC:1 "[Root.GetName] будут довольны в случае подписания договоров о научном сотрудничестве как минимум с §Yтремя§! другими государствами, вступления в научное содружество или предоставления помощи в технологическом просвещении для [root.owner.GetPreFTLLower&fem,gen] цивилизации."
  TECHNOLOGIST_FEW_RESEARCH_TREATIES:0 "$TECHNOLOGIST_RESEARCH_TREATIES$"
  TECHNOLOGIST_NO_SYNTH_ENVY:0 "Зависть к синтетикам"
  TECHNOLOGIST_NO_SYNTH_ENVY_DESC:0 "[Root.GetName] наверняка будут недовольны, если увидят, что другие звездные государства хвастаются любыми разными роботов, а ни в одном из наших миров ничего подобного не будет."
@@ -413,7 +413,7 @@
  TOTALITARIAN_GOVERNORS_DESC:0 "[Root.GetName] будут довольны, если каждым сектором будет править §Yгубернатор§!, держащий все под контролем."
  TOTALITARIAN_FEW_GOVERNORS:0 "$TOTALITARIAN_GOVERNORS$"
  TOTALITARIAN_STRONG_ARMY:0 "Военная дисциплина"
- TOTALITARIAN_STRONG_ARMY_DESC:0 "[Root.GetName] будут довольны в случае содержания как минимум §Yшести§! армий любого типа во всех принадлежащих расе [Root.Owner.GetAdj] мирах с шестью и более поселениями."
+ TOTALITARIAN_STRONG_ARMY_DESC:0 "[Root.GetName] будут довольны в случае содержания как минимум §Yшести§! армий любого типа во всех [Root.Owner.GetAdj&pl,gen] мирах с шестью и более поселениями."
  TOTALITARIAN_WEAK_ARMY:0 "$TOTALITARIAN_STRONG_ARMY$"
  TOTALITARIAN_DOMINATION:0 "Традиционное господство"
  TOTALITARIAN_NO_DOMINATION:0 "$TOTALITARIAN_DOMINATION$"
@@ -469,7 +469,7 @@
  PROSPERITY_FEDERATION_NOT_MILITARIST:0 "$military_federation$"
  PROSPERITY_FEDERATION_DESC:0 "[Root.GetName] будут недовольны, если нас примет $military_federation$."
 
- FACTION_COUNTRY_SEPARATIST:0 "Сепаратисты [parameter:owner.GetSpeciesAdj]"
+ FACTION_COUNTRY_SEPARATIST:0 "[parameter:owner.GetSpeciesAdj&pl] сепаратисты"
 
  # Generic Actions
  FACTION_ACTION_SUPPRESS_FOLLOWERS:0 "Притеснение последователей"
@@ -527,7 +527,7 @@
  POP_FACTION_SEPARATIST_DEMAND_DESC_2:0 "Сделать планету §H[parameter:planet.GetName]§! столицей независимого государства"
 
  ### PLANET SEPARATISTS
- POP_FACTION_PLANET_SEPARATIST_DEMAND_TITLE:1 "Независимая планета [parameter:Planet.GetName]"
+ POP_FACTION_PLANET_SEPARATIST_DEMAND_TITLE:1 "Независимая [parameter:Planet.GetPlanetMoon]а [parameter:Planet.GetName]"
  POP_FACTION_PLANET_SEPARATIST_DEMAND_DESC:0 "Сепаратисты хотят, чтобы планета §Y[parameter:Planet.GetName]§! была независимой."
  POP_FACTION_PLANET_SEPARATIST_STRIKES_TITLE:0 "Забастовка"
  POP_FACTION_PLANET_SEPARATIST_STRIKES_DESC:0 "Планетарное производство снижено из-за нехватки рабочей силы."
@@ -566,8 +566,8 @@
  pft_nationalist:0 "Репатриационная фракция"
  pft_nationalist_desc:0 "Поселения, состоящие в репатриационных фракциях, стремятся выйти из состава нашего государства в качестве независимых государств, а потом интегрироваться в государство, частью которого они когда-то были. К ним могут присоединиться и другие поселения, если они решат, что чужая власть более заманчива, чем наша."
 
- POP_FACTION_NATIONALIST_DEMAND_TITLE:0 "Вернуть государству §Y[parameter:country.GetName]§!"
- POP_FACTION_NATIONALIST_DEMAND_DESC:0 "Вернуть государству §H[parameter:country.GetName]§! все планеты с поселениями, принадлежащими этой фракции."
+ POP_FACTION_NATIONALIST_DEMAND_TITLE:0 "Вернуть §Y[parameter:country.GetName&dat]§!"
+ POP_FACTION_NATIONALIST_DEMAND_DESC:0 "Вернуть §H[parameter:country.GetName&dat]§! все планеты с поселениями, принадлежащими этой фракции."
  POP_FACTION_NATIONALIST_SABOTAGE_TITLE:0 "Диверсия"
  POP_FACTION_NATIONALIST_SABOTAGE_DESC:0 "Члены этой фракции §Rразрушают§! сооружение."
  POP_FACTION_NATIONALIST_CORRUPTION_TITLE:0 "Коррупция"
@@ -585,7 +585,7 @@
  POP_FACTION_NATIONALIST_INTEGRATION_CAMPAIGN_3_TITLE:0 "Кампания по интеграции 3"
  POP_FACTION_NATIONALIST_INTEGRATION_CAMPAIGN_3_DESC:0 "Можно уменьшить чувство разочарования у националистов, если помочь им интегрироваться в их новое общество."
  POP_FACTION_NATIONALIST_RELEASE_PLANETS_TITLE:0 "Вернуть планеты"
- POP_FACTION_NATIONALIST_RELEASE_PLANETS_DESC:0 "Вернуть государству §Y[parameter:country.GetName]§! все планеты с поселениями, принадлежащими этой фракции."
+ POP_FACTION_NATIONALIST_RELEASE_PLANETS_DESC:0 "Вернуть §Y[parameter:country.GetName&dat]§! все планеты с поселениями, принадлежащими этой фракции."
  POP_FACTION_NATIONALIST_RELEASE_PLANETS_OCCUPIED:0 "Ни одна из планет не оккупирована"
  POP_FACTION_NATIONALIST_RELEASE_PLANETS_COMBAT:0 "Ни на одной из планет нет наземных сражений"
 
@@ -663,7 +663,7 @@
 
  # Demands
  POP_FACTION_PEACE_DEMAND_TITLE_1:0 "Завершение войны"
- POP_FACTION_PEACE_DEMAND_DESC_1:0 "Разорвать все дипломатические связи, требующие участия в конфликте с государством [parameter:enemy.GetName] и объявить мир на условиях статус-кво."
+ POP_FACTION_PEACE_DEMAND_DESC_1:0 "Разорвать все дипломатические связи, требующие участия в конфликте с [parameter:enemy.GetName&inst] и объявить мир на условиях статус-кво."
 
  # Actions
 
@@ -693,19 +693,19 @@
 
  # Demands
  POP_FACTION_LIBERATE_DEMAND_TITLE_1:0 "Освободить планету §H[parameter:planet.GetName]§!."
- POP_FACTION_LIBERATE_DEMAND_DESC_1:0 "Объявить войну государству [parameter.enemy.GetName], чтобы вернуть планету [parameter:planet.GetName]."
+ POP_FACTION_LIBERATE_DEMAND_DESC_1:0 "Объявить войну [parameter.enemy.GetName&dat], чтобы вернуть [parameter:planet.GetPlanetMoon]у [parameter:planet.GetName]."
 
  # Support Effects
  SUPPORT_EFFECT_LIBERATE_INSULT_HIJACK:0 "Радиоперехват"
- SUPPORT_EFFECT_LIBERATE_INSULT_HIJACK_DESC:0 "[Root.GetName] отравляет наши дипломатические отношения с государством §H[parameter:enemy.GetName]§!."
+ SUPPORT_EFFECT_LIBERATE_INSULT_HIJACK_DESC:0 "[Root.GetName] отравляет наши дипломатические отношения с §H[parameter:enemy.GetName&inst]§!."
  SUPPORT_EFFECT_LIBERATE_HAWKISH_REBELS:0 "Риск вооруженного восстания"
- SUPPORT_EFFECT_LIBERATE_HAWKISH_REBELS_DESC:0 "[Root.GetName] поднимает бунт против слабых правителей [Root.Owner.GetSpeciesAdj]."
+ SUPPORT_EFFECT_LIBERATE_HAWKISH_REBELS_DESC:0 "[Root.GetName] поднимает бунт против слабых [Root.Owner.GetSpeciesAdj&pl,gen] правителей."
 
  ### XENOSLAVER
 
  # Demands
  POP_FACTION_XENOSLAVER_DEMAND_TITLE_1:0 "Порабощение чужаков"
- POP_FACTION_XENOSLAVER_DEMAND_DESC_1:0 "Поработить все §Yпоселения§! расы §H[parameter:xeno.GetSpeciesAdj]§!."
+ POP_FACTION_XENOSLAVER_DEMAND_DESC_1:0 "Поработить все §H[parameter:xeno.GetSpeciesAdj&pl]§! §Yпоселения§!."
 
  # Actions
 
@@ -719,13 +719,13 @@
 
  # Demands
  POP_FACTION_CRUSADE_DEMAND_TITLE_1:0 "Крестовый поход"
- POP_FACTION_CRUSADE_DEMAND_DESC_1:0 "Развязать священную войну против еретического государства [parameter:heathens.GetName]."
+ POP_FACTION_CRUSADE_DEMAND_DESC_1:0 "Развязать священную войну против еретического [parameter:heathens.GetName&gen]."
 
  # Actions
 
  # Support Effects
  SUPPORT_EFFECT_CRUSADE_INSULT:0 "Намеренное кощунство"
- SUPPORT_EFFECT_CRUSADE_INSULT_DESC:0 "[Root.GetName] публично выступает против государства [parameter:heathens.GetName], ухудшая дипломатические отношения."
+ SUPPORT_EFFECT_CRUSADE_INSULT_DESC:0 "[Root.GetName] публично выступает против [parameter:heathens.GetName&gen], ухудшая дипломатические отношения."
  SUPPORT_EFFECT_CRUSADE_INSURRECTION:0 "Восстание культа"
  SUPPORT_EFFECT_CRUSADE_INSURRECTION_DESC:0 "[Root.GetName] пытается устроить переворот в колонии."
 
@@ -733,7 +733,7 @@
 
  # Support Effects
  SUPPORT_EFFECT_CONQUER_INSULT:0 "Оскорбительное коммюнике"
- SUPPORT_EFFECT_CONQUER_INSULT_DESC:0 "[Root.GetName] направляет оскорбительное коммюнике, что усиливает напряженность между нами и государством §H[parameter:foreign_power.GetName]§!."
+ SUPPORT_EFFECT_CONQUER_INSULT_DESC:0 "[Root.GetName] направляет оскорбительное коммюнике, что усиливает напряженность между нами и §H[parameter:foreign_power.GetName&inst]§!."
 
  ### PRETENDER
 
@@ -754,20 +754,20 @@
  ### New Events
  factions.1.title:0 "Основана фракция"
  factions.1.desc:1 "Новая фракция набирает вес на нашей политической арене. Это [Root.GetName], которые намерены твердо отстаивать свои интересы в тех областях, где они желают перемен.\n\nБезусловно, [Root.Owner.GetName] еще не раз станет свидетелем появления новых фракций. Население государства растет, и политические взгляды наших сограждан становятся всё более разнообразными. Фракции, недовольные существующим положением дел, могут оказаться источником неприятностей, но те, кто одобряет действия правительства, несомненно, станут весьма полезными..."
- factions.1.desc.start:1 "В последнее время новая фракция набирает обороты на внутренней политической арене государства [Root.Owner.GetName]. Они именуют себя §H[Root.GetName]§!. "
+ factions.1.desc.start:1 "В последнее время новая фракция набирает обороты на внутренней политической арене [Root.Owner.GetName&gen]. [Root.Leader.GetAXX:Возглавил|||fem:Возглавила] их §H[Root.Leader.GetTitle] [Root.Leader.GetName]§!, а сами себя они именуют §H[Root.GetName]§!. "
  factions.1.desc.firstfinisher:0 "Недовольная фракция становится источником проблем, но те, кто одобряет действия правительства, могут пригодиться..."
  factions.1.desc.imperialist:0 "Их члены упорно добиваются от нас подтверждения нашего военного превосходства над остальными частями галактики.\n\n"
  factions.1.desc.isolationist:0 "Их члены выступают за закрытие границ и невмешательство в галактические дела.\n\n"
  factions.1.desc.progressive:0 "Их члены стремятся к равенству и правосудию для всех жителей нашего государства.\n\n"
  factions.1.desc.prosperity:1 "Их члены выступают за направленность нации на финансовый рост и стабильность мирными средствами."
- factions.1.desc.supremacist:0 "Их члены стремятся утвердить превосходство расы [Root.Owner.GetSpeciesAdj], урезав при необходимости права чужаков.\n\n"
+ factions.1.desc.supremacist:0 "Их члены стремятся утвердить [Root.Owner.GetSpeciesAdj&neut] превосходство, урезав при необходимости права чужаков.\n\n"
  factions.1.desc.technologist:0 "Их члены упорно добиваются развития различных наук.\n\n"
  factions.1.desc.totalitarian:0 "Их члены упорно добиваются крайней централизации политической и военной власти.\n\n"
  factions.1.desc.traditionalist:0 "Их члены поддерживают спиритуалистические и консервативные ценности.\n\n"
  factions.1.desc.xenoist:0 "Их члены упорно добиваются установления дружеских отношений с инопланетными расами.\n\n"
 
- factions.2000.title:0 "[TargetFaction.Owner.GetName]: смена принципов"
- factions.2000.desc.start:0 "После долгого периода, в течение которого фракция §Y[TargetFaction.GetName]§! пользовалась все большей поддержкой, государство §Y[TargetFaction.Owner.GetName]§! наконец приняло ее вместе с основными ценностями и политикой."
+ factions.2000.title:0 "Смена принципов в [TargetFaction.Owner.GetName&prep]"
+ factions.2000.desc.start:0 "После долгого периода, в течение которого фракция §Y[TargetFaction.GetName]§! пользовалась всё большей поддержкой, [TargetFaction.Owner.GetName:§Y<1>§! наконец принял|||fem:§Y<1>§! наконец приняла|||neut:§Y<1>§! наконец приняло|||pl:§Y<1>§! наконец приняли] её вместе с основными ценностями и политикой."
  factions.2000.desc.imperialist:0 "В результате привлечения этой фракции в наше правительство оно теперь более явно исповедует принцип §HМилитаризм§!.\n\n"
  factions.2000.desc.isolationist:0 "В результате привлечения этой фракции в наше правительство оно теперь более явно исповедует принцип §HКсенофобия§!.\n\n"
  factions.2000.desc.progressive:0 "В результате привлечения этой фракции в наше правительство оно теперь более явно исповедует принцип §HЭгалитаризм§!.\n\n"
@@ -791,51 +791,51 @@
  planet_political_crackdown:0 "Политические запреты"
  planet_political_crackdown_desc:0 "Политическим фракциям запрещено вести агитацию в этой колонии."
 
- factions.3005.name:0 "Доклад: политическая обстановка на планете [root.GetName]"
+ factions.3005.name:0 "Доклад о политике на [root.GetPlanetMoon]е [root.GetName]"
  factions.3005.desc.1:0 "Наши информаторы в колонии [root.GetName] шлют нам регулярные доклады о развитии политической ситуации в колонии. Вкратце: тенденция в целом благоприятная.\n\nМестные правоохранители и политические агенты смогли малыми силами свести открытое инакомыслие к минимуму. В частности, непокорные фракции практически не смогли найти сторонников среди колонистов. В результате политическая ситуация в колонии остается под нашим контролем."
  factions.3005.a:0 "Эти патриоты заслуживают похвалы."
- factions.3005.desc.2:0 "Приходящие из колонии [root.GetName] данные по политической ситуации дают почву для беспокойства. Политические кампании маргинального толка нашли отклик среди местного населения. Граждане повелись на сладкие обещания равенства и социальной мобильности и начали попирать базовые принципы нашего общества.\n\nНо несмотря ни на что, это все равно можно считать хорошей новостью. Мы собрали много данных наблюдений, которые помогут нам лучше понять, как устроен [owner.GetAdj] колониальный политический дискурс. Кроме того, выманив на поверхность эти маргинальные элементы, мы обнажили эти опасные течения задолго до того, как они смогли укорениться в столице."
+ factions.3005.desc.2:0 "Приходящие из колонии [root.GetName] данные по политической ситуации дают почву для беспокойства. Политические кампании маргинального толка нашли отклик среди местного населения. Граждане повелись на сладкие обещания равенства и социальной мобильности и начали попирать базовые принципы нашего общества.\n\nНо несмотря ни на что, это все равно можно считать хорошей новостью. Мы собрали много данных наблюдений, которые помогут нам лучше понять устройство [owner.GetAdj&masc,gen] колониального политического дискурса. Кроме того, выманив на поверхность эти маргинальные элементы, мы обнажили эти опасные течения задолго до того, как они смогли укорениться в столице."
  factions.3005.b:0 "Но... что если в этих идеях что-то есть?"
  planet_political_admittance:0 "Лояльная политика"
  planet_political_admittance_desc:0 "В этой колонии разрешены более радикальные формы политического дискурса, которые здесь проще изучать."
- factions.3005.desc.3:0 "Информация о политических движениях в колонии [root.GetName] позволила построить интересные прогнозы. Мы наблюдаем тенденцию к большей готовности принимать новые идеи, выходящие за рамки того, что представляется нам разумной политической мыслью. Но при этом какой-либо значительной радикализации не ожидается.\n\nМожно опасаться, что такое отклонение от нашей генеральной линии ослабит нашу власть, но это все равно можно считать хорошей новостью. Мы собрали много данных наблюдений, которые помогут нам лучше понять, как устроен колониальный политический дискурс. Кроме того, мы доказали, что даже если дать голос маргинальным политическим движениям, [owner.GetAdj] народ отвергает их наиболее радикальные элементы и в целом поддерживает принципы нашего государства."
+ factions.3005.desc.3:0 "Информация о политических движениях в колонии [root.GetName] позволила построить интересные прогнозы. Мы наблюдаем тенденцию к большей готовности принимать новые идеи, выходящие за рамки того, что представляется нам разумной политической мыслью. Но при этом какой-либо значительной радикализации не ожидается.\n\nМожно опасаться, что такое отклонение от нашей генеральной линии ослабит нашу власть, но это все равно можно считать хорошей новостью. Мы собрали много данных наблюдений, которые помогут нам лучше понять, как устроен колониальный политический дискурс. Кроме того, мы доказали, что даже если дать голос маргинальным политическим движениям, [owner.GetAdj&masc] народ отвергает их наиболее радикальные элементы и в целом поддерживает принципы нашего государства."
  factions.3005.c:0 "Тогда эту практику следует поощрять."
 
  factions.3010.desc.1:0 "[root.GetName] представляет большой интерес для наших политологов. Впрочем, несмотря на всю бурную агитацию и громкий шум в СМИ, будущее политического ландшафта этой колонии кажется им достаточно типичным.\n\nНаши исследователи отмечают, что отсутствие новостей здесь тоже считается хорошими новостями. Несмотря на заявления отдельных маргинальных элементов нашего общества, [root.GetName] еще не скоро станет рассадником автократии. Пока что здесь еще правит демократия."
  factions.3010.a:0 "Возможно, нужно их немного встряхнуть."
- factions.3010.desc.2:0 "Похоже, колония [root.GetName] стала своего рода плацдармом для некоторых авторитарно настроенных политических образований. Их агитаторы были замечены в числе тех, кто избрал своей целью эту молодую колонию. Несмотря на то, что некоторые первоначальные успехи — еще не повод бить тревогу, наши политологи относятся к происходящему с осторожностью. Возможно, [root.owner.GetAdj] взгляд на демократию не так уж незыблем."
+ factions.3010.desc.2:0 "Похоже, колония [root.GetName] стала своего рода плацдармом для некоторых авторитарно настроенных политических образований. Их агитаторы были замечены в числе тех, кто избрал своей целью эту молодую колонию. Несмотря на то, что некоторые первоначальные успехи — еще не повод бить тревогу, наши политологи относятся к происходящему с осторожностью. Возможно, [root.owner.GetAdj&masc] взгляд на демократию не так уж незыблем."
  factions.3010.b:0 "Достойное испытание наших методов правления!"
  factions.3010.c:0 "Нужно встать на защиту идеалов демократии."
- factions.3010.desc.3:0 "[root.GetName] уже долгое время находится под наблюдением наших политологов. Они сообщают, что в местном обществе укоренились самые разные политические взгляды.\n\nПока что не наблюдается признаков, что [root.GetName] скатится в анархию или какую-либо другую, столь же радикальную идеологию. Однако [root.owner.GetAdj] демократический метод правления в таких условиях сталкивается с серьезными трудностями, грозящими перерасти в настоящие риски, если какая-нибудь радикальная фракция наберет силу."
+ factions.3010.desc.3:0 "[root.GetName] уже долгое время находится под наблюдением наших политологов. Они сообщают, что в местном обществе укоренились самые разные политические взгляды.\n\nПока что не наблюдается признаков, что [root.GetName] скатится в анархию или какую-либо другую, столь же радикальную идеологию. Однако [root.owner.GetAdj&masc] демократический метод правления в таких условиях сталкивается с серьезными трудностями, грозящими перерасти в настоящие риски, если какая-нибудь радикальная фракция наберет силу."
  factions.3010.frontier.tt:0 "Модификатор «§Y$planet_political_frontier$§!» будет действовать примерно §Y9§! лет. $MOD_POP_ETHICS_SHIFT_SPEED$ увеличивается на §G50%§!."
  factions.3010.d:0 "Эти риски слишком велики."
 
  ### Loyalists
  faction.4.title:0 "Требования лоялистов"
- faction.4.desc:0 "[Root.Owner.GetRulerTitle] [Root.Owner.GetRulerName] из государства [Root.Owner.GetName] пользуется поддержкой лоялистов, которые не выдвигают никаких требований."
+ faction.4.desc:0 "[Root.Owner.GetRulerTitle] [Root.Owner.GetRulerName] из [Root.Owner.GetName&gen] пользуется поддержкой лоялистов, которые не выдвигают никаких требований."
 
  ### Slaves
  faction.6.title:0 "Голодовка!"
- faction.6.desc:0 "Рабы планеты [Root.Owner.GetName] решили уничтожить наши производственные мощности — свои тела — в ходе добровольной голодовки. Члены фракции [Root.GetName], по сути, §Yуничтожают§! себя на планете [Root.Owner.GetName].\n\nЕсли мы не предпримем мер, то потеряем львиную долю порабощенного населения. Мы можем подождать, пока несчастные умрут или найти другой способ усмирить непокорную фракцию."
+ faction.6.desc:0 "Рабы [Root.Owner.GetPlanetMoon]ы [Root.Owner.GetName] решили уничтожить наши производственные мощности — свои тела — в ходе добровольной голодовки. Члены фракции [Root.GetName], по сути, §Yуничтожают§! себя на [Root.Owner.GetPlanetMoon]е [Root.Owner.GetName].\n\nЕсли мы не предпримем мер, то потеряем львиную долю порабощенного населения. Мы можем подождать, пока несчастные умрут или найти другой способ усмирить непокорную фракцию."
 
  faction.7.title:0 "Восстание рабов!"
- faction.7.desc:0 "Рабы с планеты [slave_planet.GetName] восстали против хозяев и создали нелегальную мятежную коалицию, чтобы освободиться от своих законных владельцев — [Root.Owner.GetName]!"
+ faction.7.desc:0 "Рабы с [slave_planet.GetPlanetMoon]ы [slave_planet.GetName] восстали против хозяев и создали нелегальную мятежную коалицию, чтобы освободиться от своих законных владельцев — [Root.Owner.GetName]!"
 
  faction.8.title:0 "Принудительное питание"
  faction.8.desc:0 "Раб не имеет права повреждать или угнетать свое тело.\n\nИх бессмысленный самогеноцид завершился, и все, кто принял в нем участие, получили соответствующие дозы питательных веществ."
 
  faction.10.title:0 "Волнения рабов!"
- faction.10.desc:0 "Повсеместные волнения среди рабов на планете [unrest_planet.GetName] отрицательно влияют на их объемы производства."
- faction.10.desc.colle:0 "Среди порабощенных поселений государства [Root.Owner.GetName] распространяется недовольство, причем центром является планета [unrest_planet.GetName]."
+ faction.10.desc:0 "Повсеместные волнения среди рабов на [unrest_planet.GetPlanetMoon]е [unrest_planet.GetName] отрицательно влияют на их объемы производства."
+ faction.10.desc.colle:0 "Среди порабощенных поселений [Root.Owner.GetName&gen] распространяется недовольство, причем центром является [unrest_planet.GetPlanetMoon]а [unrest_planet.GetName]."
  faction.10.a.tooltip:0 "§HПорабощенные поселения§! на планете §H[unrest_planet.GetName]§! получают модификатор §RВолнения рабов§! на §Y4 года§!."
 
  faction.15.title:0 "Насилие среди рабов!"
- faction.15.desc:0 "Бродячие толпы, состоящие из нерадивых рабов, вступили в жестокое противостояние с другими представителями населения на планете [roving_gangs_planet.GetName], что привело к уничтожению одного поселения.\n\nПока еще неясно, как на случившееся отреагируют товарищи погибших."
+ faction.15.desc:0 "Бродячие толпы, состоящие из нерадивых рабов, вступили в жестокое противостояние с другими представителями населения на [roving_gangs_planet.GetPlanetMoon]е [roving_gangs_planet.GetName], что привело к уничтожению одного поселения.\n\nПока еще неясно, как на случившееся отреагируют товарищи погибших."
  faction.15.a.tooltip:0 "[roving_gangs_planet]:\n§Y1 поселение§! §Rпогибает§!."
 
  faction.50.title:0 "Межгалактическая железная дорога!"
- faction.50.desc:0 "Похоже, некоторые из более радикальных элементов среди наших рабов объединились, чтобы вывезти рабов с территории расы [Root.Owner.GetAdj].\n\nМы не знаем, как было совершено преступление такого масштаба, но мы совершенно уверены, что рабы теперь свободны и находятся где-то за пределами владений народа [Root.Owner.GetAdj]."
- faction.50.desc.colle:0 "Одна запутавшаяся фракция сочла нужным оскорбить государство [Root.Owner.GetName] посредством устранения нескольких рабов от исполнения их обязанностей и вывоза их за пределы территорий народа [Root.Owner.GetAdj].\n\nСо временем мы исцелимся и надеемся, что заблудшие в конце концов вернутся назад в государство [Root.Owner.GetName] и поймут свое истинное предназначение."
+ faction.50.desc:0 "Похоже, некоторые из более радикальных элементов среди наших рабов объединились, чтобы вывезти рабов с [Root.Owner.GetAdj&fem,gen] территории.\n\nМы не знаем, как было совершено преступление такого масштаба, но мы совершенно уверены, что рабы теперь свободны и находятся где-то за пределами [Root.Owner.GetAdj&pl,gen] владений."
+ faction.50.desc.colle:0 "Одна запутавшаяся фракция сочла нужным оскорбить [Root.Owner.GetName&acc], отстранив нескольких рабов от исполнения их обязанностей и вывезя их за пределы [Root.Owner.GetAdj&pl,gen] территорий.\n\nСо временем мы исцелимся и надеемся, что заблудшие в конце концов вернутся назад в [Root.Owner.GetName&acc] и поймут свое истинное предназначение."
  faction.50.a:0 "Досадно."
  faction.50.1.tooltip:0 "[Root.Owner.GetName]:\nПорабощенные поселения: §R-1§!"
  faction.50.3.tooltip:0 "[Root.Owner.GetName]:\nПорабощенные поселения: §R-3§!"
@@ -843,18 +843,18 @@
  faction.50.5.tooltip:0 "[Root.Owner.GetName]:\nПорабощенные поселения: §R-5§!"
 
  faction.55.title:0 "Бунт недовольных рабов!"
- faction.55.desc.colle:0 "Некоторые элементы во фракции [Root.GetName] загорелись желанием причинить вред государству [Root.Owner.GetName], уничтожив производственный объект на планете [riots_planet.GetName]. Мы можем только предположить, вредить самим себе таким образом их побуждают те же самые дефекты, что мешают им занять достойное место в иерархии народа [Root.Owner.GetAdj]."
- faction.55.desc:0 "Бунтующие рабы разрушили сооружение на планете [riots_planet.GetName], и его нужно отремонтировать, чтобы можно было возобновить производство."
+ faction.55.desc.colle:0 "Некоторые элементы во фракции [Root.GetName] загорелись желанием причинить вред [Root.Owner.GetName&dat], уничтожив производственный объект на [riots_planet.GetPlanetMoon]е [riots_planet.GetName]. Мы можем только предположить, вредить самим себе таким образом их побуждают те же самые дефекты, что мешают им занять достойное место в [Root.Owner.GetAdj&fem,gen] иерархии."
+ faction.55.desc:0 "Бунтующие рабы разрушили сооружение на [riots_planet.GetPlanetMoon]е [riots_planet.GetName], и его нужно отремонтировать, чтобы можно было возобновить производство."
 
  faction.60.title:0 "Восстание недовольных рабов!"
- faction.60.desc:0 "Более радикальные элементы среди наших рабов восстали — как и следовало ожидать, по мнению некоторых, — с оружием в руках против нашего законного правления.\n\nСогласно поступившим сообщениям, волнения начались на планете [revolt_planet.GetName] и, возможно, уже распространились за ее пределы."
- faction.60.desc.colle:0 "Недовольство среди тех, кого назначили выполнять черную работу ради славы и благополучия государства [Root.Owner.GetName], достигло критической точки кипения.\n\nИх неспособность увидеть более широкую картину и свое место в ней привела к открытому восстанию на планете [revolt_planet.GetName], — и за ней могут вскоре последовать и другие миры, если этого уже не произошло."
+ faction.60.desc:0 "Более радикальные элементы среди наших рабов восстали — как и следовало ожидать, по мнению некоторых, — с оружием в руках против нашего законного правления.\n\nСогласно поступившим сообщениям, волнения начались на [revolt_planet.GetPlanetMoon]е [revolt_planet.GetName] и, возможно, уже распространились за ее пределы."
+ faction.60.desc.colle:0 "Недовольство среди тех, кого назначили выполнять черную работу ради славы и благополучия [Root.Owner.GetName&gen], достигло критической точки кипения.\n\nИх неспособность увидеть более широкую картину и свое место в ней привела к открытому восстанию на [revolt_planet.GetPlanetMoon]е [revolt_planet.GetName], — и за ней могут вскоре последовать и другие миры, если этого уже не произошло."
  faction.60.a:0 "Это катастрофа."
  faction.60.b:0 "Невежды и глупцы..."
  faction.60.a.tooltip:0 "Фракция §Hнедовольных рабов§! §Yвосстала§!!"
 
  faction.80.title:0 "Радикализация рабов!"
- faction.80.desc:0 "Члены местного отделения фракции [Root.GetName], похоже, успешно провели радикализацию нескольких рабов из расы [Root.Owner.GetAdj], пополнив тем самым ряды недовольных."
+ faction.80.desc:0 "Члены местного отделения фракции [Root.GetName], похоже, успешно провели радикализацию нескольких [Root.Owner.GetAdj&pl,gen] рабов, пополнив тем самым ряды недовольных."
 
  ### Separatists
  # From = pop faction
@@ -865,7 +865,7 @@
 
  # Separatists rebel
  faction.100.title:0 "Сепаратисты подняли бунт!"
- faction.100.desc:3 "Волнения на планете [planet.GetName] достигли критической отметки. Местная фракция сепаратистов поднялась в вооруженной попытке захватить планету."
+ faction.100.desc:3 "Волнения на [planet.GetPlanetMoon]е [planet.GetName] достигли критической отметки. Местная фракция сепаратистов поднялась в вооруженной попытке захватить планету."
 
  # Separatists riot
  faction.101.title:1 "Восстание сепаратистов!"
@@ -873,14 +873,14 @@
 
  # Separatist leader assassinated
  faction.102.title:1 "Лидер фракции убит!"
- faction.102.desc:1 "Фракция [Root.GetName] охвачена паникой после того, как внезапно погиб ее лидер [Root.Leader.GetName].\n\nГражданам [Root.Owner.GetSpeciesAdj] представят это событие как итог борьбы за власть внутри фракции [Root.GetName]. Несмотря на появление нового лидера, народная поддержка фракции уменьшилась."
+ faction.102.desc:1 "Фракция [Root.GetName] охвачена паникой после того, как внезапно погиб ее лидер [Root.Leader.GetName].\n\n[Root.Owner.GetSpeciesAdj&masc,inst] гражданам представят это событие как итог борьбы за власть внутри фракции [Root.GetName]. Несмотря на появление нового лидера, народная поддержка фракции уменьшилась."
 
  # Separatist sector created
  faction.103.title:0 "Сектор создан!"
- faction.103.desc:0 "Фракция [Root.GetName] получила в свое распоряжение полунезависимый сектор с правительством на планете [parameter:planet.GetName]."
+ faction.103.desc:0 "Фракция [Root.GetName] получила в свое распоряжение полунезависимый сектор с правительством на [parameter:planet.GetPlanetMoon]е [parameter:planet.GetName]."
 
  faction.104.title:0 "Государство освобождено!"
- faction.104.desc:0 "Чтобы ублажить и, по сути, устранить сепаратистов, колония на планете [parameter:planet.GetName] получила независимость от государства [Root.Owner.GetName].\n\nФракция [Root.GetName] теперь является отдельным государством."
+ faction.104.desc:0 "Чтобы ублажить и, по сути, устранить сепаратистов, колония на [parameter:planet.GetPlanetMoon]е [parameter:planet.GetName] получила независимость от [Root.Owner.GetName&gen].\n\nФракция [Root.GetName] теперь является отдельным государством."
 
  ### Crusaders
 
@@ -898,56 +898,56 @@
  faction.201.title:0 "Столица еретиков захвачена!"
  faction.201.desc:0 "Их храмы осквернены, а их боги отвернулись от них."
 
- faction.202.title:0 "Государство [parameter:heathens.GetName] оскорблено"
- faction.202.desc:1 "Из-за досадного промаха в системе безопасности фракция [Root.GetName] ненадолго получила доступ к нашим каналам дипломатической связи. Они использовали эту возможность, чтобы оскорбить государство [parameter:heathens.GetName], обвинив его в ереси и аморальных деяниях.\n\nГлубоко религиозное государство [parameter:heathens.GetSpeciesNamePlural] крайне недовольно этим инцидентом."
+ faction.202.title:0 "Оскорбление [parameter:heathens.GetName&gen]"
+ faction.202.desc:1 "Из-за досадного промаха в системе безопасности фракция [Root.GetName] ненадолго получила доступ к нашим каналам дипломатической связи. Они использовали эту возможность, чтобы оскорбить [parameter:heathens.GetName&acc], обвинив [parameter:heathens.GetName:его|||fem:её|||pl:их] в ереси и аморальных деяниях.\n\nГлубоко религиозные [parameter:heathens.GetSpeciesNamePlural] крайне недовольны этим инцидентом."
  faction.202.a:0 "Какой позор."
  faction.202.a.tooltip:0 "§Y[parameter:enemy.GetName]§! добавляет модификатор отношения §YОскорбление фракции§! к §Yнашему государству§!."
  faction.203.title:0 "Попытка оскорбления"
- faction.203.desc:1 "В результате очередного крайне неприятного промаха в системе безопасности фракция [Root.GetName] ненадолго получила доступ к нашим каналам дипломатической связи. Они использовали эту возможность, чтобы вновь унизить религиозные взгляды государства [parameter:heathens.GetName].\n\nК счастью, государство [parameter:heathens.GetSpeciesNamePlural] не приняло всерьез этот повторный инцидент и, похоже, проигнорировало его."
+ faction.203.desc:1 "В результате очередного крайне неприятного промаха в системе безопасности фракция [Root.GetName] ненадолго получила доступ к нашим каналам дипломатической связи. Они использовали эту возможность, чтобы вновь унизить религиозные взгляды [parameter:heathens.GetName&gen].\n\nК счастью, государство [parameter:heathens.GetSpeciesNamePlural] не приняло всерьез этот повторный инцидент и, похоже, проигнорировало его."
  faction.203.a:0 "Пронесло..."
 
  faction.204.title:0 "Религиозный бунт!"
- faction.204.desc:0 "Мы получили сообщения о том, что радикально настроенные элементы фракции [Root.GetName] готовят вооруженное восстание на планете [planet.GetName].\n\nПодготовка только началась, так что у нас еще есть возможность задушить бунт в зародыше."
+ faction.204.desc:0 "Мы получили сообщения о том, что радикально настроенные элементы фракции [Root.GetName] готовят вооруженное восстание на [planet.GetPlanetMoon]е [planet.GetName].\n\nПодготовка только началась, так что у нас еще есть возможность задушить бунт в зародыше."
  faction.204.a:0 "Ну что ж..."
  faction.204.a.tooltip:0 "[planet.GetName]:\nВосстание!"
 
  ### Nationalists
  faction.301.title:2 "Диверсия националистов!"
- faction.301.desc:2 "Радикалы-[Root.GetName] разрушили сооружение на планете [planet.GetName]."
- faction.301.desc.phobe:0 "Чужаки-громилы из фракции [Root.GetName] разрушили сооружение на планете [planet.GetName] с расчетом навредить интересам народа [Root.Owner.GetAdj] и очевидной целью уничтожить наш образ жизни."
- faction.301.desc.phile:0 "Во всем остальном прекрасные члены фракции [Root.GetName] сочли нужным выразить свое недовольство нашим правлением, выведя из строя комплекс — или, по мнению некоторых, проведя диверсию — на планете [planet.GetName]."
+ faction.301.desc:2 "Радикалы-[Root.GetName] разрушили сооружение на [planet.GetPlanetMoon]е [planet.GetName]."
+ faction.301.desc.phobe:0 "Чужаки-громилы из фракции [Root.GetName] разрушили сооружение на [planet.GetPlanetMoon]е [planet.GetName] с расчетом навредить [Root.Owner.GetAdj&pl,dat] интересам и с очевидной целью уничтожить наш образ жизни."
+ faction.301.desc.phile:0 "Во всем остальном прекрасные члены фракции [Root.GetName] сочли нужным выразить свое недовольство нашим правлением, выведя из строя комплекс — или, по мнению некоторых, проведя диверсию — на [planet.GetPlanetMoon]е [planet.GetName]."
 
  faction.302.title:1 "Восстание националистов!"
  faction.302.desc:3 "Вдохновленный повсеместной поддержкой народ [Root.GetName] взялся за оружие и пытается силой вернуть свои территории."
- faction.302.desc.phobe:0 "Чужаки-бунтари из фракции [Root.GetName] хотят свергнуть правление расы [Root.Owner.GetAdj] в ходе открытого восстания!"
+ faction.302.desc.phobe:0 "Чужаки-бунтари из фракции [Root.GetName] хотят свергнуть [Root.Owner.GetAdj&neut] правление в ходе открытого восстания!"
  faction.302.desc.phile:0 "Вследствие того, что мы постоянно игнорировали их требования, фракция [Root.GetName] перешла к открытому восстанию."
 
  ### Peace Movement
 
  faction.400.title:0 "Диверсия на флоте!"
- faction.400.desc:0 "В какой-то момент радикально настроенные члены фракции [From.GetName] успешно проникли на как минимум один военный корабль государства [Root.Owner.GetSpeciesAdj] и установили взрывчатку. Они детонировали взрывчатку, полностью уничтожив [Root.GetName].\n\n[From.Leader.GetName], лидер фракции [From.GetName], считает это действие наглядным примером недопустимости любого насилия, в частности, войны, в которую втянуты [Root.Owner.GetName] и [From.parameter:enemy.GetName]."
+ faction.400.desc:0 "В какой-то момент радикально настроенные члены фракции [From.GetName] успешно проникли на как минимум один [Root.Owner.GetSpeciesAdj&masc] военный корабль и установили взрывчатку. Они детонировали взрывчатку, полностью уничтожив [Root.GetName].\n\n[From.Leader.GetName], лидер фракции [From.GetName], считает это действие наглядным примером недопустимости любого насилия, в частности, войны, в которую втянуты [Root.Owner.GetName] и [From.parameter:enemy.GetName]."
  faction.400.a:0 "Какое двуличие."
  faction.400.a.tooltip:0 "§R[Root.GetName] уничтожен.§!"
 
  faction.401.title:0 "Прекращение огня"
- faction.401.desc:0 "Все дипломатические связи, обязывающие продолжать войну с государством [From.parameter:enemy.GetName], разорваны, и мы предложили мир на условиях статус-кво."
+ faction.401.desc:0 "Все дипломатические связи, обязывающие продолжать войну с [From.parameter:enemy.GetName&inst], разорваны, и мы предложили мир на условиях статус-кво."
  faction.401.a:0 "Мы надеемся, они этим довольны."
 
  faction.402.title:0 "Прекращение огня"
- faction.402.desc:0 "Мы предложили мир на условиях статус-кво государства [From.parameter:enemy.GetName] в надежде положить конец войне."
+ faction.402.desc:0 "Мы предложили мир на условиях статус-кво [From.parameter:enemy.GetName&gen] в надежде положить конец войне."
  faction.402.a:0 "Зачем нам эта война?"
 
  ### Liberation Faction
 
- faction.501.title:0 "Государство [parameter:enemy.GetName] оскорблено"
- faction.501.desc:1 "Из-за досадного промаха в системе безопасности фракция [Root.GetName] ненадолго получила доступ к нашим каналам дипломатической связи. Они использовали эту возможность, чтобы глубоко оскорбить государство [parameter:enemy.GetName] и потребовать немедленного возвращения планеты [parameter:planet.GetName].\n\nГосударство [parameter:enemy.GetSpeciesNamePlural] крайне недовольно произошедшим."
+ faction.501.title:0 "Оскобрление [parameter:enemy.GetName&gen]"
+ faction.501.desc:1 "Из-за досадного промаха в системе безопасности фракция [Root.GetName] ненадолго получила доступ к нашим каналам дипломатической связи. Они использовали эту возможность, чтобы глубоко оскорбить [parameter:enemy.GetName&acc] и потребовать немедленного возвращения [parameter:planet.GetPlanetMoon]ы [parameter:planet.GetName].\n\n[parameter:enemy.GetSpeciesNamePlural] крайне недовольны произошедшим."
  faction.501.a:0 "Какой позор."
  faction.501.a.tooltip:0 "§Y[parameter:enemy.GetName]§! добавляет модификатор отношения §YОскорбление фракции§! к §Yнашему государству§!."
  faction.502.title:0 "Попытка оскорбления"
- faction.502.desc:1 "В результате очередного крайне неприятного промаха в системе безопасности фракция [Root.GetName] ненадолго получила доступ к нашим каналам дипломатической связи. Они использовали эту возможность, чтобы вновь унизить государство [parameter:enemy.GetName] и потребовать немедленного возвращения планеты [parameter:planet.GetName].\n\nК счастью, государство [parameter:enemy.GetSpeciesNamePlural] не приняло всерьез этот повторный инцидент и, похоже, проигнорировало его."
+ faction.502.desc:1 "В результате очередного крайне неприятного промаха в системе безопасности фракция [Root.GetName] ненадолго получила доступ к нашим каналам дипломатической связи. Они использовали эту возможность, чтобы вновь унизить [parameter:enemy.GetName&acc] и потребовать немедленного возвращения [parameter:planet.GetPlanetMoon]ы [parameter:planet.GetName].\n\nК счастью, [parameter:enemy.GetSpeciesNamePlural] не приняли всерьез этот повторный инцидент и, похоже, проигнорировали его."
  faction.502.a:0 "Пронесло..."
  faction.503.title:0 "Воинственные мятежники!"
- faction.503.desc:0 "Мы получили сообщения о том, что радикально настроенные элементы фракции [Root.GetName] создали хорошо организованные отряды мятежников на планете [planet.GetName].\n\nПодготовка только началась, так что у нас еще есть возможность задушить бунт в зародыше."
+ faction.503.desc:0 "Мы получили сообщения о том, что радикально настроенные элементы фракции [Root.GetName] создали хорошо организованные отряды мятежников на [planet.GetPlanetMoon]е [planet.GetName].\n\nПодготовка только началась, так что у нас еще есть возможность задушить бунт в зародыше."
  faction.503.a:0 "Ну что ж..."
  faction.503.a.tooltip:0 "[planet.GetName]:\n§RВосстание!§!"
 
@@ -957,26 +957,26 @@
  faction.600.a:0 "Но это все равно тревожит."
  faction.600.a.tooltip:0 "[parameter:slave_faction.GetName]:\n§R+50%§! Воинственность\n§R+30%§! Поддержка"
  faction.601.title:0 "Межгалактическая железная дорога"
- faction.601.desc:0 "До нас дошли слухи, что несколько радикально настроенных членов фракции [Root.GetName] освободили группу рабов на планете [railroad_planet.GetName] и увезли их туда, куда [Root.Owner.GetName] не сможет дотянуться."
+ faction.601.desc:0 "До нас дошли слухи, что несколько радикально настроенных членов фракции [Root.GetName] освободили группу рабов на [railroad_planet.GetPlanetMoon]е [railroad_planet.GetName] и увезли их туда, куда [Root.Owner.GetName] не сможет дотянуться."
  faction.601.a:0 "Надо внимательнее за ними следить."
  faction.601.a.tooltip:0 "[railroad_planet.GetName]:\nПорабощенные поселения: §R-1§!"
 
  ### Xenoslaver Faction
  faction.700.title:0 "Рабы захвачены!"
- faction.700.desc:0 "По слухам, обезумевшая фракция [Root.GetName] поработила жителей государства [Root.Owner.GetName], не относящихся к расе [Root.Owner.GetSpeciesAdj]."
+ faction.700.desc:0 "По слухам, обезумевшая фракция [Root.GetName] поработила жителей [Root.Owner.GetName&gen], не относящихся к [Root.Owner.GetSpeciesAdj&fem,gen] расе."
  faction.700.a:0 "Это возмутительно!"
  faction.700.a.tooltip:0 "Рабы:\n§Y+2§! поселения"
 
  faction.701.title:0 "Фракция [parameter:rebelling_faction.GetName] бунтует!"
- faction.701.desc:0 "Устав от того, сколь мягко [Root.Owner.GetName] обходится с обнаглевшими чужаками, бывшие рабовладельцы с планеты [parameter:planet.GetName] собрались вместе, создали конфедерацию общин и объявили о своей независимости."
+ faction.701.desc:0 "Устав от того, сколь мягко [Root.Owner.GetName] обходится с обнаглевшими чужаками, бывшие рабовладельцы с [parameter:planet.GetPlanetMoon]ы [parameter:planet.GetName] собрались вместе, создали конфедерацию общин и объявили о своей независимости."
  faction.701.a:0 "Это очень, очень, очень возмутительно."
 
  ### Purged Faction
  faction.801.title:0 "Борьба до конца"
- faction.801.desc:0 "Доведенные до отчаяния граждане планеты [riot_planet.GetName], которым угрожает чистка, решили атаковать и разрушить одно из предприятий планеты."
+ faction.801.desc:0 "Доведенные до отчаяния граждане [riot_planet.GetPlanetMoon]ы [riot_planet.GetName], которым угрожает чистка, решили атаковать и разрушить одно из предприятий планеты."
 
  faction.803.title:0 "[Root.GetName] бунтует!"
- faction.803.desc:0 "Доведенные до отчаяния граждане, которым угрожает чистка на планете [death_planet.GetName], восстали с оружием в руках против власти государства [Root.Owner.GetName] и создали слабое повстанческое движение."
+ faction.803.desc:0 "Доведенные до отчаяния граждане, которым угрожает чистка на [death_planet.GetPlanetMoon]е [death_planet.GetName], восстали с оружием в руках против власти [Root.Owner.GetName&gen] и создали слабое повстанческое движение."
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  henrik.1234.name:0 "§HСмещенное во времени примитивное общество§!: сводка"

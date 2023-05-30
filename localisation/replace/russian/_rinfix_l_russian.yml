@@ -1,0 +1,152 @@
+﻿l_russian:
+
+#################
+# Свои строки
+#################
+ RINFIX_WIKI: "§HCообщество VK§!\nПосетить сообщество VK, посвящённое Stellaris и другим играм Paradox"
+ #utopia.83.desc: "[Root.GetName]\n[Root.GetName&gen]\n[Root.GetName&dat]\n[Root.GetName&acc]\n[Root.GetName&inst]\nо [Root.GetName&prep]"
+
+#################
+# Недостающие строки
+#################
+ # В l_russlan есть строка indeterminable (с маленькой буквы)
+ Indeterminable: "$indeterminable$"
+ economy: "Экономика"
+
+ # Для предсозданных государств
+ PRESCRIPTED_ruler_title_female_knights: "Королева"
+
+ # Дефолтный префикс, Международный Космический Корабль
+ ISS: "МКК"
+
+ # В подсказке, когда воруешь технологию (и нет доступных вариантов?)
+ NO_POSSIBLE_OPTION: "§RНет доступных вариантов.§!"
+
+ MESSAGE_REANIMATION_COMPLETE_DESC: "Первая группа воскрешённых тиянки ожидает наших приказов в системе $SYSTEM|Y$. Следующая группа уже готовится."
+ NAME_Reanimated_Elderly_Tiyanki: "Возрождённый $NAME_Elderly_Tiyanki$"
+
+#################
+# Исправления скриптов
+#################
+### \events\00_distant_stars_events_2.txt
+# Это часть файла distant_stars_events_2.txt.
+# Два ивента включено в мод из-за пробелов в названиях.
+# НА САМОМ ДЕЛЕ ОНИ НЕ ВКЛЮЧЕНЫ, ЧТОБЫ НЕ ЛОМАТЬ КЕКСУММУ. Я ЗАРЕПОРТИЛА ПАРАХОДАМ (уже во второй раз)!
+ NAME_Mardak_Vol: "Мардак Вул"
+ NAME_Mardak_Purger: "Мардакский чистильщик"
+
+# Прямая подмена.
+ Vol: "Вул"
+ 
+### \common\scripted_effects\00_scripted_effects.txt
+# Прямая подмена.
+ Commander: "Командор"
+
+#################
+# Абуз существующих скриптов локализации 
+#################
+### Французские
+# Родительный падеж для модификаторов
+ job_agri_drone_plural_lower: "аграрных дронов" # GetFarmerPlural_lower
+ job_alloy_drone_plural_lower: "дронов-литейщиков" # GetAlloyProducerPlural_lower
+ job_artificer_plural_lower: "мастеров" # GetArtisanPlural_lower, ConsumerGoodsProducer_lower
+ job_artisan_drone_plural_lower: "дронов-ремесленников" # GetArtisanPlural_lower, ConsumerGoodsProducer_lower
+ job_artisan_plural_lower: "ремесленников" # GetArtisanPlural_lower, ConsumerGoodsProducer_lower
+ job_brain_drone_plural_lower: "научных дронов" # GetResearcherPlural_lower, ResearchProducer_lower
+ job_calculator_plural_lower: "вычислителей" # GetResearcherPlural_lower, ResearchProducer_lower
+ job_catalytic_drone_plural_lower: "дронов-катализаторов" # GetAlloyProducerPlural_lower
+ job_catalytic_technician_plural_lower: "техников-катализаторов" # GetAlloyProducerPlural_lower
+ job_chemist_drone_plural_lower: "дронов-химиков" # Chemists_lower
+ job_chemist_plural_lower: "химиков" # Chemists_lower
+ job_death_priest_plural_lower: "жрецов смерти" # GetPriestPlural_lower
+ job_fabricator_plural_lower: "изготовителей" # GetAlloyProducerPlural_lower
+ job_farmer_plural_lower: "фермеров" # GetFarmerPlural_lower
+ job_foundry_plural_lower: "металлургов" # GetAlloyProducerPlural_lower
+ job_gas_refiner_drone_plural_lower: "дронов-переработчиков" # Refiners_lower
+ job_gas_refiner_plural_lower: "переработчиков газов" # Refiners_lower
+ job_miner_plural_lower: "шахтёров" # GetMinerPlural_lower
+ job_mining_drone_plural_lower: "добывающих дронов" # GetMinerPlural_lower
+ job_priest_plural_lower: "жрецов" # GetPriestPlural_lower
+ job_researcher_plural_lower: "исследователей" # GetResearcherPlural_lower, ResearchProducer_lower
+ job_soldier_plural_lower: "солдат" # GetSoldierPlural_lower
+ job_technician_drone_plural_lower: "дронов-техников" # GetArtisanPlural_lower
+ job_technician_plural_lower: "техников" # GetArtisanPlural_lower
+ job_translucer_drone_plural_lower: "дронов-кристальщиков" # Translucers_lower
+ job_translucer_plural_lower: "специалистов по кристаллам" # Translucers_lower
+ job_warrior_drone_plural_lower: "дронов-воинов" # GetSoldierPlural_lower
+ pop_cat_complex_drone_plural_lower: "комплексных дронов" # GetSpecialistPlural_lower
+ pop_cat_simple_drone_plural_lower: "дронов-чернорабочих" # GetWorkerPlural_lower
+ pop_cat_specialist_plural_lower: "специалистов" # GetSpecialistPlural_lower
+ pop_cat_worker_plural_lower: "рабочих" # GetWorkerPlural_lower
+
+# Винительный падеж для ресурсов в описании должностей из Overlord
+ r_minerals_FR_lela: "$r_minerals$" # SubjectResearcherUpkeep_FR_lela, OverlordConsumes_FR_lela
+ r_energy_FR_lela: "$r_energy$" # SubjectResearcherUpkeep_FR_lela, OverlordConsumes_FR_lela
+ r_food_FR_lela: "$r_food$" # OverlordConsumes_FR_lela
+ r_consumer_goods_FR_lela: "$r_consumer_goods$" # SubjectResearcherUpkeep_FR_lela
+ r_minerals_lower: "$r_minerals$" # AlloysProducerResources_lower
+ r_food_lower: "$r_food$" # AlloysProducerResources_lower
+
+# Винительный падеж для категорий автоматизации планет
+# Примечание. Если заменяешь CrimeOrDeviancy — не забудь добавить значок £crime£ §Yжёлтый цвет§!,
+# а если GetCrimeDeviancy — это обычный текст, просто добавь _lower!
+ PLANET_CRIME_TITLE_lower: "преступность" # GetCrimeDeviancy_lower
+ PLANET_CRIME_NO_HAPPINESS_TITLE_lower: "отклонение от нормы" # GetCrimeDeviancy_lower
+
+# Родительный падеж для сообщества/Империума
+ FRLOC_la: "Галактического сообщества" # GetLeLaLCommGalEmpGal
+ FRLOC_l: "Галактического империума" # GetLeLaLCommGalEmpGal
+
+### Падежи для названий трофеев с левиафанов для ивентов.
+# Через варианты сделать не вышло — в подсказке «добавить модификатор» выводятся все варианты.
+# GetTrophyNameDE1
+ DELOC_1_drakes_scale:0 "Клык дракона&!masc|||acc:клык дракона&!masc|||prep:клыке дракона&!masc"
+ DELOC_1_eye_of_the_shard:0 "Глаз Шард&!masc|||acc:глаз Шард&!masc|||prep:глазе Шард&!masc"
+ DELOC_1_matriarchs_flagella:0 "Жгутик матриарха&!masc|||acc:жгутик матриарха&!masc|||prep:жгутике матриарха&!masc"
+ DELOC_1_voidspawns_chitin:0 "Ядовитая железа Порождения пустоты&!fem|||acc:ядовитую железу Порождения пустоты&!fem|||prep:ядовитой железе Порождения пустоты&!fem"
+ DELOC_1_wraiths_energy_disperser:0 "Рассеивающий мешок фантома&!masc|||acc:рассеивающий мешок фантома&!masc|||prep:рассеивающем мешке фантома&!masc"
+ DELOC_1_devourers_plasma:0 "Яйцевая камера Пожирателя&!fem|||acc:яйцевую камеру Пожирателя&!fem|||prep:яйцевой камере Пожирателя&!fem"
+ DELOC_1_horrific_inverse_mass:0 "Жуткая инверсная масса&!fem|||acc:жуткую инверсную массу&!fem|||prep:жуткой инверсной массе&!fem"
+ DELOC_1_dreadnoughts_reactor:0 "Реактор дредноута&!masc|||acc:реактор дредноута&!masc|||prep:реакторе дредноута&!masc"
+ DELOC_1_fortress_hull_plates:0 "Камера из крепости&!fem|||acc:камеру из крепости&!fem|||prep:&!fem"
+ DELOC_1_scavenger_bots_compactor:0 "Уплотнитель Робота-мусорщика&!masc|||acc:уплотнитель Робота-мусорщика&!masc|||prep:уплотнителе Робота-мусорщика&!masc"
+ DELOC_1_sky_dragons_plume:0 "Перо Небесного дракона&!neut|||acc:перо Небесного дракона&!neut|||prep:пере Небесного дракона&!neut"
+
+# То же касается самих левиафанов...
+# GetLeviathanTargetNameDE1DE1
+ DELOC_1_leviathans.510.name: "Эфирный дракон&!masc|||gen:Эфирного дракона&!masc|||dat:Эфирному дракону&!masc|||acc:Эфирного дракона&!masc|||inst:Эфирным драконом&!masc|||prep:Эфирном драконе&!masc"
+ DELOC_1_scripted_SHARD: "Шард&!fem"
+ DELOC_1_leviathans.556.name: "Матриарх тиянки&!masc|||gen:Матриарха тиянки&!masc|||dat:Матриарху тиянки&!masc|||acc:Матриарха тиянки&!masc|||inst:Матриархом тиянки&!masc|||prep:Матриархе тиянки&!masc"
+ DELOC_1_leviathans.550.name: "Порождение пустоты&!neut|||gen:Порождения пустоты&!neut|||dat:Порождению пустоты&!neut|||acc:Порождение пустоты&!neut|||inst:Порождением пустоты&!neut|||prep:Порождении пустоты&!neut"
+ DELOC_1_leviathans.545.name: "Фантом&!masc|||gen:Фантома&!masc|||dat:Фантому&!masc|||acc:Фантома&!masc|||inst:Фантоме&!masc|||prep:Фантомом&!masc"
+ DELOC_1_leviathans.520.name: "Пожиратель звёзд&!masc|||gen:Пожирателя звёзд&!masc|||dat:Пожирателю звёзд&!masc|||acc:Пожирателя звёзд&!masc|||inst:Пожирателем звёзд&!masc|||prep:Пожирателе звёзд&!masc"
+ DELOC_1_leviathans.525.name: "Межпространственный ужас&!masc|||gen:Межпространственного ужаса&!masc|||dat:Межпространственному ужасу&!masc|||acc:Межпространственный ужас&!masc|||inst:Межпространственным ужасом&!masc|||prep:Межпространственном ужасе&!masc"
+ DELOC_1_scripted_ELDER_ONE: "Древний&!masc|||gen:Древнего&!masc|||dat:Древнему&!masc|||acc:Древнего&!masc|||inst:Древним&!masc|||prep:Древнем&!masc"
+ DELOC_1_scripted_WORM: "Червь&!masc|||gen:Червя&!masc|||dat:Червю&!masc|||acc:Червя&!masc|||inst:Червём&!masc|||prep:Черве&!masc"
+ DELOC_1_leviathans.540.name: "Автоматизированный дредноут&!masc|||gen:Автоматизированного дредноута&!masc|||dat:Автоматизированному дредноуту&!masc|||acc:Автоматизированный дредноут&!masc|||inst:Автоматизированным дредноутом&!masc|||prep:Автоматизированном дредноуте&!masc"
+ DELOC_1_leviathans.515.name: "Загадочная крепость&!fem|||gen:Загадочной крепости&!fem|||dat:Загадочной крепости&!fem|||acc:Загадочную крепость&!fem|||inst:Загадочной крепостью&!fem|||prep:Загадочной крепости&!fem"
+ DELOC_1_leviathans.535.name: "Машина бесконечности&!fem|||gen:Машины бесконечности&!fem|||dat:Машине бесконечности&!fem|||acc:Машину бесконечности&!fem|||inst:Машиной бесконечности&!fem|||prep:Машине бесконечности&!fem"
+ DELOC_1_NAME_Scavenger_Bot: "Робот-мусорщик&!masc|||gen:Робота-мусорщика&!masc|||dat:Роботу-мусорщику&!masc|||acc:Робота-мусорщика&!masc|||inst:Роботом-мусорщиком&!masc|||prep:Роботе-мусорщике&!masc"
+ DELOC_1_scripted_SKY_DRAGON: "Небесный дракон&!masc|||gen:Небесного дракона&!masc|||dat:Небесному дракону&!masc|||acc:Небесного дракона&!masc|||inst:Небесным драконом&!masc|||prep:Небесном драконе&!masc"
+
+ ### Падежи PlanetMoon, через систему падежей не работает
+ # Родительный
+ DELOC_1_habitat_lowercase: "орбитального поселения" # GetPlanetHabitatDE1
+ DELOC_1_ringworld_lowercase: "мира-кольца" # GetPlanetHabitatDE1
+ DELOC_1_planetmoon: "[This.GetPlanetMoon]ы" # GetPlanetHabitatDE1
+ # Дательный
+ DELOC_2_habitat_lowercase: "орбитальному поселению" # GetPlanetHabitatDE2
+ DELOC_2_ringworld_lowercase: "миру-кольцу" # GetPlanetHabitatDE2
+ DELOC_2_planetmoon: "[This.GetPlanetMoon]е" # GetPlanetHabitatDE2
+ # Винительный
+ DELOC_3_habitat_lowercase: "орбитальное поселение" # GetPlanetHabitatDE3
+ DELOC_3_ringworld_lowercase: "мир-кольцо" # GetPlanetHabitatDE3
+ DELOC_3_planetmoon: "[This.GetPlanetMoon]у" # GetPlanetHabitatDE3
+ # Творительный
+ DELOC_4_habitat_lowercase: "орбитальным поселением" # GetPlanetHabitatDE4
+ DELOC_4_ringworld_lowercase: "миром-кольцом" # GetPlanetHabitatDE4
+ DELOC_4_planetmoon: "[This.GetPlanetMoon]ой" # GetPlanetHabitatDE4
+ # Предложный
+ DELOC_5_habitat_lowercase: "орбитальном поселении" # GetPlanetHabitatDE5
+ DELOC_5_ringworld_lowercase: "мире-кольце" # GetPlanetHabitatDE5
+ DELOC_5_planetmoon: "[This.GetPlanetMoon]е" # GetPlanetHabitatDE5

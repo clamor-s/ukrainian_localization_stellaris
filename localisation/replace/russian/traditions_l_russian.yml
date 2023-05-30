@@ -692,7 +692,7 @@
  tr_unyielding_federations_finish_desc:0 "$MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_MULT$§G+50%§!\n$mod_starbases_upkeep_mult$§G-20%§!\nНадає доступ до федерації типу §Y$military_federation$§!.\nВідкрито бонусів сходження: §G+1§!"
 
  tr_unyielding_resistance_is_frugal:0 "Ощадливий опір"
- tr_unyielding_resistance_is_frugal_desc:1 "£defense_army£ §YАрмії оборони§! тепер генерують §Y0.5§! £unity£ єдності. Крім того, §Y$MOD_ARMY_DEFENSE_HEALTH_MULT$§! збільшено на §G+25%§!."
+ tr_unyielding_resistance_is_frugal_desc:1 "£defense_army£ §YАрмії оборони§! тепер генерують §Y0.5§! £unity£ єдності. Крім того, §Y$MOD_ARMY_DEFENSE_HEALTH_MULT$§! збільшено на §G+25%§!." # [LocEditor:ForFutureBatchExport]
  tr_unyielding_resistance_is_frugal_hive:0 "$tr_unyielding_resistance_is_frugal$"
  tr_unyielding_resistance_is_frugal_machine:0 "$tr_unyielding_resistance_is_frugal$"
  tr_unyielding_resistance_is_frugal_delayed:0 "Наші люди втішаються міцністю бастіонів, які охороняють наші планети, і вважають їх життєво важливими для забезпечення процвітаючого майбутнього."
@@ -924,7 +924,7 @@
  tradition_aptitude_machine_desc:0 "Високий рівень лідерства підвищує потенціал величі імперії."
  tr_aptitude_adopt:0 "традиції здібності"
  tr_aptitude_finish:0 "Традиції здібності завершено"
- tr_aptitude_finish_desc:0 "Початкові риси лідера: §G+1§!"
+ tr_aptitude_adopt_desc:0 "Початкові риси лідера: §G+1§!"
  tr_aptitude_the_empire_needs_you:0 "Імперія потребує вас!"
  tr_aptitude_the_empire_needs_you_delayed:0 "Багато молодих людей мріють стати одними з шанованих лідерів імперії."
  tr_aptitude_the_empire_needs_you_hive:0 "Вище юрби"
@@ -955,7 +955,7 @@
  tr_aptitude_champions_of_the_empire_hive_delayed:0 "Вулик готовий надати незначний рівень автономії своїм найсильнішим елементам на благо всього."
  tr_aptitude_champions_of_the_empire_machine:0 "Адміністративні права"
  tr_aptitude_champions_of_the_empire_machine_delayed:0 "Ми довіряємо унікальним підпрограмам наших лідерів і даємо їм дозвіл впливати на управління імперією."
- tr_aptitude_champions_of_the_empire_desc:0 "Кожен $admiral_with_icon$ і $general_with_icon$ дають\n$t$$MOD_COUNTRY_NAVAL_CAP_ADD$: §G+2§!\nКожен $governor_with_icon$ дає\n$t$$MOD_EMPIRE_SIZE_MULT$: §G-2%§!\nКожен $scientist_with_icon$ дає\n$t$$MOD_LEADER_SPECIES_EXP_GAIN$: §G+2%§!"
+ tr_aptitude_champions_of_the_empire_desc:0 "$admiral_with_icon$ і $general_with_icon$ за кожен рівень дають\n$t$$MOD_COUNTRY_NAVAL_CAP_ADD$: §G+2§!\n$governor_with_icon$ за кожен рівень дає\n$t$$MOD_EMPIRE_SIZE_MULT$: §G-2%§!\n$scientist_with_icon$ за кожен рівень дає\n$t$$MOD_LEADER_SPECIES_EXP_GAIN$: §G+2%§!"
 
 ################################################################
 # Statecraft
@@ -1040,7 +1040,7 @@
 
  requires_tradition_the_federation:1 "$TRIGGER_FAIL$§RТребуется традиция дипломатии §YФедерация§!.§!"
  requires_tradition_universal_compatibility:0 "§RТребуется традиция многогранности §YУниверсальная совместимость§!.§!"
- requires_independence:0 "$TRIGGER_FAIL$Государство [This.GetName] должно быть независимым."
+ requires_independence:0 "$TRIGGER_FAIL$[This.GetName:<1> должен|||fem:<1> должна|||neut:<1> должно|||pl:<1> должны] обладать независимостью."
  requires_ascension_perks_1:0 "$TRIGGER_FAIL$Требуется сначала выбрать один другой бонус за стремление."
  requires_ascension_perks_2:1 "$TRIGGER_FAIL$Требуется сначала выбрать два других бонуса за стремление."
  requires_ascension_perks_3:1 "$TRIGGER_FAIL$Требуется сначала выбрать три других бонуса за стремление."
@@ -1209,3 +1209,4 @@
  ap_transcendence_desc:0 "Мы стоим на пороге пробуждения истинной псионической мощи нашей расы. Наш разум к этому готов, и мы слышали шепот, идущий из экстрасенсорной области, которая нам пока недоступна..."
  tr_aptitude_psychological_profiling_desc:0 "$chance_for_negative_traits$: §G−25%§!"
  tr_statecraft_finish_desc:0 "Получена технология: §Y$tech_galactic_administration$§!"
+ tr_aptitude_finish_desc:0 "Начальные признаки лидера: §G+1§!"
