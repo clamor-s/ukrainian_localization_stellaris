@@ -4,130 +4,130 @@
 ####################
 
 # Ice Trauma (by Gemma Thomson)
- site_ice_trauma:0 "Подо льдом"
- site_ice_trauma_desc:0 "Бескрайние ледяные пустоши [from.planet.GetPlanetMoon]ы [from.planet.GetName] когда-то были морями, существование которых обеспечивала активность глубоких вулканических трещин. Хотя она больше не может поддерживать жизнь, мы обнаружили руины древних подводных поселений в ледяных впадинах возле поверхности."
+ site_ice_trauma:0 "Under the Ice"
+ site_ice_trauma_desc:0 "The vast, frozen wastelands of [from.planet.GetName] were once seas, spread atop an abundance of deep volcanic canyons. Though the environment is no longer capable of supporting life, we have detected the ruins of ancient submarine settlements in icebound trenches close to the planet's surface."
 
- arcsite.1000.name:0 "Призрачные шпили"
- arcsite.1000.desc:0 "Наши [owner.GetScientistPlural] разбили свои лагеря по краям гладкого замерзшего озера. При достаточном освещении подо льдом можно разглядеть тонкие призрачные башни. Они поднимаются со дна озера, подобно стойким водорослям.\n\nМенее опытным отрядам все еще трудно работать при таком лютом, стерильном холоде. Несмотря на это, раскопки продвигаются быстро. Мы обнаружили множество воздушных шлюзов, предназначенных для стыковки примитивных подводных судов, хотя следы самих кораблей пока что отсутствуют. Мы не знаем, сбежали обитатели башен или остались внутри, но все их доки стоят пустыми."
- arcsite.1000.a:0 "Мы должны изучить их методы борьбы со льдом."
+ arcsite.1000.name:0 "Ghostly Spires"
+ arcsite.1000.desc:0 "Our [owner.GetScientistPlural] have set their camps around the edges of a glassy, frozen lake. Under sufficient light, one may catch glimpses of spectral towers underneath. They grasp upwards from the lake bed like steadfast tendrils.\n\nOur less experienced crews are still adjusting to work in such biting, sterile cold. Despite this, our excavations have proceeded swiftly. We have exposed numerous airlocks, all designed for primitive submarine vessels. There is, as yet, no sign of the vessels themselves. Whether the tower's inhabitants stayed or fled, every one of its docks was left empty."
+ arcsite.1000.a:0 "We should invest further in these ice-breaking techniques."
 
- arcsite.1005.name:0 "Некоторый износ"
- arcsite.1005.desc:0 "Когда мы приступили к уборке льда вокруг погребенных под ним жилищ, [owner.GetScientistPlural] обнаружили возле стыковочной башни примитивный компьютерный терминал. Похоже, что кто-то успел... погрызть его хрупкий металлический корпус.\n\nНам удалось запустить терминал после незначительного ремонта. Большая часть сети здания не работает, но мы получили ценную информацию о расположении и содержимом складов с припасами. Что еще интересней, мы обнаружили личные дела участников экспедиции и архив с их отчетами."
+ arcsite.1005.name:0 "Some Wear and Tear"
+ arcsite.1005.desc:0 "As we continue to remove large sections of ice from around the various icebound habitats, our [owner.GetScientistPlural] at the docking tower have discovered a primitive computer terminal. Its brittle metal casing appears to have been... chewed upon.\n\nThe terminal booted up correctly after some minor repairs. Large parts of the habitat's data network remain offline, but we can infer a great deal from local caches of stock manifests, personnel files, and what appears to be a stash of mission logs."
 
- arcsite.1010.name:0 "Тревожные новости"
- arcsite.1010.desc:0 "Мы продолжаем изучать поселение на [from.planet.GetPlanetMoon]е [from.planet.GetName], но чем больше мы узнаем, тем сильнее растет наше беспокойство. Мы обнаружили останки пограничной колонии, принадлежавшей столь древней цивилизации, что мы даже не знаем ее названия.\n\nВ те дни, когда этот мир был покрыт океаном, сюда доставили несколько групп первопроходцев, которых забрали с родных миров и превратили в экипажи подводных лодок. Их целью было основать поселения и приступить к добыче природных богатств планеты, но вместо этого им пришлось иметь дело с бесконтрольными биологическими экспериментами, радикальными политическими сдвигами и нападениями §Yвраждебной флоры и фауны§!.\n\nЗаписи датчиков с навигационного буя позволили нам отследить маршрут одной из таких команд, направлявшихся к ближнему форпосту. Мы полагаем, что их судно может все еще находиться там, запертое во льдах вместе с запасом полезных материалов."
- arcsite.1010.a:0 "Немедленно отправьте туда исследователей."
- arcsite.1010.b:0 "Постарайтесь как можно больше узнать об этих враждебных обитателях океана."
+ arcsite.1010.name:0 "Troubling Developments"
+ arcsite.1010.desc:0 "Our knowledge of the ancient settlement on [from.planet.GetName] deepens, but so too does our concern. What we have uncovered is the remains of a frontier colony - a remnant of a civilization so long forgotten, we cannot even discern their name.\n\nWhen seas were a more dominant feature on this world, disparate groups of settlers were brought from their homeworld and conscripted into pioneer submarine crews. Their goal: to establish colonies and exploit the planet's natural resources. Their reality, however, was one of unchecked biological experiments, radical political change, and significant peril fending off §Yhostile flora and fauna§!.\n\nThe sensor logs from a navigation buoy appear to have tracked one such crew en route to a nearby outpost. We believe their vessel may still be there, trapped in ice along with a cache of useful materials."
+ arcsite.1010.a:0 "Dispatch a research team immediately."
+ arcsite.1010.b:0 "See what we can learn about those hostile ocean-dwellers."
 
- arcsite.1016.name:0 "Огонь и вода"
- arcsite.1016.desc:0 "Пещеру, в которой мы нашли смятые и обгоревшие останки древней подводной лодки, окружает почерневший лед. Выжженная пещера была укрыта от многочисленных циклов замерзания и оттаивания этой планеты и потому сохранила свидетельства многочисленных бедствий, постигнувших экипаж этого судна.\n\nПримитивный ядерный реактор судна хранит следы поспешного ремонта; на стенах каюты экипажа видны царапины и слабые следы химических ожогов. В какой-то момент экипаж воспользовался спасательными камерами подводной лодки, но одна из них так и осталась поблизости: она застряла внутри тоннеля, образованном лавой спящего вулкана.\n\nЕдинственной ценной информацией, которую можно извлечь из обгорелых останков судна, являются координаты его места назначения — §Yсклада с припасами§! для ближайшей колонии. Нашей команде удалось забрать то, что не смогли извлечь обреченные подводники."
+ arcsite.1016.name:0 "Fire and Water"
+ arcsite.1016.desc:0 "Blackened ice surrounds the cave in which we found the crumpled, burnt wreckage of an ancient submarine. Sheltered from the worst of this planet's freeze-thaw cycles, this scorched cave has preserved evidence of multiple calamities befalling this crew.\n\nThe vessel's crude nuclear engine bears signs of hasty patchwork repairs; in the crew quarters we found scratch marks and faint residue from chemical burns. At some point all the submarine's escape shuttles were deployed, yet only one remains nearby - it became lodged inside a dormant lava vent.\n\nThere is little more to glean from this burnt-out wreckage, but the crew's erstwhile destination - a colonial §Ysupply cache§! - has remained intact. Our recovery team has therefore succeeded in retrieving what the doomed submariners could not."
 
- arcsite.1017.name:0 "Независимая подводная лодка"
- arcsite.1017.desc:0 "Пробив туннель через толщу льда, мы обнаружили герметичную пещеру с неповрежденными обломками подводной лодки. Тундровые условия давно превратили органику в мелкую пыль, но сохранили множество артефактов древней культуры.\n\nОтчет наших антропологов упоминает очаг политической активности, поскольку экипаж этой подводной лодки отделился от близлежащей колонии. Они провозгласили несколько суверенных государств в пределах своего судна, каждое из которых отстаивало свою политическую идеологию. Удивительно, но вместо того, чтобы разрушить социальные связи между членами экипажа, эта раздробленность только укрепила их. Подобный случай обязательно вызовет оживленную дискуссию среди наших политологов."
- arcsite.1017.auth.a:0 "...И поможет нам бороться с инакомыслием."
+ arcsite.1017.name:0 "Sovereign Submarine"
+ arcsite.1017.desc:0 "We have tunnelled through significant quantities of ice to find the intact wreckage of a submarine, sealed within an airtight cave. Tundral conditions have long since reduced all organic matter to fine dust, but so too have they preserved a wealth of cultural artifacts.\n\nOur anthropological survey suggests a hotbed of political activity as this submarine's crew broke away from the nearby colony. They proclaimed several sovereign boundaries within the hull of their own submarine, espousing all manner of political ideologies. Surprisingly, this extreme factionalism appears to have strengthened the social bonds of this crew rather than forcing them apart. The matter is sure to spark lively debate amongst our own political scientists."
+ arcsite.1017.auth.a:0 "... Keeping us one step ahead of dissidents."
 
- arcsite.1018.name:0 "Генетическое наследие"
- arcsite.1018.desc:0 "Мы ожидали, что такое древнее судно будет давно раздавлено движением ледяных пластов. Вместо этого мы обнаружили, что подводная лодка вмерзла в лед целиком и уцелела вместе с телами многочисленных существ. Часть из них явно была представителями местной фауны: это крупные, свирепые и явно опасные хищники. Другие, похоже, стали их добычей: мы отыскали небольшую группу разумных существ в защитных скафандрах.\n\nНикто из них не был коренным обитателем [fromfrom.planet.GetPlanetMoon]ы [fromfrom.planet.GetName]. Вскрытие показало, что все они были пришельцами и дополнили свой генетический код материалом, взятым у местных форм жизни. Нам остается только гадать, почему колонисты решили так сильно модифицировать себя, но, сохранив этот генетический материал в себе, они также спасли его для истории."
- arcsite.1018.phobe.a:0 "Какая мерзость."
+ arcsite.1018.name:0 "Genetic Legacy"
+ arcsite.1018.desc:0 "We had expected such an ancient wreck to have been crushed long ago. Instead we find that this stricken hulk was flash-frozen, preserving its superstructure along with the corpses of numerous creatures. Some of these appear to have been native fauna: large, ferocious and decidedly predatory in nature. The others appear to have been their prey: a small group of sapient beings wearing environment suits.\n\nThese individuals - the submarine's crew - did not originate on [fromfrom.planet.GetName]. Rather, our autopsy suggests that these aliens had gene-spliced themselves with material from local lifeforms. We can only imagine what drove the colonists to modify themselves so extensively, and yet we cannot deny: by preserving this genetic material within themselves, they have ensured the survival of a valuable genetic history."
+ arcsite.1018.phobe.a:0 "Such vile obscenity."
 
- arcsite.1020.name:0 "Подвиги во льдах"
- arcsite.1020.desc.intro:0 "Наша экспедиция на [from.planet.GetPlanetMoon]е [from.planet.GetName] завершила изучение брошенных зданий и обломков подводных лодок и возвращается на поверхность. Мы до сих пор многого не знаем об этой колонии. Большинство из того, что мы нашли, просто позволяет представить несколько эпизодов из жизни на особенно одинокой станции."
- arcsite.1020.tech.desc:0 "$arcsite.1020.desc.intro$\n\nНесмотря на то, что их цивилизация так и не открыла способ путешествовать быстрее света, эти древние подводники привели нас ко множеству открытий в других областях. Они продвигали науку в тяжелых условиях, которых мы любой ценой стараемся избегать."
- arcsite.1020.default.desc:0 "$arcsite.1020.desc.intro$\n\nНесмотря на то, что их цивилизация так и не открыла способ путешествовать быстрее света, трудности привели жителей этой подводной колонии к необыкновенным научным открытиям и прорывам в социологии, плодами которых мы можем воспользоваться."
- arcsite.1020.a:0 "Эти поучительные истории могут принести пользу нашим колонистам."
- arcsite.1020.b:0 "Идея строительства поселений под поверхностью выглядит интересной."
- arcsite.1020.c:0 "Мы можем использовать оружие с этой подлодки."
- arcsite.1020.a.memorialist:0 "Мы будем бережно хранить память о них."
- arcsite.1020.a.prospectors:0 "Интересное предприятие."
+ arcsite.1020.name:0 "Frozen Ordeals"
+ arcsite.1020.desc.intro:0 "Having surveyed all we can from the wrecked submarine and abandoned habitats, our teams on [from.planet.GetName] are preparing to regroup near the planet's surface. There is much we still do not know about this colony. Most of what we found simply amounts to an eclectic legacy, of life on a particularly lonely frontier."
+ arcsite.1020.tech.desc:0 "$arcsite.1020.desc.intro$\n\nAlthough they lacked faster-than-light travel, these ancient submariners have steered us towards remarkable breakthroughs in other fields. They made these discoveries in hardship, the likes of which we can strive not to experience ourselves."
+ arcsite.1020.default.desc:0 "$arcsite.1020.desc.intro$\n\nAlthough their civilization did not yet possess faster-than-light technology, hardship seems to steered this once-submarine colony towards some singular breakthroughs in science and economics, which we are now at liberty to exploit."
+ arcsite.1020.a:0 "These cautionary tales may benefit our colonists."
+ arcsite.1020.b:0 "Sub-surface habitats are an interesting idea."
+ arcsite.1020.c:0 "We could put that submarine's armaments to good use."
+ arcsite.1020.a.memorialist:0 "We shall cherish their memory."
+ arcsite.1020.a.prospectors:0 "A curious enterprise."
 
- ice_trauma_insights_colony:0 "Наследие замерзших подводников" #modifier
- ice_trauma_insights_engineering:0 "Находчивость замерзших подводников" #modifier
- ice_trauma_memorialist_unity:0 "В память о замерзших подводниках" #modifier
+ ice_trauma_insights_colony:0 "Frozen Submariners' Legacy" #modifier
+ ice_trauma_insights_engineering:0 "Frozen Submariners' Ingenuity" #modifier
+ ice_trauma_memorialist_unity:0 "In Memory of the Frozen Submariners" #modifier
 
 # Engineered Species
- site_engineered_species:0 "Многочисленные окаменелости"
- site_engineered_species_desc:1 "Мир [from.planet.GetName] выглядит как типичная пригодная планета, но при внимательном изучении наша исследовательская группа обнаружила многочисленные окаменелости в отличном состоянии. Особое внимание привлекли обширные отложения с различными видами существ в одном слое. Либо они погибли одновременно, либо кто-то сознательно разместил их таким образом. Изучение этих останков позволит нам лучше понять эволюцию видов на этой планете."
+ site_engineered_species:0 "Plentiful Fossils"
+ site_engineered_species_desc:1 "[from.planet.GetName] appears to be a standard habitable planet, but on closer inspection, our research team has spotted large deposits of fossils in seemingly well-preserved conditions. Interestingly, larger clusters contain multiple specimens on the same layer, indicating that they either died at the same time or were placed there intentionally. Examination of these remains gives us the opportunity to better understand the evolutionary process of the species inhabiting this planet."
 
- arcsite.2000.name:0 "Обилие костей"
- arcsite.2000.desc:0 "Мы просканировали поверхность и нашли несколько перспективных залежей, полных останков представителей самых разных видов. Некоторые напоминают существ, обитающих на поверхности, а другие не похожи ни на что, виденное нами ранее.\n\nХотя работа предстоит непростая, а наше присутствие встревожило местную фауну, [leader.GetName] уже сообщает о выдающихся успехах и реконструкции нескольких вымерших видов. В свою очередь, это вызвало споры среди исследователей. Некоторые хотят выставить находки в музеях, а другие предпочли бы изучить столь хорошо сохранившиеся окаменелости, тем более что на этом месте уже почти все выкопано."
- arcsite.2000.study:0 "Изучите окаменелости."
- arcsite.2000.use:0 "Их нужно выставить в музее."
- arcsite.2001.name:0 "Изучение ископаемых" #Study
- arcsite.2001.desc:0 "Мы провели обширные исследования, чтобы определить родство между обнаруженными окаменелостями и современной биосферой мира [from.planet.GetName]. Как оказалось, некоторые из них принадлежат к одному роду и обладают множеством схожих черт. Дополнительные исследования могут дать нам больше ответов."
- arcsite.2002.name:0 "Межпланетная выставка" #Use
- arcsite.2002.desc:0 "Выставка привлекла немало посетителей. Хотя мы не сможем использовать собранные образцы для исследований, нам удалось привлечь щедрых спонсоров и отправить ископаемые в межпланетное турне. Необычный вид экспонатов спровоцировал небольшой рост интереса к ксеноархеологии."
+ arcsite.2000.name:0 "Loads of Bones"
+ arcsite.2000.desc:0 "We scanned the surface and found a few promising deposits, filled with the remains of a variety of different species. Some resemble those still living on the surface, while others are nothing like we have seen before.\n\nAlthough the work is hard and the wildlife is agitated by our presence, [leader.GetName] has already made remarkable discoveries and managed to reconstruct some of the extinct species. This, in turn, sparked a dispute among the research team. While some want to display these species in exhibitions, others prefer to study the material, as they are the best-preserved fossils found to date, and this dig site is almost exhausted."
+ arcsite.2000.study:0 "Study the fossils."
+ arcsite.2000.use:0 "Make an exhibition out of them."
+ arcsite.2001.name:0 "Fossil Study" #Study
+ arcsite.2001.desc:0 "We have done extensive research to determine the relationship of fossil species to the current biosphere on [from.planet.GetName]. It turns out that some of them belong to the same genus, having many similarities. Further studies might bring us more answers."
+ arcsite.2002.name:0 "Interplanetary Exhibition" #Use
+ arcsite.2002.desc:0 "Quite a few people came to our exhibition. Although we can't use the collected material for our research, we attracted some generous funders and sent the fossils on an interplanetary tour. The alien appearance of exhibits caused a small boom of people interested in xenoarchaeology."
 
- arcsite.2010.name:0 "Жители пещер"
- arcsite.2010.desc:0 "Вычерпав первое место, мы решили перенести раскопки в отдаленные регионы в поисках новых материалов для исследования. [leader.GetName] сообщает, что команде удалось обнаружить неплохой участок: пещеру, служившую домом вымершему виду разумных существ. Осторожное зондирование и осмотр выявили нечто необычное: обитатели пещеры использовали сложный краситель, который проявляется в присутствии освещения и тепла.\n\nМы определили два типа рисунков: в одних раскрывается история прошлого, а другие изображают повседневную жизнь. Увы, мы нарушили хрупкую экосистему, сохранявшую рисунки. Начавшаяся цепная реакция в совокупности с возрастом красителя привели к его выцветанию, а затем и полному исчезновению. Команда должна решить, что спасать."
- arcsite.2010.study:0 "Сохраните историю."
- arcsite.2010.use:0 "Сохраните повседневность."
- arcsite.2011.name:0 "История жителей пещер" #Study
- arcsite.2011.desc:0 "Мы сохранили рисунки, связанные с прошлым, и узнали новое об истории вида. Похоже, что эти жители пещер вступили в контакт с развитой цивилизацией, которая оказала некоторое влияние на их внешний вид и развитие. Судя по изображениям существ, они были склонны к быстрым мутациям, и их поколения сильно отличались по внешнему виду."
- arcsite.2012.name:0 "Жизнь жителей пещер" #Use
- arcsite.2012.desc:0 "Мы сохранили рисунки, связанные с повседневной жизнью, и узнали новое об истории вида. На них изображены сложные ритуалы с участием жителей пещер, которые выглядят как объединение по-разному выглядящих, но в равной степени разумных существ. [leader.GetName] считает, что различные существа купались в лучах божества, работали на него и взамен обретали свободу."
+ arcsite.2010.name:0 "Cave Dwellers"
+ arcsite.2010.desc:0 "Exhausting the first site, we decided to move to more remote places in search of more material for research. [leader.GetName] found a good enough spot, a cave that served as a home for some intelligent extinct species. Careful probing and examination revealed something unusual: whatever lived in this cave used an ingenious dye that reveals itself when exposed to heat and light.\n\nWe have identified two types of paintings: one telling the story of the past, and the other portraying daily life. Unfortunately, we disrupted the delicate ecosystem that preserved the drawings. The resulting chain reaction, combined with the age of the dye, causes it to fade and disappear on short notice. The team must decide which one is worth saving."
+ arcsite.2010.study:0 "Preserve the history."
+ arcsite.2010.use:0 "Preserve the daily life."
+ arcsite.2011.name:0 "Cave Dwellers History" #Study
+ arcsite.2011.desc:0 "We captured drawings related to the past and gained insight into the species' history. It appears that these cave dwellers came into contact with an advanced civilization that somewhat influenced their looks and development. Given the depictions of the creatures, we assume that the species was prone to rapid genetic mutations, and their generations varied greatly in appearance."
+ arcsite.2012.name:0 "Cave Dwellers Life" #Use
+ arcsite.2012.desc:0 "We captured drawings related to daily life and gained insight into the history of the species. They depict cave dwellers as a conglomeration of different-looking but similarly intelligent species who participated in complex rituals. [leader.GetName] assumed that the various creatures basked in the light of the deity, worked for him, and in return were given freedom."
 
- arcsite.2020.name:0 "Костяное сооружение"
- arcsite.2020.desc:0 "Углубившись в пещеру, мы обнаружили грот со странным костяным сооружением. Судя по его состоянию, оно, вероятно, обрушилось и погрузилось в землю — возможно, в результате землетрясения. [Leader.GetName] приказывает разбить лагерь, и мы уже получаем результаты сканирования периметра, но почва нестабильна. Возможно, у нас не будет времени на полноценное изучение структуры, когда мы проникнем внутрь нее.\n\nНаибольшую ценность для нас представляет само сооружение. Мы можем либо изучить любопытный костяной материал, либо сосредоточиться на исследованиях, поиске новых зацепок о том, кем были чужаки, которые построили его и использовали для своих нужд."
- arcsite.2020.study:0 "Изучите сооружение."
- arcsite.2020.use:0 "Изучите его внутреннее строение."
- arcsite.2021.name:0 "Живая структура" #Study
- arcsite.2021.desc:0 "После непримечательного исследования [Leader.GetName] сообщает, что сооружение... живое. Сейчас уже нет, но было давным-давно, в момент его создания. Оно представляло собой скопление костей и мышц, способное менять свой вид в зависимости от потребностей. Учитывая особенности обрушения сооружения, можно предположить, что оно произошло по воле самой структуры.\n\nК сожалению, мы повредили структуру во время изучения, что привело к новым разрушениям и сделало сооружение бесполезным для дальнейших исследований. [Leader.GetName] приказывает команде двигаться дальше."
- arcsite.2022.name:0 "Подземная цивилизация" #Use
- arcsite.2022.desc:0 "Внутри этой жутковатой структуры обнаружился лабиринт полуразрушенных коридоров, заполненных материалом, напоминающим кости. Нам кое-как удалось извлечь несколько орудий труда и объектов, свидетельствующих о том, что в прошлом эту планету населяла сложная культура. Мы многое узнали об образе жизни этой вымершей расы.\n\nК сожалению, мы повредили структуру во время изучения, что привело к новым разрушениям и сделало сооружение бесполезным для дальнейших исследований. [Leader.GetName] приказывает команде двигаться дальше."
+ arcsite.2020.name:0 "Bone Structure"
+ arcsite.2020.desc:0 "Exploring further into the deep chasms of the cave, we came across a grotto with a strange bone structure inside. Given the current state of the structure, it looks like it collapsed and sank into the ground - probably as a result of an earthquake. [Leader.GetName] ordered a camp to be set up, and we have already done some perimeter scans, but the ground is not stable. We may not have adequate time to examine the structure fully once we get inside.\n\nThe greatest potential yield for our studies lies in the building itself. We can either study the intriguing bone-like material or focus our efforts on exploration, searching the structure for more clues about the aliens who built and used it and their daily routine."
+ arcsite.2020.study:0 "Study the building."
+ arcsite.2020.use:0 "Study its interior."
+ arcsite.2021.name:0 "Living Structure" #Study
+ arcsite.2021.desc:0 "After uneventful research, [Leader.GetName] concluded that the building was... alive. Not now, but years ago, sometime during its creation. It was a mass of bones and tissues molded together to create a building that could reshape for the desired purpose. Given the way the building collapsed, one might even assume that this was a deliberate act on the part of the structure itself.\n\nUnfortunately, we compromised the structure during our studies and it collapsed even further, rendering the building useless for further research. [Leader.GetName] ordered the team to move forward."
+ arcsite.2022.name:0 "Underground Civilization" #Use
+ arcsite.2022.desc:0 "The interior of this creepy structure turned out to be a maze of half-collapsed corridors filled with bone-like material lying everywhere. With some difficulty, we were able to extract several tools and objects that indicate that a complex culture lived on this planet. They will give us great insight into what life may have been like for these extinct species.\n\nUnfortunately, we compromised the structure during our studies and it collapsed even further, rendering the building useless for further research. [Leader.GetName] has ordered the team to move forward."
 
- arcsite.2030.name:0 "Подземный комплекс"
- arcsite.2030.desc:0 "Мы наконец-то достигли конца пещеры и проникли в помещение, напоминающее старый заброшенный подземный бункер. Он отличается от всего виденного ранее. Предположительно, здесь располагалась исследовательская лаборатория пришельцев. Судя по обветшалым емкостям, разбросанным костям и окаменелостям, они тоже изучали местные виды... Правда, у них была возможность делать это при жизни.\n\n[Leader.GetName] немедленно приступает к работе в попытках извлечь хоть какую-то полезную информацию из лаборатории и ее банков данных, запитав их от источника энергии."
- arcsite.2030.proceed:0 "Какие тайны мы обнаружим?"
+ arcsite.2030.name:0 "Underground Facility"
+ arcsite.2030.desc:0 "We finally reached the end of the cave. We entered something that resembled an old abandoned bunker built deep underground. It doesn't look like anything we've found before: we assume alien visitors set up a research lab down here. And given the dilapidated tanks, various bones, and fossils lying around, they were studying these species just as we were... Only they had this opportunity to conduct research when their specimens were still alive.\n\n[Leader.GetName] immediately jumped to work, trying to gather any useful information from the site and data banks, as soon as we plugged them into the power source."
+ arcsite.2030.proceed:0 "What mysteries will we uncover?"
 
- arcsite.2040.name:0 "Прорыв"
- arcsite.2040.revelation.desc:0 "Мы сопоставили уже известные нам факты с информацией из банков данных и пришли к тревожному выводу. Похоже, тысячи лет назад космическая цивилизация высадилась на этом мире и выяснила, что представителей местной фауны легко можно обучать с помощью генетических манипуляций. Для начала пришельцы поработили местных не вполне разумных аборигенов и провели над ними ряд экспериментов. В том числе они превратили их в живой строительный материал. В послушных рабов. В питомцев и скот.\n\nСудя по всему, предыдущие находки были останками этих существ, которые затем выродились в неразумную биосферу мира [from.planet.GetName]. Пугающая участь расы, которая могла бы, как и мы, бороздить просторы галактики."
- arcsite.2040.ignorance.desc:0 "Похоже, несколько тысячелетий назад развитая цивилизация сочла представителей местной фауны интересными образцами для изучения, удивившись разнообразию биосферы. Старые банки данных еще работают, и в них полно странных выводов и тревожных экспериментов, а также генетический состав местных видов и их возможная эволюция, как в прошлом, так и в будущем.\n\nЧто произошло с самими исследователями? Они деградировали до найденных ранее пещерных жителей? Или, наоборот, эволюционировали из них и в какой-то момент покинули планету? Нам остается лишь задаваться вопросом, какие еще тайны скрывает вселенная?"
- arcsite.2040.revelation:0 "Ужасно."
- arcsite.2040.ignorance:0 "Вселенная полна чудес."
- arcsite.2040.phobe:0 "Это доказывает, что чужакам нельзя доверять!"
- arcsite.2040.phile:0 "Наше правительство не потерпело бы подобные преступления!"
+ arcsite.2040.name:0 "Breakthrough"
+ arcsite.2040.revelation.desc:0 "We compared our knowledge from previous studies to the information from the databanks. The conclusion we made is disconcerting. It appears that thousands of years ago, a space-faring civilization landed on this world and found the indigenous specimens easy to train, using their genetic manipulation techniques. At first, they enslaved the population of intelligent - albeit not fully-developed - autochthons, and conducted various experiments on them. These included making them into living tissue for construction purposes. Or into obedient slaves. Or into pets and livestock.\n\nThe previous instances we found were probably remnants of these species before they devolved into the non-sapient biosphere that now thrives on the [from.planet.GetName]. A horrifying end for a species that could, one day, have traversed the galaxy just as we do."
+ arcsite.2040.ignorance.desc:0 "It appears that thousands of years ago, an advanced civilization found the specimens living here to be an interesting study. They were, fascinated by the diverse biosphere. Old databanks are still working, filled with strange conclusions and somewhat worrying experiments. They contain a basic genetic composition of the species and how they might have developed in the past and future.\n\nWhat happened to the researchers themselves? Did they devolve to the state of cave dwellers we found before? Or maybe it is the opposite, and they evolved from them, leaving the planet at some point? It brings us to wonder: what other mysteries does the universe hold?"
+ arcsite.2040.revelation:0 "This is horrible."
+ arcsite.2040.ignorance:0 "Universe is full of wonders."
+ arcsite.2040.phobe:0 "This proves that Xenos can't be trusted!"
+ arcsite.2040.phile:0 "Such crimes would be impossible under our government!"
 
- engineered_species_revelation:0 "Суровая правда" #modifier
- engineered_species_revelation_desc:0 "Мы открыли для себя знания вымерших чужаков о генетических манипуляциях и экспериментах над подопытными, и это показало нам, что космос — враждебное место. Хищник легко может стать жертвой."
- engineered_species_ignorance:0 "Таинственная вселенная" #modifier
- engineered_species_ignorance_desc:0 "Исследование вселенной открывает нам множество чудес. Удивительно, что жизнь может процветать даже в самых далеких уголках галактики и в самых опасных условиях. Под впечатлением от истории о гармоничном сосуществовании различных видов наш народ готов познать тайны вселенной."
- engineered_species_ownway:0 "Объединяющая мысль"
- engineered_species_ownway_desc:0 "Вселенная жестока, но мы не должны сходить со своего пути, чтобы не повторять ошибок наших предшественников."
+ engineered_species_revelation:0 "Harsh Truth" #modifier
+ engineered_species_revelation_desc:0 "While we were able to embrace the knowledge of long-dead aliens and their genetic manipulation test subjects, it also proved to us that space is not a friendly place. It is easy to turn from predator to prey."
+ engineered_species_ignorance:0 "Mysterious Universe" #modifier
+ engineered_species_ignorance_desc:0 "Exploring the universe is an undertaking full of wonders. It is amazing that life can flourish even in the farthest corners of the galaxy and in the most dangerous conditions. Our people, fascinated by stories of diverse creatures living together in harmony, are ready to face the mysteries of the universe."
+ engineered_species_ownway:0 "Unified Thought"
+ engineered_species_ownway_desc:0 "The universe is harsh, but we must stay true to our path so that we do not follow the mistakes of those who have gone before us."
 
  # Debris Belt
- site_debris_belt:0 "Пояс обломков"
- site_debris_belt_desc:0 "Сканирование системы [From.Planet.System.GetName] выявило необычную природу ее пояса астероидов. В отличие от смеси камня, льда и космического мусора, из которых обычно состоят подобные объекты, мы наблюдаем множество крупных искусственных поселений. Должно быть, они были уничтожены в ходе колоссального конфликта несколько тысяч лет назад. Образовавшиеся поля обломков могут хранить в себе множество тайн, но из-за протяженности их изучение займет немало времени."
- r_odryskan_crystal:0 "Кристалл Одрискии"
- r_odryskan_crystal_desc:0 "Кристалл невообразимой ценности. Говорят, что стоимость даже одного осколка может свести с ума любого смертного."
- r_odryskan_crystal_regular_effect:0 "Один из наших ученых может получить черту §Yодержимый§!."
- NAME_The_Cabin:0 "Избушка"
+ site_debris_belt:0 "Debris Belt"
+ site_debris_belt_desc:0 "Our scans of the [From.Planet.System.GetName] system show that its asteroid belt is of an unusual variety. Instead of the standard mix of rocks, ice and space rubble that usually make up such formations, it seems to be the remains of a number of large, artificial habitats. These must have been destroyed with incredible violence sometime in the last few millennia. Untold secrets may be contained within the resulting debris field, but it is so extensive that charting it out could take quite some time."
+ r_odryskan_crystal:0 "Crystal of Odryskia"
+ r_odryskan_crystal_desc:0 "A crystal of incalculable wealth. It is said that the value of even a single shard is enough to drive mortal minds to insanity."
+ r_odryskan_crystal_regular_effect:0 "One of our scientists may gain the §YManiacal§! trait."
+ NAME_The_Cabin:0 "The Cabin"
 
- arcsite.2500.name:0 "Избушка"
- arcsite.2500.desc:0 "Мы не первые, кто обнаружил пояс обломков в системе §Y[From.Planet.System.GetName]§!: мы обнаружили корабль, настолько маленький, что [Root.Owner.GetResearchers] прозвали его «космической избушкой», с останками одного токсоида и значительным количеством кристаллов данных. Судя по темпам разложения, можно предположить, что смерть наступила всего несколько веков назад."
- arcsite.2505.name:0 "Долгое путешествие"
- arcsite.2505.desc:0 "Кристаллы данных из инопланетного корабля оказались журналами полета. Наши [Root.Owner.GetResearchers] прислали нам один из них, сопроводив предварительным переводом. Начало вполне жизнерадостное:\n\n«Такой шанс выпадает раз в жизни. Руины легендарных одрисканцев совсем рядом. Мой новый дом небогат, но меня устраивает, и вскоре у меня будет достаточно кредитов, чтобы оплатить лечение дочери».\n\nНо вскоре записи становятся более мрачными:\n\n«Жена и дочь мертвы. Больше обо мне некому скорбеть. Продажа находок на черном рынке едва позволяет сводить концы с концами. Пути назад уже нет».\n\nВ общей сложности этот чужак потратил более пяти десятков лет, роясь среди обломков в бесплодных поисках богатств."
- arcsite.2505.A:0 "Ну что-то же должно было найтись за это время!"
- arcsite.2515.name:0 "Погружение в безумие"
- arcsite.2515.desc:0 "Это неправда\nЭто неправда\nЭто неправда\nЭто неправда\n§RЛОЖЬ!§!\n...\n...\n...\nНо вдруг это правда?\n\nЗаписи становятся все более пугающими по мере того, как чужак все глубже погружается в пучину безумия."
- arcsite.2520.name:0 "Наконец-то покой"
- arcsite.2520.desc:0 "Наши [Root.Owner.GetResearchers] завершили перевод кристаллов данных чужака. Они предоставили нам перевод последнего журнала, записанного незадолго до смерти в редкий момент прояснения:\n\n«Я наконец-то нашел то, что искал. Многие сочли бы меня безумцем после столь долгих поисков. Думаю, они правы. Я стар, более того, я умираю, а все мои родные давно обратились в прах. Нет смысла продавать артефакт. Но, возможно, я наконец-то обрету покой».\n\nДалее в записи указывается, где чужак спрятал сокровище. Следуя его указаниям, мы нашли огромных размеров драгоценный камень, ценность которого неизмерима."
- arcsite.2520.A:0 "Наша прелесть..."
+ arcsite.2500.name:0 "The Cabin"
+ arcsite.2500.desc:0 "We are not the first to discover the debris belt in the §Y[From.Planet.System.GetName]§! system: a craft - so small that our [Root.Owner.GetResearchers] are dubbing it a "space cabin" - has been found, containing the remains of a single toxoid alien and a considerable number of data crystals. Judging by the rate of decay, our best guess is that this alien expired only a few centuries ago."
+ arcsite.2505.name:0 "A Long Sojourn"
+ arcsite.2505.desc:0 "The data crystals discovered in the alien's space cabin are in fact mission logs. Our [Root.Owner.GetResearchers] have sent us a sample, along with a preliminary translation. They start in an upbeat tone:\n\n"This is the chance of a lifetime. The ruins of the fabled Odryskans are within reach. My new home isn't much, but it's good enough for me, and soon I'll be able to send enough credits home to pay for my daughter's treatment."\n\nSoon enough however, the logs grow sour:\n\n"Wife and daughter dead. No one left to mourn for me. Salvage sold on black market barely enough to support living costs. Too late to turn back now."\n\nAll told, the alien spent over five decades trawling the rubble belt in an apparently futile search for riches."
+ arcsite.2505.A:0 "Surely they found something in all those years!"
+ arcsite.2515.name:0 "Descent Into Madness"
+ arcsite.2515.desc:0 "It is not true\nIt is not true\nIt is not true\nIt is not true\n§RLIES!§!\n...\n...\n...\nBut what if it is true?\n\nThe logs become increasingly disturbing as the alien slips further and further into madness."
+ arcsite.2520.name:0 "Peace At The Last"
+ arcsite.2520.desc:0 "Our [Root.Owner.GetResearchers] have finished translating the alien's data crystals. They present an interpretation of the last log, in which, not long before their death, the recorder experiences a rare moment of lucidity:\n\n"I have finally found what I am looking for. Many would consider me mad for continuing the search this long. I think, probably, that they are right. I am old, now - dying, even - and my kin are long since dust. There is no point in selling the artifact, but perhaps now I can find peace."\n\nThe logs go on to pinpoint where the alien concealed the treasure. By following them, we have tracked down an astonishingly large gemstone of immeasurable value."
+ arcsite.2520.A:0 "Our precious..."
 
 ################
 # RANDOM EVENTS
 ################
 
- arcsite.9000.name:0 "Одинокий дозор"
- arcsite.9000.desc:0 "В последнее время старший археолог [leader.GetName] все чаще сторонится коллег. [leader.GetHeSheCap] все меньше интересуют исследования и все больше — найденные нами дневники и личные записи. [leader.GetHeSheCap] часто бормочет что-то о том, «как же им было здесь одиноко».\n\nВозможно, уныние этого места начинает отрицательно сказываться на психологическом здоровье членов экспедиции. Мы можем предоставить им психологическую помощь или понадеяться, что [leader.GetName] найдет душевный покой в работе." #Uses he/she/they loc., i.e. 'She appears' vs. 'They appear'
- arcsite.9000.a:0 "Готовьте психологов. На первом месте для нас стоит здоровье наших ученых."
- arcsite.9000.b:0 "[leader.GetHimHer] справится. Быть может, [leader.GetHeShe] что-то знает."
- arcsite.9001.desc:0 "Вчера начались поиски старшего археолога [absconded_archaeologist.GetName]. Похоже, наш ведущий специалист бежал, забрав с собой изрядную долю антропологического архива. Команда докладывает об исчезновении одного наземного транспорта, но все защитные скафандры на месте.\n\nБыть может, [absconded_archaeologist.GetName] рассчитывает найти укрытие в другом подводном поселке, но если смотреть на ситуацию трезво, то нам следует готовиться к худшему."
- arcsite.9001.a:0 "Весьма прискорбно."
- arcsite.9002.desc:0 "Вернувшись, [leader.GetName] выглядит гораздо старше своих лет и не отрицает, что цена познания оказалась велика. Тем не менее [leader.GetHeShe] утверждает, что мы пропустили ряд кажущихся незначительными деталей в частных документах, которые могут приблизить нас к долгожданному открытию."
- arcsite.9002.a:0 "Неужели оно того стоило?"
+ arcsite.9000.name:0 "Lonely Vigil"
+ arcsite.9000.desc:0 "Chief archaeologist [leader.GetName] has been growing steadily more withdrawn of late. [leader.GetHeSheCap] appear[leader.GetSXX] less invested in our research goals, choosing instead to obsess over the various diaries and logs we have uncovered so far. [leader.GetHeSheCap] often mutter[leader.GetSXX] about "how lonely these people must have been".\n\nIt is possible the bleakness of this dig site is taking a toll. We can arrange for team-wide counseling, or else trust that [leader.GetName] finds resolution in [leader.GetHisHer] work." #Uses he/she/they loc., i.e. 'She appears' vs. 'They appear'
+ arcsite.9000.a:0 "Make arrangements. Our team's health is of utmost importance."
+ arcsite.9000.b:0 "Leave [leader.GetHimHer] be. Perhaps [leader.GetHeShe] [leader.GetIsAre] onto something."
+ arcsite.9001.desc:0 "Chief archaeologist [absconded_archaeologist.GetName] has absconded, taking a sizeable portion of our anthropological data with [absconded_archaeologist.GetHimHer]. The team reports one ground vehicle missing, but all our environment suits remain at the base.\n\nIt is possible [absconded_archaeologist.GetName] escaped to another submarine habitat somewhere across the tundra, but realistically... We must assume the worst."
+ arcsite.9001.a:0 "Deeply regrettable."
+ arcsite.9002.desc:0 "A heavy toll has been exacted upon archaeologist [leader.GetName]. Though they appear quite haggard now, [leader.GetHeShe] has rejoined the team and presented a compelling hypothesis. It seems we had overlooked several subtle details in the corpus of personal documents. Together, these clues provide just the sort of breakthrough we had been hoping for."
+ arcsite.9002.a:0 "But was it worth the cost?"
 
- arcsite.9005.name:0 "Ледокол"
- arcsite.9005.desc:0 "Команда археологов на [fromfrom.planet.GetPlanetMoon]е [fromfrom.planet.GetName] попросила о помощи. Наши [owner.GetResearchers] на [owner.capital_scope.GetPlanetMoon]е [owner.capital_scope.GetName] выдвинули ряд предложений, которые позволят облегчить работу археологов в условиях вечной мерзлоты. Им предоставили новую модель экскаватора, который обычно используется для терраформирования.\n\nПо заверениям ученых, такая техника значительно ускорит работу, но повлечет за собой §Hдополнительные риски§!. Чтобы уменьшить их, понадобится дополнительное финансирование."
- arcsite.9005.a:0 "Риск и цена слишком велики."
- arcsite.9005.tt.carefree:0 "добавит §G4 подсказки§! в проект §H$site_ice_trauma$§!\n§H[leader.GetName]§! получит:\nЧерта $t$§Y$leader_trait_carefree$§!\n$t$Опыт: +§G150§!" #directly follows loc string 'RANDOM_EFFECT'
- arcsite.9005.tt.paranoid:0 "уберет §R2 подсказки§! из проекта §H$site_ice_trauma$§!\n§H[leader.GetName]§! получит:\nЧерта $t$§Y$leader_trait_paranoid$§!\n$t$Опыт: +§G50§!" #directly follows loc string 'RANDOM_EFFECT'
+ arcsite.9005.name:0 "Icebreaker"
+ arcsite.9005.desc:0 "The excavation team on [fromfrom.planet.GetName] has been working closely with our [owner.GetResearchers] on [owner.capital_scope.GetName], trying out novel solutions for work in harsh tundra. The ground team has deployed a prototype excavator whose design draws heavily on terraforming techniques.\n\nEarly trials suggest this machine will significantly speed up our work here. However, they have identified §Hseveral risks§!. Additional funds will be required if we are to try and mitigate those."
+ arcsite.9005.a:0 "The risks and potential cost are too great."
+ arcsite.9005.tt.carefree:0 "adding §G4 clues§! to §H$site_ice_trauma$§!\n§H[leader.GetName]§! gains:\n$t$§Y$leader_trait_carefree$§! trait\n$t$Experience: +§G150§!" #directly follows loc string 'RANDOM_EFFECT'
+ arcsite.9005.tt.paranoid:0 "adding §R-2 clues§! to §H$site_ice_trauma$§!\n§H[leader.GetName]§! gains:\n$t$§Y$leader_trait_paranoid$§! trait\n$t$Experience: +§G50§!" #directly follows loc string 'RANDOM_EFFECT'

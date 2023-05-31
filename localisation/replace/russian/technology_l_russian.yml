@@ -1211,7 +1211,3 @@
  requires_tech_orbital_sensor_array:0 "§RВимагає £physics£ §Y$tech_orbital_sensor_array$§!.§!"
  requires_tech_command_matrix:0 "§RВимагає £society£ §Y$tech_command_matrix$§!.§!"
 
-
-# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
- tech_genetic_resequencing:0 "Генетичне ресеквенування"
- tech_genetic_resequencing_desc:0 "Ми більше не будемо обмежені базовою біологічною структурою виду в прагненні покращити її. ДНК - це просто ще один матеріал, якому можна надати форму, що відповідає задуму скульптора."

@@ -6,109 +6,109 @@
 
  ### Story Events
 
- AMOEBAS_1_PROJECT:0 "Наблюдение за космическими амебами"
- AMOEBAS_1_PROJECT_DESC:0 "Поручите космическому отделу сбор и обработку данных, связанных с космическими амебами."
+ AMOEBAS_1_PROJECT:0 "Space Amoeba Observation"
+ AMOEBAS_1_PROJECT_DESC:0 "Task a science department with collecting and collating data relating to the Space Amoebas."
 
- CRYSTALS_1_PROJECT:0 "Наблюдение за кристаллическими существами"
- CRYSTALS_1_PROJECT_DESC:0 "Поручите космическому отделу сбор и обработку данных, связанных с кристаллическими существами."
+ CRYSTALS_1_PROJECT:0 "Crystalline Entity Observation"
+ CRYSTALS_1_PROJECT_DESC:0 "Task a science department with collecting and collating data relating to the Crystalline Entities."
 
- DRONES_1_PROJECT:0 "Наблюдение за добывающими дронами"
- DRONES_1_PROJECT_DESC:0 "Поручите космическому отделу сбор и обработку данных, связанных с древними добывающими дронами."
+ DRONES_1_PROJECT:0 "Mining Drone Observation"
+ DRONES_1_PROJECT_DESC:0 "Task a science department with collecting and collating data relating to the Ancient Mining Drones."
 
- CLOUDS_1_PROJECT:0 "Наблюдение за войд-облаками"
- CLOUDS_1_PROJECT_DESC:0 "Поручите космическому отделу сбор и обработку данных, связанных с войд-облаками."
+ CLOUDS_1_PROJECT:0 "Void Cloud Observation"
+ CLOUDS_1_PROJECT_DESC:0 "Task a science department with collecting and collating data relating to the Void Clouds."
 
- CRYSTAL_CONSTRUCT_PROJECT:0 "Кристаллический объект"
- CRYSTAL_CONSTRUCT_PROJECT_DESC:0 "Поручите космическому отделу сбор и обработку данных, связанных с уникальным кристаллическим объектом."
+ CRYSTAL_CONSTRUCT_PROJECT:0 "The Crystal Construct"
+ CRYSTAL_CONSTRUCT_PROJECT_DESC:0 "Task a science department with collecting and collating data relating to the unique Crystalline Construct."
 
- MINING_BASE_PROJECT:0 "Станция по переработке"
- MINING_BASE_PROJECT_DESC:0 "Поручите космическому отделу удаленное изучение последней известной станции по переработке с древними добывающими дронами."
+ MINING_BASE_PROJECT:0 "The Processing Hub"
+ MINING_BASE_PROJECT_DESC:0 "Task a science department with remotely studying the last known Ancient Mining Drone Processing Hub."
 
  ### Anomaly Events
 
- DEAL_WITH_FLORA:0 "Агрессивные растения"
- DEAL_WITH_FLORA_DESC:0 "Флора этой планеты на удивление проворна, пугающе агрессивна и определенно заслуживает более пристального изучения."
+ DEAL_WITH_FLORA:0 "Plant Aggression"
+ DEAL_WITH_FLORA_DESC:0 "The planet's flora is remarkably dexterous, alarmingly aggressive, and definitely worthy of closer study."
 
- OLD_GODS_BENEFACTRESS_PROJECT:0 "Древние боги: Дарительница"
- OLD_GODS_BENEFACTRESS_PROJECT_DESC:2 "Каждый сантиметр поверхности в святилище Дарительницы покрыт сложной вязью пиктограмм, рассказывающих историю, которая более эпична, чем отрывочные былины, известные всем на [Root.Owner.Capital.GetPlanetMoon]е [Root.Owner.Capital.GetName].\n\nПусть они лишь отдаленно напоминают известные древние языки расы [Root.Owner.GetSpeciesName], современные технологии позволят расшифровать пиктограммы, если мы затратим достаточное количество времени и ресурсов."
- OLD_GODS_UNDAUNTED_PROJECT:0 "Древние боги: Неустрашимый"
- OLD_GODS_UNDAUNTED_PROJECT_DESC:2 "Храм, в котором находится святилище Неустрашимого, столь же загадочен, как и легенды, окружающие этого бога. Он наполнен устройствами, чьи происхождение и назначение неясны. Это далеко не те примитивные коробочки с головоломками и испытания силы, которыми изобиловали его храмы на [Root.Owner.Capital.GetPlanetMoon]е [Root.Owner.Capital.GetName]. Когда-то существовало поверье, что его священные тексты откроются только избранным.\n\nВпрочем, наши аналитические системы должны быстро разобраться с этими загадками."
- OLD_GODS_PERCIPIENT_PROJECT:0 "Древние боги: Восприниматель"
- OLD_GODS_PERCIPIENT_PROJECT_DESC:2 "Стены помещения, где находится святилище Воспринимателя, покрыты толстым слоем минерализованного лака, но само святилище пусто.\n\nЛегенды про Воспринимателя рассказывают только тем, кто достаточно восприимчив, чтобы их понять; главное — разобраться, что именно нужно воспринимать."
+ OLD_GODS_BENEFACTRESS_PROJECT:0 "Old Gods: The Benefactress"
+ OLD_GODS_BENEFACTRESS_PROJECT_DESC:2 "Every surface of the Benefactress' shrine is covered with a complex web of pictograms, seemingly telling a story far more expansive than the lingering fables on [Root.Owner.Capital.GetName].\n\nThough only distantly related to known ancient [Root.Owner.GetSpeciesName] languages: modern technology should allow us to decipher the pictograms, given enough time and resources."
+ OLD_GODS_UNDAUNTED_PROJECT:0 "Old Gods: The Undaunted"
+ OLD_GODS_UNDAUNTED_PROJECT_DESC:2 "The temple holding the Undaunted's shrine is - true to the myths surrounding him - filled with contraptions of indeterminate origin and purpose. A far cry from the simple puzzle-boxes and tests of strength that once filled his temples on [Root.Owner.Capital.GetName], it was once claimed that his holy texts could only be read by the truly worthy.\n\nOur sophisticated analysis tools should make short work of these ciphers."
+ OLD_GODS_PERCIPIENT_PROJECT:0 "Old Gods: The Percipient"
+ OLD_GODS_PERCIPIENT_PROJECT_DESC:2 "The walls housing this shrine to the Percipient are coated with thick layers of a mineral-based lacquer, but the shrine itself is bare.\n\nThe tales of the Percipient are told only to those perceptive enough to understand their meaning - it is just a matter of figuring out what needs to be perceived."
 
- LIMBO_1_PROJECT:0 "Лимб"
- LIMBO_1_PROJECT_DESC:0 "Инопланетный склеп, наполненный носителями данных, который прямо-таки умоляет заняться информационной археологией."
+ LIMBO_1_PROJECT:0 "In Limbo"
+ LIMBO_1_PROJECT_DESC:0 "An alien vault filled with data storage devices practically begs for some archaeological data recovery."
 
- PROJECTING_MOON_PROJECT:0 "Проецирование"
- PROJECTING_MOON_PROJECT_DESC:0 "У необычной планеты есть столь же необычная луна. Обычные методы сканирования не дают нужных результатов, поэтому придется изучать ее живьем."
+ PROJECTING_MOON_PROJECT:0 "Projecting"
+ PROJECTING_MOON_PROJECT_DESC:0 "An unusual planet has an unusual moon; the usual scanning techniques do not give satisfactory results, and a more hands-on approach is needed."
 
- GRIMACING_PLANET_PROJECT:0 "Кривляющаяся планета"
- GRIMACING_PLANET_PROJECT_DESC:0 "Невероятно подвижную поверхность этой планеты можно стабилизировать, сделав ее потенциально обитаемой, если мы поспешим."
+ GRIMACING_PLANET_PROJECT:0 "Grimacing Planet"
+ GRIMACING_PLANET_PROJECT_DESC:0 "The violently animated face of this planet can be stabilized into something potentially habitable, if we act soon."
 
- OLFACTORY_PROJECT:0 "Ольфакторный анализ"
- OLFACTORY_PROJECT_DESC:0 "Инопланетный артефакт, который, как мы подозреваем, передает информацию с помощью аэрозольных ароматических соединений."
+ OLFACTORY_PROJECT:0 "Olfactory Study"
+ OLFACTORY_PROJECT_DESC:0 "An alien artifact is suspected of relaying information through aerosolized aromatic compounds."
 
- ULTIMATE_WEAPON_PROJECT:0 "Абсолютное оружие"
- ULTIMATE_WEAPON_PROJECT_DESC:0 "Где-то на этой планете находится склад оружия. Если мы найдем его, то получим доступ к новым военным технологиям."
+ ULTIMATE_WEAPON_PROJECT:0 "The Ultimate Weapon"
+ ULTIMATE_WEAPON_PROJECT_DESC:0 "A cache of weapons lie hidden somewhere on the planet. If we can find them, they may provide new martial technologies for our Empire."
 
- REFINE_ROCK_PROJECT:0 "Позитронная бомбардировка"
- REFINE_ROCK_PROJECT_DESC:0 "Контролируемое рассеяние позитронов с орбиты может преобразовать минералы этой планеты в более удобную форму."
+ REFINE_ROCK_PROJECT:0 "Positron Bombardment"
+ REFINE_ROCK_PROJECT_DESC:0 "Controlled dispersal of positrons from orbit may change the minerals native to the planet into a more useful form."
 
- CRYSTAL_CODEX_PROJECT:0 "Кристальный архив"
- CRYSTAL_CODEX_PROJECT_DESC:0 "Это минеральное образование содержит информацию, закодированную голографическим методом. Структура данных знакома, но из-за высокой плотности записи их будет трудно расшифровать."
+ CRYSTAL_CODEX_PROJECT:0 "Crystal Codex"
+ CRYSTAL_CODEX_PROJECT_DESC:0 "A mineral formation houses hologram-encoded information. Its structure is familiar, but the sheer data density makes it a challenge to decode."
 
- ALIEN_BARRACKS_PROJECT:0 "Военный городок чужаков"
- ALIEN_BARRACKS_PROJECT_DESC:0 "Более тщательное ксено-социо-археологическое изучение этих руин позволит нам лучше понять, как функционировала армия какой-то древней инопланетной расы."
+ ALIEN_BARRACKS_PROJECT:0 "Alien Barracks"
+ ALIEN_BARRACKS_PROJECT_DESC:0 "A closer xeno-socio-archaeological study of these ruins may provide insights into some past alien war machine."
 
- ROBOT_MINERALS_PROJECT:0 "Природа взяла свое"
- ROBOT_MINERALS_PROJECT_DESC:0 "Этот заросший растениями комплекс может хранить важные тайны."
+ ROBOT_MINERALS_PROJECT:0 "Reclaimed by Nature"
+ ROBOT_MINERALS_PROJECT_DESC:0 "An overgrown facility may house important secrets."
 
- BALANCE_ECOSYSTEM_PROJECT:0 "Сбалансированная экосистема"
- BALANCE_ECOSYSTEM_PROJECT_DESC:0 "Мы разработали план, чтобы попытаться сбалансировать неравномерную биосферу этой планеты, используя лишь средства стандартного научного корабля.\n\nЭто может привести к непредсказуемым последствиям."
+ BALANCE_ECOSYSTEM_PROJECT:0 "Balance Ecosystem"
+ BALANCE_ECOSYSTEM_PROJECT_DESC:0 "A plan has been formulated to attempt to balance the planet's lopsided biosphere using only the tools available to a standard Science Ship.\n\nThere may be unforeseen consequences."
 
- HEAD_IN_SAND_PROJECT:0 "Голова в песке"
- HEAD_IN_SAND_PROJECT_DESC:0 "Военная флотилия может попытаться вытащить намертво застрявший корабль."
+ HEAD_IN_SAND_PROJECT:0 "Head in the Sand"
+ HEAD_IN_SAND_PROJECT_DESC:0 "A military fleet can attempt to salvage an ever-burrowing ship."
 
- THE_PRINCE_PROJECT:0 "Государь"
- THE_PRINCE_PROJECT_DESC:0 "Хранилище данных, найденное в космосе, содержит лишь длинный фрагмент текста, написанного на странном, но почему-то знакомом чужом языке."
+ THE_PRINCE_PROJECT:0 "The Prince"
+ THE_PRINCE_PROJECT_DESC:0 "A databank found floating in space houses nothing but a lengthy piece of text, written in a strange, yet familiar, alien language."
 
- EMERGENCY_BUOY_PROJECT:0 "Аварийный буй"
- EMERGENCY_BUOY_PROJECT_DESC:0 "Сильно поврежденный объект, который, похоже, ретранслирует чей-то сигнал."
+ EMERGENCY_BUOY_PROJECT:0 "Emergency Buoy"
+ EMERGENCY_BUOY_PROJECT_DESC:0 "A heavily-damaged object seems to act as a repeater for a comms signal."
 
- WRECKED_FLEET_1:0 "Увековеченное сообщение"
- WRECKED_FLEET_1_DESC:0 "Расшифруйте сообщение, испускаемое монолитом."
+ WRECKED_FLEET_1:0 "Monumental Transmission"
+ WRECKED_FLEET_1_DESC:0 "Decode the message emanating from the monolith."
 
- WRECKED_FLEET_2:0 "Армада древнего альянса"
- WRECKED_FLEET_2_DESC:0 "Направьте ремонтные группы, чтобы привести в рабочее состояние те корабли, которые можно восстановить."
+ WRECKED_FLEET_2:0 "Ancient Alliance Armada"
+ WRECKED_FLEET_2_DESC:0 "Deploy engineering teams to restore the salvageable vessels to working order."
 
- MANUFACTORY_PROJECT:0 "Восстановление добычи"
- MANUFACTORY_PROJECT_DESC:0 "Направьте ремонтные группы, чтобы привести в рабочее состояние древнюю орбитальную станцию."
+ MANUFACTORY_PROJECT:0 "Mining Restoration"
+ MANUFACTORY_PROJECT_DESC:0 "Deploy engineering teams to restore an ancient orbital station to working order."
 
 ### Colony Events
 
- HELPFUL_DRONES_1_PROJECT:0 "Брошенные"
- HELPFUL_DRONES_1_PROJECT_DESC:0 "Странные послания поступают со спутника этой планеты. Возможно, в них нет ничего особенного.\n\nНо может быть и наоборот. Используя корабль на орбите как ретранслятор, ученые колонии тщательно просканируют поверхность луны и выяснят, в чем дело."
- POLLEN_1_PROJECT:0 "Изучение флоры"
- POLLEN_1_PROJECT_DESC:0 "Некоторые виды местной флоры обладают рядом потенциально интересных свойств."
- POLLEN_2_PROJECT:0 "Трудовой анализ"
- POLLEN_2_PROJECT_DESC:0 "Исследования, которые недавно провел авторитетный университет [Root.Owner.GetSpeciesName], выявили способ по-новому упорядочить огромные трудовые ресурсы. Подробное масштабное изучение этих новых концепций позволит нам понять, почему падает производительность в колониях с затрудненными условиями проживания."
- POLLEN_3_PROJECT:0 "Ощущение надвигающейся катастрофы"
- POLLEN_3_PROJECT_DESC:0 "Ситуация на планете, чья атмосфера засорена пыльцой, грозит обернуться катастрофой. Нужно как можно скорее изучить уникальную ситуацию, в которой оказалась колония, в особенности растущую враждебность внешней среды.\n\nКак только мы выявим все угрозы, то за несколько часов сможем составить план действий и приступить к его выполнению."
+ HELPFUL_DRONES_1_PROJECT:0 "Left Behind"
+ HELPFUL_DRONES_1_PROJECT_DESC:0 "Strange readings are coming from the planet's moon. It could be nothing.\n\nBut it could be something. With a ship in orbit acting as a relay, the colony's scientists will carefully scan the moon's surface in order to get to the heart of the matter."
+ POLLEN_1_PROJECT:0 "Floral Study"
+ POLLEN_1_PROJECT_DESC:0 "Some of the planet's native flora exhibit several potentially interesting properties."
+ POLLEN_2_PROJECT:0 "Labor Study"
+ POLLEN_2_PROJECT_DESC:0 "Several recent studies from reputable [Root.Owner.GetSpeciesName] seats of learning present a number of alternative ways of arranging a vast workforce. An exhaustive meta-study of these new ideas could provide the answer to the problem of declining productivity in challenging colony environments."
+ POLLEN_3_PROJECT:0 "A Sense of Impending Doom"
+ POLLEN_3_PROJECT_DESC:0 "The situation on the pollen-infested planet has taken a turn for the potentially dangerous. A speedy assessment of the colony's unique situation and especially its increasingly volatile environmental factors is of the utmost importance.\n\nOnce all threats are known, an action plan can be drafted and executed within hours."
 
 ### Starting Events
 
 # Wanderlust
- ROGUE_SCIENTIST_1_PROJECT:0 "Жажда странствий: оставшиеся следы"
- ROGUE_SCIENTIST_1_PROJECT_DESC:0 "Незаметное отбытие Председателя из этой системы породило странное множество остаточных энергетических импульсов в солнечном ветре.\n\nМы надеемся, что полный анализ этих импульсов подскажет нам, куда направляется Председатель, и упростит отслеживание в будущем."
+ ROGUE_SCIENTIST_1_PROJECT:0 "Wanderlust: What Was Left Behind"
+ ROGUE_SCIENTIST_1_PROJECT_DESC:0 "The Chairperson's unseen departure from this system resulted in a perplexing mass of residual energy signatures being cast upon the solar winds.\n\nHopefully a complete analysis of these energies should point us to the Chairperson's next destination, and if need be, make them easier to track in the future."
 
 # Mass Extinction
- MASSEX_1_PROJECT:0 "Анализ: разбитое"
- MASSEX_1_PROJECT_DESC:0 "Восстановите картину тяжелого прошлого этого небесного тела."
- MASSEX_2_PROJECT:0 "Анализ: сгоревшее"
- MASSEX_2_PROJECT_DESC:0 "Восстановите картину тяжелого прошлого этого небесного тела."
- MASSEX_3_PROJECT:0 "Анализ: опустошенное"
- MASSEX_3_PROJECT_DESC:0 "Восстановите картину тяжелого прошлого этого небесного тела."
- MASSEX_4_PROJECT:0 "Анализ: отравленное"
- MASSEX_4_PROJECT_DESC:0 "Восстановите картину тяжелого прошлого этого небесного тела."
- MASSEX_5_PROJECT:0 "Анализ: остывшее"
- MASSEX_5_PROJECT_DESC:0 "Восстановите картину тяжелого прошлого этого небесного тела."
+ MASSEX_1_PROJECT:0 "Analysis: Broken"
+ MASSEX_1_PROJECT_DESC:0 "Reconstruct the traumatic past of this celestial body."
+ MASSEX_2_PROJECT:0 "Analysis: Burned"
+ MASSEX_2_PROJECT_DESC:0 "Reconstruct the traumatic past of this celestial body."
+ MASSEX_3_PROJECT:0 "Analysis: Desolate"
+ MASSEX_3_PROJECT_DESC:0 "Reconstruct the traumatic past of this celestial body."
+ MASSEX_4_PROJECT:0 "Analysis: Noxious"
+ MASSEX_4_PROJECT_DESC:0 "Reconstruct the traumatic past of this celestial body."
+ MASSEX_5_PROJECT:0 "Analysis: Chilly"
+ MASSEX_5_PROJECT_DESC:0 "Reconstruct the traumatic past of this celestial body."

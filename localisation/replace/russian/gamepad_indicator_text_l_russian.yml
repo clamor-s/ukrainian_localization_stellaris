@@ -45,7 +45,7 @@
  LOAD_SELECTED_GAMEPAD_INDICATOR:0 "£gamepad_a£ $LOAD_SELECTED_SAVE$"
 
  ### Combat view
- COMBAT_GAMEPAD_INDICATOR:0 "£gamepad_lt£ + £gamepad_rt£ $COMBAT_VIEW_RETREAT_ALL$ — £gamepad_rt£ $RETREAT$"
+ COMBAT_GAMEPAD_INDICATOR:0 "£gamepad_lt£ + £gamepad_rt£ $COMBAT_VIEW_RETREAT_ALL$ - £gamepad_rt£ $RETREAT$"
  
  ### Combat stats view
  COMBAT_STAT_COMMUNICATE_WITH_BELLIGERENT:0 "£gamepad_y£ $GALAXY_VIEW_EMPIRE_DIPLOMACY$"

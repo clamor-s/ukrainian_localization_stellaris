@@ -3,7 +3,7 @@
  # Strings and special keys
  # for use in game names
  ####################################
- NAME_Absorbed_Species:0 "Поглощённые [Root.GetSpeciesNamePlural]"
+ NAME_Absorbed_Species:0 "Absorbed [Root.GetSpeciesNamePlural]"
 
  # Common name formats
  
@@ -13,9 +13,9 @@
  PREFIX_NAME_FORMAT:0 "$PREFIX$ $NAME$" # Used for ships' prefixes, e.g. 'UNS Excelsior'
  SUFFIX_NAME_FORMAT:0 "$NAME$ $SUFFIX$" # Used for ships with numbers where applicable, e.g. 'UNS Excelsior II'
  ASTEROID_NAME_FORMAT:0 "$prefix$$suffix$"
- AofB:0 "$1$ $2&gen$&!1" # Used in empire names like 'Empire of Sol'.
+ AofB:0 "$1$ of $2$" # Used in empire names like 'Empire of Sol'.
  AofBpfx:0 "$1$ $2$" # Same as above, except used only to generate a ship prefix acronym: 'Empire Sol' -> 'ESL'
- AassocB:0 "$2$ $1$" # Two loosely associated names, like 'Omega Initiative'
+ AassocB:0 "$1$ $2$" # Two loosely associated names, like 'Omega Initiative'
  # Note: if you use grammatical tags in your language, you may want to add '&! 1' to AofB. 
  #   This will give the name as a whole the gender/number of 'Empire', and not that of 'Sol'.
 
@@ -23,15 +23,15 @@
  
  # $1$ and $2$ are the attacker and defender adjectives, $3$ is the word for the war.
  # Example: 'Prossnakan - Centaurian War of Rivalry'
- war_vs_adjectives:0 "$1$о-$2$ий $3$|||fem:$1$о-$2$ая $3$|||neut:$1$о-$2$ое $3$"
+ war_vs_adjectives:0 "$1$ - $2$ $3$"
  
  # $1$ and $2$ are the attacker and defender names, $3$ is the word. (Typically used for federations)
  # Example: 'Federated Star Nations - Star Pact War'
- war_vs_names:0 "$3&cap$ $1&gen$ против $2&gen$"
+ war_vs_names:0 "$1$ - $2$ $3$"
 
  # Mix of adjective and name
- war_name_vs_adj:0 "$3&cap$ $1&gen$ против $2$ого государства" # $2$ is an adjective
- war_adj_vs_name:0 "$1$ий $3$ против $2&gen$|||fem:$1$ая $3$ против $2&gen$|||neut:$1$ое $3$ против $2&gen$" # $1$ is an adjective
+ war_name_vs_adj:0 "$1$ - $2$ $3$" # $2$ is an adjective
+ war_adj_vs_name:0 "$1$ - $2$ $3$" # $1$ is an adjective
 
 
  # Special-use keys
@@ -39,7 +39,7 @@
  # Default adjective word order. Any adjective that doesn't already have '$1$' in it
  # will use this pattern to add a '$1$' before or after the adjective, as appropriate
  # for the language. A space is optional.
- adj_format:0 "adj $1$|||masc:adjий $1$|||masc,gen:adjого $1$|||masc,dat:adjому $1$|||masc,acc:adjий $1$|||masc,inst:adjим $1$|||masc,prep:adjом $1$|||fem:adjая $1$|||fem,gen:adjой $1$|||fem,dat:adjой $1$|||fem,acc:adjую $1$|||fem,inst:adjой $1$|||fem,prep:adjой $1$|||neut:adjое $1$|||neut,gen:adjого $1$|||neut,dat:adjому $1$|||neut,acc:adjое $1$|||neut,inst:adjим $1$|||neut,prep:adjом $1$|||pl:adjие $1$|||pl,gen:adjих $1$|||pl,dat:adjим $1$|||pl,acc:adjие $1$|||pl,inst:adjими $1$|||pl,prep:adjих $1$"
+ adj_format:0 "adj $1$"
 
  # Patterns for turning nouns into adjectives
  # NOTE: Languages can have more or fewer entries here than English has.
@@ -50,8 +50,8 @@
  # and the remainder of the word it's attributing will replace the '*': e.g. 'Jhabbanid'->'Jhabbanan Confederacy'
  # Patterns can be 2 last letters (adj_NNid), 1 last letter (adj_NNd) or 0 last letters
  # (i.e. default, adj_NN). If you need more, contact dev.
- adj_NNi:0 "*an $1$"
- adj_NNr:0 "*an $1$"
+ adj_NNi:0 "*ian $1$"
+ adj_NNr:0 "*ran $1$"
  adj_NNa:0 "*an $1$"
  adj_NNe:0 "*an $1$"
  adj_NNus:0 "*an $1$"
@@ -103,9 +103,9 @@
  # - 'N' means insert the straight Arabic number
  
  # Ordinary English ordinal.
- ORD:0 "def:$C$"
+ ORD:0 "n100+10+(0-9):$C$th, n10+1:$C$st, n10+2:$C$nd, n10+3:$C$rd, def:$C$th"
  # 0-based English ordinal
- ORD0:0 "-1, def:$C$"
+ ORD0:0 "-1, n100+10+(0-9):$C$th, n10+1:$C$st, n10+2:$C$nd, n10+3:$C$rd, def:$C$th"
 
  # ## Suggested numeral variants for languages
  #l_russian:
@@ -147,6 +147,3 @@
  NUMBERS_TEST_HEX:0 "$HEX$"
  NUMBERS_TEST_R:0 "$R$"
  NUMBERS_TEST:0 "$C$ $CC$ $CCC$ $ORD$ $HEX$ $R$"
-
-# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
- adj_NN:0 "* $1$"
