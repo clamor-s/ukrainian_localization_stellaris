@@ -1101,7 +1101,7 @@
  no_rev_engineering:1 "Операція §Y$operation_steal_technology$§! автоматично зазнає збою, якщо її використовують проти нас, а §Yуламки§! із наших знищених кораблів не можуть вивчатися іншими імперіями."
  allow_raiding:0 "Розблокує §Y$bombardment_raiding$§! бомбардування, яке дозволяє нам викрадати поселення з оточених планет і переселяти їх у наші власні світи."
 
- ap_defender_of_the_galaxy_effect_opinion:1 "£opinion£ §YСтавлення§! всіх імперій збільшується на §G+200§!"
+ ap_defender_of_the_galaxy_effect_opinion:2 "£opinion£ §YСтавлення§! всіх звичайних імперій збільшується на §G+200§!"
  ap_defender_of_the_galaxy_modifier_desc:0 "Пошкодження фракціям кризи кінця гри: §G+50%§!"
 
  ap_engineered_evolution:0 "Спроектована еволюція"
