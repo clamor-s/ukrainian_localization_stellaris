@@ -7998,12 +7998,6 @@
  ACTION_STOP_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_TITLE:0 "Прекратить предоставление технологий"
  ACTION_STOP_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_DESC:0 "Завершить программу по предоставлению этой досветовой цивилизации наших продвинутых технологий."
  ACTION_STOP_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_OFFER_DESC:0 "Завершить программу по предоставлению наших продвинутых технологий цивилизации §H[Actor.GetName]§!."
-#  ACTION_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_TITLE: "Offer Stratified Technological Development"
-#  ACTION_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_DESC: "Do some stratified thechnological enlightenment." #TODO_CD
-#  ACTION_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_OFFER_DESC: "-- TODO ME (stratified technological development) --------------" #TODO_CD
-#  ACTION_STOP_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_TITLE: "Stop stratified technological development" #TODO_CD
-#  ACTION_STOP_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_DESC: "Stop stratified technological development." #TODO_CD
-#  ACTION_STOP_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_OFFER_DESC: "-- TODO ME (stop stratified technological development) --------------" #TODO_CD
  ACTION_PRE_FTL_TRADE_TITLE:0 "Заключить коммерческое соглашение"
  ACTION_PRE_FTL_TRADE_DESC:0 "Заключить коммерческое соглашение с этой досветовой цивилизацией. Это увеличит производство наблюдательного форпоста."
  ACTION_PRE_FTL_TRADE_OFFER_DESC:0 "Заключить коммерческое соглашение с цивилизацией §H[Actor.GetName]§!. Это увеличит производство наблюдательного форпоста."
@@ -9356,7 +9350,7 @@
  civic_tooltip_agrarian_idyll_effects:8 "$civic_tooltip_agrarian_idyll_start$£job_farmer£ §Y$job_farmer_plural$§! также производят §G2§! £amenities£ ед. §Yблаг§!"
  civic_tooltip_agrarian_anglers_effects:0 "$civic_tooltip_agrarian_idyll_start$£job_farmer£ §Y$job_farmer_plural$§!, £job_angler£ §Y$job_angler_plural$§! и £job_pearl_diver£ §Y$job_pearl_diver_plural$§! также производят §G2§! £amenities£ ед. §Yблаг§!"
  civic_tooltip_mechanists_effects:10 "Вы начнете игру с 8 £pop£ поселениями роботов, а также с технологиями и инфраструктурой для постройки дополнительных\n— $mod_planet_pops_robotics_upkeep_mult$: §G-5%§!\n"
- civic_tooltip_shared_burden_effects:5 "Разрешен уровень жизни §Y$living_standard_shared_burden$§!, при котором все £pop£ поселения имеют £consumer_goods£ §Y$consumer_goods$§! в умеренном количестве, независимо от §Yсоциального слоя§!.\nБольшинство других типов §Yуровня жизни§! отключены.\nДает доступ к владению £building£ §Y$holding_communal_housing_outreach$§!\nУдваивает £unity£ §Yединство§! от фракции эгалитаристов\n"
+ civic_tooltip_shared_burden_effects:6 "Разрешен уровень жизни §Y$living_standard_shared_burden$§!, при котором все £pop£ поселения имеют £consumer_goods£ §Y$consumer_goods$§! в умеренном количестве, независимо от §Yсоциального слоя§!.\nБольшинство других типов §Yуровня жизни§! отключены.\nДает доступ к владению £building£ §Y$holding_communal_housing_outreach$§!\n"
  civic_tooltip_syncretic_evolution_effects:6 "— Вы начнете игру с 12 £pop£ поселениями другой расы, подчиняющейся вам"
  civic_tooltip_fanatic_purifiers_effects:14 "Нельзя вступать в §Yдипломатические отношения§! с другими расами!\nНедоступен §Yгалактический рынок§!\n§Y«Очищение»§! является поводом к войне с соседними расами\n§YПоселения чужаков§! всегда подвергаются геноциду\n£unity£ §YЕдинство§! дается за геноцид £pop£ поселений чужаков\nМожно использовать бомбардировки §Y$bombardment_armageddon$§!\n"
  civic_tooltip_devouring_swarm_effects:11 "Нельзя вступать в §Yдипломатические отношения§! с другими государствами!\nНедоступен §Yгалактический рынок§!\n§Y«Голод»§! является поводом к войне с другими государствами\n§YПоселения чужаков§! всегда поедаются\n§Y$society_research$§! £society£ даются за геноцид £pop£ поселений чужаков\n"
