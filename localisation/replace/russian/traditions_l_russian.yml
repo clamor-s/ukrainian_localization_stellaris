@@ -714,7 +714,7 @@
 
  tr_unyielding_defensive_zeal:1 "Завзяття до захисту"
  tr_unyielding_defensive_zeal_delayed:1 "Коли мова заходить про захист наших територій і існування, наші вороги обов'язково відчують наш запал."
- tr_unyielding_defensive_zeal_desc:0 "§Y$HEALTH$§! і §Yшкоду§! від §Yзоряних баз§! и §Yоборонних платформ§ збільшено на §G33%§!."
+ tr_unyielding_defensive_zeal_desc:0 "§Y$HEALTH$§! і §Yшкоду§! від §Yзоряних баз§! та §Yоборонних платформ§! збільшено на §G33%§!."
 
  tr_unyielding_fortress_doctrine:0 "Доктрина фортеці"
  tr_unyielding_fortress_doctrine_delayed:1 "У нашій свідомості закладено постійну пильність. Поки охорона не впаде, наші вороги ніколи не зможуть застати нас зненацька."
