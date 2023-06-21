@@ -85,7 +85,7 @@
  TRAIT_EMOTION_EMULATORS_EFFECT:2 "£amenities_no_happiness£ Блага від £job£ діяльності: §G+20%§!"
  TRAIT_UNCANNY_EFFECT:2 "£amenities_no_happiness£ Блага від £job£ діяльності: §R-20%§!"
  TRAIT_THRIFTY_EFFECT:0 "£trade_value£ Торгова цінність від £job£ діяльності: §G+25%§!"
- TRAIT_LITHOID_EFFECT:2 "Полгинають £minerals£ §YМінерали§! замість £food£ §YЇжі§!\n\n$MOD_POP_GROWTH_SPEED$: §R-25%§!\n$MOD_POP_ASSEMBLY_SPEED$: §R-25%§!\n$MOD_POP_ENVIRONMENT_TOLERANCE$: §G+50%§!\n$MOD_ARMY_HEALTH$: §G+50%§!\n$MOD_LEADER_AGE$: §G+50§!"
+ TRAIT_LITHOID_EFFECT:2 "Споживають £minerals£ §YМінерали§! замість £food£ §YЇжі§!\n\n$MOD_POP_GROWTH_SPEED$: §R-25%§!\n$MOD_POP_ASSEMBLY_SPEED$: §R-25%§!\n$MOD_POP_ENVIRONMENT_TOLERANCE$: §G+50%§!\n$MOD_ARMY_HEALTH$: §G+50%§!\n$MOD_LEADER_AGE$: §G+50§!"
 
  NO_SPECIES_CAN_INHABIT:0 "§RУ нашій імперії немає жодного виду, який міг би населяти цей тип планети§!"
  POP_HABITABILITY_TOO_LOW:0 "§RПридатність планети для проживання поселень нижче §R20%§!.§!"
