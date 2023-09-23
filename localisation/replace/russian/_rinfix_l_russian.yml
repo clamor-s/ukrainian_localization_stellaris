@@ -23,7 +23,6 @@
  NO_POSSIBLE_OPTION: "§RНет доступных вариантов.§!"
 
  MESSAGE_REANIMATION_COMPLETE_DESC: "Первая группа воскрешённых тиянки ожидает наших приказов в системе $SYSTEM|Y$. Следующая группа уже готовится."
- NAME_Reanimated_Elderly_Tiyanki: "Возрождённый $NAME_Elderly_Tiyanki$"
 
 #################
 # Исправления скриптов
@@ -100,17 +99,17 @@
 ### Падежи для названий трофеев с левиафанов для ивентов.
 # Через варианты сделать не вышло — в подсказке «добавить модификатор» выводятся все варианты.
 # GetTrophyNameDE1
- DELOC_1_drakes_scale:0 "Клык дракона&!masc|||acc:клык дракона&!masc|||prep:клыке дракона&!masc"
- DELOC_1_eye_of_the_shard:0 "Глаз Шард&!masc|||acc:глаз Шард&!masc|||prep:глазе Шард&!masc"
- DELOC_1_matriarchs_flagella:0 "Жгутик матриарха&!masc|||acc:жгутик матриарха&!masc|||prep:жгутике матриарха&!masc"
- DELOC_1_voidspawns_chitin:0 "Ядовитая железа Порождения пустоты&!fem|||acc:ядовитую железу Порождения пустоты&!fem|||prep:ядовитой железе Порождения пустоты&!fem"
- DELOC_1_wraiths_energy_disperser:0 "Рассеивающий мешок фантома&!masc|||acc:рассеивающий мешок фантома&!masc|||prep:рассеивающем мешке фантома&!masc"
- DELOC_1_devourers_plasma:0 "Яйцевая камера Пожирателя&!fem|||acc:яйцевую камеру Пожирателя&!fem|||prep:яйцевой камере Пожирателя&!fem"
- DELOC_1_horrific_inverse_mass:0 "Жуткая инверсная масса&!fem|||acc:жуткую инверсную массу&!fem|||prep:жуткой инверсной массе&!fem"
- DELOC_1_dreadnoughts_reactor:0 "Реактор дредноута&!masc|||acc:реактор дредноута&!masc|||prep:реакторе дредноута&!masc"
- DELOC_1_fortress_hull_plates:0 "Камера из крепости&!fem|||acc:камеру из крепости&!fem|||prep:&!fem"
- DELOC_1_scavenger_bots_compactor:0 "Уплотнитель Робота-мусорщика&!masc|||acc:уплотнитель Робота-мусорщика&!masc|||prep:уплотнителе Робота-мусорщика&!masc"
- DELOC_1_sky_dragons_plume:0 "Перо Небесного дракона&!neut|||acc:перо Небесного дракона&!neut|||prep:пере Небесного дракона&!neut"
+ DELOC_1_drakes_scale: "Клык дракона&!masc|||acc:клык дракона&!masc|||prep:клыке дракона&!masc"
+ DELOC_1_eye_of_the_shard: "Глаз Шард&!masc|||acc:глаз Шард&!masc|||prep:глазе Шард&!masc"
+ DELOC_1_matriarchs_flagella: "Жгутик матриарха&!masc|||acc:жгутик матриарха&!masc|||prep:жгутике матриарха&!masc"
+ DELOC_1_voidspawns_chitin: "Ядовитая железа Порождения пустоты&!fem|||acc:ядовитую железу Порождения пустоты&!fem|||prep:ядовитой железе Порождения пустоты&!fem"
+ DELOC_1_wraiths_energy_disperser: "Рассеивающий мешок фантома&!masc|||acc:рассеивающий мешок фантома&!masc|||prep:рассеивающем мешке фантома&!masc"
+ DELOC_1_devourers_plasma: "Яйцевая камера Пожирателя&!fem|||acc:яйцевую камеру Пожирателя&!fem|||prep:яйцевой камере Пожирателя&!fem"
+ DELOC_1_horrific_inverse_mass: "Жуткая инверсная масса&!fem|||acc:жуткую инверсную массу&!fem|||prep:жуткой инверсной массе&!fem"
+ DELOC_1_dreadnoughts_reactor: "Реактор дредноута&!masc|||acc:реактор дредноута&!masc|||prep:реакторе дредноута&!masc"
+ DELOC_1_fortress_hull_plates: "Камера из крепости&!fem|||acc:камеру из крепости&!fem|||prep:&!fem"
+ DELOC_1_scavenger_bots_compactor: "Уплотнитель Робота-мусорщика&!masc|||acc:уплотнитель Робота-мусорщика&!masc|||prep:уплотнителе Робота-мусорщика&!masc"
+ DELOC_1_sky_dragons_plume: "Перо Небесного дракона&!neut|||acc:перо Небесного дракона&!neut|||prep:пере Небесного дракона&!neut"
 
 # То же касается самих левиафанов...
 # GetLeviathanTargetNameDE1DE1

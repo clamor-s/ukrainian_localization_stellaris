@@ -1,7 +1,5 @@
 ﻿l_russian:
-
-# Sequential name formats
- IA_IMPERIALARMADA:0 "$R$ имперская флотилия"
-
-# Obsolete sequentials (for backwards compatibility)
- IA_xxIMPERIALARMADA_ROM:0 "$R$ имперская флотилия"
+ #Sequential name formats
+ IA_IMPERIALARMADA: "$R$ имперская флотилия"
+ #Obsolete sequentials (for backwards compatibility)
+ IA_xxIMPERIALARMADA_ROM: "$R$ имперская флотилия"
